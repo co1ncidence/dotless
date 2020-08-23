@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Dina:pixelsize=10:antialias=true:autohint=true";
-static int borderpx = 10;
+static char *font = "IBM Plex Mono:pixelsize=16:antialias=true:autohint=true";
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 10;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/bash";
+static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -26,8 +26,8 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
-static float cwscale = 0.0;
-static float chscale = 0.0;
+static float cwscale = 1.0;
+static float chscale = 1.0;
 
 /*
  * word delimiter string
@@ -95,41 +95,39 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#050505",
-	"#e0717b",
-	"#b5a757",
-	"#f2bf70",
-	"#4d8bb4",
-	"#f270a3",
-	"#4db4aa",
-	"#f4e0da",
 
-	/* 8 bright colors */
-	"#191919",
-	"#f1828c",
-	"#c6b868",
-	"#ffdf88",
-	"#5e9cc5",
-	"#f381b4",
-	"#5ec5bb",
-	"#f4e0da",
+  /* 8 normal colors */
+  [0] = "#292b34", /* black   */
+  [1] = "#f9929b", /* red     */
+  [2] = "#7ed491", /* green   */
+  [3] = "#fbdf90", /* yellow  */
+  [4] = "#a3b8ef", /* blue    */
+  [5] = "#ccaced", /* magenta */
+  [6] = "#9ce5c0", /* cyan    */
+  [7] = "#ffffff", /* white   */
 
-	[255] = 0,
+  /* 8 bright colors */
+  [8]  = "#585e74", /* black   */
+  [9]  = "#fca2aa", /* red     */
+  [10] = "#a5d4af", /* green   */
+  [11] = "#fbeab9", /* yellow  */
+  [12] = "#bac8ef", /* blue    */
+  [13] = "#d7c1ed", /* magenta */
+  [14] = "#c7e5d6", /* cyan    */
+  [15] = "#eaeaea", /* white   */
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+  /* special colors */
+  [256] = "#30333d", /* background */
+  [257] = "#ffffff", /* foreground */
 };
-
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -199,6 +197,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*

@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Dina:pixelsize=10:antialias=true:autohint=true";
-static int borderpx = 10;
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 10;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/bash";
+static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -95,41 +95,39 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#050505",
-	"#e0717b",
-	"#b5a757",
-	"#f2bf70",
-	"#4d8bb4",
-	"#f270a3",
-	"#4db4aa",
-	"#f4e0da",
 
-	/* 8 bright colors */
-	"#191919",
-	"#f1828c",
-	"#c6b868",
-	"#ffdf88",
-	"#5e9cc5",
-	"#f381b4",
-	"#5ec5bb",
-	"#f4e0da",
+  /* 8 normal colors */
+  [0] = "#050505", /* black   */
+  [1] = "#AC8A8C", /* red     */
+  [2] = "#8AAC8B", /* green   */
+  [3] = "#ACA98A", /* yellow  */
+  [4] = "#8F8AAC", /* blue    */
+  [5] = "#AC8AAC", /* magenta */
+  [6] = "#8AABAC", /* cyan    */
+  [7] = "#f0f0f0", /* white   */
 
-	[255] = 0,
+  /* 8 bright colors */
+  [8]  = "#191919", /* black   */
+  [9]  = "#C49EA0", /* red     */
+  [10] = "#9EC49F", /* green   */
+  [11] = "#C4C19E", /* yellow  */
+  [12] = "#A39EC4", /* blue    */
+  [13] = "#C49EC4", /* magenta */
+  [14] = "#9EC3C4", /* cyan    */
+  [15] = "#fafafa", /* white   */
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+  /* special colors */
+  [256] = "#050505", /* background */
+  [257] = "#f0f0f0", /* foreground */
 };
-
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -199,6 +197,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*

@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Dina:pixelsize=10:antialias=true:autohint=true";
-static int borderpx = 30;
+static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 30;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/bash";
+static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -68,18 +68,6 @@ static unsigned int blinktimeout = 800;
 static unsigned int cursorthickness = 2;
 
 /*
- * 1: render most of the lines/blocks characters without using the font for
- *    perfect alignment between cells (U2500 - U259F except dashes/diagonals).
- *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
- * 0: disable (render all U25XX glyphs normally from the font).
- */
-const int boxdraw = 0;
-const int boxdraw_bold = 0;
-
-/* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
-const int boxdraw_braille = 0;
-
-/*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
  * it
  */
@@ -108,24 +96,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#050505",
-	"#e0717b",
-	"#b5a757",
-	"#f2bf70",
-	"#4d8bb4",
-	"#f270a3",
-	"#4db4aa",
-	"#f4e0da",
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
 
 	/* 8 bright colors */
-	"#191919",
-	"#f1828c",
-	"#c6b868",
-	"#ffdf88",
-	"#5e9cc5",
-	"#f381b4",
-	"#5ec5bb",
-	"#f4e0da",
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
 
 	[255] = 0,
 
@@ -145,32 +133,13 @@ static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
 /*
- * Whether to use pixel geometry or cell geometry
- */
-
-static Geometry geometry = CellGeometry;
-
-/*
  * Default shape of cursor
  * 2: Block ("█")
  * 4: Underline ("_")
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 4;
-
-/*
- * Default width and height (including borders!)
- */
-
-static unsigned int width = 564;
-static unsigned int height = 364;
-
-/*
- * Whether to use pixel geometry or cell geometry
- */
-
-static Geometry geometry = CellGeometry;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
@@ -178,13 +147,6 @@ static Geometry geometry = CellGeometry;
 
 static unsigned int cols = 80;
 static unsigned int rows = 24;
-
-/*
- * Default width and height (including borders!)
- */
-
-static unsigned int width = 564;
-static unsigned int height = 364;
 
 /*
  * Default colour and shape of the mouse cursor
@@ -212,8 +174,6 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 1},      0, /* !alt */ -1 },
-	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 1},      0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
