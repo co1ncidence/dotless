@@ -1,0 +1,123 @@
+From 6a5a862569912e34febe2dbd5244062013840204 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jos=C3=A9=20Miguel=20S=C3=A1nchez=20Garc=C3=ADa?=
+ <soy.jmi2k@gmail.com>
+Date: Thu, 13 Aug 2020 11:02:01 +0000
+Subject: [PATCH] add -G to set pixel-based geometry
+
+---
+ config.def.h | 13 +++++++++++++
+ x.c          | 36 ++++++++++++++++++++++++++++++++----
+ 2 files changed, 45 insertions(+), 4 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 6f05dce..bea316a 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -141,6 +141,12 @@ static unsigned int defaultrcs = 257;
+  */
+ static unsigned int cursorshape = 2;
+ 
++/*
++ * Whether to use pixel geometry or cell geometry
++ */
++
++static Geometry geometry = CellGeometry;
++
+ /*
+  * Default columns and rows numbers
+  */
+@@ -148,6 +154,13 @@ static unsigned int cursorshape = 2;
+ static unsigned int cols = 80;
+ static unsigned int rows = 24;
+ 
++/*
++ * Default width and height (including borders!)
++ */
++
++static unsigned int width = 564;
++static unsigned int height = 364;
++
+ /*
+  * Default colour and shape of the mouse cursor
+  */
+diff --git a/x.c b/x.c
+index 210f184..29e35d0 100644
+--- a/x.c
++++ b/x.c
+@@ -45,6 +45,11 @@ typedef struct {
+ 	signed char appcursor; /* application cursor */
+ } Key;
+ 
++typedef enum {
++	PixelGeometry,
++	CellGeometry
++} Geometry;
++
+ /* X modifiers */
+ #define XK_ANY_MOD    UINT_MAX
+ #define XK_NO_MOD     0
+@@ -1096,7 +1101,7 @@ xicdestroy(XIC xim, XPointer client, XPointer call)
+ }
+ 
+ void
+-xinit(int cols, int rows)
++xinit(int w, int h)
+ {
+ 	XGCValues gcvalues;
+ 	Cursor cursor;
+@@ -1121,8 +1126,16 @@ xinit(int cols, int rows)
+ 	xloadcols();
+ 
+ 	/* adjust fixed window geometry */
+-	win.w = 2 * borderpx + cols * win.cw;
+-	win.h = 2 * borderpx + rows * win.ch;
++	switch (geometry) {
++	case CellGeometry:
++		win.w = 2 * borderpx + w * win.cw;
++		win.h = 2 * borderpx + h * win.ch;
++		break;
++	case PixelGeometry:
++		win.w = w;
++		win.h = h;
++		break;
++	}
+ 	if (xw.gm & XNegative)
+ 		xw.l += DisplayWidth(xw.dpy, xw.scr) - win.w - 2;
+ 	if (xw.gm & YNegative)
+@@ -2001,6 +2014,12 @@ main(int argc, char *argv[])
+ 	case 'g':
+ 		xw.gm = XParseGeometry(EARGF(usage()),
+ 				&xw.l, &xw.t, &cols, &rows);
++		geometry = CellGeometry;
++		break;
++	case 'G':
++		xw.gm = XParseGeometry(EARGF(usage()),
++				&xw.l, &xw.t, &width, &height);
++		geometry = PixelGeometry;
+ 		break;
+ 	case 'i':
+ 		xw.isfixed = 1;
+@@ -2037,10 +2056,19 @@ run:
+ 
+ 	setlocale(LC_CTYPE, "");
+ 	XSetLocaleModifiers("");
++	switch (geometry) {
++	case CellGeometry:
++		xinit(cols, rows);
++		break;
++	case PixelGeometry:
++		xinit(width, height);
++		cols = (win.w - 2 * borderpx) / win.cw;
++		rows = (win.h - 2 * borderpx) / win.ch;
++		break;
++	}
+ 	cols = MAX(cols, 1);
+ 	rows = MAX(rows, 1);
+ 	tnew(cols, rows);
+-	xinit(cols, rows);
+ 	xsetenv();
+ 	selinit();
+ 	run();
+-- 
+2.28.0
+

@@ -1,0 +1,5 @@
+feh --bg-fill ~/usr/pic/wallpapers/flora.jpg
+
+picom &
+
+sxhkd &

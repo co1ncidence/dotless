@@ -1,0 +1,258 @@
+#!/bin/sh
+#
+##
+##    Super CRappy SCReenshot SCRipt for Sound Cloud Rappers
+##            (and recording ^)
+##
+#
+
+trap 'pkill -2 -P $(cat /tmp/"${0##*/}"-pid)' 15 2
+
+m() {
+	for i in menu 'rofi -dmenu' dmenu; do
+		command -v "${i%% *}" >/dev/null &&
+			{ $i "$@"; return $?; }
+	done
+}
+
+sel() {
+	a='%w %h %x %y'
+	command -v boox >/dev/null && { boox "$a"; return $?; }
+	command -v slop >/dev/null && { slop -f "$a"; return $?; }
+	command -v crud >/dev/null && { eval "$(crud "$a")" && \
+		echo "$W" "$H" "$X" "$Y"; return $?; }
+	echo "missing selection tool, exiting"
+	exit 1
+}
+
+# exit if X isn't running
+[ ! "$DISPLAY" ] &&
+	echo "Can't open display; exiting" && exit
+
+# output file, use $REC_DIR and $REC_FILE if they are set
+output="${REC_DIR:-$PWD}/${REC_FILE:-$(date '+%Y-%m-%d_%H-%M-%S').mp4}"
+n="${SCR_DIR:-$PWD}/${SCR_FILE:-$(date '+%Y-%m-%d_%H-%M-%S').png}"
+
+# find default audio device
+audio() {
+	[ "$1" ] || {
+		pacmd="$(pacmd list-sources | grep -i -B 1 output)"
+		dev="$(echo "$pacmd" | grep -i '\* index' ||
+			echo "$pacmd" | grep -i 'index' | head -n 1 | grep -o '[0-9]\+')"
+	}
+	audio="-f pulse -i ${1:-$dev}"
+}
+
+help() {
+	cat << EOF
+Examples:
+ # select an area then record it at 30fps
+ scr -m s -c
+ # select an area then record it at 60fps and save as 'recording.mp4'
+ scr -m s -f 60 -c recording.mp4
+
+Options
+ -A    screenshot primary monitor
+ -S    screenshot a selection
+ -F    screenshot focused window
+
+ -s    save the recording
+ -h    display this message
+ -c    skip the confirm start message
+ -p  ? save and load settings from profile
+ -f  ? framerate
+ -b  ? force bitrate  (in MB)
+ -m  ? force method   (selection, display)
+ -d  ? force display
+ -n    disable NVENC for unsupported nvidia cards
+ -a    Record desktop audio
+
+? = Option requires another argument
+
+Variables
+ REC_DIR: If unset, saves in the current directory
+ REC_FILE: If unset, saves as '\$(date '+%Y-%m-%d_%H-%M-%S').mp4'
+
+ SCR_DIR: If unset, saves in the current directory
+ SCR_FILE: If unset, saves as '\$(date '+%Y-%m-%d_%H-%M-%S').png'
+
+Dependencies
+ xrandr | getting info about displays
+AND / OR
+ github.com/BanchouBoo/boox / github.com/ix/crud / slop | selecting an area
+
+Recording:
+ ffmpeg
+ pkill
+ rofi / dmenu / clone with binary name 'menu'
+
+Screenshotting:
+ github.com/neXromancers/shotgun
+ wmutils         | getting focused window
+ xclip           | copying image to clipboard
+EOF
+}
+
+mon() {
+	xrandr | while read -r l; do
+		case $l in
+			*\ connected*) ;;
+			*) continue;;
+		esac
+		set -- $l
+		case $3 in
+			primary) printf '%s\n' "$1_primary   $4";;
+			*) printf '%s\n' "$1   $3";;
+		esac
+	done
+}
+
+xc() { xclip -sel clip -t image/png "$1"; }
+
+case $1 in
+	-F) shotgun -i "$(pfw)" "${2:-$n}"; xc "${2:-$n}"; exit;;
+	-A)
+		n="${2:-$n}"
+		# if only I could just use mmutils...
+		v=$(mon)
+		set -- $v
+		for i; do
+			[ "$a" ] && break
+			[ "${i##*_}" = primary ] && a=.
+		done
+		shotgun -g "$i" "$n"; xc "$n"
+		exit
+	;;
+	-S) n="${2:-$n}"
+		set -- $(sel) &&
+		sleep 0.05 &&
+		n="${n%.*}-$1x$2.png" &&
+		shotgun -g "$1x$2+$3+$4" "$n"
+		xc "$n"
+		exit
+	;;
+esac
+
+while [ "$1" ]; do
+	case "$1" in
+		-h|--help) help; exit;;
+		-r) ;;
+		-s) pkill -x "${0##*/}";  exit;;
+		-a*) audio ${1#-a};;
+		-c) ready="yes";;
+		-p) profile="$2";  shift;;
+		-m) method="$2";   shift;;
+		-f) rate="$2";     shift;;
+		-n) nvenc=" ";;
+		-d) display="$2" method="display";  shift;;
+		-b) bitrate="-b:v ${2}M";           shift;;
+		-e) extra=$2; shift;;
+		--)	[ "$2" ] && output="$2";        break;;
+		-*) echo "Invalid option '$1'";     exit;;
+		*)  output="$1";   break;;
+	esac
+	shift
+done
+
+[ "$REC_DIR" ] &&
+	mkdir -p "$REC_DIR"
+
+[ -f /tmp/"${0##*/}"-pid ] && pkill -x "${0##*/}" && exit
+
+
+# load profile
+if [ "$profile" ]; then
+	mkdir -p "${XDG_CONFIG_HOME:-~/.config}/scr" >/dev/null 2>&1
+	profile_location="${XDG_CONFIG_HOME:-~/.config}/scr/scr-$profile"
+	[ -f "$profile_location" ] && . "$profile_location"
+fi
+
+
+
+[ "$method" ] || {
+	# Check if the user has a selection tool and xrandr
+	command -v boox crud slop 2>&1 |: && s=s
+	command -v xrandr 2>&1 |: && d=d
+
+	# if the user only has a selection tool or xrandr (But not both) and use that
+	[ "$s" ] && method=selection
+	[ "$d" ] && method=display
+
+	# if the user has both a selection tool and xrandr ask which one to use
+	[ "$s" ] && [ "$d" ] &&
+		method="$(printf "display\nselection\n" | m -p "Method of recording")" || exit 1
+}
+
+case $method in
+	d*)
+		[ "$display" ] || {
+			v=$(mon)
+			set -- $v
+			[ "$#" -le 2 ] && display="$2" || display=$(printf '%s\n' "$v" | menu)
+		}
+		display=${display##* }
+		oIFS=$IFS
+		IFS=+x
+		set -- $display
+		IFS=$oIFS
+	;;
+	s*)
+		# select an area and make each number a separate word
+		set -- $(sel)
+	;;
+	*)
+		echo "Invalid method; exiting"; exit
+	;;
+esac
+
+width="$1"
+height="$2"
+offX="$3"
+offY="$4"
+
+[ "$((  width % 2 ))" = 1 ] &&  width="$((  width + 1 ))"
+[ "$(( height % 2 ))" = 1 ] && height="$(( height + 1 ))"
+
+
+rate="${rate:-30}"
+
+# save profile
+[ "$profile" ] && cat << EOF > "$profile_location"
+	${bitrate:+bitrate=\""$bitrate"\"}
+	${display:+display="$display"}
+	${rate:+rate="$rate"}
+	method="$method"
+EOF
+
+# detect if the user has a nvidia card and use nvenc
+[ ! "$nvenc" ] && lspci | grep -qi nvidia &&
+	nvenc="-vcodec h264_nvenc"
+
+
+# confirm starting the recording
+[ ! "$ready" ] && ready="$(printf "yes\nno\n" | m -p "Start the recording")"
+
+if [ "$ready" = yes ]; then
+	notify-send -t 1500 "Recording Started"
+
+	echo $$ > /tmp/"${0##*/}"-pid
+
+	ffmpeg                         \
+	  -loglevel error              \
+	  -y                           \
+	  $audio                       \
+	  -f x11grab                   \
+	  -draw_mouse 1                \
+	  -s "${width}x$height"        \
+	  -r "$rate"                   \
+	  -i "$DISPLAY.0+$offX,$offY"  \
+	  $bitrate                     \
+	  -pix_fmt yuv420p             \
+	  $nvenc                       \
+	  -q:v 0                       \
+	  $extra                       \
+	  "$output"
+
+	rm /tmp/"${0##*/}"-pid
+	notify-send -t 2000 "Recording Saved"
+fi

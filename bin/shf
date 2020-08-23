@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+pic="wall.jpg"
+
+cd ~/usr/pic/wallpapers/ && rm wall*
+
+wget https://source.unsplash.com/user/co1ncidence/likes/wall.jpg
+
+feh --bg-fill $pic

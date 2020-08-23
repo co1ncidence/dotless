@@ -1,0 +1,11 @@
+#!/bin/sh
+
+read -r uptime _ < /proc/uptime
+
+up=${uptime%.*}
+
+hours=$(( ( up % 86400 ) / 3600 ))
+min=$(( (( up % 86400 ) % 3600 ) / 60 ))
+sec=$(( (( up % 86400 ) % 3600 ) % 60 ))
+
+printf '%s\n' "${hours}h"

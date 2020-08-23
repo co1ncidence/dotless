@@ -1,0 +1,453 @@
+#!/usr/bin/env bash
+#
+# birch - a simple irc client in bash
+
+clean() {
+    # '\e[?7h':    Re-enable line wrapping.
+    # '\e[2J':     Clear the screen.
+    # '\e[;r':     Reset the scroll area.
+    # '\e[?1049l': Swap back to the primary screen.
+    printf '\e[?7h\e[2J\e[;r\e[?1049l'
+
+    rm -rf "$TMPDIR/birch-$$"
+
+    # Kill the IRC client to also exit the child
+    # listener which runs in the background.
+    kill 0
+}
+
+refresh() {
+    # The pure bash method of grabbing the terminal
+    # size in cells in unreliable. This command always
+    # works and doesn't add a tiny delay.
+    shopt -s checkwinsize; (:;:)
+
+    # '\e[?1049h': Swap to the alternate buffer.
+    # '\e[?7l':    Disable line wrapping.
+    # '\e[2J':     Clear the screen.
+    # '\e[3;%sr':  Set the scroll area.
+    # '\e[999H':   Move the cursor to the bottom.
+    printf '\e[?1049h\e[?7l\e[2J\e[3;%sr\e[999H' "$((LINES-1))"
+}
+
+resize() {
+    refresh
+    status
+
+    # '\e7':     Save the cursor position.
+    # '\e[?25l': Hide the cursor.
+    # '\r':      Move the cursor to column 0.
+    # '\e[999B': Move the cursor to the bottom.
+    # '\e[A':    Move the cursor up a line.
+    printf '\e7\e[?25l\r\e[999B\e[A'
+
+    # Print the last N lines of the log file.
+    {
+        [[ -s .c ]] && read -r c < .c
+
+        mapfile -tn 0 log 2>/dev/null < "${c:-$chan}"
+
+        printf '%s\n' \
+            "${log[@]: -(LINES > ${#log[@]} ? ${#log[@]} : LINES)}"
+    }
+
+    # '\e[999H': Move the cursor back to the bottom.
+    # '\e[?25h': Unhide th cursor.
+    printf '\e[999H\e[?25h'
+}
+
+status() {
+    # Each channel or "buffer" is a file in the current
+    # directory. A simple glob is used to populate the
+    # list.
+    #
+    # The array is turned into a string with a space on
+    # either end so that we can find/replace the current
+    # buffer to add highlighting.
+    cl=(*[^:]) cL=" ${cl[*]} "
+
+    # '\e7':  Save the cursor position.
+    # '\e[H': Move the cursor to 0,0.
+    # '\e[K': Clear the current line.
+    # '\e8':  Restore cursor position.
+    printf '\e7\e[H\e[K%b\e8' \
+        "${cL/" $chan "/ ${BIRCH_STATUS:=$'\e[7m'}"$chan"$'\e[m' }"
+}
+
+connect() {
+    # Open an input/output network socket to the IRC server
+    # using the file descriptor '9'.
+    exec 9<>"/dev/tcp/${s:=irc.freenode.net}/${P:-6667}" ||
+        exit 1
+
+    printf 'NICK %s\nUSER %s - - :%s\nPASS %s\n' \
+        "${U:-${nick:=${u:-$USER}}}" "$nick" "$nick" "${p-}" >&9
+
+    # Join all passed channels as early as we can.
+    printf 'JOIN %s\n' "${c:=#kisslinux}" >&9
+
+    chan=${c/,*}
+}
+
+prin() {
+    # Strip escape sequences from the first word in the
+    # full message so that we can calculate how much padding
+    # to add for alignment.
+    raw=${1%% *}
+    raw=${raw//$'\e[1;3'?m}
+    raw=${raw//$'\e[m'}
+
+    # Generate a cursor right sequence based on the length
+    # of the above "raw" word. The nick column is a fixed
+    # width of '10' so it's simply '10 - word_len'.
+    printf -v out '\e[%sC%s' \
+        "$((${#raw}>10?0:11-${#raw}))" "$1"
+
+    # Grab the current channel a second time to ensure it
+    # didn't change during the printing process.
+    [[ -s .c ]] && read -r chan < .c
+
+    # Only display to the terminal if the message destination
+    # matches the currently focused buffer.
+    #
+    # '\e[?25l': Hide the cursor.
+    # '\e7':     Save cursor position.
+    # '\e[999B': Move the cursor to the bottom.
+    # '\e[A':    Move the cursor up a line.
+    # '\r':      Move the cursor to column 0.
+    # '\e8':     Restore cursor position.
+    # '\e[?25h': Unhide the cursor.
+    [[ $dest == "$chan" ]] &&
+        printf '\e[?25l\e7\e[999B\e[A\r%s\n\r\e8\e[?25h' "$out"
+
+    # Log the message to it's destination temporary file.
+    # This is how history, resize and buffer swaps work.
+    printf '\r%s\n' "$out" >> "$dest"
+}
+
+cmd() {
+    # Unescape some pesky tab completion blunders.
+    inp=${1//\\\#/\#}   inp=${inp//\\@/@}   inp=${inp//\\:/:}
+    inp=${inp//\\\[/\[} inp=${inp//\\\]/\]} inp=${inp//\\!/!}
+    inp=${inp//\\\(/\(} inp=${inp//\\\)/\)}
+    set -- "$inp"
+
+    # Save the sent input to readline's history so up/down
+    # arrow work to scroll through sent history.
+    history -s "$1"
+
+    # Read the input into an array chopping off the /cmd.
+    # This makes splitting everything easier below if it
+    # is needed.
+    read -r _ a args <<< "$inp"
+
+    # This is a simple function to send the input to the
+    # terminal and to the listener while saving space below.
+    send() { parse "$1"; printf '%s\n' "$1" >&9; }
+
+    case $1 in "") ;;
+        '/join '*)
+            chan=$a
+            printf '%s\n' "$chan" > .c
+
+            [[ -f $a ]] || printf ':%s JOIN %s\n' "$nick" "$a" >&9
+
+            kill -28 0
+            status
+        ;;
+
+        '/nick '*)
+            printf 'NICK %s\n' "$a" >&9
+            nick=$a
+        ;;
+
+        '/msg '*)
+            send "PRIVMSG $a :$args"
+        ;;
+
+        '/raw '*)
+            printf '%s\n' "$a $args" >&9
+        ;;
+
+        '/me '*)
+            send "PRIVMSG $chan :"$'\001'"ACTION $a $args"$'\001'
+        ;;
+
+        '/part'*)
+            printf '%s PART %s :bye bye\n' "$nick" "${a:=$chan}" >&9
+            sleep 1
+            rm -f "$a"
+        ;;
+
+        '/shrug'*)
+            send "PRIVMSG $chan :¯\_(ツ)_/¯"
+        ;;
+
+        '/quit'*)
+            send "QUIT :$a $args"
+            clean
+         ;;
+
+        '/next'*)
+            chan=${cl[z = z + 1 >= ${#cl[@]} ? 0 : z + 1]}
+        ;;&
+
+        '/prev'*)
+            chan=${cl[z = z - 1 < 0 ? ${#cl[@]}-1 : z - 1]}
+        ;;&
+
+        '/'[0-9]*)
+            chan="${cl[${1//[!0-9]/} >= ${#cl[@]} ? 0 : ${1//[!0-9]/}]}"
+        ;;&
+
+        '/next'*|'/prev'*|'/'[0-9]*)
+            printf '%s\n' "$chan" > .c
+            kill -28 0
+        ;;
+
+        '/names'*)
+            send "NAMES $chan"
+        ;;
+
+        '/topic'*)
+            send "TOPIC $chan"
+        ;;
+
+        '/away '*)
+            send "AWAY :$a $args"
+        ;;
+
+        '/away'*)
+            send "AWAY"
+        ;;
+
+        /*)
+            send "NOTICE :${1/ *} not implemented yet"
+        ;;
+
+        *)
+            send "PRIVMSG $chan :$1"
+        ;;
+    esac
+
+    # Clear the input line once we're done.
+    printf '\r\e[2K\r'
+}
+
+parse() {
+    fields=() word='' from='' whom=''
+    [[ -s .c ]] && read -r chan < .c
+
+    # If the first "word" in the raw IRC message contains
+    # ':', '@' or '!', split it and grab the sending user
+    # nick.
+    [[ "${1%% *}" == *[:@!]* ]] && {
+        from=${1%% *}
+        IFS='!@' read -r whom _ <<< "${from#:}"
+    }
+
+    # Read the rest of the message character by character
+    # until we reach the first ':'. Once the first colon
+    # is hit, break from the loop and assume that everything
+    # after it is the message contents.
+    #
+    # Each word prior to ':' is appended to an array so that
+    # we may use each portion.
+    while IFS= read -d '' -rn 1 c; do case $c in
+        ' ') [[ $word ]] && fields+=("$word") word= ;;
+          :) break ;;
+          *) word+=$c ;;
+    esac; done <<< "${1/"$from"}"
+
+    # Grab the message contents by stripping everything we've
+    # found so far above. Then word wrap each line at 60
+    # chars wide. TODO: Pure bash and unrestriced..
+    mesg=${1/"${from:+$from }${fields[*]} "} mesg=${mesg#:}
+    mesg=$(fold -sw "${BIRCH_COLUMNS:=60}" <<< "$mesg")
+    mesg=${mesg//$'\n'/$'\n'            }
+
+    # If the field after the typical dest is a channel, use
+    # it in place of the regular field. This correctly
+    # catches MOTD and join messages.
+    case ${fields[2]} in
+        \#*|\*) fields[1]=${fields[2]} ;;
+             =) fields[1]=${fields[3]} ;;
+    esac
+
+    whom=${whom:-$nick}
+    dest=${fields[1]:-$chan}
+
+    # If the message itself contains ACTION with surrounding
+    # '\001', we're dealing with '/me'. Simply set the type
+    # to 'ACTION' so we may specially deal with it below.
+    [[ $mesg == *$'\001ACTION'*$'\001'* ]] &&
+        fields[0]=ACTION mesg=${mesg/$'\001ACTION' }
+
+    # Color the interesting parts based on their lengths.
+    # This saves a lot of space below.
+    nc=$'\e[1;3'$(((${#whom}%6)+1))m$whom$'\e[m'
+    pu=$'\e[1;3'$(((${#whom}%6)+1))m${whom:0:10}$'\e[m'
+    me=$'\e[1;3'$(((${#nick}%6)+1))m$nick$'\e[m'
+    mc=$'\e[1;3'$(((${#mesg}%6)+1))m$mesg$'\e[m'
+    dc=$'\e[1;3'$(((${#dest}%6)+1))m$dest$'\e[m'
+
+    # The first element in the fields array points to the
+    # type of message we're dealing with.
+    case ${fields[0]} in
+        PRIVMSG)
+            prin "$pu ${mesg//$nick/$me}"
+
+            [[ $dest == *$nick* || $mesg == *$nick* ]] &&
+                type -p notify-send >/dev/null &&
+                notify-send "birch: New mention" "$whom: $mesg"
+        ;;
+
+        ACTION)
+            prin "* $nc ${mesg/$'\001'}"
+        ;;
+
+        NOTICE)
+            prin "NOTE $mesg"
+        ;;
+
+        QUIT)
+            rm -f "$whom:"
+
+            [[ ${nl[chan]} == *" $whom "* ]] &&
+                 prin "<-- $nc has quit ${dc//$dest/$chan}"
+        ;;
+
+        PART)
+            rm -f "$whom:"
+
+            [[ $dest == "$chan" ]] &&
+                prin "<-- $nc has left $dc"
+        ;;
+
+        JOIN)
+            [[ $whom == "$nick" ]] && chan=$mesg
+
+            : > "$whom:"
+            dest=$mesg
+            prin "--> $nc has joined $mc"
+        ;;
+
+        NICK)
+            prin "--@ $nc is now known as $mc"
+        ;;
+
+        PING)
+            printf 'PONG%s\n' "${1##PING}" >&9
+        ;;
+
+        AWAY)
+            dest=$nick
+            prin "-- Away status: $mesg"
+        ;;
+
+        00?|2[56]?|37?)
+            dest=\*
+        ;;&
+
+        376)
+            cmd  "${x:-}"
+        ;;&
+
+        353)
+            [[ -f "$dest" ]] || return
+
+            read -ra ns <<< "$mesg"
+            nl[chan]=" $mesg "
+
+            for nf in "${ns[@]/%/:}"; do
+                : > "$nf"
+            done
+        ;;&
+
+        *)
+            prin "-- $mesg"
+        ;;
+    esac
+}
+
+args() {
+    # Simple argument parsing. We use 'declare' to... declare
+    # variables named after the argument they represent (-b == $b).
+    while getopts :s:u:U:p:c:x:P:v opt; do case $opt in
+        \?)
+            printf 'birch <args>\n\n'
+            printf -- '-s <host>\n'
+            printf -- '-c <channel>\n'
+            printf -- '-u <nick>\n'
+            printf -- '-p <server_password>\n'
+            printf -- '-U <server_username>\n'
+            printf -- '-P <port>\n'
+            printf -- '-x <cmd>\n\n'
+            printf -- '-h (help)\n'
+            printf -- '-v (version)\n'
+        ;;
+
+        v) printf 'birch 0.0.1\n' ;;
+        :) printf 'Option -%s requires an argument\n' "$OPTARG" >&2 ;;
+        *) declare -g "$opt=$OPTARG"
+    esac; [[ $opt =~ \?|v|: ]] && exit; done
+}
+
+main() {
+    args "$@"
+    refresh
+    connect
+
+    # Enable loadable bash builtins if available.
+    # YES! Bash has loadable builtins for a myriad of
+    # external commands. This includes 'sleep'!
+    enable -f /usr/lib/bash/mkdir mkdir 2>/dev/null
+    enable -f /usr/lib/bash/sleep sleep 2>/dev/null
+
+    # Setup the temporary directory and create any channel
+    # files early. Change the PWD to this directory to
+    # simplify file handling later on.
+    mkdir -p "${TMPDIR:=/tmp}/birch-$$"
+    cd "$_" || exit 1
+    printf '%s\n' "$chan" > .c
+    IFS=, read -ra channels <<< "$c"
+    for f in "${channels[@]}"; do : >> "$f"; done
+
+    # Declare an associative array to hold the nick list
+    # of each channel. The key is the channel name and the
+    # value is a string containing each nick.
+    declare -A nl
+
+    # Bind 'ctrl+n' to cycle through the buffer list. As
+    # the prompt uses bash's builtin 'readline', we're
+    # able to do whatever we like with it. Neat huh?
+    bind -x '"\C-n":cmd "/next"' &>/dev/null
+    bind -x '"\C-p":cmd "/prev"' &>/dev/null
+    bind 'TAB:menu-complete' &>/dev/null
+    bind 'set match-hidden-files off' &>/dev/null
+    bind 'set horizontal-scroll-mode on' &>/dev/null
+
+    # Set readline's history file so that we can manage
+    # its history ourselves.
+    export HISTFILE=$PWD/hist
+    export HISTCONTROL=ignoreboth:erasedups
+    export INPUTRC=$BIRCH_INPUTRC
+
+    trap resize WINCH
+    trap 'cmd /quit' INT
+
+    # Start the listener loop in the background so that
+    # we are able to additionally run an input loop below.
+    while read -sru 9; do
+        parse "${REPLY%%$'\r'*}"
+    done &
+
+    # Start the input loop which uses bash's builtin
+    # readline. This gives us neato features like a full
+    # set of keybindings, tab completion, etc, etc.
+    while status && read -er; do
+        cmd "$REPLY"
+    done
+}
+
+main "$@"
