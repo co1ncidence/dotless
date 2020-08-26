@@ -82,8 +82,6 @@ void die(const char *, ...);
 void redraw(void);
 void draw(void);
 
-void kscrolldown(const Arg *);
-void kscrollup(const Arg *);
 void printscreen(const Arg *);
 void printsel(const Arg *);
 void sendbreak(const Arg *);

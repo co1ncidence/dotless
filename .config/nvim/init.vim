@@ -2,9 +2,6 @@
 
 " st fix
 if &term =~ '256color'
-    " disable Background Color Erase (BCE) so that color schemes
-    " render properly when inside 256-color tmux and GNU screen.
-    " see also https://sunaku.github.io/vim-256color-bce.html
     set t_ut=
 endif
 
@@ -19,8 +16,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-let g:sierra_Pitch = 1
-colorscheme sierra
+colorscheme mountaineer
 set ruler
 set number relativenumber
 set laststatus=2
@@ -52,7 +48,7 @@ set showcmd
 filetype indent on
 
 " folding settings
-set foldmethod=indent
+set foldmethod=manual
 set foldnestmax=3
 set nofoldenable
 
@@ -74,10 +70,9 @@ set notitle
 set history=1000
 set shell:bash
 set backspace=indent,eol,start
-set mouse=
 
 " autocmd's
-autocmd InsertEnter * norm zz
+" autocmd InsertEnter * norm zz
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " vim-plugins
@@ -85,7 +80,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'reedes/vim-pencil'
-Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
@@ -151,7 +145,6 @@ let g:mkdp_auto_close = 1
 " Markdown file settings
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd BufNewFile,BufRead *.md set filetype=markdown
-" autocmd FileType markdown set conceallevel=3
 autocmd FileType markdown let b:coc_suggest_disable = 0
 
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
@@ -173,7 +166,7 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
-" WARNING, MASSIVE, coc-nvim settings
+"  coc-nvim settings
 set nobackup
 set nowritebackup
 set cmdheight=1
@@ -256,27 +249,61 @@ endfunction
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-" Lightline configuration
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'helloworld' ] ]
-      \ },
-      \ 'component': {
-      \   'helloworld': 'Hello, world!'
-      \ },
-      \ }
+" statusline configuration
 
-let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
-      \ 'active': {
-      \   'right': [ ['filetype'],
-      \              ['lineinfo'] ]
-      \ },
-      \ 'component': {
-      \   'line': '|'
-      \ },
-      \ }
+hi Sl1 ctermfg=16   cterm=none ctermbg=none
+hi Sl2 ctermfg=7    cterm=none ctermbg=none
+hi Sl3 ctermfg=8    cterm=none ctermbg=none
+hi Slrese ctermfg=none cterm=none ctermbg=none
+function! RedrawMode(mode)
+	" Normal mode
+	if a:mode == 'n'
+		return 'nor'
+	" Insert mode
+	elseif a:mode == 'i'
+		return 'ins'
+	elseif a:mode == 'R'
+		return 'rep'
+	" Visual mode
+	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^V'
+		return 'vis'
+	" Command mode
+	elseif a:mode == 'c'
+		return 'cmd'
+	" Terminal mode
+	elseif a:mode == 't'
+		return 'trm'
+	endif
+	return ''
+endfunction
 
-" end
+
+function! SetModifiedSymbol(modified)
+	if a:modified == 1
+		return '[*]'
+	else
+		return ''
+	endif
+endfunction
+
+
+function! SetFiletype(filetype)
+	if a:filetype == ''
+		return 'txt'
+	else
+		return a:filetype
+	endif
+endfunction
+
+set statusline=%#Slrese#\ %{RedrawMode(mode())}\ %#Sl1#\|
+" Filename
+set statusline+=%#Sl2#\ %.20t\ 
+" Modified status
+set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
+set statusline+=%#SlRese#
+" right side
+set statusline+=%=
+" ruler
+set statusline+=\%#Sl2#\ %l,%c
+" filetype
+set statusline+=\ %#Sl1#\|%#Slrese#\ %{SetFiletype(&filetype)}\ 
