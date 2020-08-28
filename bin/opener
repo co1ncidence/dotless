@@ -1,0 +1,29 @@
+#!/bin/sh -e
+
+case $1 in
+        *.mp3|*.flac|*.wav)
+            mpv "$1"
+        ;;
+
+        *.mp4|*.mkv|*.webm)
+            mpv "$1"
+        ;;
+
+        *.png|*.gif|*.jpg|*.jpe|*.jpeg)
+            sxiv "$1"
+        ;;
+
+        *.pdf)
+            zathura "$1"
+        ;;
+
+        *.epub)
+            epy "$1"
+        ;;
+
+        # all other files
+        *)
+            "${EDITOR:=nvim}" "$1"
+        ;;
+    esac
+
