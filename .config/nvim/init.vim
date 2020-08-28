@@ -7,7 +7,7 @@ endif
 
 " weird ass keybind
 nnoremap <C-a> :set nocursorline<CR>
-nnoremap <C-x> :set cursorline<CR>
+nnoremap <C-x> :set number relativenumber<CR>
 
 " UI based settings
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
@@ -16,9 +16,8 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme mountaineer
+colorscheme gunmetal
 set ruler
-set number relativenumber
 set laststatus=2
 set noshowmode 
 set linebreak
@@ -40,12 +39,10 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+filetype indent on
 
 " bottom bar settings
 set showcmd
-
-" some setting
-filetype indent on
 
 " folding settings
 set foldmethod=manual
@@ -71,8 +68,7 @@ set history=1000
 set shell:bash
 set backspace=indent,eol,start
 
-" autocmd's
-" autocmd InsertEnter * norm zz
+" remove whitespace on file save
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " vim-plugins
@@ -86,7 +82,6 @@ Plug 'alvan/vim-closetag'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips'
 Plug 'dense-analysis/ale'
 Plug 'honza/vim-snippets'
 Plug 'elzr/vim-json'
@@ -249,30 +244,31 @@ endfunction
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-" statusline configuration
-
-hi Sl1 ctermfg=16   cterm=none ctermbg=none
-hi Sl2 ctermfg=7    cterm=none ctermbg=none
-hi Sl3 ctermfg=8    cterm=none ctermbg=none
+" statusline
+"
+" https://github.com/6gk/polka
+hi Sl1 ctermfg=none cterm=none ctermbg=NONE
+hi Sl2 ctermfg=none cterm=none ctermbg=NONE
+hi Sl3 ctermfg=none cterm=none ctermbg=NONE
 hi Slrese ctermfg=none cterm=none ctermbg=none
 function! RedrawMode(mode)
 	" Normal mode
 	if a:mode == 'n'
-		return 'nor'
+		return 'normal mode'
 	" Insert mode
 	elseif a:mode == 'i'
-		return 'ins'
+		return 'insert mode'
 	elseif a:mode == 'R'
-		return 'rep'
+		return 'replace mode'
 	" Visual mode
 	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^V'
-		return 'vis'
+		return 'visual mode'
 	" Command mode
 	elseif a:mode == 'c'
-		return 'cmd'
+		return 'command mode'
 	" Terminal mode
 	elseif a:mode == 't'
-		return 'trm'
+		return 'trace mode'
 	endif
 	return ''
 endfunction
@@ -280,7 +276,7 @@ endfunction
 
 function! SetModifiedSymbol(modified)
 	if a:modified == 1
-		return '[*]'
+		return '/ file is unsaved'
 	else
 		return ''
 	endif
@@ -295,15 +291,15 @@ function! SetFiletype(filetype)
 	endif
 endfunction
 
-set statusline=%#Slrese#\ %{RedrawMode(mode())}\ %#Sl1#\|
-" Filename
-set statusline+=%#Sl2#\ %.20t\ 
+set statusline=%#Slrese#\ %{RedrawMode(mode())}\ %#Sl1#
 " Modified status
 set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
 set statusline+=%#SlRese#
 " right side
 set statusline+=%=
+" Filename
+set statusline+=%#Sl2#\ %.20t\ /
 " ruler
 set statusline+=\%#Sl2#\ %l,%c
 " filetype
-set statusline+=\ %#Sl1#\|%#Slrese#\ %{SetFiletype(&filetype)}\ 
+" set statusline+=\ %#Sl2#\/%#Slrese#\ %{SetFiletype(&filetype)}\ 

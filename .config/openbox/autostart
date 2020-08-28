@@ -1,4 +1,4 @@
-feh --bg-fill ~/usr/pic/wallpapers/flora.jpg
+hsetroot -cover ~/usr/pic/wallpapers/7.jpg
 
 picom &
 

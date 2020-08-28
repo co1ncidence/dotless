@@ -15,13 +15,13 @@ super + Return
   st
 
 super + space
-	dmenu_run -fn "Dina" -nb '#050505' -nf '#f4e0da' -sb '#f4e0da' -sf '#26221f'
+	dmenu_run -fn "Space Mono" -nb '#050505' -nf '#ac8a8c' -sb '#ac8a8c' -sf '#26221f'
 
 super + n
-  passmenu -fn "Dina" -nb '#050505' -nf '#f4e0da' -sb '#f4e0da' -sf '#26221f'
+  passmenu -fn "Space Mono" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#26221f'
 
 alt + shift + e
-  maim -s -u | xclip -selection clipboard -t image/png
+  maim -s -u -m 10 | xclip -selection clipboard -t image/png
 
 alt + shift + d
   maim -s -u -m 10 ~/usr/pic/scrots/$(date '+%Y-%m-%d_%H-%M-%S').png
@@ -39,7 +39,7 @@ super + b
   firefox-developer-edition
 
 super + shift + {h,l,j,k}
-  xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-50 y,50 y,x 50,x -50}
+  xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
 
 super + x
   pkill -9 polybar

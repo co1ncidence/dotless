@@ -77,32 +77,34 @@ if ! shopt -oq posix; then
 fi
 
 # ENV VARS
-export PATH="${PATH}:${HOME}/.local/bin/"
 export PATH="/home/co1ncidence/.local/bin:$PATH"
-export TERMINAL=alacritty
+export TERMINAL=st
 export EDITOR=nvim
-export PATH="/home/co1ncidence/.cargo/bin":$PATH
 export PATH="${PATH}:${HOME}/.local/bin/"
 export PATH=$PATH:~/bin/
 export FZF_DEFAULT_COMMAND='find .'
 export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=2" +"set statusline=\ %t%=%p%%\ L%l:C%c\ "'
+export FFF_OPENER=/home/co1ncidence/bin/opener
+export SHFM_OPENER=/home/co1ncidence/bin/opener
 
 # ALIASES
-alias ls="exa --group-directories-first"
 alias walls="cd ~/usr/pic/wallpapers/"
 alias df="df -h /dev/sda3"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
 alias c="clear"
-alias download="youtube-dl -x --audio-format mp3"
 alias class="cd ~/usr/doc/school/"
 alias notes="cd ~/usr/doc/school/awo/"
 alias t="todo.sh"
 alias du="du -m | sort -n"
-alias web="cd ~/opt/mysite/"
+alias web="cd ~/git/mysite/"
 alias gif="giph -s ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').gif"
 alias free="free -h"
-alias shot="import -window root ~/usr/pic/scrots/$(date '+%Y-%m-%d_%H-%M-%S').png"
-alias torwal="hsetroot -solid '#C8E1FF'"
+alias wpm="wpm --monochrome"
+alias epub="epy"
+alias wset="hsetroot -cover"
+alias r="ranger"
+alias f="fff"
+alias ff="shfm"
 
 # CUSTOM PROMPT
 PS1='\[\e[0;91m\]\W\[\e[m\] \[\e0'

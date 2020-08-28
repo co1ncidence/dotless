@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Bazik_Light_Blue</name>
+    <name>blackwindow</name>
     <titleLayout/>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -160,10 +160,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>10</top>
-    <bottom>52</bottom>
-    <left>10</left>
-    <right>10</right>
+    <top>15</top>
+    <bottom>67</bottom>
+    <left>15</left>
+    <right>15</right>
   </margins>
   <dock>
     <position>TopLeft</position>
