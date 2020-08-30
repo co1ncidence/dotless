@@ -2,6 +2,6 @@
 
 <p align="center"
 
-![img](https://i.postimg.cc/mgczFNpF/vibe.png)
+![img](scrots/vibe.png)
 
 </p>
