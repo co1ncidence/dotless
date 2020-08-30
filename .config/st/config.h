@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Pointfree:pixelsize=14:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -118,24 +118,24 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#050505", /* black   */
-  [1] = "#AC8A8C", /* red     */
-  [2] = "#8AAC8B", /* green   */
-  [3] = "#ACA98A", /* yellow  */
-  [4] = "#8F8AAC", /* blue    */
-  [5] = "#AC8AAC", /* magenta */
-  [6] = "#8AABAC", /* cyan    */
-  [7] = "#f0f0f0", /* white   */
+  [0] = "#050505", /* black  */
+  [1] = "#AC8A8C", /* red    */
+  [2] = "#8AAC8B", /* green  */
+  [3] = "#ACA98A", /* yellow */
+  [4] = "#8F8AAC", /* blue   */
+  [5] = "#AC8AAC", /* puple  */
+  [6] = "#8AABAC", /* cyan   */
+  [7] = "#f0f0f0", /* white  */
 
   /* 8 bright colors */
-  [8]  = "#191919", /* black   */
-  [9]  = "#C49EA0", /* red     */
-  [10] = "#9EC49F", /* green   */
-  [11] = "#C4C19E", /* yellow  */
-  [12] = "#A39EC4", /* blue    */
-  [13] = "#C49EC4", /* magenta */
-  [14] = "#9EC3C4", /* cyan    */
-  [15] = "#fafafa", /* white   */
+  [8]  = "#191919", /* black  */
+  [9]  = "#C49EA0", /* red    */
+  [10] = "#9EC49F", /* green  */
+  [11] = "#C4C19E", /* yellow */
+  [12] = "#A39EC4", /* blue   */
+  [13] = "#C49EC4", /* purple */
+  [14] = "#9EC3C4", /* cyan   */
+  [15] = "#fafafa", /* white  */
 
   /* special colors */
   [256] = "#050505", /* background */

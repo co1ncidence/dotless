@@ -51,7 +51,7 @@ c0="${reset}${green}"               # first color
 cat <<EOF
 
 ${c0}  ${lc}os ${ic}arch${reset}
-${c0}  ${lc}kr ${ic}5.8.1${reset}
+${c0}  ${lc}kr ${ic}5.8.3${reset}
 ${c0}  ${lc}up ${ic}${uptime}${reset}
 ${c0}  ${lc}de ${ic}${ui}${reset}
 

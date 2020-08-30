@@ -15,7 +15,7 @@ super + Return
   st
 
 super + space
-	dmenu_run -fn "Space Mono" -nb '#050505' -nf '#ac8a8c' -sb '#ac8a8c' -sf '#26221f'
+	dmenu_run -fn "Space Mono" -nb '#050505' -nf '#aca98a' -sb '#aca98a' -sf '#26221f'
 
 super + n
   passmenu -fn "Space Mono" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#26221f'

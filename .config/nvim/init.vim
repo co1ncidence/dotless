@@ -6,7 +6,7 @@ if &term =~ '256color'
 endif
 
 " weird ass keybind
-nnoremap <C-a> :set nocursorline<CR>
+nnoremap <C-a> :set cursorline<CR>
 nnoremap <C-x> :set number relativenumber<CR>
 
 " UI based settings
@@ -22,7 +22,6 @@ set laststatus=2
 set noshowmode 
 set linebreak
 set hidden
-set cursorline
 
 " rebinding vim split navigation
 nnoremap <C-J> <C-W><C-J>
@@ -77,7 +76,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-commentary'
-Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
@@ -254,21 +252,21 @@ hi Slrese ctermfg=none cterm=none ctermbg=none
 function! RedrawMode(mode)
 	" Normal mode
 	if a:mode == 'n'
-		return 'normal mode'
+		return 'normal'
 	" Insert mode
 	elseif a:mode == 'i'
-		return 'insert mode'
+		return 'insert'
 	elseif a:mode == 'R'
-		return 'replace mode'
+		return 'replace'
 	" Visual mode
 	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^V'
-		return 'visual mode'
+		return 'visual'
 	" Command mode
 	elseif a:mode == 'c'
-		return 'command mode'
+		return 'command'
 	" Terminal mode
 	elseif a:mode == 't'
-		return 'trace mode'
+		return 'trace'
 	endif
 	return ''
 endfunction
@@ -276,7 +274,7 @@ endfunction
 
 function! SetModifiedSymbol(modified)
 	if a:modified == 1
-		return '/ file is unsaved'
+		return '/ unsaved'
 	else
 		return ''
 	endif
@@ -300,6 +298,4 @@ set statusline+=%=
 " Filename
 set statusline+=%#Sl2#\ %.20t\ /
 " ruler
-set statusline+=\%#Sl2#\ %l,%c
-" filetype
-" set statusline+=\ %#Sl2#\/%#Slrese#\ %{SetFiletype(&filetype)}\ 
+set statusline+=\%#Sl2#\ %l:%c

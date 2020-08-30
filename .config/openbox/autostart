@@ -1,4 +1,4 @@
-hsetroot -cover ~/usr/pic/wallpapers/7.jpg
+hsetroot -solid "#dcdcdc"
 
 picom &
 
