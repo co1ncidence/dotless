@@ -1,4 +1,4 @@
-hsetroot -solid "#dcdcdc"
+hsetroot -solid "#8aabac"
 
 picom &
 

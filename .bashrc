@@ -60,7 +60,6 @@ fi
 
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
@@ -97,14 +96,15 @@ alias notes="cd ~/usr/doc/school/awo/"
 alias t="todo.sh"
 alias du="du -m | sort -n"
 alias web="cd ~/git/mysite/"
-alias gif="giph -s ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').gif"
 alias free="free -h"
-alias wpm="wpm --monochrome"
 alias epub="epy"
 alias wset="hsetroot -cover"
 alias r="ranger"
 alias f="fff"
 alias ff="shfm"
+alias q="qalc"
+alias ls="ls -CF --color=auto --group-directories-first"
+alias cat="bat --theme Nord"
 
 # CUSTOM PROMPT
 PS1='\[\e[0;91m\]\W\[\e[m\] \[\e0'

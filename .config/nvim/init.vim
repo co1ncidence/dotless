@@ -1,6 +1,6 @@
 " nuaNce's init.vim
 
-" st fix
+" st and tmux fix
 if &term =~ '256color'
     set t_ut=
 endif
@@ -116,7 +116,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " nerdtree settings
-" autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
@@ -159,7 +158,7 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
-"  coc-nvim settings
+" coc-nvim settings
 set nobackup
 set nowritebackup
 set cmdheight=1
@@ -266,7 +265,7 @@ function! RedrawMode(mode)
 		return 'command'
 	" Terminal mode
 	elseif a:mode == 't'
-		return 'trace'
+		return 'terminal'
 	endif
 	return ''
 endfunction
