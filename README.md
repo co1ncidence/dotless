@@ -8,4 +8,4 @@
 
 ### Wallpapers
 
-can be accessed in [this Imgur album](https://imgur.com/gallery/bvOqSVU)
+can be accessed in [this postimg gallery](https://postimg.cc/gallery/s74RhYs)
