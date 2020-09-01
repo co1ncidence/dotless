@@ -1,4 +1,4 @@
-hsetroot -solid "#8aabac"
+hsetroot -cover ~/usr/pic/wallpapers/16.jpg
 
 picom &
 

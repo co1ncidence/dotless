@@ -2,24 +2,6 @@
 super + Escape
   pkill sxhkd && sxhkd & disown
 
-super + e
-	thunar
-
-super + i
-	chromium
-
-super + y
-	alacritty
-
-super + Return
-  st
-
-super + space
-	dmenu_run -fn "Space Mono" -nb '#050505' -nf '#aca98a' -sb '#aca98a' -sf '#26221f'
-
-super + n
-  passmenu -fn "Space Mono" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#26221f'
-
 alt + shift + e
   maim -s -u -m 10 | xclip -selection clipboard -t image/png
 
@@ -32,20 +14,8 @@ alt + shift + r
 alt + shift + x
   oblogout
 
-super + v
-  ~/bin/ripcord.AppImage
-
-super + b
-  firefox-developer-edition
-
 super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
-
-super + x
-  pkill -9 polybar
-
-super + z
-  . ~/.config/polybar/launch.sh
 
 super + q
   notify-send "`acpi`" -t 700
