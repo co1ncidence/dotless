@@ -5,3 +5,7 @@
 ![img](scrots/vibe.png)
 
 </p>
+
+### Wallpapers
+
+can be accessed in [this Imgur album](https://imgur.com/gallery/bvOqSVU)
