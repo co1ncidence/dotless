@@ -2,7 +2,7 @@
 
 <p align="center"
 
-![img](scrots/vibe.png)
+![img](scrots/what.png)
 
 </p>
 
