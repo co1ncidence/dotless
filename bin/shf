@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-cd ~/usr/pic/wallpapers/
-
-rm ~/usr/pic/wallpapers/wall.jpg
-
-wget https://source.unsplash.com/user/co1ncidence/likes/wall.jpg
-
-hsetroot -cover wall.jpg
+feh --bg-fill --randomize ~/usr/pic/wallpapers/*

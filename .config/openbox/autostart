@@ -1,4 +1,4 @@
-hsetroot -cover ~/usr/pic/wallpapers/16.jpg
+feh --bg-fill --randomize ~/usr/pic/wallpapers/*
 
 picom &
 
