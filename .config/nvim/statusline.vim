@@ -8,21 +8,21 @@ hi Slrese ctermfg=none cterm=none ctermbg=none
 function! RedrawMode(mode)
 	" Normal mode
 	if a:mode == 'n'
-		return 'normal'
+		return 'n'
 	" Insert mode
 	elseif a:mode == 'i'
-		return 'insert'
+		return 'i'
 	elseif a:mode == 'R'
-		return 'replace'
+		return 'r'
 	" Visual mode
-	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^V'
-		return 'visual'
+	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^v'
+		return 'v'
 	" Command mode
 	elseif a:mode == 'c'
-		return 'command'
+		return 'c'
 	" Terminal mode
 	elseif a:mode == 't'
-		return 'terminal'
+		return 't'
 	endif
 	return ''
 endfunction
@@ -30,7 +30,7 @@ endfunction
 
 function! SetModifiedSymbol(modified)
 	if a:modified == 1
-		return 'unsaved /'
+		return ' *'
 	else
 		return ''
 	endif
@@ -49,11 +49,13 @@ set statusline=%#Slrese#\ \ %#Sl1#
 " Modified status
 " right side
 set statusline+=%=
-"
-set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
-"
+" Mode
+set statusline+=\%#Sl2#\%{RedrawMode(mode())}\ -
+" Begin
 set statusline+=%#SlRese#
 " Filename
-set statusline+=%#Sl2#\ %.20t\ /
+set statusline+=%#Sl2#\ %.20t
+" Unsaved
+set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
 " ruler
-set statusline+=\%#Sl2#\ %l:%c\ 
+set statusline+=\%#Sl2#\ -\ %l:%c\ 

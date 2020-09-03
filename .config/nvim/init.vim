@@ -1,17 +1,21 @@
 " nuaNce's init.vim
-" 
+" don't forget to use the files sourced at bottom
+
 " ST and Tmux fix
 if &term =~ '256color'
     set t_ut=
 
 endif
 
-" weird ass keybind
+" keybinds
 nnoremap <C-a> :set cursorline<CR>
 nnoremap <C-x> :set number relativenumber<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " UI based settings
-"
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
@@ -24,12 +28,7 @@ set laststatus=2
 set noshowmode 
 set linebreak
 set hidden
-
-" rebinding vim split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+set title
 
 " more natural vim splitting
 set splitbelow
@@ -43,7 +42,7 @@ set expandtab
 filetype indent on
 
 " bottom bar settings
-set showcmd
+set noshowcmd
 
 " folding settings
 set foldmethod=manual
@@ -62,7 +61,6 @@ set incsearch
 set hlsearch
 set ignorecase
 let g:rehash256 = 1
-set notitle
 
 " undo, shell, backspace, and mouse settings
 set history=1000
@@ -71,31 +69,6 @@ set backspace=indent,eol,start
 
 " remove whitespace on file save
 autocmd BufWritePre *.py :%s/\s\+$//e
-
-" vim-plugins
-call plug#begin('~/.vim/plugged')
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'reedes/vim-pencil'
-Plug 'tpope/vim-commentary'
-Plug 'alvan/vim-closetag'
-Plug 'ap/vim-css-color'
-Plug 'preservim/nerdtree'
-Plug 'sheerun/vim-polyglot'
-Plug 'dense-analysis/ale'
-Plug 'honza/vim-snippets'
-Plug 'elzr/vim-json'
-Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'yaml', 'html'] }
-
-call plug#end()
 
 " nerdtree settings
 autocmd StdinReadPre * let s:std_in=1
@@ -108,3 +81,4 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 source ~/.config/nvim/statusline.vim
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/markdown.vim
+source ~/.config/nvim/plugins.vim

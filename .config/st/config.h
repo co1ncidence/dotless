@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 30;
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -165,7 +165,7 @@ static unsigned int cursorshape = 4;
  */
 
 static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int rows = 20;
 
 /*
  * Default colour and shape of the mouse cursor

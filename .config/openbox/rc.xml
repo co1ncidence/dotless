@@ -55,16 +55,16 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Iosevka Term</name>
+      <name>Input</name>
       <size>10</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Iosevka Term</name>
+      <name>Input</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -73,7 +73,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Iosevka Term</name>
+      <name>Input</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -82,7 +82,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Iosevka Term</name>
+      <name>Input</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -159,7 +159,7 @@
      cases. -->
   <margins>
     <top>15</top>
-    <bottom>15</bottom>
+    <bottom>100</bottom>
     <left>15</left>
     <right>15</right>
   </margins>
@@ -287,12 +287,12 @@
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Iosevka Term" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#050505'</command>
+        <command>dmenu_run -fn "Input" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#050505'</command>
       </action>
     </keybind>
     <keybind key="W-n">
       <action name="Execute">
-        <command>passmenu -fn "Iosevka Term" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#050505'</command>
+        <command>passmenu -fn "Input" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#050505'</command>
       </action>
     </keybind>
     <keybind key="W-v">
