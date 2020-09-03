@@ -6,12 +6,6 @@
 
 </p>
 
-<p align="center"
-
-![img](scrots/what1.png)
-
-</p>
-
 ### Wallpapers
 
 can be accessed in [this postimg gallery](https://postimg.cc/gallery/s74RhYs)

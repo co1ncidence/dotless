@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Crisp:pixelsize=15:antialias=true:autohint=true";
+static char *font = "Input:pixelsize=14:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 15;
+static int borderpx = 30;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -134,7 +134,7 @@ static const char *colorname[] = {
   [11] = "#C4C19E", /* yellow */
   [12] = "#A39EC4", /* blue   */
   [13] = "#C49EC4", /* purple */
-  [14] = "#9EC3C4", /* cyan   */
+  [14] = "#9ec3c4", /* cyan   */
   [15] = "#fafafa", /* white  */
 
   /* special colors */

@@ -18,4 +18,4 @@ super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
 
 super + q
-  notify-send "`acpi`" -t 700
+  notify-send "`cat /sys/class/power_supply/BAT0/capacity` Percent Remaining" -t 700
