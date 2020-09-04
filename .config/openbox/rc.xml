@@ -287,7 +287,7 @@
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Input" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#050505'</command>
+        <command>dmenu_run -fn "Input"</command>
       </action>
     </keybind>
     <keybind key="W-n">
