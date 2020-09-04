@@ -6,6 +6,12 @@
 
 </p>
 
+<p align="center"
+
+![img](scrots/what1.png)
+
+</p>
+
 ## Details
 **Window Manager:** Openbox
 
