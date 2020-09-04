@@ -1,4 +1,5 @@
 " nuaNce's init.vim
+"
 " don't forget to use the files sourced at bottom
 
 " ST and Tmux fix
