@@ -19,6 +19,7 @@ cp ~/.config/openbox/rc.xml ~/tmp/dotfiles/.config/openbox/
 cp ~/.config/picom/picom.conf ~/tmp/dotfiles/.config/picom/picom.conf
 cp ~/.config/polybar/* ~/tmp/dotfiles/.config/polybar/
 cp ~/.config/sxhkd/sxhkdrc ~/tmp/dotfiles/.config/sxhkd/sxhkdrc
+cp ~/.bashrc ~/tmp/dotfiles/.bashrc
 
 # push to github
 git add . && git commit -m "${msg}"

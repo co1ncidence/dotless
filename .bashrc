@@ -96,6 +96,7 @@ alias notes="cd ~/usr/doc/school/awo/"
 alias t="todo.sh"
 alias du="du -m | sort -n"
 alias web="cd ~/git/mysite/"
+alias webb="nvim ~/git/mysite/themes/hugo-kiera/static/css/styles-light.css"
 alias free="free -h"
 alias epub="epy"
 alias wset="hsetroot -cover"
@@ -104,7 +105,6 @@ alias f="fff"
 alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CF --color=auto --group-directories-first"
-alias cat="bat --theme Nord"
 
 # CUSTOM PROMPT
 PS1='\[\e[0;91m\]\W\[\e[m\] \[\e0'
