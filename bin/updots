@@ -23,5 +23,6 @@ cp ~/.config/sxhkd/sxhkdrc ~/tmp/dotfiles/.config/sxhkd/sxhkdrc
 cp ~/.bashrc ~/tmp/dotfiles/.bashrc
 
 # push to github
+cd ~/tmp/dotfiles/
 git add . && git commit -m "${msg}"
 git push origin master
