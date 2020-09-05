@@ -170,7 +170,7 @@ quit () {
 
 keyboard_loop () {
     startup
-    file_read "$1" && message="🛏  Welcome to bed ($message)"
+    file_read "$1" && message="Welcome to bed ($message)"
     refresh
 
     declare -a key
