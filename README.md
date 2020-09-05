@@ -2,19 +2,7 @@
 
 <p align="center"
 
-![img](scrots/what.png)
-
-</p>
-
-<p align="center"
-
-![img](scrots/what1.png)
-
-</p>
-
-<p align="center"
-
-![img](scrots/what2.png)
+![img](scrots/what3.png)
 
 </p>
 
