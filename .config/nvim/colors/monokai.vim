@@ -7,38 +7,38 @@ set background=dark
 
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
 
-let g:colors_name = 'mountaineer-grey'
+let g:colors_name = 'monokai'
 " }}}
 " Configuration: {{{
 let s:configuration = {}
-let s:configuration.palette = get(g:, 'mountaineer-grey_palette', 'soft')
-let s:configuration.transparent_background = get(g:, 'mountaineer-grey_transparent_background', 0)
-let s:configuration.disable_italic_comment = get(g:, 'mountaineer-grey_disable_italic_comment', 0)
-let s:configuration.enable_italic = get(g:, 'mountaineer-grey_enable_italic', 0)
-let s:configuration.cursor = get(g:, 'mountaineer-grey_cursor', 'auto')
-let s:configuration.current_word = get(g:, 'mountaineer-grey_current_word', get(g:, 'mountaineer-grey_transparent_background', 0) == 0 ? 'grey background' : 'bold')
+let s:configuration.palette = get(g:, 'monokai_palette', 'soft')
+let s:configuration.transparent_background = get(g:, 'monokai_transparent_background', 0)
+let s:configuration.disable_italic_comment = get(g:, 'monokai_disable_italic_comment', 0)
+let s:configuration.enable_italic = get(g:, 'monokai_enable_italic', 0)
+let s:configuration.cursor = get(g:, 'monokai_cursor', 'auto')
+let s:configuration.current_word = get(g:, 'monokai_current_word', get(g:, 'monokai_transparent_background', 0) == 0 ? 'grey background' : 'bold')
 " }}}
 " Palette: {{{
 let s:palette = {
-      \ 'bg0':        ['#191919',   '235',  'Black'],
-      \ 'bg1':        ['#222222',   '236',  'DarkGrey'],
-      \ 'bg2':        ['#222222',   '237',  'DarkGrey'],
-      \ 'bg3':        ['#191919',   '238',  'DarkGrey'],
-      \ 'bg4':        ['#191919',   '239',  'Grey'],
-      \ 'bg_red':     ['#222222',   '52',   'DarkRed'],
-      \ 'bg_green':   ['#222222',   '22',   'DarkGreen'],
-      \ 'bg_blue':    ['#222222',   '17',   'DarkBlue'],
-      \ 'fg':         ['#f0f0f0',   '223',  'White'],
-      \ 'red':        ['#AC8A8C',   '167',  'Red'],
-      \ 'orange':     ['#AC9D8A',   '208',  'Red'],
-      \ 'yellow':     ['#ACA98A',   '214',  'Yellow'],
-      \ 'green':      ['#8AAC8B',   '108',  'Green'],
-      \ 'cyan':       ['#8AABAC',   '108',  'Cyan'],
-      \ 'blue':       ['#8F8AAC',   '109',  'Blue'],
-      \ 'purple':     ['#AC8AAC',   '175',  'Magenta'],
-      \ 'grey':       ['#363636',   '245',  'LightGrey'],
-      \ 'light_grey': ['#4c4c4c',   '245',  'LightGrey'],
-      \ 'gold':       ['#2f4243',   '214',  'Yellow'],
+      \ 'bg0':        ['#2b292e',   '235',  'Black'],
+      \ 'bg1':        ['#3d3b40',   '236',  'DarkGrey'],
+      \ 'bg2':        ['#3d3b40',   '237',  'DarkGrey'],
+      \ 'bg3':        ['#2b292e',   '238',  'DarkGrey'],
+      \ 'bg4':        ['#2b292e',   '239',  'Grey'],
+      \ 'bg_red':     ['#3d3b40',   '52',   'DarkRed'],
+      \ 'bg_green':   ['#211f22',   '22',   'DarkGreen'],
+      \ 'bg_blue':    ['#3d3b40',   '17',   'DarkBlue'],
+      \ 'fg':         ['#fdf9f3',   '223',  'White'],
+      \ 'red':        ['#FF6188',   '167',  'Red'],
+      \ 'orange':     ['#FC9867',   '208',  'Red'],
+      \ 'yellow':     ['#FFD866',   '214',  'Yellow'],
+      \ 'green':      ['#A9DC76',   '108',  'Green'],
+      \ 'cyan':       ['#78DCE8',   '108',  'Cyan'],
+      \ 'blue':       ['#AB9DF2',   '109',  'Blue'],
+      \ 'purple':     ['#DC9DF2',   '175',  'Magenta'],
+      \ 'grey':       ['#575558',   '245',  'LightGrey'],
+      \ 'light_grey': ['#575558',   '245',  'LightGrey'],
+      \ 'gold':       ['#C5BAFF',   '214',  'Yellow'],
       \ 'none':       ['NONE',      'NONE', 'NONE']
       \ }
 " }}}
@@ -185,7 +185,7 @@ call s:HL('StatusLineTermNC', s:palette.grey, s:palette.bg1)
 call s:HL('TabLine', s:palette.fg, s:palette.bg4)
 call s:HL('TabLineFill', s:palette.grey, s:palette.bg1)
 call s:HL('TabLineSel', s:palette.bg0, s:palette.green)
-call s:HL('VertSplit', s:palette.grey, s:palette.none)
+call s:HL('VertSplit', s:palette.bg4, s:palette.bg1)
 call s:HL('Visual', s:palette.fg, s:palette.gold)
 call s:HL('VisualNOS', s:palette.bg0, s:palette.gold, 'underline')
 call s:HL('CursorIM', s:palette.none, s:palette.fg)
