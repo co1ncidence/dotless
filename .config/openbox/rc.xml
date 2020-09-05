@@ -287,12 +287,12 @@
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Input"</command>
+        <command>dmenu_run -fn "DM Mono"</command>
       </action>
     </keybind>
     <keybind key="W-n">
       <action name="Execute">
-        <command>passmenu -fn "Input" -nb '#050505' -nf '#f0f0f0' -sb '#f0f0f0' -sf '#050505'</command>
+        <command>passmenu -fn "DM Mono"</command>
       </action>
     </keybind>
     <keybind key="W-v">

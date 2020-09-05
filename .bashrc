@@ -76,11 +76,11 @@ if ! shopt -oq posix; then
 fi
 
 # ENV VARS
+export PATH=$PATH:~/bin/
 export PATH="/home/co1ncidence/.local/bin:$PATH"
+export PATH="${PATH}:${HOME}/.local/bin/"
 export TERMINAL=st
 export EDITOR=nvim
-export PATH="${PATH}:${HOME}/.local/bin/"
-export PATH=$PATH:~/bin/
 export FZF_DEFAULT_COMMAND='find .'
 export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=2" +"set statusline=\ %t%=%p%%\ L%l:C%c\ "'
 export FFF_OPENER=/home/co1ncidence/bin/opener
