@@ -7,17 +7,32 @@
 </p>
 
 ## Details
+
+**Distro:** Arch Linux
+
 **Window Manager:** Openbox
 
 **Terminal:** Simple Terminal
 
-**Editor:** NVIM
+**Editor:** NeoVim
 
-**Preferred Programs:** Thunar, Ungoogled Chromium, Polybar, Ranger, SHFM, Birch, Ripcord
+**File Manager:** Thunar, Ranger, FFF, or SHFM
+
+**Web Browser:** Ungoogled Chromium
+
+**Chat Clients:** Lightcord, Ripcord, Birch
 
 My system colorscheme is [mountaineer](https://github.com/co1ncidence/mountaineer), and the one I use in NVIM is [gunmetal](https://github.com/co1ncidence/gunmetal).
 
-All themes and configs are my own, this repo is officially 99.9% "gk dot free"
+#### All themes and configs are my own, this repo is officially 99.9% "gk dot free"
+
+### Fonts I Use
+I usually hop around these 3 fonts:
+- [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- [Input Mono](https://input.fontbureau.com/download/)
+- [DM Mono](https://fonts.google.com/specimen/DM+Mono?category=Monospace)
+
+Note: I have adjusted the line spacing of Input Mono to 1.8 and DM Mono to 1.4 in my screenshots
 
 ## What's in the `/bin`
 - `bed`, bash-only text editor written by [comfies](https://github.com/comfies)
