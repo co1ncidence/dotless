@@ -1,6 +1,7 @@
 " statusline
-" based off of:
+" based off of gk's statusline:
 " https://github.com/6gk/polka
+"
 hi Sl1 ctermfg=none cterm=none ctermbg=NONE
 hi Sl2 ctermfg=none cterm=none ctermbg=NONE
 hi Sl3 ctermfg=none cterm=none ctermbg=NONE
@@ -45,9 +46,9 @@ function! SetFiletype(filetype)
 	endif
 endfunction
 
-set statusline=%#Slrese#\ \ %#Sl1#
 " Modified status
-" right side
+set statusline=%#Slrese#\ \ %#Sl1#
+" Right side
 set statusline+=%=
 " Mode
 set statusline+=\%#Sl2#\%{RedrawMode(mode())}\ -
@@ -57,5 +58,5 @@ set statusline+=%#SlRese#
 set statusline+=%#Sl2#\ %.20t
 " Unsaved
 set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
-" ruler
+" Ruler
 set statusline+=\%#Sl2#\ -\ %l:%c\ 
