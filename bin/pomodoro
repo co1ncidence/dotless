@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sleep 1500 && notify-send "Time's Up!"
