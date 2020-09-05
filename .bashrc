@@ -108,7 +108,7 @@ alias ls="ls -CF --color=auto --group-directories-first"
 alias scdl="scdl -l"
 
 # CUSTOM PROMPT
-PS1='\[\e[0;91m\]\W\[\e[m\] \[\e0'
+PS1='\[\e[0;91m\]/\[\e[0m\]\W\[\e[0;91m\]/\[\e[m\] \[\e0'
 
 # FZF SHIT
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
