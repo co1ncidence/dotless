@@ -1,6 +1,6 @@
 " nuaNce's init.vim
 
-" ST and Tmux fix
+" Tmux fix
 if &term =~ '256color'
     set t_ut=
 
