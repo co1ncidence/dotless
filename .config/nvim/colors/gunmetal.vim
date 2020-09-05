@@ -10,7 +10,7 @@ let s:black           = { "gui": "#050505", "cterm": "232" }
 let s:medium_gray     = { "gui": "#ababab", "cterm": "243" }
 let s:white           = { "gui": "#f0f0f0", "cterm": "15"  }
 let s:actual_white    = { "gui": "#fafafa", "cterm": "231" }
-let s:subtle_black    = { "gui": "#191919", "cterm": "236" }
+let s:subtle_black    = { "gui": "#0f0f0f", "cterm": "236" }
 let s:light_black     = { "gui": "#4a4a4a", "cterm": "235" }
 let s:lighter_black   = { "gui": "#363636", "cterm": "239" }
 let s:light_gray      = { "gui": "#9e9e9e", "cterm": "248" }
@@ -21,7 +21,7 @@ let s:dark_red        = { "gui": "#c49ea0", "cterm": "1"   }
 let s:light_red       = { "gui": "#ac8a8c", "cterm": "1"   }
 let s:orange          = { "gui": "#c49ea0", "cterm": "167" }
 let s:darker_blue     = { "gui": "#7B7794", "cterm": "18"  }
-let s:dark_blue       = { "gui": "#a39ec4", "cterm": "32"   }
+let s:dark_blue       = { "gui": "#212A3B", "cterm": "32"   }
 let s:blue            = { "gui": "#a39ec4", "cterm": "12"  }
 let s:light_blue      = { "gui": "#8f8aac", "cterm": "153" }
 let s:dark_cyan       = { "gui": "#9ec3c4", "cterm": "6"   }
@@ -46,7 +46,7 @@ if &background == "dark"
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
   let s:red             = s:light_red
-  let s:visual          = s:subtle_black
+  let s:visual          = s:dark_blue
   let s:yellow          = s:light_yellow
 else
   let s:bg              = s:actual_white
