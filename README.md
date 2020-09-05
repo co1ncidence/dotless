@@ -26,6 +26,7 @@ All themes and configs are my own, this repo is officially 99.9% "gk dot free"
 - `download`, downloads a song from youtube as .mp3
 - `lel`, ultra minimal fetch, hardcoded :box:
 - `opener`, makes FFF and SHFM open files correctly
+- `pomodoro`, sends a "Time's Up" notification after 1500 seconds
 - `scr`, screenshot and recording script written by [6gk](https://github.com/6gk)
 - `shf`, simple wallpaper shuffler
 - `shfm`, POSIX file browser written by [dylanaraps ](https://github.com/dylanaraps)
