@@ -6,6 +6,12 @@
 
 </p>
 
+<p align="center"
+
+![img](scrots/what4.png)
+
+</p>
+
 ## Details
 
 **Distro:** Arch Linux
@@ -40,6 +46,7 @@ Note: I have adjusted the line spacing of Input Mono to 1.8 and DM Mono to 1.4 i
 - `cl`, simple colorscheme script
 - `download`, downloads a song from youtube as .mp3
 - `farge`, a simple colorpicker written by [sdushantha](https://github.com/sdushantha)
+- `fontpreview`, a POGGERS bash fontpreviewer written by [sdushantha](https://github.com/sdushantha)
 - `lel`, ultra minimal fetch, hardcoded :box:
 - `opener`, makes FFF and SHFM open files correctly
 - `pomodoro`, sends a "Time's Up" notification after 1500 seconds
