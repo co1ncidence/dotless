@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Simple script to vibe to 
+# vibe to a random song
+
+exec mpv --geometry=200x200+1600+800 \
+         --shuffle \
+         --x11-name=no-title \
+         "$@" \
+         -- ~/etc/

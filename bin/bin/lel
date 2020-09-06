@@ -1,0 +1,58 @@
+#!/bin/sh
+
+host="$(hostname)"
+os='Manjaro'
+kernel="$(uname -sr)"
+uptime="$(up)"
+packages="$(pacman -Q | wc -l)"
+shell="$(basename "$SHELL")"
+
+if [ -n "${DE}" ]; then
+	ui="${DE}"
+	uitype='DE'
+elif [ -n "${WM}" ]; then
+	ui="${WM}"
+	uitype='WM'
+elif [ -n "${XDG_CURRENT_DESKTOP}" ]; then
+	ui="${XDG_CURRENT_DESKTOP}"
+	uitype='DE'
+elif [ -n "${DESKTOP_SESSION}" ]; then
+	ui="${DESKTOP_SESSION}"
+	uitype='DE'
+elif [ -f "${HOME}/.xinitrc" ]; then
+	ui="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
+	uitype='WM'
+elif [ -f "${HOME}/.xsession" ]; then
+	ui="$(tail -n 1 "${HOME}/.xsession" | cut -d ' ' -f 2)"
+	uitype='WM'
+else
+	ui='unknown'
+	uitype='UI'
+fi
+
+if [ -x "$(command -v tput)" ]; then
+	bold="$(tput bold)"
+	black="$(tput setaf 0)"
+	red="$(tput setaf 1)"
+	green="$(tput setaf 2)"
+	yellow="$(tput setaf 3)"
+	blue="$(tput setaf 4)"
+	magenta="$(tput setaf 5)"
+	cyan="$(tput setaf 6)"
+	white="$(tput setaf 7)"
+	reset="$(tput sgr0)"
+fi
+
+lc="${reset}${bold}${red}"        # labels
+nc="${reset}${bold}${green}"        # user and hostname
+ic="${reset}"                       # info
+c0="${reset}${green}"               # first color
+
+cat <<EOF
+
+${c0}  ${lc}os ${ic}arch${reset}
+${c0}  ${lc}kr ${ic}5.8.3${reset}
+${c0}  ${lc}up ${ic}${uptime}${reset}
+${c0}  ${lc}de ${ic}${ui}${reset}
+
+EOF
