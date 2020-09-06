@@ -55,6 +55,7 @@ Note: I have adjusted the line spacing of Input Mono to 1.8 and DM Mono to 1.4 i
 - `shfm`, POSIX file browser written by [dylanaraps ](https://github.com/dylanaraps)
 - `testfont`, a simple script that allows you to see a font entirely for review
 - `updots`, simple one command script that updates this repository
+- `uploat`, short script to upload a file to 0x0.st
 - `upptime`, uptime that scripts that outputs as `1-9h`, used in `lel`
 - `vtog`, converts .mp4 to .gif using ffmpeg
 - `wordstar`, opens Libreoffice Writer with a light GTK theme
