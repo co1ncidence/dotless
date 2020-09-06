@@ -15,9 +15,9 @@
     sort = yes
     idle_threshold = 120
 
-    font = Iosevka Extralight 11
-    line_height = 0
+    font = Apercu Light 11
 
+    line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
     alignment = center
