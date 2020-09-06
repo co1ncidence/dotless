@@ -1,6 +1,8 @@
 #!/bin/sh
 
-# Send to host
-
-[ -f "${1}" ] && op=cat
-${op:-echo} "${1:-`cat -`}" | curl -F file='@-' 'http://0x0.st'
+[ -f "$1" ] && op="cat"
+${op:-echo} "${@:-$(cat -)}" \
+	| curl -sF file='@-' 'http://0x0.st' \
+	| tee /dev/stderr \
+	| tr -d '\n'      \
+	| xclip -sel clip
