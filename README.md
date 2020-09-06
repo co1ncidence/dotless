@@ -1,4 +1,4 @@
-<h3 align="center">.files</h3>
+<h1 align="center">.files</h1>
 
 <p align="center"
 
@@ -12,26 +12,24 @@
 
 </p>
 
-## Details
+***
 
-**Distro:** Arch Linux
+<p align="center"
 
-**Window Manager:** Openbox
+![img](scrots/what2.png)
 
-**Terminal:** Simple Terminal
+</p>
 
-**Editor:** NeoVim
+<p align="center"
 
-**File Manager:** Thunar, Ranger, FFF, or SHFM
+![img](scrots/what.png)
 
-**Web Browser:** Ungoogled Chromium
+</p>
 
-My system colorscheme is [mountaineer](https://github.com/co1ncidence/mountaineer), and the one I use in NVIM is [gunmetal](https://github.com/co1ncidence/gunmetal).
+***
 
-### Fonts I Use
-I usually hop around these 3 fonts:
-- [Space Mono](https://fonts.google.com/specimen/Space+Mono)
-- [Input Mono](https://input.fontbureau.com/download/)
-- [DM Mono](https://fonts.google.com/specimen/DM+Mono?category=Monospace)
+<p align="center"
 
-Note: I have adjusted the line spacing of Input Mono to 1.8 and DM Mono to 1.4 in my screenshots
+![img](scrots/what5.png)
+
+</p>
