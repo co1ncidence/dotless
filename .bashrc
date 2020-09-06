@@ -106,6 +106,7 @@ alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CF --color=auto --group-directories-first"
 alias scdl="scdl -l"
+alias volume="amixer set Master"
 
 # CUSTOM PROMPT
 PS1='\[\e[0;91m\]/\[\e[0m\]\W\[\e[0;91m\]/\[\e[m\] \[\e0'
