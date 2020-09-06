@@ -315,22 +315,22 @@
         <command>~/.config/polybar/launch.sh</command>
       </action>
     </keybind>
-    <keybind key="W-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
+      <keybind key="W-Left">
+    <action name="UnmaximizeFull"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
         <width>50%</width>
-      </action>
-      <action name="MoveToEdge"/>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
+    </action>
+    <action name="MoveToEdge"><direction>west</direction></action>
+</keybind>
+<keybind key="W-Right">
+    <action name="UnmaximizeFull"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
         <width>50%</width>
-      </action>
-      <action name="MoveToEdge"/>
-    </keybind>
+    </action>
+    <action name="MoveToEdge"><direction>east</direction></action>
+</keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

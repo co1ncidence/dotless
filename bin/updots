@@ -4,22 +4,22 @@
 msg="$(date)"
 
 #update dotfiles
-cp -r ~/bin/ ~/tmp/dotfiles/
-cp -r ~/.themes/ ~/tmp/dotfiles/
-rm ~/tmp/dotfiles/bin/ripcord.AppImage
-cp ~/.ncmpcpp/config ~/tmp/dotfiles/.ncmpcpp/config
-cp -r ~/.config/nvim/ ~/tmp/dotfiles/.config/
-rm -rf ~/tmp/dotfiles/.config/nvim/spell
-cp -r ~/tmp/dmenu/ ~/tmp/dotfiles/.config/
-cp -r ~/tmp/st/ ~/tmp/dotfiles/.config/
-cp -r ~/.config/polybar/ ~/tmp/dotfiles/.config/
-cp -r ~/.config/dunst/ ~/tmp/dotfiles/.config/
-cp ~/.config/openbox/rc.xml ~/tmp/dotfiles/.config/openbox/
-cp ~/.config/picom/picom.conf ~/tmp/dotfiles/.config/picom/picom.conf
-cp ~/.config/sxhkd/sxhkdrc ~/tmp/dotfiles/.config/sxhkd/sxhkdrc
-cp ~/.bashrc ~/tmp/dotfiles/
+cp -r ~/bin/ ~/git/dotfiles/
+cp -r ~/.themes/ ~/git/dotfiles/
+rm ~/git/dotfiles/bin/ripcord.AppImage
+cp ~/.ncmpcpp/config ~/git/dotfiles/.ncmpcpp/config
+cp -r ~/.config/nvim/ ~/git/dotfiles/.config/
+rm -rf ~/git/dotfiles/.config/nvim/spell
+cp -r ~/git/dmenu/ ~/git/dotfiles/.config/
+cp -r ~/git/st/ ~/git/dotfiles/.config/
+cp -r ~/.config/polybar/ ~/git/dotfiles/.config/
+cp -r ~/.config/dunst/ ~/git/dotfiles/.config/
+cp ~/.config/openbox/rc.xml ~/git/dotfiles/.config/openbox/
+cp ~/.config/picom/picom.conf ~/git/dotfiles/.config/picom/picom.conf
+cp ~/.config/sxhkd/sxhkdrc ~/git/dotfiles/.config/sxhkd/sxhkdrc
+cp ~/.bashrc ~/git/dotfiles/
 
 # push to github
-cd ~/tmp/dotfiles/
+cd ~/git/dotfiles/
 git add . && git commit -m "${msg}"
 git push origin master
