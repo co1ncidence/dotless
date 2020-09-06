@@ -1,7 +1,7 @@
 #!/bin/sh
 #
-# Simple script to vibe to 
-# vibe to a random song
+# Simple script to vibe
+# to a random song
 
 exec mpv --geometry=200x200+1600+800 \
          --shuffle \
