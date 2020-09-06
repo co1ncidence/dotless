@@ -5,7 +5,7 @@ msg="$(date)"
 
 #update dotfiles
 cp -r ~/bin/ ~/tmp/dotfiles/
-cp -r ~/.themes/ ~/tmp/dotfiles/.themes/
+cp -r ~/.themes/ ~/tmp/dotfiles/
 rm ~/tmp/dotfiles/bin/ripcord.AppImage
 cp ~/.ncmpcpp/config ~/tmp/dotfiles/.ncmpcpp/config
 cp -r ~/.config/nvim/ ~/tmp/dotfiles/.config/
