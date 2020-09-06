@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# set the date variable
+# set the date variable for the commit msg
 msg="$(date)"
 
 #update dotfiles
