@@ -3,7 +3,7 @@
 host="$(hostname)"
 os='Manjaro'
 kernel="$(uname -sr)"
-uptime="$(upptime)"
+uptime="$(up)"
 packages="$(pacman -Q | wc -l)"
 shell="$(basename "$SHELL")"
 
