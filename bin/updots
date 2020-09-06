@@ -10,8 +10,8 @@ rm ~/git/dotfiles/bin/ripcord.AppImage
 cp ~/.ncmpcpp/config ~/git/dotfiles/.ncmpcpp/config
 cp -r ~/.config/nvim/ ~/git/dotfiles/.config/
 rm -rf ~/git/dotfiles/.config/nvim/spell
-cp -r ~/git/dmenu/ ~/git/dotfiles/.config/
-cp -r ~/git/st/ ~/git/dotfiles/.config/
+cp -r ~/tmp/dmenu/ ~/git/dotfiles/.config/
+cp -r ~/tmp/st/ ~/git/dotfiles/.config/
 cp -r ~/.config/polybar/ ~/git/dotfiles/.config/
 cp -r ~/.config/dunst/ ~/git/dotfiles/.config/
 cp ~/.config/openbox/rc.xml ~/git/dotfiles/.config/openbox/
