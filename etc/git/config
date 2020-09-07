@@ -1,7 +1,0 @@
-[user]
-	email = r3yan.chaudhry@zohomail.com
-	name = co1ncidence
-[url "https://co1ncidence@github.com"]
-	insteadOf = https://github.com
-[credential]
-	helper = cache --timeout=75000
