@@ -1,7 +1,3 @@
-# Reload functions
-super + Escape
-  pkill sxhkd && sxhkd & disown
-
 alt + shift + e
   maim -s -u -m 10 | xclip -selection clipboard -t image/png
 
@@ -22,3 +18,24 @@ super + q
 
 super + n
   passmenu -fn "Roboto Mono Medium"
+
+super + e
+  thunar
+
+super + i
+  chromium
+
+super + space
+  dmenu_run -fn "Roboto Mono Medium"
+
+super + v
+  ~/.local/bin/ripcord.AppImage
+
+super + x
+  pkill -9 polybar
+
+super + z
+  . ~/etc/polybar/launch.sh
+
+super + Return
+  st
