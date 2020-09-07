@@ -58,7 +58,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias ll='ls -l'
-alias la='ls -a'
+alias la='ls -A'
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
@@ -90,6 +90,7 @@ export PASSWORD_STORE_DIR=/home/co1ncidence/usr/pass/
 export GIMP2_DIRECTORY=/home/co1ncidence/etc/GIMP/2.10/
 export XDG_DATA_HOME=/home/co1ncidence/var/
 export XDG_CACHE_HOME=/home/co1ncidence/var/cache/
+export LESSHISTFILE=/home/co1ncidence/etc/.lesshst
 
 # ALIASES
 alias walls="cd ~/usr/pic/wallpapers/"
@@ -109,6 +110,7 @@ alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CF --color=auto --group-directories-first"
 alias volume="amixer set Master"
+alias wget="wget --no-hsts"
 
 # CONFIG ALIASES
 alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
