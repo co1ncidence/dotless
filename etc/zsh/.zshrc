@@ -1,16 +1,18 @@
-# The following lines were added by compinstall
-
-zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+# AUTOCOMPLETION SETTINGS
+zstyle ':completion:*' completer _expand _complete _ignored _correct
 zstyle ':completion:*' max-errors 3
 zstyle :compinstall filename '/home/co1ncidence/etc/zsh/.zshrc'
 
+# COMPSTYLE SETTINGS
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
+
+# HISTFILE SETTINGS
 HISTFILE=~/etc/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+
+# RANDOM SETTINGS
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -e
