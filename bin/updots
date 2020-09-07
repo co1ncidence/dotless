@@ -25,6 +25,7 @@ rm -rf ~/git/dotfiles/etc/xfce4/
 rm -rf ~/git/dotfiles/etc/pavucontrol.ini
 rm -rf ~/git/dotfiles/etc/gedit/
 rm -rf ~/git/dotfiles/etc/Thunar/
+rm -rf ~/git/dotfiles/etc/youtube-dlg/
 
 # push to github
 cd ~/git/dotfiles/
