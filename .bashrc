@@ -96,7 +96,7 @@ alias notes="cd ~/usr/doc/school/awo/"
 alias t="todo.sh"
 alias du="du -m | sort -n"
 alias web="cd ~/git/co1ncidence.github.io/mysite/"
-alias webb="nvim ~/git/co1ncidence.github.io/mysite/themes/smol/static/css/style.css"
+alias webb="nvim ~/git/co1ncidence.github.io/mysite/themes/nuance/static/css/style.css"
 alias free="free -h"
 alias epub="epy"
 alias wset="hsetroot -cover"
@@ -109,7 +109,7 @@ alias scdl="scdl -l"
 alias volume="amixer set Master"
 
 # CUSTOM PROMPT
-PS1='\[\e[0;91m\]/\[\e[0m\]\W\[\e[0;91m\]/\[\e[m\] \[\e0'
+PS1='\[\e[0;1m\]\W\[\e[m\] \[\e[0;1;91m\]/\[\e[m\] \[\e0'
 
 # FZF SHIT
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
