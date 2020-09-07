@@ -11,7 +11,7 @@ cp -r ~/usr/bin/ ~/git/dotfiles/
 cp -r ~/var/themes/shit/ ~/git/dotfiles/thm/themes/
 cp -r ~/var/themes/blackwindow/ ~/git/dotfiles/thm/themes/
 cp -r ~/var/themes/whitewindow/ ~/git/dotfiles/thm/themes/
-cp -r ~/.local/share/icons/blackbeach.tar.bz2 ~/git/dotfiles/thm/icons/
+cp -r ~/var/icons/blackbeach.tar.bz2 ~/git/dotfiles/thm/icons/
 rm -rf ~/git/dotfiles/etc/gnupg/
 rm -rf ~/git/dotfiles/etc/pulse/
 rm -rf ~/git/dotfiles/etc/git/
