@@ -1,0 +1,6 @@
+# GIMP gimp-rect-select-tool options
+
+(fixed-rule size)
+(corner-radius 0)
+
+# end of gimp-rect-select-tool options

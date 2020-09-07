@@ -87,6 +87,7 @@ export SHFM_OPENER=/home/co1ncidence/bin/opener
 export XDG_CONFIG_HOME=/home/co1ncidence/etc/
 export GNUPGHOME=/home/co1ncidence/etc/gnupg/
 export PASSWORD_STORE_DIR=/home/co1ncidence/usr/pass/
+export GIMP2_DIRECTORY=/home/co1ncidence/etc/GIMP/2.10/
 
 # ALIASES
 alias walls="cd ~/usr/pic/wallpapers/"
