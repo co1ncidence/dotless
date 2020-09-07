@@ -1,9 +1,0 @@
-#!/bin/sh
-
-read -r uptime _ < /proc/uptime
-
-up=${uptime%.*}
-
-hours=$(( ( up % 86400 ) / 3600 ))
-
-printf '%s\n' "${hours}h"

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-youtube-dl \
-    -x \
-    --audio-format mp3 \
-    "$@"
