@@ -14,6 +14,7 @@ cp -r ~/.local/share/icons/blackbeach.tar.bz2 ~/git/dotfiles/thm/icons/
 rm -rf ~/git/dotfiles/etc/gnupg/
 rm -rf ~/git/dotfiles/etc/pulse/
 rm -rf ~/git/dotfiles/etc/git/
+rm -rf ~/git/dotfiles/etc/chromium/
 
 # push to github
 cd ~/git/dotfiles/

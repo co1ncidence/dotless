@@ -1,0 +1,5 @@
+hsetroot -cover ~/usr/pic/wallpapers/19.jpg
+
+picom -b --config ~/etc/picom/picom.conf &
+
+sxhkd -c ~/etc/sxhkd/sxhkdrc &
