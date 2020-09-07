@@ -161,7 +161,7 @@ osd.bg.color: #050505
 osd.bg.border.color: #050505
 
 osd.label.bg: parentrelative
-osd.label.text.color: #050505
+osd.label.text.color: #f0f0f0
 
 osd.hilight.bg: flat solid border
 osd.hilight.bg.color: #050505
