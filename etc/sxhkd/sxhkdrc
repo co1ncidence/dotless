@@ -15,27 +15,3 @@ super + shift + {h,l,j,k}
 
 super + q
   notify-send "`cat /sys/class/power_supply/BAT0/capacity` Percent Remaining" -t 700
-
-super + n
-  passmenu -fn "Roboto Mono Medium"
-
-super + e
-  thunar
-
-super + i
-  chromium --user-data-dir=/home/co1ncidence/etc/chromium/
-
-super + space
-  dmenu_run -fn "Roboto Mono Medium"
-
-super + v
-  ~/.local/bin/ripcord.AppImage
-
-super + x
-  pkill -9 polybar
-
-super + z
-  . ~/etc/polybar/launch.sh
-
-super + Return
-  st

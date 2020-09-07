@@ -270,46 +270,49 @@
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
+      <!-- app shortcuts -->
     <keybind key="W-Return">
       <action name="Execute">
         <command>st</command>
       </action>
     </keybind>
+      <!-- thunar -->
     <keybind key="W-e">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
+      <!-- chrome -->
     <keybind key="W-i">
       <action name="Execute">
-        <command>chromium</command>
+        <command>chromium --user-data-dir=/home/co1ncidence/etc/chromium/</command>
       </action>
     </keybind>
+      <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
         <command>dmenu_run -fn "Apercu"</command>
       </action>
     </keybind>
+      <!-- discord -->
     <keybind key="W-v">
       <action name="Execute">
         <command>~/.local/bin/ripcord.AppImage</command>
       </action>
     </keybind>
-    <keybind key="W-b">
-      <action name="Execute">
-        <command>firefox-developer-edition</command>
-      </action>
-    </keybind>
+      <!-- kill polybar -->
     <keybind key="W-x">
       <action name="Execute">
         <command>pkill -9 polybar</command>
       </action>
     </keybind>
+      <!-- start polybar -->
     <keybind key="W-z">
       <action name="Execute">
         <command>~/etc/polybar/launch.sh</command>
       </action>
     </keybind>
+      <!-- snap windows -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
