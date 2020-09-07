@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+GTK_THEME=Macha libreoffice & disown

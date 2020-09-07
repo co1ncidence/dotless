@@ -23,7 +23,7 @@ super + e
   thunar
 
 super + i
-  chromium
+  chromium --user-data-dir=/home/co1ncidence/etc/chromium/
 
 super + space
   dmenu_run -fn "Roboto Mono Medium"
