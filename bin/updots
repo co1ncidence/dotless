@@ -18,6 +18,13 @@ rm -rf ~/git/dotfiles/etc/chromium/
 rm -rf ~/git/dotfiles/etc/libreoffice/
 rm -rf ~/git/dotfiles/etc/GIMP/
 rm -rf ~/git/dotfiles/etc/manjaro/
+rm -rf ~/git/dotfiles/etc/configstore/
+rm -rf ~/git/dotfiles/etc/dconf/
+rm -rf ~/git/dotfiles/etc/keepassxc/
+rm -rf ~/git/dotfiles/etc/xfce4/
+rm -rf ~/git/dotfiles/etc/pavucontrol.ini
+rm -rf ~/git/dotfiles/etc/gedit/
+rm -rf ~/git/dotfiles/etc/Thunar/
 
 # push to github
 cd ~/git/dotfiles/
