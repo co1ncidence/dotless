@@ -4,7 +4,6 @@
 msg="$(date)"
 
 #update dotfiles
-cp ~/.bashrc ~/git/dotfiles/
 cp -r ~/etc/ ~/git/dotfiles/
 rm -rf ~/git/dotfiles/etc/nvim/plugged/
 cp -r ~/usr/bin/ ~/git/dotfiles/
