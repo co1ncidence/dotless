@@ -1,0 +1,24 @@
+# Reload functions
+super + Escape
+  pkill sxhkd && sxhkd & disown
+
+alt + shift + e
+  maim -s -u -m 10 | xclip -selection clipboard -t image/png
+
+alt + shift + d
+  maim -s -u -m 10 ~/usr/pic/scrots/$(date '+%Y-%m-%d_%H-%M-%S').png
+
+alt + shift + r
+  scr -m s -f 60 -c ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+
+alt + shift + x
+  oblogout
+
+super + shift + {h,l,j,k}
+  xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
+
+super + q
+  notify-send "`cat /sys/class/power_supply/BAT0/capacity` Percent Remaining" -t 700
+
+super + n
+  passmenu -fn "Roboto Mono Medium"
