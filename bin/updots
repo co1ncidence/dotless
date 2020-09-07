@@ -7,6 +7,10 @@ msg="$(date)"
 cp ~/.bashrc ~/git/dotfiles/
 cp -r ~/etc/ ~/git/dotfiles/
 cp -r ~/bin/ ~/git/dotfiles/
+cp -r ~/.themes/shit/ ~/git/dotfiles/thm/themes/
+cp -r ~/.themes/blackwindow/ ~/git/dotfiles/thm/themes/
+cp -r ~/.themes/whitewindow/ ~/git/dotfiles/thm/themes/
+cp -r ~/.local/share/icons/blackbeach.tar.bz2 ~/git/dotfiles/thm/icons/
 rm -rf ~/git/dotfiles/etc/gnupg/
 rm -rf ~/git/dotfiles/etc/pulse/
 rm -rf ~/git/dotfiles/etc/git/
