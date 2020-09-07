@@ -1,5 +1,0 @@
-feh --bg-fill --randomize ~/usr/pic/wallpapers/*
-
-picom &
-
-sxhkd &
