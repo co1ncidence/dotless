@@ -84,15 +84,17 @@ export FZF_DEFAULT_COMMAND='find .'
 export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=2" +"set statusline=\ %t%=%p%%\ L%l:C%c\ "'
 export FFF_OPENER=/home/co1ncidence/bin/opener
 export SHFM_OPENER=/home/co1ncidence/bin/opener
+export XDG_CONFIG_HOME=/home/co1ncidence/etc/
+export GNUPGHOME=/home/co1ncidence/etc/gnupg/
+export PASSWORD_STORE_DIR=/home/co1ncidence/usr/pass/
 
 # ALIASES
 alias walls="cd ~/usr/pic/wallpapers/"
 alias df="df -h /dev/sda3"
-alias nvimrc="nvim ~/.config/nvim/init.vim"
+alias nvimrc="nvim ~/etc/nvim/init.vim"
 alias c="clear"
 alias class="cd ~/usr/doc/school/"
 alias notes="cd ~/usr/doc/school/awo/"
-alias t="todo.sh"
 alias du="du -m | sort -n"
 alias web="cd ~/git/co1ncidence.github.io/mysite/"
 alias webb="nvim ~/git/co1ncidence.github.io/mysite/themes/nuance/static/css/style.css"
@@ -105,6 +107,10 @@ alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CF --color=auto --group-directories-first"
 alias volume="amixer set Master"
+
+# CONFIG ALIASES
+alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
+alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 
 # CUSTOM PROMPT
 PS1='\[\e[0;1m\]\W\[\e[m\] \[\e[0;1;91m\]:\[\e[m\] \[\e0'
