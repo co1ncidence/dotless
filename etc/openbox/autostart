@@ -1,4 +1,4 @@
-hsetroot -cover ~/usr/pic/wallpapers/19.jpg &
+hsetroot -cover ~/usr/pic/wallpapers/32.jpg &
 
 picom -b --config ~/etc/picom/picom.conf &
 

@@ -15,7 +15,7 @@
     sort = yes
     idle_threshold = 120
 
-    font = Apercu Light 11
+    font = Roboto Mono 11
 
     line_height = 0
     markup = full

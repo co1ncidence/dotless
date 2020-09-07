@@ -1,6 +1,7 @@
 #!/bin/sh
 
 youtube-dl \
+    --config-location ~/etc/youtube-dlg/settings.json \
     -x \
     --audio-format mp3 \
     "$@"
