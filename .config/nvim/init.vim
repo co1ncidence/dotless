@@ -247,21 +247,21 @@ hi Slrese ctermfg=none cterm=none ctermbg=none
 function! RedrawMode(mode)
 	" Normal mode
 	if a:mode == 'n'
-		return 'n'
+		return 'n '
 	" Insert mode
 	elseif a:mode == 'i'
-		return 'i'
+		return 'i '
 	elseif a:mode == 'R'
-		return 'r'
+		return 'r '
 	" Visual mode
 	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '^v'
-		return 'v'
+		return 'v '
 	" Command mode
 	elseif a:mode == 'c'
-		return 'c'
+		return 'c '
 	" Terminal mode
 	elseif a:mode == 't'
-		return 't'
+		return 't '
 	endif
 	return ''
 endfunction
@@ -289,7 +289,7 @@ set statusline=%#Slrese#\ \ %#Sl1#
 " Right side
 set statusline+=%=
 " Mode
-set statusline+=\%#Sl2#\%{RedrawMode(mode())}\ /
+set statusline+=\%#Sl2#\%{RedrawMode(mode())}\/
 " Begin
 set statusline+=%#SlRese#
 " Filename
