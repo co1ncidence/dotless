@@ -4,19 +4,12 @@
 msg="$(date)"
 
 #update dotfiles
-cp -r ~/bin/ ~/git/dotfiles/
-cp -r ~/.themes/ ~/git/dotfiles/
-rm ~/git/dotfiles/bin/ripcord.AppImage
-cp -r ~/.config/nvim/ ~/git/dotfiles/.config/
-rm -rf ~/git/dotfiles/.config/nvim/spell
-cp -r ~/tmp/dmenu/ ~/git/dotfiles/.config/
-cp -r ~/tmp/st/ ~/git/dotfiles/.config/
-cp -r ~/.config/polybar/ ~/git/dotfiles/.config/
-cp -r ~/.config/dunst/ ~/git/dotfiles/.config/
-cp ~/.config/openbox/rc.xml ~/git/dotfiles/.config/openbox/
-cp ~/.config/picom/picom.conf ~/git/dotfiles/.config/picom/picom.conf
-cp ~/.config/sxhkd/sxhkdrc ~/git/dotfiles/.config/sxhkd/sxhkdrc
 cp ~/.bashrc ~/git/dotfiles/
+cp -r ~/etc/ ~/git/dotfiles/
+cp -r ~/bin/ ~/git/dotfiles/
+rm -rf ~/git/dotfiles/etc/gnupg/
+rm -rf ~/git/dotfiles/etc/pulse/
+rm -rf ~/git/dotfiles/etc/git/
 
 # push to github
 cd ~/git/dotfiles/
