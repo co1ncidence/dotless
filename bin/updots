@@ -8,9 +8,9 @@ cp ~/.bashrc ~/git/dotfiles/
 cp -r ~/etc/ ~/git/dotfiles/
 rm -rf ~/git/dotfiles/etc/nvim/plugged/
 cp -r ~/usr/bin/ ~/git/dotfiles/
-cp -r ~/.themes/shit/ ~/git/dotfiles/thm/themes/
-cp -r ~/.themes/blackwindow/ ~/git/dotfiles/thm/themes/
-cp -r ~/.themes/whitewindow/ ~/git/dotfiles/thm/themes/
+cp -r ~/var/themes/shit/ ~/git/dotfiles/thm/themes/
+cp -r ~/var/themes/blackwindow/ ~/git/dotfiles/thm/themes/
+cp -r ~/var/themes/whitewindow/ ~/git/dotfiles/thm/themes/
 cp -r ~/.local/share/icons/blackbeach.tar.bz2 ~/git/dotfiles/thm/icons/
 rm -rf ~/git/dotfiles/etc/gnupg/
 rm -rf ~/git/dotfiles/etc/pulse/
