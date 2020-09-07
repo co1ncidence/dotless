@@ -1,3 +1,5 @@
+/* This theme was edited using https://gibbu.me/editor/minimalcord */
+
 @import url('https://gibbu.github.io/BetterDiscord-Themes/MinimalCord/base.css');
 @import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
 @import url('https://gibbu.github.io/BetterDiscord-Themes/HorizontalServerlist/base.css');
@@ -9,7 +11,7 @@
   --emoji-picker-height: 260px;
   --chat-message-padding: 20px;
   --chat-message-spacing: 10px;
-  --font: 'Open Sans';
+  --font: 'Apercu';
   --HSL-server-icon-size: 25px;
   --HSL-server-spacing: 15px;
   
