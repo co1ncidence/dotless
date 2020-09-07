@@ -14,25 +14,6 @@ SAVEHIST=1000
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -e
-# End of lines configured by zsh-newuser-install
-PROMPT="%~ : "
-# ENV VARS
-export PATH=$PATH:~/usr/bin/
-export PATH="/home/co1ncidence/.local/bin:$PATH"
-export PATH="${PATH}:${HOME}/.local/bin/"
-export TERMINAL=st
-export EDITOR=nvim
-export FZF_DEFAULT_COMMAND='find .'
-export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=2" +"set statusline=\ %t%=%p%%\ L%l:C%c\ "'
-export FFF_OPENER=/home/co1ncidence/bin/opener
-export SHFM_OPENER=/home/co1ncidence/bin/opener
-export XDG_CONFIG_HOME=/home/co1ncidence/etc/
-export GNUPGHOME=/home/co1ncidence/etc/gnupg/
-export PASSWORD_STORE_DIR=/home/co1ncidence/usr/pass/
-export GIMP2_DIRECTORY=/home/co1ncidence/etc/GIMP/2.10/
-export XDG_DATA_HOME=/home/co1ncidence/var/
-export XDG_CACHE_HOME=/home/co1ncidence/var/cache/
-export LESSHISTFILE=/home/co1ncidence/etc/.lesshst
 
 # ALIASES
 alias walls="cd ~/usr/pic/wallpapers/"
@@ -59,3 +40,6 @@ alias wget="wget --no-hsts"
 # CONFIG ALIASES
 alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
+
+# PROMPT
+PROMPT='%B%F{red}%1~%f%b '
