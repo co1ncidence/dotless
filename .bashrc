@@ -75,7 +75,7 @@ if ! shopt -oq posix; then
 fi
 
 # ENV VARS
-export PATH=$PATH:~/bin/
+export PATH=$PATH:~/usr/bin/
 export PATH="/home/co1ncidence/.local/bin:$PATH"
 export PATH="${PATH}:${HOME}/.local/bin/"
 export TERMINAL=st
@@ -88,6 +88,8 @@ export XDG_CONFIG_HOME=/home/co1ncidence/etc/
 export GNUPGHOME=/home/co1ncidence/etc/gnupg/
 export PASSWORD_STORE_DIR=/home/co1ncidence/usr/pass/
 export GIMP2_DIRECTORY=/home/co1ncidence/etc/GIMP/2.10/
+export XDG_DATA_HOME=/home/co1ncidence/var/
+export XDG_CACHE_HOME=/home/co1ncidence/var/cache/
 
 # ALIASES
 alias walls="cd ~/usr/pic/wallpapers/"

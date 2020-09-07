@@ -70,27 +70,24 @@ set backspace=indent,eol,start
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " vim-plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/etc/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'reedes/vim-pencil'
-Plug 'tpope/vim-commentary'
-Plug 'alvan/vim-closetag'
-Plug 'ap/vim-css-color'
-Plug 'preservim/nerdtree'
-Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
-Plug 'honza/vim-snippets'
-Plug 'elzr/vim-json'
-Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
-Plug 'junegunn/goyo.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'yaml', 'html'] }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+Plug 'preservim/nerdtree'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-commentary'
+Plug 'ap/vim-css-color'
+Plug 'elzr/vim-json'
+Plug 'plasticboy/vim-markdown'
+Plug 'reedes/vim-pencil'
+Plug 'sheerun/vim-polyglot'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
