@@ -133,6 +133,7 @@ autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd FileType markdown let b:coc_suggest_disable = 0
 
+" HTML tag closer
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'

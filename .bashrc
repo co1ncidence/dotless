@@ -105,7 +105,6 @@ alias f="fff"
 alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CF --color=auto --group-directories-first"
-alias scdl="scdl -l"
 alias volume="amixer set Master"
 
 # CUSTOM PROMPT
