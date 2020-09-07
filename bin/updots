@@ -7,7 +7,6 @@ msg="$(date)"
 cp -r ~/bin/ ~/git/dotfiles/
 cp -r ~/.themes/ ~/git/dotfiles/
 rm ~/git/dotfiles/bin/ripcord.AppImage
-cp ~/.ncmpcpp/config ~/git/dotfiles/.ncmpcpp/config
 cp -r ~/.config/nvim/ ~/git/dotfiles/.config/
 rm -rf ~/git/dotfiles/.config/nvim/spell
 cp -r ~/tmp/dmenu/ ~/git/dotfiles/.config/
