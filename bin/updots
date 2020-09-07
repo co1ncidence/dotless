@@ -17,6 +17,7 @@ rm -rf ~/git/dotfiles/etc/git/
 rm -rf ~/git/dotfiles/etc/chromium/
 rm -rf ~/git/dotfiles/etc/libreoffice/
 rm -rf ~/git/dotfiles/etc/GIMP/
+rm -rf ~/git/dotfiles/etc/manjaro/
 
 # push to github
 cd ~/git/dotfiles/
