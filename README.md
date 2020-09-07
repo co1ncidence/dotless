@@ -1,4 +1,4 @@
-<h1 align="center">.files</h1>
+<h1 align="center">.file(s)</h1>
 
 <p align="center"
 
