@@ -85,6 +85,7 @@ export FZF_DEFAULT_COMMAND='find .'
 export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=2" +"set statusline=\ %t%=%p%%\ L%l:C%c\ "'
 export FFF_OPENER=/home/co1ncidence/bin/opener
 export SHFM_OPENER=/home/co1ncidence/bin/opener
+# export GITHUB_TOKEN=
 
 # ALIASES
 alias walls="cd ~/usr/pic/wallpapers/"
