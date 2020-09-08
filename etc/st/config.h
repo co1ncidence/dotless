@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono Medium:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Input:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 25;
+static int borderpx = 50;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -118,7 +118,7 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#222222", /* "#050505",  black  */
+  [0] = "#4c4c4c", /* "#050505",  black  */
   [1] = "#786162", /* "#AC8A8C",  red    */
   [2] = "#617878", /* "#8AAC8B",  green  */
   [3] = "#787661", /* "#ACA98A",  yellow */
@@ -128,7 +128,7 @@ static const char *colorname[] = {
   [7] = "#c9c9c9", /* "#f0f0f0",  white  */
 
   /* 8 bright colors */
-  [8]  = "#2c2c2c", /* "#191919",  black  */
+  [8]  = "#222222", /* "#191919",  black  */
   [9]  = "#917576", /* "#C49EA0",  red    */
   [10] = "#759191", /* "#9EC49F",  green  */
   [11] = "#918F75", /* "#C4C19E",  yellow */
