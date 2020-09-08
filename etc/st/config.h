@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 50;
+static int borderpx = 35;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -125,7 +125,7 @@ static const char *colorname[] = {
   [4] = "#646178", /* "#8F8AAC",  blue   */
   [5] = "#786178", /* "#AC8AAC",  purple */
   [6] = "#617878", /* "#8AABAC",  cyan   */
-  [7] = "#c9c9c9", /* "#f0f0f0",  white  */
+  [7] = "#e7e7e7", /* "#f0f0f0",  white  */
 
   /* 8 bright colors */
   [8]  = "#222222", /* "#191919",  black  */
@@ -135,7 +135,7 @@ static const char *colorname[] = {
   [12] = "#797591", /* "#A39EC4",  blue   */
   [13] = "#917591", /* "#C49EC4",  purple */
   [14] = "#759191", /* "#9ec3c4",  cyan   */
-  [15] = "#d3d3d3", /* "#fafafa",  white  */
+  [15] = "#f0f0f0", /* "#fafafa",  white  */
 
   /* special colors */
   [256] = "#f0f0f0", /* background */

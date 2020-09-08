@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/co1ncidence/.gtkrc-2.0.mine"
-gtk-theme-name="shit"
+gtk-theme-name="Materia"
 gtk-icon-theme-name="blackbeach"
 gtk-font-name="Apercu 11"
 gtk-cursor-theme-name="xcursor-breeze"
