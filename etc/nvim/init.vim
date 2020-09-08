@@ -54,6 +54,7 @@ set lazyredraw
 set scrolloff=3
 set autoread
 let g:netrw_winsize = 25
+set spell
 
 " search settings
 set incsearch
