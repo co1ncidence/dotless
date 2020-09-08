@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Apercu Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Akkurat-Mono:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
