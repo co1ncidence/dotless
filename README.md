@@ -5,7 +5,7 @@
 
 <p align="center"
 
-![img](zzz/what6.png)
+![img](screenshots/what6.png)
 
 </p>
 
