@@ -1,5 +1,6 @@
 <h3 align="center">.file(s)</h3>
 <p align="center">I don't even use bash anymore, so no dots :(</p>
+***
 
 <p align="center"
 
