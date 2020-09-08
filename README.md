@@ -1,4 +1,5 @@
-<h1 align="center">.file(s)</h1>
+<h3 align="center">.file(s)</h3>
+<p align="center">I don't even use bash anymore, so no dots :(</p>
 
 <p align="center"
 
@@ -6,40 +7,5 @@
 
 </p>
 
-***
-
-<p align="center"
-
-![img](zzz/what3.png)
-
-</p>
-
-***
-
-<p align="center"
-
-![img](zzz/what4.png)
-
-</p>
-
-***
-
-<p align="center"
-
-![img](zzz/what2.png)
-
-</p>
-
-<p align="center"
-
-![img](zzz/what.png)
-
-</p>
-
-***
-
-<p align="center"
-
-![img](zzz/what5.png)
-
-</p>
+## See More Rices [Here](https://co1ncidence.github.io/posts/my-openbox-rice/)
+Or just check the screenshots in the `/zzz` folder.
