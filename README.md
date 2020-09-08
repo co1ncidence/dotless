@@ -9,5 +9,11 @@
 
 </p>
 
+<p align="center"
+
+![img](screenshots/what8.png)
+
+</p>
+
 ## See More Rices [Here](https://co1ncidence.github.io/rices/)
 Or just check the screenshots in the `/zzz` folder.
