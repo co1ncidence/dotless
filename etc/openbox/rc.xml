@@ -40,8 +40,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>blackwindow</name>
-    <titleLayout>MLC</titleLayout>
+    <name>graywindow</name>
+    <titleLayout>C</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -158,7 +158,7 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>10</top>
+    <top>55</top>
     <bottom>10</bottom>
     <left>10</left>
     <right>10</right>
