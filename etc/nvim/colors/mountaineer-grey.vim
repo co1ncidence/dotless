@@ -37,7 +37,7 @@ let s:palette = {
       \ 'blue':       ['#8F8AAC',   '109',  'Blue'],
       \ 'purple':     ['#AC8AAC',   '175',  'Magenta'],
       \ 'grey':       ['#363636',   '245',  'LightGrey'],
-      \ 'light_grey': ['#4c4c4c',   '245',  'LightGrey'],
+      \ 'light_grey': ['#191919',   '245',  'LightGrey'],
       \ 'gold':       ['#2f4243',   '214',  'Yellow'],
       \ 'none':       ['NONE',      'NONE', 'NONE']
       \ }
