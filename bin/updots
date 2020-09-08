@@ -10,7 +10,7 @@ cp -r ~/usr/bin/ ~/git/dotfiles/
 cp -r ~/var/themes/shit/ ~/git/dotfiles/var/themes/
 cp -r ~/var/themes/blackwindow/ ~/git/dotfiles/var/themes/
 cp -r ~/var/themes/whitewindow/ ~/git/dotfiles/var/themes/
-cp -r ~/var/icons/blackbeach.tar.bz2 ~/git/dotfiles/var/icons/
+cp -r ~/var/icons/blackbeach.tar.bz2 git/dotfiles/var/icons/
 rm -rf ~/git/dotfiles/etc/gnupg/
 rm -rf ~/git/dotfiles/etc/pulse/
 rm -rf ~/git/dotfiles/etc/git/
