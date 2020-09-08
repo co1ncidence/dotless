@@ -26,6 +26,9 @@ rm -rf ~/git/dotfiles/etc/pavucontrol.ini
 rm -rf ~/git/dotfiles/etc/gedit/
 rm -rf ~/git/dotfiles/etc/Thunar/
 rm -rf ~/git/dotfiles/etc/youtube-dlg/
+rm -rf ~/git/dotfiles/etc/.lesshst
+rm -rf ~/git/dotfiles/etc/QtProject.conf
+rm -rf ~/git/dotfiles/etc/mimeapps.list
 
 # push to github
 cd ~/git/dotfiles/
