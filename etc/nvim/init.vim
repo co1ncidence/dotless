@@ -1,6 +1,6 @@
 " nuaNce's init.vim
 
-" Tmux fix
+" TMUX fix
 if &term =~ '256color'
     set t_ut=
 
@@ -21,7 +21,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme gunmetal
+colorscheme mountaineer-light
 set ruler
 set laststatus=2
 set noshowmode 

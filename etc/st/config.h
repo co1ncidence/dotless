@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 15;
+static int borderpx = 25;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -118,28 +118,28 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#050505", /* black  */
-  [1] = "#AC8A8C", /* red    */
-  [2] = "#8AAC8B", /* green  */
-  [3] = "#ACA98A", /* yellow */
-  [4] = "#8F8AAC", /* blue   */
-  [5] = "#AC8AAC", /* puple  */
-  [6] = "#8AABAC", /* cyan   */
-  [7] = "#f0f0f0", /* white  */
+  [0] = "#222222", /* "#050505",  black  */
+  [1] = "#786162", /* "#AC8A8C",  red    */
+  [2] = "#617878", /* "#8AAC8B",  green  */
+  [3] = "#787661", /* "#ACA98A",  yellow */
+  [4] = "#646178", /* "#8F8AAC",  blue   */
+  [5] = "#786178", /* "#AC8AAC",  purple */
+  [6] = "#617878", /* "#8AABAC",  cyan   */
+  [7] = "#c9c9c9", /* "#f0f0f0",  white  */
 
   /* 8 bright colors */
-  [8]  = "#191919", /* black  */
-  [9]  = "#C49EA0", /* red    */
-  [10] = "#9EC49F", /* green  */
-  [11] = "#C4C19E", /* yellow */
-  [12] = "#A39EC4", /* blue   */
-  [13] = "#C49EC4", /* purple */
-  [14] = "#9ec3c4", /* cyan   */
-  [15] = "#fafafa", /* white  */
+  [8]  = "#2c2c2c", /* "#191919",  black  */
+  [9]  = "#917576", /* "#C49EA0",  red    */
+  [10] = "#759191", /* "#9EC49F",  green  */
+  [11] = "#918F75", /* "#C4C19E",  yellow */
+  [12] = "#797591", /* "#A39EC4",  blue   */
+  [13] = "#917591", /* "#C49EC4",  purple */
+  [14] = "#759191", /* "#9ec3c4",  cyan   */
+  [15] = "#d3d3d3", /* "#fafafa",  white  */
 
   /* special colors */
-  [256] = "#050505", /* background */
-  [257] = "#f0f0f0", /* foreground */
+  [256] = "#f0f0f0", /* background */
+  [257] = "#363636", /* foreground */
 };
 
 /*
