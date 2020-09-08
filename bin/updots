@@ -7,10 +7,10 @@ msg="$(date)"
 cp -r ~/etc/ ~/git/dotfiles/
 rm -rf ~/git/dotfiles/etc/nvim/plugged/
 cp -r ~/usr/bin/ ~/git/dotfiles/
-cp -r ~/var/themes/shit/ ~/git/dotfiles/thm/themes/
-cp -r ~/var/themes/blackwindow/ ~/git/dotfiles/thm/themes/
-cp -r ~/var/themes/whitewindow/ ~/git/dotfiles/thm/themes/
-cp -r ~/var/icons/blackbeach.tar.bz2 ~/git/dotfiles/thm/icons/
+cp -r ~/var/themes/shit/ ~/git/dotfiles/var/themes/
+cp -r ~/var/themes/blackwindow/ ~/git/dotfiles/var/themes/
+cp -r ~/var/themes/whitewindow/ ~/git/dotfiles/var/themes/
+cp -r ~/var/icons/blackbeach.tar.bz2 ~/git/dotfiles/var/icons/
 rm -rf ~/git/dotfiles/etc/gnupg/
 rm -rf ~/git/dotfiles/etc/pulse/
 rm -rf ~/git/dotfiles/etc/git/
