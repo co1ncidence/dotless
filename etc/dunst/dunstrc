@@ -15,12 +15,12 @@
     sort = yes
     idle_threshold = 120
 
-    font = Roboto Mono 11
+    font = Bront 11
 
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
-    alignment = center
+    alignment = left
     show_age_threshold = 60
     word_wrap = yes
     ellipsize = middle
