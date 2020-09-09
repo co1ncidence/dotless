@@ -29,6 +29,9 @@ rm -rf ~/git/dotfiles/etc/youtube-dlg/
 rm -rf ~/git/dotfiles/etc/.lesshst
 rm -rf ~/git/dotfiles/etc/QtProject.conf
 rm -rf ~/git/dotfiles/etc/mimeapps.list
+rm -rf ~/git/dotfiles/etc/zsh/.histfile
+rm -rf ~/git/dotfiles/etc/zsh/.zcompdump
+rm -rf ~/git/dotfiles/etc/zsh/.zshrc.zni
 
 # push to github
 cd ~/git/dotfiles/
