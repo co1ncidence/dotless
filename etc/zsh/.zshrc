@@ -36,7 +36,6 @@ alias q="qalc"
 alias ls="ls -CF --color=auto --group-directories-first"
 alias ll='ls -l'
 alias la='ls -A'
-alias volume="amixer set Master"
 alias wget="wget --no-hsts"
 
 # CONFIG ALIASES

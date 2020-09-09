@@ -4,6 +4,7 @@
 # to a specific song
 
 exec mpv --geometry=200x200+1600+800 \
+         --no-video \
          --shuffle \
          --x11-name=no-title \
          "$@" \
