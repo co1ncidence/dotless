@@ -16,4 +16,4 @@
 </p>
 
 ## See More Rices [Here](https://co1ncidence.github.io/rices/)
-Or just check the screenshots in the `/zzz` folder.
+Or just check the screenshots in the `screenshots/` folder.
