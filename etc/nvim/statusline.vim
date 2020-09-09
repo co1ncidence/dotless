@@ -16,7 +16,7 @@ function! RedrawMode(mode)
 	elseif a:mode == 'R'
 		return 'r '
 	" Visual mode
-	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '\<C-v>'
+	elseif a:mode == 'v' || a:mode == 'V' || a:mode == '<C-v>'
 		return 'v '
 	" Command mode
 	elseif a:mode == 'c'
