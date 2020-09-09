@@ -5,3 +5,5 @@ picom -b --config ~/etc/picom/picom.conf &
 sxhkd -c ~/etc/sxhkd/sxhkdrc &
 
 dunst -conf ~/etc/dunst/dunstrc &
+
+cbatticon -n &
