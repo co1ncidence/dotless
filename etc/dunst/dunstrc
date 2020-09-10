@@ -15,7 +15,7 @@
     sort = yes
     idle_threshold = 120
 
-    font = JetBrains Mono 11
+    font = Bergen Mono Light 11
 
     line_height = 0
     markup = full

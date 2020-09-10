@@ -291,7 +291,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "JetBrains Mono" -nb '#f0f0f0' -nf '#838383' -sb '#e3e3e3' -sf '#0f0f0f'</command>
+        <command>dmenu_run -fn "Bergen Mono" -nb '#f0f0f0' -nf '#838383' -sb '#e3e3e3' -sf '#0f0f0f'</command>
       </action>
     </keybind>
     <!-- passmenu -->
@@ -730,7 +730,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>

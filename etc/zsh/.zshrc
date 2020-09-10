@@ -43,4 +43,4 @@ alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 
 # PROMPT
-PROMPT='%B%F{red}%1~%f%b '
+PROMPT='%F{red}%1~%f '

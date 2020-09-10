@@ -16,5 +16,4 @@ nm-applet &
 pgrep -x pulseaudio || pulseaudio --start
 
 # Start window manager
-# exec sowm
 exec openbox
