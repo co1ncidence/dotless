@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Clean your home dir!
+
+rm -rf ~/.cache/
+rm -rf ~/.dbus/
+rm -rf ~/.pki/
