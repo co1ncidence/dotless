@@ -1,7 +1,5 @@
 <h3 align="center">(.)files</h3>
-<p align="center">I have reclaimed `~/`</p>
-
-***
+<p align="center">I have reclaimed <code>~/</code></p>
 
 <p align="center"
 
