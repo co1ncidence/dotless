@@ -1,5 +1,5 @@
-<h3 align="center">.file(s)</h3>
-<p align="center">I don't even use bash anymore, so no dots :(</p>
+<h3 align="center">(.)files</h3>
+<p align="center">I have reclaimed `~/`</p>
 
 ***
 
