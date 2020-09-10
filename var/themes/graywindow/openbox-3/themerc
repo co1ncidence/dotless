@@ -1,9 +1,9 @@
 # Window geometry
-padding.width: 1
-padding.height: 1
+padding.width: 0
+padding.height: 0
 border.width: 10
-window.client.padding.width: 0
-window.client.padding.height: 0
+window.client.padding.width: 4
+window.client.padding.height: 4
 window.handle.width: 0
 
 #Menu geometry
@@ -15,8 +15,8 @@ menu.overlap.y: 0
 window.active.border.color: #f0f0f0
 window.inactive.border.color: #f0f0f0
 menu.border.color: #050505
-window.active.client.color: #050505
-window.inactive.client.color: #050505
+window.active.client.color: #4c4c4c
+window.inactive.client.color: #c9c9c9
 
 # Text shadows
 window.active.label.text.font: shadow=n
@@ -127,7 +127,7 @@ window.inactive.handle.bg: Flat solid
 window.inactive.handle.bg.color: #c9c9c9
 
 window.inactive.grip.bg: Flat solid
-window.inactive.grip.bg.color: #c9c9c9
+window.inactive.grip.bg.color: #f0f0f0
 
 ### Inactive buttons ###
 window.inactive.button.unpressed.bg: Flat solid

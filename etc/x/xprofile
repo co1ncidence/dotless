@@ -1,0 +1,20 @@
+#! /bin/sh
+
+
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+# actual programs
+hsetroot -cover ~/usr/pic/wallpapers/58.jpg
+picom -b --config ~/etc/picom/picom.conf &
+sxhkd -c ~/etc/sxhkd/sxhkdrc &
+dunst -conf ~/etc/dunst/dunstrc &
+. ~/etc/polybar/launch.sh &
+cbatticon -n &
+nm-applet &
+
+# Start Pulseaudio
+pgrep -x pulseaudio || pulseaudio --start
+
+# Start window manager
+# exec sowm
+exec openbox

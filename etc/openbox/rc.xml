@@ -55,8 +55,8 @@
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Roboto Mono Medium</name>
-      <size>5</size>
+      <name>Roboto Slab</name>
+      <size>2</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
