@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# Retarded Fetch Script
 
 host="$(hostname)"
 os='Manjaro'

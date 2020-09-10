@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# Download a song as mp3 from YouTube
 
 youtube-dl \
     --config-location ~/etc/youtube-dlg/settings.json \

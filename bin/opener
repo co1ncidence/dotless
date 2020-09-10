@@ -1,4 +1,6 @@
 #!/bin/sh -e
+#
+# Opener script for FFF and SHFM
 
 case $1 in
         *.mp3|*.flac|*.wav)

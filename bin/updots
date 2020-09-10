@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# Stupid Script that updates my dotfiles
 
 # set the date variable for the commit msg
 msg="$(date)"
