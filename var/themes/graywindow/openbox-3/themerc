@@ -1,22 +1,22 @@
 # Window geometry
-padding.width: 0
+padding.width: 15
 padding.height: 0
-border.width: 10
-window.client.padding.width: 4
-window.client.padding.height: 4
+border.width: 15
+window.client.padding.width: 3
+window.client.padding.height: 3
 window.handle.width: 0
 
 #Menu geometry
-menu.border.width: 3
-menu.overlap.x: -2
+menu.border.width: 10
+menu.overlap.x: 0
 menu.overlap.y: 0
 
 # Border colors
 window.active.border.color: #f0f0f0
 window.inactive.border.color: #f0f0f0
-menu.border.color: #050505
+menu.border.color: #f0f0f0
 window.active.client.color: #4c4c4c
-window.inactive.client.color: #c9c9c9
+window.inactive.client.color: #dcdcdc
 
 # Text shadows
 window.active.label.text.font: shadow=n
@@ -31,19 +31,19 @@ menu.title.text.justify: center
 ### Menu ###
 
 menu.title.bg: Solid Flat
-menu.title.bg.color: #050505
+menu.title.bg.color: #4c4c4c
 menu.title.text.color: #f0f0f0
 
 menu.items.bg: Solid Flat
-menu.items.bg.color: #050505
-menu.items.text.color: #f0f0f0
+menu.items.bg.color: #f0f0f0
+menu.items.text.color: #4c4c4c
 menu.items.disabled.text.color: #050505
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #0f0f0f
-menu.items.active.text.color:#f0f0f0
+menu.items.active.bg.color: #e7e7e7
+menu.items.active.text.color:#4c4c4c
 
-menu.separator.color: #050505
+menu.separator.color: #4c4c4c
 menu.separator.width: 1
 menu.separator.padding.width: 10
 menu.separator.padding.height: 10
@@ -117,17 +117,17 @@ window.active.button.disabled.image.color: #f0f0f0
 
 ### Inactive windows ###
 window.inactive.title.bg: Flat solid
-window.inactive.title.bg.color: #c9c9c9
-window.inactive.title.bg.border.color: #c9c9c9
+window.inactive.title.bg.color: #4c4c4c
+window.inactive.title.bg.border.color: #4c4c4c
 
 window.inactive.label.bg: Parentrelative
 window.inactive.label.text.color: #363636
 
 window.inactive.handle.bg: Flat solid
-window.inactive.handle.bg.color: #c9c9c9
+window.inactive.handle.bg.color: #4c4c4c
 
 window.inactive.grip.bg: Flat solid
-window.inactive.grip.bg.color: #f0f0f0
+window.inactive.grip.bg.color: #4c4c4c
 
 ### Inactive buttons ###
 window.inactive.button.unpressed.bg: Flat solid

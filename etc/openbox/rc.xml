@@ -56,7 +56,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Roboto Slab</name>
-      <size>2</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -82,7 +82,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Roboto Mono Medium</name>
+      <name>Roboto Mono</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -291,13 +291,13 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Bergen Mono" -nb '#f0f0f0' -nf '#838383' -sb '#e3e3e3' -sf '#0f0f0f'</command>
+        <command>dmenu_run -fn "Whois" -nb '#f0f0f0' -nf '#838383' -sb '#e3e3e3' -sf '#0f0f0f'</command>
       </action>
     </keybind>
     <!-- passmenu -->
     <keybind key="W-n">
       <action name="Execute">
-        <command>passmenu -fn "JetBrains Mono" -nb '#f0f0f0' -nf '#838383' -sb '#e3e3e3' -sf '#0f0f0f'</command>
+        <command>passmenu -fn "Whois" -nb '#f0f0f0' -nf '#838383' -sb '#e3e3e3' -sf '#0f0f0f'</command>
       </action>
     </keybind>
     <!-- discord -->
