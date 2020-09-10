@@ -279,7 +279,7 @@
     <!-- thunar -->
     <keybind key="W-e">
       <action name="Execute">
-        <command>thunar</command>
+        <command>st -e ranger</command>
       </action>
     </keybind>
     <!-- chrome -->
