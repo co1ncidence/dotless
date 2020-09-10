@@ -303,7 +303,7 @@
     <!-- discord -->
     <keybind key="W-v">
       <action name="Execute">
-        <command>~/.local/bin/ripcord.AppImage</command>
+        <command>ripcord</command>
       </action>
     </keybind>
     <!-- kill polybar -->

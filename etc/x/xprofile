@@ -12,8 +12,5 @@ dunst -conf ~/etc/dunst/dunstrc &
 cbatticon -n &
 nm-applet &
 
-# Start Pulseaudio
-pgrep -x pulseaudio || pulseaudio --start
-
 # Start window manager
 exec openbox
