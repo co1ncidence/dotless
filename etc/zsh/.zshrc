@@ -1,23 +1,34 @@
-# AUTOCOMPLETION SETTINGS
-zstyle ':completion:*' completer _expand _complete _ignored _correct
-zstyle ':completion:*' max-errors 3
-zstyle :compinstall filename '/home/co1ncidence/etc/zsh/.zshrc'
+# General settings
+set -k
+setopt auto_cd
+setopt autocd extendedglob nomatch notify
 
-# COMPSTYLE SETTINGS
+# autocomplete stuff
+setopt NO_NOMATCH
+setopt complete_in_word
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu select
+zstyle ':completion:*' special-dirs true
+zstyle ':completion:*' matcher-list \
+	'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+autoload -U compinit && compinit -C
+
+
+# compinit
 autoload -Uz compinit
 compinit
 
-# HISTFILE SETTINGS
+# history settings
+setopt hist_ignore_dups
 HISTFILE=~/etc/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
 # RANDOM SETTINGS
-setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -e
 
-# ALIASES
+# aliases
 alias walls="cd ~/usr/pic/wallpapers/"
 alias df="df -h /dev/sda3"
 alias nvimrc="nvim ~/etc/nvim/init.vim"
@@ -37,8 +48,6 @@ alias ls="ls -CF --color=auto --group-directories-first"
 alias ll='ls -l'
 alias la='ls -A'
 alias wget="wget --no-hsts"
-
-# CONFIG ALIASES
 alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 
