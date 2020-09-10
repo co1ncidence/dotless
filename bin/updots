@@ -3,37 +3,37 @@
 # set the date variable for the commit msg
 msg="$(date)"
 
-#update dotfiles
-cp -r ~/etc/ ~/git/dotfiles/
-rm -rf ~/git/dotfiles/etc/nvim/plugged/
-cp -r ~/usr/bin/ ~/git/dotfiles/
-cp -r ~/var/themes/shit/ ~/git/dotfiles/var/themes/
-cp -r ~/var/themes/blackwindow/ ~/git/dotfiles/var/themes/
-cp -r ~/var/themes/whitewindow/ ~/git/dotfiles/var/themes/
-cp -r ~/var/themes/graywindow/ ~/git/dotfiles/var/themes/
-rm -rf ~/git/dotfiles/etc/gnupg/
-rm -rf ~/git/dotfiles/etc/pulse/
-rm -rf ~/git/dotfiles/etc/git/
-rm -rf ~/git/dotfiles/etc/chromium/
-rm -rf ~/git/dotfiles/etc/libreoffice/
-rm -rf ~/git/dotfiles/etc/GIMP/
-rm -rf ~/git/dotfiles/etc/manjaro/
-rm -rf ~/git/dotfiles/etc/configstore/
-rm -rf ~/git/dotfiles/etc/dconf/
-rm -rf ~/git/dotfiles/etc/keepassxc/
-rm -rf ~/git/dotfiles/etc/xfce4/
-rm -rf ~/git/dotfiles/etc/pavucontrol.ini
-rm -rf ~/git/dotfiles/etc/gedit/
-rm -rf ~/git/dotfiles/etc/Thunar/
-rm -rf ~/git/dotfiles/etc/youtube-dlg/
-rm -rf ~/git/dotfiles/etc/.lesshst
-rm -rf ~/git/dotfiles/etc/QtProject.conf
-rm -rf ~/git/dotfiles/etc/mimeapps.list
-rm -rf ~/git/dotfiles/etc/zsh/.histfile
-rm -rf ~/git/dotfiles/etc/zsh/.zcompdump
-rm -rf ~/git/dotfiles/etc/zsh/.zshrc.zni
+#update dotless
+cp -r ~/etc/ ~/git/dotless/
+rm -rf ~/git/dotless/etc/nvim/plugged/
+cp -r ~/usr/bin/ ~/git/dotless/
+cp -r ~/var/themes/shit/ ~/git/dotless/var/themes/
+cp -r ~/var/themes/blackwindow/ ~/git/dotless/var/themes/
+cp -r ~/var/themes/whitewindow/ ~/git/dotless/var/themes/
+cp -r ~/var/themes/graywindow/ ~/git/dotless/var/themes/
+rm -rf ~/git/dotless/etc/gnupg/
+rm -rf ~/git/dotless/etc/pulse/
+rm -rf ~/git/dotless/etc/git/
+rm -rf ~/git/dotless/etc/chromium/
+rm -rf ~/git/dotless/etc/libreoffice/
+rm -rf ~/git/dotless/etc/GIMP/
+rm -rf ~/git/dotless/etc/manjaro/
+rm -rf ~/git/dotless/etc/configstore/
+rm -rf ~/git/dotless/etc/dconf/
+rm -rf ~/git/dotless/etc/keepassxc/
+rm -rf ~/git/dotless/etc/xfce4/
+rm -rf ~/git/dotless/etc/pavucontrol.ini
+rm -rf ~/git/dotless/etc/gedit/
+rm -rf ~/git/dotless/etc/Thunar/
+rm -rf ~/git/dotless/etc/youtube-dlg/
+rm -rf ~/git/dotless/etc/.lesshst
+rm -rf ~/git/dotless/etc/QtProject.conf
+rm -rf ~/git/dotless/etc/mimeapps.list
+rm -rf ~/git/dotless/etc/zsh/.histfile
+rm -rf ~/git/dotless/etc/zsh/.zcompdump
+rm -rf ~/git/dotless/etc/zsh/.zshrc.zni
 
 # push to github
-cd ~/git/dotfiles/
+cd ~/git/dotless/
 git add . && git commit -m "${msg}"
 git push origin master
