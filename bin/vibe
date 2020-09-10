@@ -5,6 +5,7 @@
 
 exec mpv --geometry=200x200+1600+800 \
          --shuffle \
+         --no-video \
          --x11-name=no-title \
          "$@" \
          -- ~/usr/mus/
