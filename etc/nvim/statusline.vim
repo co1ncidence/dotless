@@ -31,7 +31,7 @@ endfunction
 
 function! SetModifiedSymbol(modified)
 	if a:modified == 1
-		return ' *'
+		return '*'
 	else
 		return ''
 	endif

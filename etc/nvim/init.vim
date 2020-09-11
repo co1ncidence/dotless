@@ -9,14 +9,17 @@ endif
 " ui keybinds
 nnoremap <C-a> :set cursorline<CR>
 nnoremap <C-x> :set number relativenumber<CR>
+
 " split keybinds
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
 " why is this not normal
 noremap k gk
 noremap j gj
+
 " move lines around
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
