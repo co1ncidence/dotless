@@ -1,7 +1,7 @@
 [global]
     monitor = 0
     follow = mouse
-    geometry = "270x5-30+20"
+    geometry = "190x5-30+20"
     indicate_hidden = yes
     shrink = no
     transparency = 0
@@ -18,7 +18,7 @@
     font = Whois 12
 
     line_height = 0
-    markup = full
+    markup = no
     format = "<b>%s</b>\n%b"
     alignment = left
     show_age_threshold = 60

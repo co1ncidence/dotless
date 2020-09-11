@@ -4,7 +4,7 @@
 
 case $1 in
         *.mp3|*.flac|*.wav)
-            mpv "$1"
+            mpv --no-video "$1"
         ;;
 
         *.mp4|*.mkv|*.webm)

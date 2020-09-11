@@ -37,6 +37,7 @@ rm -rf ~/git/dotless/etc/qalculate/
 rm -rf ~/git/dotless/etc/gtk-2.0/
 rm -rf ~/git/dotless/etc/gtk-3.0/
 rm -rf ~/git/dotless/etc/qt5ct/
+rm -rf ~/git/dotless/etc/ranger/colorschemes/
 
 # push to github
 cd ~/git/dotless/
