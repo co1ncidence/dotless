@@ -9,5 +9,4 @@ sxhkd -c ~/etc/sxhkd/sxhkdrc &
 dunst -conf ~/etc/dunst/dunstrc &
 
 # Start a WM
-# exec sowm
 exec openbox

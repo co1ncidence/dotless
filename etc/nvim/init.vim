@@ -41,7 +41,7 @@ set expandtab
 filetype indent on
 
 " bottom bar settings
-set showcmd
+set noshowcmd
 
 " folding settings
 set foldmethod=manual
