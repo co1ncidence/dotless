@@ -38,6 +38,10 @@ rm -rf ~/git/dotless/etc/gtk-2.0/
 rm -rf ~/git/dotless/etc/gtk-3.0/
 rm -rf ~/git/dotless/etc/qt5ct/
 rm -rf ~/git/dotless/etc/ranger/colorschemes/
+rm -rf ~/git/dotless/etc/gconf
+rm -rf ~/git/dotless/etc/procps
+rm -rf ~/git/dotless/etc/user-dirs.locale
+rm -rf ~/git/dotless/etc/user-dirs.dirs
 
 # push to github
 cd ~/git/dotless/
