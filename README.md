@@ -14,4 +14,4 @@
 </p>
 
 ## See More Rices [Here](https://co1ncidence.github.io/rices/)
-For more information on how to make your home dir spot-free^tm, check out [declutter-hom](https://github.com/vizs/declutter-home)
+For more information on how to make your home directory **spot-free**, check out [declutter-hom](https://github.com/vizs/declutter-home).
