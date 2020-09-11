@@ -1,18 +1,27 @@
 " nuaNce's init.vim
 
-" TMUX fix
+" fix weird colors in tmux
 if &term =~ '256color'
     set t_ut=
 
 endif
 
-" keybinds
+" ui keybinds
 nnoremap <C-a> :set cursorline<CR>
 nnoremap <C-x> :set number relativenumber<CR>
+" split keybinds
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" why is this not normal
+noremap k gk
+noremap j gj
+" move lines around
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
 
 " UI based settings
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
@@ -40,7 +49,7 @@ set softtabstop=2
 set expandtab
 filetype indent on
 
-" bottom bar settings
+" more mnml
 set noshowcmd
 
 " folding settings
@@ -66,8 +75,12 @@ set history=1000
 set shell:bash
 set backspace=indent,eol,start
 
-" remove whitespace on file save
-autocmd BufWritePre *.py :%s/\s\+$//e
+" whitespace control
+hi!  ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call  clearmatches()
 
 " sources
 source ~/etc/nvim/statusline.vim

@@ -15,3 +15,6 @@ super + shift + {h,l,j,k}
 
 super + q
   dunstify "`date +'%I:%M %P' ; echo ' ' ; date +'%a, %b %d' ; echo ' ' ;cat /sys/class/power_supply/BAT0/capacity`% Remaining"
+
+super + b
+  ~/usr/bin/shf

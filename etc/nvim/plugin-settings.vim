@@ -2,8 +2,10 @@
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
-map <C-p> :Files<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" FZF Menu
+map <C-p> :Files<CR>
 
 " Pencil only for Markdown
 set nocompatible
@@ -35,9 +37,8 @@ let g:mkdp_auto_close = 1
 " Markdown file settings
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd BufNewFile,BufRead *.md set filetype=markdown
-" autocmd FileType markdown let b:coc_suggest_disable = 0
 
-" HTML tag closer
+" HTML
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
@@ -56,4 +57,3 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
-
