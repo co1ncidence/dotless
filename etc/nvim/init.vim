@@ -21,7 +21,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme mountaineer-grey
+colorscheme gunmetal-grey
 set ruler
 set laststatus=2
 set noshowmode
