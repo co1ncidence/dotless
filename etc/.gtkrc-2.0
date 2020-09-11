@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/co1ncidence/.gtkrc-2.0.mine"
-gtk-theme-name="Materia"
+gtk-theme-name="Materia-dark"
 gtk-icon-theme-name="Zafiro-Icons-Light"
 gtk-font-name="Apercu 11"
 gtk-cursor-theme-name="xcursor-breeze-snow"
@@ -15,5 +15,5 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintfull"
+gtk-xft-hintstyle="hintslight"
 gtk-xft-rgba="rgb"

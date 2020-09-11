@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Whois:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Whois:pixelsize=18:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -118,28 +118,28 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#4c4c4c", /* "#050505",  black  */
-  [1] = "#786162", /* "#AC8A8C",  red    */
-  [2] = "#617878", /* "#8AAC8B",  green  */
-  [3] = "#787661", /* "#ACA98A",  yellow */
-  [4] = "#646178", /* "#8F8AAC",  blue   */
-  [5] = "#786178", /* "#AC8AAC",  purple */
-  [6] = "#617878", /* "#8AABAC",  cyan   */
+  [0] = "#303030", /* "#050505",  black  */
+  [1] = "#D5BBBC", /* "#AC8A8C",  red    */
+  [2] = "#BBD5BE", /* "#8AAC8B",  green  */
+  [3] = "#D5D5BB", /* "#ACA98A",  yellow */
+  [4] = "#BCBBD5", /* "#8F8AAC",  blue   */
+  [5] = "#D5BBD3", /* "#AC8AAC",  purple */
+  [6] = "#BBD5D4", /* "#8AABAC",  cyan   */
   [7] = "#e7e7e7", /* "#f0f0f0",  white  */
 
   /* 8 bright colors */
-  [8]  = "#222222", /* "#191919",  black  */
-  [9]  = "#917576", /* "#C49EA0",  red    */
-  [10] = "#759191", /* "#9EC49F",  green  */
-  [11] = "#918F75", /* "#C4C19E",  yellow */
-  [12] = "#797591", /* "#A39EC4",  blue   */
-  [13] = "#917591", /* "#C49EC4",  purple */
-  [14] = "#759191", /* "#9ec3c4",  cyan   */
+  [8]  = "#3d3d3d", /* "#191919",  black  */
+  [9]  = "#dcc7c8", /* "#C49EA0",  red    */
+  [10] = "#c7dcca", /* "#9EC49F",  green  */
+  [11] = "#dcdcc7", /* "#C4C19E",  yellow */
+  [12] = "#c8c7dc", /* "#A39EC4",  blue   */
+  [13] = "#dcc7db", /* "#C49EC4",  purple */
+  [14] = "#c7dcdc", /* "#9ec3c4",  cyan   */
   [15] = "#f0f0f0", /* "#fafafa",  white  */
 
   /* special colors */
-  [256] = "#f0f0f0", /* background */
-  [257] = "#363636", /* foreground */
+  [256] = "#232323", /* background */
+  [257] = "#f0f0f0", /* foreground */
 };
 
 /*
