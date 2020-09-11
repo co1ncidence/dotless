@@ -14,4 +14,4 @@
 </p>
 
 ## See More Rices [Here](https://co1ncidence.github.io/rices/)
-Guide on cleaning home [coming soon](https://co1ncidence.github.io)
+For more information on how to make your home dir spot-free^tm, check out [declutter-hom](https://github.com/vizs/declutter-home)
