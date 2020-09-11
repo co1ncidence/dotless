@@ -309,7 +309,7 @@
     <!-- kill polybar -->
     <keybind key="W-x">
       <action name="Execute">
-        <command>pkill -9 polybar</command>
+        <command>~/etc/polybar/kill.sh</command>
       </action>
     </keybind>
     <!-- start polybar -->
