@@ -43,6 +43,7 @@ rm -rf ~/git/dotless/etc/gconf
 rm -rf ~/git/dotless/etc/procps
 rm -rf ~/git/dotless/etc/user-dirs.locale
 rm -rf ~/git/dotless/etc/user-dirs.dirs
+rm -rf ~/git/dotless/etc/MusicBrainz/
 
 # push to github
 cd ~/git/dotless/
