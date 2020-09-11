@@ -34,6 +34,9 @@ rm -rf ~/git/dotless/etc/mimeapps.list
 rm -rf ~/git/dotless/etc/zsh/.histfile
 rm -rf ~/git/dotless/etc/zsh/.zcompdump
 rm -rf ~/git/dotless/etc/zsh/.zshrc.zni
+rm -rf ~/git/dotless/etc/qalculate/
+rm -rf ~/git/dotless/etc/gtk-2.0/
+rm -rf ~/git/dotless/etc/gtk-3.0/
 
 # push to github
 cd ~/git/dotless/
