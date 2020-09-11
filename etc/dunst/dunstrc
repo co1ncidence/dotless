@@ -1,7 +1,7 @@
 [global]
     monitor = 0
     follow = mouse
-    geometry = "190x5-30+20"
+    geometry = "210-30+20"
     indicate_hidden = yes
     shrink = no
     transparency = 0
@@ -15,7 +15,7 @@
     sort = yes
     idle_threshold = 120
 
-    font = Whois 12
+    font = Roboto Mono Light 12
 
     line_height = 0
     markup = no
