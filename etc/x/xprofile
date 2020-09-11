@@ -3,7 +3,7 @@
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
 # actual programs
-hsetroot -cover ~/usr/pic/wallpapers/58.jpg
+hsetroot -cover ~/usr/pic/wallpapers/66.jpg
 picom -b --config ~/etc/picom/picom.conf &
 sxhkd -c ~/etc/sxhkd/sxhkdrc &
 dunst -conf ~/etc/dunst/dunstrc &
