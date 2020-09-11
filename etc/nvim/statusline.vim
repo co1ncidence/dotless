@@ -51,7 +51,7 @@ set statusline=%#Slrese#\ \ %#Sl1#
 " Right side
 set statusline+=%=
 " Mode
-set statusline+=\%#Sl2#\%{RedrawMode(mode())}\|
+set statusline+=\%#Sl2#\%{RedrawMode(mode())}\/
 " Begin
 set statusline+=%#SlRese#
 " Filename
@@ -59,5 +59,5 @@ set statusline+=%#Sl2#\ %.20t\
 " Unsaved
 set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
 " Ruler
-set statusline+=\%#Sl2#\|
+set statusline+=\%#Sl2#\/
 set statusline+=\%#Sl2#\ %l
