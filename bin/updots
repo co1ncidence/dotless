@@ -9,7 +9,6 @@ msg="$(date)"
 cp -r ~/etc/ ~/git/dotless/
 rm -rf ~/git/dotless/etc/nvim/plugged/
 cp -r ~/usr/bin/ ~/git/dotless/
-cp -r ~/var/themes/shit/ ~/git/dotless/var/themes/
 cp -r ~/var/themes/blackwindow/ ~/git/dotless/var/themes/
 cp -r ~/var/themes/whitewindow/ ~/git/dotless/var/themes/
 cp -r ~/var/themes/graywindow/ ~/git/dotless/var/themes/
