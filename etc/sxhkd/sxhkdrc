@@ -18,3 +18,18 @@ super + q
 
 super + b
   ~/usr/bin/shf
+
+super + Up
+  xbacklight -inc 10 -time 0
+
+super + Down
+  xbacklight -dec 10 -time 0
+
+super + period
+  amixer --quiet set Master 10%+
+
+super + comma
+  amixer --quiet set Master 10%-
+
+super + slash
+  dunstify "`~/usr/bin/vol`" -t 500

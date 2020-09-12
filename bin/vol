@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Display current Volume level
+
+amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'

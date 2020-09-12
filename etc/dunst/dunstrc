@@ -31,7 +31,7 @@
     icon_position = off
     max_icon_size = 32
 
-    icon_path = 
+    icon_path =
     sticky_history = yes
     history_length = 20
     dmenu = /usr/bin/dmenu -p dunst:
@@ -51,8 +51,8 @@
     per_monitor_dpi = false
 
 [shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
+    close = ctrl+shift+space
+    close_all = ctrl+space
     history = ctrl+grave
     context = ctrl+shift+period
 
