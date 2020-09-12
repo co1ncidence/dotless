@@ -11,6 +11,5 @@ Plug 'elzr/vim-json'
 Plug 'plasticboy/vim-markdown'
 Plug 'reedes/vim-pencil'
 Plug 'sheerun/vim-polyglot'
-Plug 'honza/vim-snippets'
 
 call plug#end()
