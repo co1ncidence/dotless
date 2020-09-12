@@ -6,9 +6,11 @@ if &term =~ '256color'
 
 endif
 
-" ui keybinds
-nnoremap <C-a> :set cursorline<CR>
-nnoremap <C-x> :set number relativenumber<CR>
+" toggle line numbers
+nnoremap <C-x> :set nonumber! norelativenumber!<CR>
+
+" toggle cursorline
+nnoremap <C-a> :set cursorline!<CR>
 
 " split keybinds
 nnoremap <C-J> <C-W><C-J>
