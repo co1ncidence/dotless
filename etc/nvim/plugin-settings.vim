@@ -4,10 +4,10 @@ map <C-p> :Files<CR>
 " Pencil only for Markdown
 set nocompatible
 filetype plugin on
-let g:pencil#textwidth = 83
+let g:pencil#textwidth = 80
 augroup pencil
   autocmd!
-  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
+  autocmd FileType markdown,mkd call pencil#init({'wrap': 'hard'})
   autocmd FileType text         call pencil#init()
 augroup END
 

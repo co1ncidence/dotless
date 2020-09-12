@@ -35,8 +35,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 60
-    y: 50
+    x: 40
+    y: 40
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
@@ -100,13 +100,13 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: Whois
-    
+    family: Roboto Mono Medium
+
   bold:
-    family: Whois
+    family: Roboto Mono
 
   italic:
-    family: Whois
+    family: Roboto Mono Medium
 
     # The `style` can be specified to pick a specific face.
     #style: Italic
@@ -118,14 +118,14 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 8
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   glyph_offset:
     x: 0
-    y: 4
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #

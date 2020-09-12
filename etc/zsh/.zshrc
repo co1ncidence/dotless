@@ -44,7 +44,7 @@ alias r="ranger"
 alias f="fff"
 alias ff="shfm"
 alias q="qalc"
-alias ls="ls -CF --color=auto --group-directories-first"
+alias ls="ls -CFv --color=auto --group-directories-first"
 alias ll='ls -l'
 alias la='ls -A'
 alias wget="wget --no-hsts"
