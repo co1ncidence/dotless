@@ -1,9 +1,6 @@
 #!/bin/sh
 #
-# http://github.com/mitchweaver
-#
-# download stuff
-#
+# All purpose raw file download script
 
 [ "$1" ] || { read -r inp && set "$inp" ; }
 
