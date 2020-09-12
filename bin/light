@@ -2,4 +2,4 @@
 
 dunstctl close-all && \
 
-notify-send "`echo 'Brightness' ; echo ' ' ; xbacklight -get`"
+notify-send "`echo 'Brightness' ; echo ' ' ; xbacklight -get`" -t 500

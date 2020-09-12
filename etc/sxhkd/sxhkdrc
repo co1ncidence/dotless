@@ -14,7 +14,7 @@ super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
 
 super + q
-  dunstify "`date +'%I:%M %P' ; echo ' ' ; date +'%a, %b %d' ; echo ' ' ;cat /sys/class/power_supply/BAT0/capacity`% Remaining"
+  . ~/usr/bin/noti
 
 super + b
   ~/usr/bin/shf

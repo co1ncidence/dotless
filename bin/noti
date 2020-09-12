@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dunstctl close-all && \
+
+dunstify "`date +'%I:%M %P' ; echo ' ' ; date +'%a, %b %d' ; echo ' ' ;cat /sys/class/power_supply/BAT0/capacity`% Remaining" -t 1000
