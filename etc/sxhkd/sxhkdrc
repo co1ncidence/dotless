@@ -20,16 +20,13 @@ super + b
   ~/usr/bin/shf
 
 super + Up
-  xbacklight -inc 10 -time 0
+  xbacklight -inc 10 -time 0 && . ~/usr/bin/light
 
 super + Down
-  xbacklight -dec 10 -time 0
+  xbacklight -dec 10 -time 0 && . ~/usr/bin/light
 
-super + period
-  amixer --quiet set Master 10%+
+super + bracketright
+  amixer --quiet set Master 10%+ && . ~/usr/bin/vol
 
-super + comma
-  amixer --quiet set Master 10%-
-
-super + slash
-  dunstify "`~/usr/bin/vol`" -t 500
+super + bracketleft
+  amixer --quiet set Master 10%- && . ~/usr/bin/vol

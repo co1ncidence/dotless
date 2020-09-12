@@ -2,4 +2,6 @@
 #
 # Display current Volume level
 
-amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'
+dunstctl close-all && \
+
+dunstify "`echo 'Volume' ; echo ' ' ; amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'`" -t 500

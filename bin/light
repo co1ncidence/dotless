@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dunstctl close-all && \
+
+notify-send "`echo 'Brightness' ; echo ' ' ; xbacklight -get`"
