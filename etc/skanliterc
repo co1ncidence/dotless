@@ -1,0 +1,29 @@
+[General]
+DisableAutoSelection=false
+PreviewDPI=100
+SetPreviewDPI=false
+
+[Image Saving]
+ImgFormat=png
+ImgQuality=90
+Location=file:///home/co1ncidence
+NamePrefix=Image-
+NumberStartsFrom=1
+SaveMode=0
+SetQuality=false
+ShowBeforeSave=true
+
+[Options For Brother:DCP-L2550DW series]
+KSane::InvertColors=false
+br-x=215.899994
+br-y=296.925995
+mode=Color
+preview=false
+preview-in-gray=false
+resolution=600 DPI
+source=Flatbed
+tl-x=0.000000
+tl-y=0.000000
+
+[Window]
+Geometry=792,428

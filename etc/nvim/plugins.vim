@@ -6,7 +6,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'preservim/nerdtree'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'

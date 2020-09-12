@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# Set volume UwU
+# Set volume easy and simply
 
 amixer set Master "$@"%
