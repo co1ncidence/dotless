@@ -15,7 +15,7 @@ menu.overlap.y: 0
 window.active.border.color: #050505
 window.inactive.border.color: #050505
 menu.border.color: #050505
-window.active.client.color: #ac8a8c
+window.active.client.color: #f0f0f0
 window.inactive.client.color: #191919
 
 # Text shadows
@@ -131,38 +131,38 @@ window.inactive.grip.bg.color: #191919
 
 ### Inactive buttons ###
 window.inactive.button.unpressed.bg: Flat solid
-window.inactive.button.unpressed.bg.color: #c9c9c9
-window.inactive.button.unpressed.bg.border.color: #c9c9c9
-window.inactive.button.unpressed.image.color: #c9c9c9
+window.inactive.button.unpressed.bg.color: #191919
+window.inactive.button.unpressed.bg.border.color: #191919
+window.inactive.button.unpressed.image.color: #191919
 
 window.inactive.button.pressed.bg: Flat solid
-window.inactive.button.pressed.bg.color: #c9c9c9
-window.inactive.button.pressed.bg.border.color: #c9c9c9
-window.inactive.button.pressed.image.color: #c9c9c9
+window.inactive.button.pressed.bg.color: #191919
+window.inactive.button.pressed.bg.border.color: #191919
+window.inactive.button.pressed.image.color: #191919
 
 window.inactive.button.disabled.bg: Flat solid
-window.inactive.button.disabled.bg.color: #c9c9c9
-window.inactive.button.disabled.image.color: #c9c9c9
+window.inactive.button.disabled.bg.color: #191919
+window.inactive.button.disabled.image.color: #191919
 
 window.inactive.button.toggled.unpressed.bg: Flat solid
-window.inactive.button.toggled.unpressed.bg.color: #c9c9c9
-window.inactive.button.toggled.unpressed.bg.border.color: #c9c9c9
-window.inactive.button.toggled.unpressed.image.color: #c9c9c9
+window.inactive.button.toggled.unpressed.bg.color: #191919
+window.inactive.button.toggled.unpressed.bg.border.color: #191919
+window.inactive.button.toggled.unpressed.image.color: #191919
 
 window.inactive.button.toggled.pressed.bg: Flat solid
-window.inactive.button.toggled.pressed.bg.color: #c9c9c9
-window.inactive.button.toggled.pressed.bg.border.color: #c9c9c9
-window.inactive.button.toggled.pressed.image.color: #c9c9c9
+window.inactive.button.toggled.pressed.bg.color: #191919
+window.inactive.button.toggled.pressed.bg.border.color: #191919
+window.inactive.button.toggled.pressed.image.color: #191919
 
 window.inactive.button.toggled.hover.bg: Flat solid
-window.inactive.button.toggled.hover.bg.color: #c9c9c9
-window.inactive.button.toggled.hover.bg.border.color: #c9c9c9
-window.inactive.button.toggled.hover.image.color: #c9c9c9
+window.inactive.button.toggled.hover.bg.color: #191919
+window.inactive.button.toggled.hover.bg.border.color: #191919
+window.inactive.button.toggled.hover.image.color: #191919
 
 window.inactive.button.hover.bg: Flat solid
-window.inactive.button.hover.bg.color: #c9c9c9
-window.inactive.button.hover.bg.border.color: #c9c9c9
-window.inactive.button.hover.image.color: #c9c9c9
+window.inactive.button.hover.bg.color: #191919
+window.inactive.button.hover.bg.border.color: #191919
+window.inactive.button.hover.image.color: #191919
 
 ### On-Screen-Display ###
 osd.border.width: 0

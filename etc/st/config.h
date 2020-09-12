@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Space Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Bront:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -120,7 +120,7 @@ static const char *colorname[] = {
   /* 8 normal colors */
   [0] = "#050505", /* "#303030", black  */
   [1] = "#AC8A8C", /* "#D5BBBC", red    */
-  [2] = "#8AAC8B", /* "#BBD5BE", green  */
+  [2] = "#8AAC8B", /* "#BBD5BD", green  */
   [3] = "#ACA98A", /* "#D5D5BB", yellow */
   [4] = "#8F8AAC", /* "#BCBBD5", blue   */
   [5] = "#AC8AAC", /* "#D5BBD3", purple */
