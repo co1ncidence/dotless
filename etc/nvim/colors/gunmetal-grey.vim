@@ -82,7 +82,7 @@ if &background != s:background
 endif
 
 call s:h("Cursor",        {"bg": s:purple, "fg": s:norm })
-call s:h("Comment",       {"fg": s:light_black, "gui": "italic"})
+call s:h("Comment",       {"fg": s:light_black })
 
 call s:h("Constant",      {"fg": s:purple})
 hi! link Character        Constant
@@ -115,7 +115,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h("Special",       {"fg": s:norm_subtle, "gui": "italic"})
+call s:h("Special",       {"fg": s:norm_subtle })
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
