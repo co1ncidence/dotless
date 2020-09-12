@@ -1,13 +1,13 @@
 #! /bin/sh
 
 # load modmaps
-userresources="$XDG_CONFIG_HOME/x/.Xresources"
+userresources="$XDG_CONFIG_HOME/x/xresources"
 usermodmap="$HOME/.Xmodmap"
 sysresources="/etc/X11/xinit/.Xresources"
 sysmodmap="/etc/X11/xinit/.Xmodmap"
 
 # load xresources
-xrdb -merge /home/co1ncidence/etc/x/.Xresources
+xrdb -merge /home/co1ncidence/etc/x/xresources
 xset b off &
 
 # more modmap stuff
