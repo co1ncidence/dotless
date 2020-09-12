@@ -21,7 +21,6 @@ let g:vim_markdown_strikethrough = 1
 let g:vim_markdown_autowrite = 1
 let g:vim_markdown_edit_url_in = 'tab'
 let g:vim_markdown_follow_anchor = 1
-let g:mkdp_auto_close = 1
 let g:vim_markdown_folding_level = 6
 
 " Markdown file settings
