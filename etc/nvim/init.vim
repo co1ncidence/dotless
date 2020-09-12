@@ -41,7 +41,6 @@ set laststatus=2
 set noshowmode
 set linebreak
 set hidden
-set title
 
 " more natural vim splitting
 set splitbelow

@@ -51,6 +51,7 @@ alias wget="wget --no-hsts"
 alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 alias reconf="openbox --reconfigure"
+alias doctopdf="pandoc -s -o"
 
 # PROMPT
 PROMPT='%B%F{white}%1~%f%b '
