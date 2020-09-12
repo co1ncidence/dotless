@@ -18,7 +18,7 @@
 For more information on how to make your home directory **spot-free**, check out [declutter-home](https://github.com/vizs/declutter-home).
 
 ## `bin` Attributions
-`birch` and `shfn` both belong to [dylanaraps](https://github.com/dylanaraps)
+`birch` and `shfm` both belong to [dylanaraps](https://github.com/dylanaraps)
 
 `scr` and `timer` both belong to [6gk](https://github.com/6gk)
 
