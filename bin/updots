@@ -10,8 +10,6 @@ cp -r ~/etc/ ~/git/dotless/
 rm -rf ~/git/dotless/etc/nvim/plugged/
 rm -rf ~/git/dotless/etc/nvim/spell/
 cp -r ~/usr/bin/ ~/git/dotless/
-cp -r ~/var/themes/blackwindow/ ~/git/dotless/var/themes/
-cp -r ~/var/themes/whitewindow/ ~/git/dotless/var/themes/
 cp -r ~/var/themes/graywindow/ ~/git/dotless/var/themes/
 rm -rf ~/git/dotless/etc/gnupg/
 rm -rf ~/git/dotless/etc/pulse/
