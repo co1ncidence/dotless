@@ -22,6 +22,7 @@ let g:vim_markdown_autowrite = 1
 let g:vim_markdown_edit_url_in = 'tab'
 let g:vim_markdown_follow_anchor = 1
 let g:mkdp_auto_close = 1
+let g:vim_markdown_folding_level = 6
 
 " Markdown file settings
 autocmd FileType markdown setlocal spell spelllang=en_us
@@ -40,6 +41,8 @@ let g:closetag_regions = {
     \ }
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
+
+" Ale
 let b:ale_fixers = ['prettier', 'eslint']
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],

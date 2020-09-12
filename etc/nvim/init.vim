@@ -60,7 +60,7 @@ set noshowcmd
 " folding settings
 set foldmethod=manual
 set foldnestmax=3
-set nofoldenable
+set foldenable
 
 " misc settings
 set wildmenu
