@@ -56,7 +56,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Roboto Slab</name>
-      <size>10</size>
+      <size>2</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
