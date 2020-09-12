@@ -1,9 +1,9 @@
 # Window geometry
-padding.width: 15
-padding.height: 0
+padding.width: 0
+padding.height: -10
 border.width: 15
-window.client.padding.width: 3
-window.client.padding.height: 3
+window.client.padding.width: 2
+window.client.padding.height: 2
 window.handle.width: 0
 
 #Menu geometry
@@ -48,7 +48,7 @@ menu.separator.width: 1
 menu.separator.padding.width: 10
 menu.separator.padding.height: 10
 
-### Active window ###
+## Active window ###
 window.active.title.bg: Flat solid
 window.active.title.bg.color: #3d3d3d
 window.active.title.bg.border.color: #3d3d3d
