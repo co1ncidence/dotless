@@ -4,8 +4,6 @@ call plug#begin('~/etc/nvim/plugged')
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'

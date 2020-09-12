@@ -11,11 +11,6 @@ augroup pencil
   autocmd FileType text         call pencil#init()
 augroup END
 
-" Goyo and Limelight
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-nnoremap <C-g> :Goyo<CR>
-
 " vim-markdown settings
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
