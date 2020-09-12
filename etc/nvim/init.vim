@@ -13,12 +13,12 @@ nnoremap <C-x> :set nonumber! norelativenumber!<CR>
 nnoremap <C-a> :set cursorline!<CR>
 
 " split keybinds
+nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
-" why is this not normal
+" k = gk22?
 noremap k gk
 noremap j gj
 
@@ -35,7 +35,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme gunmetal-grey
+colorscheme gunmetal
 set ruler
 set laststatus=2
 set noshowmode

@@ -50,6 +50,7 @@ alias la='ls -A'
 alias wget="wget --no-hsts"
 alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
+alias reconf="openbox --reconfigure"
 
 # PROMPT
 PROMPT='%B%F{white}%1~%f%b '

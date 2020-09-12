@@ -118,27 +118,27 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#303030", /* "#050505",  black  */
-  [1] = "#D5BBBC", /* "#AC8A8C",  red    */
-  [2] = "#BBD5BE", /* "#8AAC8B",  green  */
-  [3] = "#D5D5BB", /* "#ACA98A",  yellow */
-  [4] = "#BCBBD5", /* "#8F8AAC",  blue   */
-  [5] = "#D5BBD3", /* "#AC8AAC",  purple */
-  [6] = "#BBD5D4", /* "#8AABAC",  cyan   */
-  [7] = "#e7e7e7", /* "#f0f0f0",  white  */
+  [0] = "#050505", /* "#303030", black  */
+  [1] = "#AC8A8C", /* "#D5BBBC", red    */
+  [2] = "#8AAC8B", /* "#BBD5BE", green  */
+  [3] = "#ACA98A", /* "#D5D5BB", yellow */
+  [4] = "#8F8AAC", /* "#BCBBD5", blue   */
+  [5] = "#AC8AAC", /* "#D5BBD3", purple */
+  [6] = "#8AABAC", /* "#BBD5D4", cyan   */
+  [7] = "#f0f0f0", /* "#e7e7e7", white  */
 
   /* 8 bright colors */
-  [8]  = "#3d3d3d", /* "#191919",  black  */
-  [9]  = "#dcc7c8", /* "#C49EA0",  red    */
-  [10] = "#c7dcca", /* "#9EC49F",  green  */
-  [11] = "#dcdcc7", /* "#C4C19E",  yellow */
-  [12] = "#c8c7dc", /* "#A39EC4",  blue   */
-  [13] = "#dcc7db", /* "#C49EC4",  purple */
-  [14] = "#c7dcdc", /* "#9ec3c4",  cyan   */
-  [15] = "#f0f0f0", /* "#fafafa",  white  */
+  [8]  = "#191919", /* "#3d3d3d", black  */
+  [9]  = "#C49EA0", /* "#dcc7c8", red    */
+  [10] = "#9EC49F", /* "#c7dcca", green  */
+  [11] = "#C4C19E", /* "#dcdcc7", yellow */
+  [12] = "#A39EC4", /* "#c8c7dc", blue   */
+  [13] = "#C49EC4", /* "#dcc7db", purple */
+  [14] = "#9ec3c4", /* "#c7dcdc", cyan   */
+  [15] = "#fafafa", /* "#f0f0f0", white  */
 
   /* special colors */
-  [256] = "#232323", /* background */
+  [256] = "#050505", /* background */
   [257] = "#f0f0f0", /* foreground */
 };
 
@@ -158,7 +158,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers

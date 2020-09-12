@@ -291,13 +291,13 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Roboto Mono Medium" -nb '#232323' -nf '#f0f0f0' -sb '#bbd5d4' -sf '#232323'</command>
+        <command>dmenu_run -fn "Roboto Mono Medium" -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505'</command>
       </action>
     </keybind>
     <!-- passmenu -->
     <keybind key="W-n">
       <action name="Execute">
-        <command>passmenu -fn "Roboto Mono Medium" -nb '#232323' -nf '#f0f0f0' -sb '#bbd5d4' -sf '#232323'</command>
+        <command>passmenu -fn "Roboto Mono Medium" -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505'</command>
       </action>
     </keybind>
     <!-- discord -->
