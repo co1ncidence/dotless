@@ -1,3 +1,6 @@
+super + c
+  centerwindow
+
 alt + shift + e
   maim -s -u -m 10 | xclip -selection clipboard -t image/png
 

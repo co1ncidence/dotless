@@ -249,7 +249,7 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-c">
+    <keybind key="A-Tab">
       <action name="NextWindow"/>
     </keybind>
     <keybind key="A-S-Tab">
