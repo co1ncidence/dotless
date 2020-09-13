@@ -24,7 +24,6 @@ let g:vim_markdown_follow_anchor = 1
 let g:vim_markdown_folding_level = 6
 
 " Markdown file settings
-autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 " HTML
@@ -48,3 +47,10 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
+
+" TeX Settings
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'

@@ -28,6 +28,9 @@ nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 
+" Correct typos
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
 " UI based settings
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -85,6 +88,10 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call  clearmatches()
+
+" spellcheck only for .md and .tex
+autocmd FileType markdown setlocal spell spelllang=en_us
+autocmd FileType tex setlocal spell spelllang=en_us
 
 " sources
 source ~/etc/nvim/statusline.vim
