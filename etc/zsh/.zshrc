@@ -55,4 +55,4 @@ alias convert="pandoc -s -o"
 alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
 
 # PROMPT
-PROMPT='%B%F{white}%1~%f%b '
+PROMPT='%B%F{red}%1~%f%b '
