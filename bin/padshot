@@ -19,6 +19,6 @@ id=$(slw) &&
 
         cur=$(date +%F_%H-%M-%S)
 
-        shotgun -g "${w}x${h}+$x+$y" "$DIR/$cur.png" &&
+        maim -g "${w}x${h}+$x+$y" "$DIR/$cur.png" &&
             notify-send "Screenshot saved as $cur.png"
     }
