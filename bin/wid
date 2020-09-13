@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Allows for xdotool to detect and move openbox windows
+# Allows for xdotool to detect openbox windows
 
 xwininfo -tree -id "$1" |
     while IFS=: read property value; do
