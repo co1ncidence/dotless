@@ -1,6 +1,6 @@
 #!/bin/sh
-#
-# All purpose file extractor script
+# EXT:
+# An all purpose file extractor script
 
 usage() {
     >&2 printf '%s\n' "Usage: ${0##*/} [-c copy_path] file"
