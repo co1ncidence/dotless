@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #
 # Open LibreOffice with a nice light theme
+#
 
 GTK_THEME=Macha libreoffice & disown

@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # Clean ~~your~~ my home dir!
+#
 
 rm -rf ~/.cache/
 rm -rf ~/.dbus/

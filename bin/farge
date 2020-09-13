@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # Simple CLI colorpicker
+#
 
 VERSION="1.0.8"
 TEMP_DIR=/tmp/farge

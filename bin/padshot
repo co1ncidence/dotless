@@ -2,6 +2,7 @@
 #
 # take a screenshot with some padding
 # also saves to clipboard
+#
 
 PADDING=25
 DIR=$HOME/usr/pic/scrots/

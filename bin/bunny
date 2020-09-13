@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # Display a cute ASCII bunny
+#
 
 echo ' ' ; echo '(\(\' ; echo '(-.-)' ; echo 'o_(")(")' ; echo ' '
 

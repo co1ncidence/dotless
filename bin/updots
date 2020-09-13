@@ -1,11 +1,10 @@
 #!/bin/sh
 #
 # Stupid Script that updates my dotfiles
+#
 
-# set the date variable for the commit msg
 msg="$(date)"
 
-#update dotless
 cp -r ~/etc/ ~/git/dotless/
 rm -rf ~/git/dotless/etc/nvim/plugged/
 rm -rf ~/git/dotless/etc/nvim/spell/
@@ -44,7 +43,6 @@ rm -rf ~/git/dotless/etc/user-dirs.dirs
 rm -rf ~/git/dotless/etc/MusicBrainz/
 rm -rf ~/git/dotless/etc/skanliterc
 
-# push to github
 cd ~/git/dotless/
 git add . && git commit -m "${msg}"
 git push origin master

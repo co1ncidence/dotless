@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # Minimal uptime check
+#
 
 read -r uptime _ < /proc/uptime
 

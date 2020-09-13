@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Test a font for all the testies
+#
 
 clear
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # birch - a simple irc client in bash
+#
 
 clean() {
     # '\e[?7h':    Re-enable line wrapping.
