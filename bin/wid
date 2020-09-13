@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Allows for xdotool to detect and move openbox windows
+
+xwininfo -tree -id "$1" |
+    while IFS=: read property value; do
+        case "$property" in
+            *Parent*)
+                echo "${value%\(*}"
+                break
+                ;;
+        esac
+    done

@@ -11,7 +11,7 @@ alt + shift + x
   oblogout
 
 super + shift + {h,l,j,k}
-  xdotool windowmove --relative -- $(get_parent_wid_of $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
+  xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
 
 super + q
   . ~/usr/bin/noti
