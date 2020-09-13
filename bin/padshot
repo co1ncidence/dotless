@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# take a screenshot with some padding
+
+PADDING=20
+DIR=$HOME/usr/pic/scrots/
+
+mkdir -p "$DIR"
+
+id=$(slw) &&
+    wattr xywhb "$id" | {
+        read -r x y w h b
+
+        # get dimensions & coordinates
+        w=$((w + PADDING * 2))
+        h=$((h + PADDING * 2))
+        x=$((x - PADDING + b))
+        y=$((y - PADDING + b))
+
+        cur=$(date +%F_%H-%M-%S)
+
+        shotgun -g "${w}x${h}+$x+$y" "$DIR/$cur.png" &&
+            notify-send "Screenshot saved as $cur.png"
+    }

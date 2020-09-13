@@ -2,7 +2,7 @@ alt + shift + e
   maim -s -u -m 10 | xclip -selection clipboard -t image/png
 
 alt + shift + d
-  maim -s -u -m 10 ~/usr/pic/scrots/$(date '+%Y-%m-%d_%H-%M-%S').png
+  ~/usr/bin/padshot
 
 alt + shift + r
   scr -m s -f 60 -c ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
