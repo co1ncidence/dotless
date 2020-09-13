@@ -26,7 +26,7 @@ For more information on how to make your home directory **spot-free**, check out
 ## `bin` Attributions
 `birch` and `shfm` both belong to [dylanaraps](https://github.com/dylanaraps)
 
-`scr` and `timer` both belong to [6gk](https://github.com/6gk)
+`scr`, `feth.sh`, and `timer` all belong to [6gk](https://github.com/6gk)
 
 `farge` and `fontpreview` both belong to [sdushantha](https://github.com/sdushantha/)
 
