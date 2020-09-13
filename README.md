@@ -13,6 +13,12 @@
 
 </p>
 
+<p align="center"
+
+![img](screenshots/what20.png)
+
+</p>
+
 ## See More Rices [Here](https://co1ncidence.github.io/rices/)
 
 For more information on how to make your home directory **spot-free**, check out [declutter-home](https://github.com/vizs/declutter-home).
