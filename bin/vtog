@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# Convert a video to a GIF
+# Convert a video to a GIF using ffmpeg
+# Kinda works
 
 ffmpeg \
 	-ss 0 \

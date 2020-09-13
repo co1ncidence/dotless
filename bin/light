@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Display brightness level
+# Best used with my sxhkd config
 
 dunstctl close-all && \
 

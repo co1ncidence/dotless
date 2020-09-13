@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# Allows for xdotool to detect openbox windows
+# Prints window ID for xdotool
+# Will soon replace xwininfo with wmutils
 
 xwininfo -tree -id "$1" |
     while IFS=: read property value; do

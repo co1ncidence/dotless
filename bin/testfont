@@ -37,12 +37,3 @@ echo 'Condimentum justo finibus feugiat laoreet. Nullam finibus sem semper nunc'
 echo 'hendrerit. Maecenas suscipit magna sit amet augue pharetra, a iaculis nunc.'
 
 echo ''
-
-
-
-if [ $# -ne 0 ]
-  then
-    echo '           '
-
-    echo ''
-fi
