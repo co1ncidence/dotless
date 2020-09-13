@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Bergen Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Roboto Mono Medium:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -118,28 +118,28 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#1d201d", /* "#050505", "#303030", black  */
-  [1] = "#726768", /* "#AC8A8C", "#D5BBBC", red    */
-  [2] = "#677267", /* "#8AAC8B", "#BBD5BD", green  */
-  [3] = "#717267", /* "#ACA98A", "#D5D5BB", yellow */
-  [4] = "#676772", /* "#8F8AAC", "#BCBBD5", blue   */
-  [5] = "#726770", /* "#AC8AAC", "#D5BBD3", purple */
-  [6] = "#677272", /* "#8AABAC", "#BBD5D4", cyan   */
-  [7] = "#d7dad7", /* "#f0f0f0", "#e7e7e7", white  */
+  [0] = "#050505", /* "#303030", black  */
+  [1] = "#AC8A8C", /* "#D5BBBC", red    */
+  [2] = "#8AAC8B", /* "#BBD5BD", green  */
+  [3] = "#ACA98A", /* "#D5D5BB", yellow */
+  [4] = "#8F8AAC", /* "#BCBBD5", blue   */
+  [5] = "#AC8AAC", /* "#D5BBD3", purple */
+  [6] = "#8AABAC", /* "#BBD5D4", cyan   */
+  [7] = "#f0f0f0", /* "#e7e7e7", white  */
 
   /* 8 bright colors */
-  [8]  = "#2f342f", /* "#191919",  "#3d3d3d", black  */
-  [9]  = "#726768", /* "#C49EA0",  "#dcc7c8", red    */
-  [10] = "#677267", /* "#9EC49F",  "#c7dcca", green  */
-  [11] = "#717267", /* "#C4C19E",  "#dcdcc7", yellow */
-  [12] = "#676772", /* "#A39EC4",  "#c8c7dc", blue   */
-  [13] = "#726770", /* "#C49EC4",  "#dcc7db", purple */
-  [14] = "#677272", /* "#9ec3c4",  "#c7dcdc", cyan   */
-  [15] = "#e1e4e1", /* "#fafafa",  "#f0f0f0", white  */
+  [8]  = "#191919", /* "#3d3d3d", black  */
+  [9]  = "#C49EA0", /* "#dcc7c8", red    */
+  [10] = "#9EC49F", /* "#c7dcca", green  */
+  [11] = "#C4C19E", /* "#dcdcc7", yellow */
+  [12] = "#A39EC4", /* "#c8c7dc", blue   */
+  [13] = "#C49EC4", /* "#dcc7db", purple */
+  [14] = "#9ec3c4", /* "#c7dcdc", cyan   */
+  [15] = "#fafafa", /* "#f0f0f0", white  */
 
   /* special colors */
-  [256] = "#0a0b0a", /* background */
-  [257] = "#ebedeb", /* foreground */
+  [256] = "#050505", /* background */
+  [257] = "#f0f0f0", /* foreground */
 };
 
 /*
