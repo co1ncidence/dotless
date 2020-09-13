@@ -117,7 +117,7 @@ window.active.button.disabled.image.color: #050505
 
 ### Inactive windows ###
 window.inactive.title.bg: Solid Flat
-window.inactive.title.bg.color: #191919
+window.inactive.title.bg.color: #050505
 window.inactive.title.bg.border.color: #f0f0f0
 
 window.inactive.label.bg: Parentrelative

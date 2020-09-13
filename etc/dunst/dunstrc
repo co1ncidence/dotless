@@ -10,12 +10,12 @@
     padding = 8
     horizontal_padding = 8
     frame_width = 30
-    frame_color = "#0a0b0a"
+    frame_color = "#050505"
     separator_color = frame
     sort = yes
     idle_threshold = 120
 
-    font = Cartograph Sans CF 12
+    font = Roboto Mono Light 12
 
     line_height = 0
     markup = no
@@ -57,17 +57,17 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#0a0b0a"
-    foreground = "#ebedeb"
+    background = "#050505"
+    foreground = "#f0f0f0"
     timeout = 10
 
 [urgency_normal]
-    background = "#0a0b0a"
-    foreground = "#ebedeb"
+    background = "#050505"
+    foreground = "#f0f0f0"
     timeout = 10
 
 [urgency_critical]
-    background = "#0a0b0a"
-    foreground = "#ebedeb"
-    frame_color = "#0a0b0a"
+    background = "#050505"
+    foreground = "#f0f0f0"
+    frame_color = "#050505"
     timeout = 0

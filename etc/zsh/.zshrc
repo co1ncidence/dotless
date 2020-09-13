@@ -52,6 +52,7 @@ alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 alias reconf="openbox --reconfigure"
 alias doctopdf="pandoc -s -o"
+alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
 
 # PROMPT
 PROMPT='%B%F{white}%1~%f%b '
