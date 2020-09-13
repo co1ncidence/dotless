@@ -1,8 +1,9 @@
 #!/bin/sh
 #
 # take a screenshot with some padding
+# also saves to clipboard
 
-PADDING=20
+PADDING=25
 DIR=$HOME/usr/pic/scrots/
 
 mkdir -p "$DIR"
@@ -19,6 +20,6 @@ id=$(slw) &&
 
         cur=$(date +%F_%H-%M-%S)
 
-        maim -g "${w}x${h}+$x+$y" "$DIR/$cur.png" &&
-            notify-send "Screenshot saved as $cur.png"
+        maim -m 10 -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png &&
+            notify-send "Screenshot Taken"
     }
