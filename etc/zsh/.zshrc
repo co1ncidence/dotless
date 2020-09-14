@@ -3,7 +3,7 @@ set -k
 setopt auto_cd
 setopt autocd extendedglob nomatch notify
 
-# autocomplete stuff
+# Autocomplete settings
 setopt NO_NOMATCH
 setopt complete_in_word
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -14,21 +14,23 @@ zstyle ':completion:*' matcher-list \
 autoload -U compinit && compinit -C
 
 
-# compinit
+# Compinit
 autoload -Uz compinit
 compinit
 
-# history settings
+# History Settings
 setopt hist_ignore_dups
 HISTFILE=~/etc/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-# RANDOM SETTINGS
+# Don't beep
 unsetopt beep
+
+# Emacs bindings
 bindkey -e
 
-# aliases
+# Aliases
 alias walls="cd ~/usr/pic/wallpapers/"
 alias df="df -h /dev/sda3"
 alias nvimrc="nvim ~/etc/nvim/init.vim"
@@ -55,5 +57,5 @@ alias convert="pandoc -s -o"
 alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
 alias tree="tree -C"
 
-# PROMPT
+# Prompt
 PROMPT='%B%F{red}%1~%f%b '
