@@ -1,9 +1,7 @@
-#!/bin/sh
-#
-# Push a repo to it's origin master
-#
-
-msg="$(date)"
+#! /bin/sh
+[ -z "$1" ] && \
+    msg="$(date +%H:%M:%S)" || \
+    msg="$1"
 
 git add .
 git commit -m "${msg}"

@@ -44,5 +44,11 @@ rm -rf ~/git/dotless/etc/MusicBrainz/
 rm -rf ~/git/dotless/etc/skanliterc
 
 cd ~/git/dotless/
-git add . && git commit -m "${msg}"
+
+[ -z "$1" ] && \
+    msg="$(date +%H:%M:%S)" || \
+    msg="$1"
+
+git add .
+git commit -m "${msg}"
 git push origin master

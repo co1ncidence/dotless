@@ -22,7 +22,7 @@ super + q
 super + b
   ~/usr/bin/school
 
-super + o
+super + u
   ~/usr/bin/shf
 
 super + Up
@@ -31,8 +31,8 @@ super + Up
 super + Down
   xbacklight -dec 10 -time 0 && . ~/usr/bin/light
 
-super + Right
+super + p
   amixer --quiet set Master 10%+ && . ~/usr/bin/vol
 
-super + Left
+super + o
   amixer --quiet set Master 10%- && . ~/usr/bin/vol
