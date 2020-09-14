@@ -12,32 +12,32 @@ let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
-" toggle line numbers
+" Toggle line numbers
 nnoremap <C-x> :set nonumber! norelativenumber!<CR>
 
-" toggle cursorline
+" Toggle cursorline
 nnoremap <C-a> :set cursorline!<CR>
 
-" split keybinds
+" Keybinds for navigating splits
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
-" k = gk22?
+" Let j and k navigate longer lines
 noremap k gk
 noremap j gj
 
-" move lines around
+" Move a lin up or down
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 
-" Correct typos
+" Correct any types on current line
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-" UI based settings
+" Color Settings
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
@@ -45,60 +45,62 @@ set background=dark
 set t_Co=254
 syntax on
 colorscheme mountaineer-grey
+
+" Look and feel
 set ruler
 set laststatus=2
 set noshowmode
 set linebreak
 set hidden
 
-" more natural vim splitting
+" Split Properly
 set splitbelow
 set splitright
 
-" indendation settings
+" Indentation
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 filetype indent on
 
-" more mnml
+" No Show CMD
 set noshowcmd
 
-" folding settings
+" Folding Settings
 set foldmethod=manual
 set foldnestmax=3
 set foldenable
 
-" misc settings
+" Other settings
 set wildmenu
 set lazyredraw
 set scrolloff=3
 set autoread
 
-" search settings
+" Search Settings
 set incsearch
 set hlsearch
 set ignorecase
 let g:rehash256 = 1
 
-" undo, shell, backspace, and mouse settings
+" MORE SETTINGS
 set history=1000
 set shell:bash
 set backspace=indent,eol,start
 
-" whitespace control
+" Detect whitespace and color as red
 hi!  ExtraWhitespace ctermbg=red guibg=red
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call  clearmatches()
 
-" spellcheck only for .md and .tex
+" Spellcheck only for .md and .tex
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType tex setlocal spell spelllang=en_us
 
-" sources
+" Sources
 source ~/etc/nvim/statusline.vim
 source ~/etc/nvim/plugins.vim
 source ~/etc/nvim/plugin-settings.vim
