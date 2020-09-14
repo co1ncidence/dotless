@@ -5,7 +5,7 @@ if &term =~ '256color'
 endif
 
 " File tree settings
-nnoremap <C-n> :Vexplore!<CR>
+nnoremap <C-n> :Vexplore!<CR> " Opens file tree
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 3
@@ -34,7 +34,8 @@ nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 
-" Correct any types on current line
+" Correct any typos on current line
+" Works if you have spellcheck turned on
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " Color Settings
