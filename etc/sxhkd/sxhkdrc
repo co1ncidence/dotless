@@ -14,7 +14,7 @@ super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
 
 alt + {h,j,k,l}
-      wrs {-20 0, 0 20, 0 -20, 20 0} $(pfw)
+      wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
 super + q
   . ~/usr/bin/noti

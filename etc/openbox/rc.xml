@@ -307,7 +307,7 @@
       </action>
     </keybind>
     <!-- snap windows -->
-    <keybind key="W-j">
+    <keybind key="S-C-h">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
@@ -317,7 +317,7 @@
         <direction>west</direction>
       </action>
     </keybind>
-    <keybind key="W-k">
+    <keybind key="S-C-l">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
