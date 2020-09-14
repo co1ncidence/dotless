@@ -8,6 +8,6 @@ choice=$(echo -e "todo\nassignments\n'               '"| \
 
 case "$choice" in
   todo) st -e nvim ~/usr/doc/school/huma-1301/todo.md & disown ;;
-  assignments) cd ~/usr/doc/school/huma-1301 ; st & disown ;;
+  assignments) cd ~/usr/doc/school/huma-1301/assignments/ ; st & disown ;;
   space) echo ' ' & ;;
 esac
