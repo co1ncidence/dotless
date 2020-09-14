@@ -44,7 +44,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme base16-tomorrow-night
+colorscheme mountaineer-grey
 set ruler
 set laststatus=2
 set noshowmode

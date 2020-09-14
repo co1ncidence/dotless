@@ -156,7 +156,7 @@ static unsigned int defaultrcs = 257;
  * 2: Block ("█")
  * 4: Underline ("_")
  * 6: Bar ("|")
- * 7: Snowman ("☃")
+ * 7: Snowman ("FUCK")
  */
 static unsigned int cursorshape = 4;
 
@@ -341,7 +341,6 @@ static Key key[] = {
 	{ XK_Left,    ShiftMask|ControlMask,"\033[1;6D",     0,    0},
 	{ XK_Left,     ControlMask|Mod1Mask,"\033[1;7D",     0,    0},
 	{ XK_Left,ShiftMask|ControlMask|Mod1Mask,"\033[1;8D",0,    0},
-	{ XK_Left,          XK_ANY_MOD,     "\033[D",        0,   -1},
 	{ XK_Left,          XK_ANY_MOD,     "\033OD",        0,   +1},
 	{ XK_Right,         ShiftMask,      "\033[1;2C",     0,    0},
 	{ XK_Right,         Mod1Mask,       "\033[1;3C",     0,    0},
