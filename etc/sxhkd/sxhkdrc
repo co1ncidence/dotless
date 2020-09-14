@@ -22,6 +22,9 @@ super + q
 super + b
   ~/usr/bin/school
 
+super + o
+  ~/usr/bin/shf
+
 super + Up
   xbacklight -inc 10 -time 0 && . ~/usr/bin/light
 

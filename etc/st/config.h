@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono Medium:pixelsize=16:antialias=true:autohint=true";
+static char *font = "iA Writer Mono V:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
