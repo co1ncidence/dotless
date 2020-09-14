@@ -9,5 +9,6 @@ Plug 'ap/vim-css-color'
 Plug 'plasticboy/vim-markdown'
 Plug 'reedes/vim-pencil'
 Plug 'sheerun/vim-polyglot'
+Plug 'lervag/vimtex'
 
 call plug#end()
