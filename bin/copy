@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Copies a file to the clipboard
+#
+
+cat "$1" | xclip -selection clipboard
