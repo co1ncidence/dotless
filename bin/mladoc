@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Create and MLA formatted Document in LaTeX
+#
+
+cp ~/usr/bin/classes/mla.tex ./essay.tex

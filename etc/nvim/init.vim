@@ -44,7 +44,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme gunmetal-grey
+colorscheme base16-tomorrow-night
 set ruler
 set laststatus=2
 set noshowmode
@@ -75,7 +75,6 @@ set wildmenu
 set lazyredraw
 set scrolloff=3
 set autoread
-let g:netrw_winsize = 25
 
 " search settings
 set incsearch
