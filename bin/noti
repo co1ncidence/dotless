@@ -3,6 +3,6 @@
 # Display an all inclusive notification
 #
 
-dunstctl close-all && \
+pkill herbe &
 
-dunstify "`date +'%I:%M %P' ; echo ' ' ; date +'%a, %b %d' ; echo ' ' ;cat /sys/class/power_supply/BAT0/capacity`% Remaining"
+herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(cat /sys/class/power_supply/BAT0/capacity)% Remaining"

@@ -4,6 +4,6 @@
 # Best used with my sxhkd config
 #
 
-dunstctl close-all && \
+pkill herbe &
 
-notify-send "`echo 'Brightness' ; echo ' ' ; xbacklight -get`" -t 500
+herbe "Brightness" " " "$(xbacklight -get)"

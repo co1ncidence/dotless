@@ -4,6 +4,6 @@
 # Best used with my sxhkd config
 #
 
-dunstctl close-all && \
+pkill herbe &
 
-dunstify "`echo 'Volume' ; echo ' ' ; amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'`" -t 500
+herbe "Volume: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
