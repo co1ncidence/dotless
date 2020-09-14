@@ -5,7 +5,7 @@
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
 # actual programs
-hsetroot -solid '#f0f0f0'
+hsetroot -solid '#dddddd'
 picom -b --config ~/etc/picom/picom.conf &
 sxhkd -c ~/etc/sxhkd/sxhkdrc &
 dunst -conf ~/etc/dunst/dunstrc &

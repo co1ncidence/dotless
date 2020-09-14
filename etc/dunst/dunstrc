@@ -1,9 +1,9 @@
 [global]
 monitor = 0
 follow = mouse
-geometry = "200x60-30+30"
+geometry = "300x60-30+30"
 indicate_hidden = yes
-shrink = no
+shrink = yes
 separator_height = 0
 padding = 32
 horizontal_padding = 32
