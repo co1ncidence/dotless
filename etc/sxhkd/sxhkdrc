@@ -16,7 +16,7 @@ alt + shift + r
 
 # move a window around
 super + shift + {h,l,j,k}
-  xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
+  xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-75 y,75 y,x 75,x -75}
 
 # resize current window
 alt + {h,j,k,l}
