@@ -1,38 +1,51 @@
+# centers a window
 super + c
   centerwindow
 
+# screenshot an image and pipe to clipboard
 alt + shift + e
   maim -s -u -m 10 | xclip -selection clipboard -t image/png
 
+# take a screenshot with padding
 alt + shift + d
   ~/usr/bin/padshot
 
+# record a vide via selection
 alt + shift + r
   scr -m s -f 60 -c ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
 
+# move a window around
 super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-100 y,100 y,x 100,x -100}
 
+# resize current window
 alt + {h,j,k,l}
       wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
+# send an all-inclusive notification
 super + q
   . ~/usr/bin/noti
 
+# open up my school menu
 super + b
   ~/usr/bin/school
 
+# change wallpaper
 super + u
   ~/usr/bin/shf
 
+# increase brightness and tell me the level
 super + Up
   xbacklight -inc 10 -time 0 && . ~/usr/bin/light
 
+# decrease brightness and tell me the level
 super + Down
   xbacklight -dec 10 -time 0 && . ~/usr/bin/light
 
+# increase volume and tell me the level
 super + p
   amixer --quiet set Master 10%+ && . ~/usr/bin/vol
 
+# decrease volume and tell me the level
 super + o
   amixer --quiet set Master 10%- && . ~/usr/bin/vol
