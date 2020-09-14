@@ -195,18 +195,6 @@
         <wrap>yes</wrap>
       </action>
     </keybind>
-    <keybind key="W-k">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-j">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
     <keybind key="S-A-h">
       <action name="SendToDesktopLeft"/>
     </keybind>
@@ -291,7 +279,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Dina" -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505'</command>
+        <command>dmenu_run -fn "Dina" -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323'</command>
       </action>
     </keybind>
     <!-- passmenu -->
@@ -319,7 +307,7 @@
       </action>
     </keybind>
     <!-- snap windows -->
-    <keybind key="W-Left">
+    <keybind key="W-j">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
@@ -329,7 +317,7 @@
         <direction>west</direction>
       </action>
     </keybind>
-    <keybind key="W-Right">
+    <keybind key="W-k">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">

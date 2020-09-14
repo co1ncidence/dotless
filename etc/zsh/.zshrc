@@ -53,6 +53,7 @@ alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 alias reconf="openbox --reconfigure"
 alias convert="pandoc -s -o"
 alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
+alias tree="tree -C"
 
 # PROMPT
 PROMPT='%B%F{red}%1~%f%b '

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/co1ncidence/var/themes/graywindow/openbox-3'
 let g:netrw_dirhist_3='/home/co1ncidence/usr/bin/classes'
 let g:netrw_dirhist_2='/home/co1ncidence/etc/nvim'
 let g:netrw_dirhist_1='/home/co1ncidence/git/dotless'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_8='/home/co1ncidence/usr/bin'
 let g:netrw_dirhist_7='/home/co1ncidence/usr'
 let g:netrw_dirhist_6='/home/co1ncidence'
 let g:netrw_dirhist_5='/home/co1ncidence/usr'
-let g:netrw_dirhist_4='/home/co1ncidence'
