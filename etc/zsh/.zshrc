@@ -57,5 +57,8 @@ alias convert="pandoc -s -o"
 alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
 alias tree="tree -C"
 
+# Pfetch
+export PF_ASCII="linux"
+
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
