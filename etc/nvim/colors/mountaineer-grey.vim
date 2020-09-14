@@ -24,8 +24,8 @@ let g:base16_gui01 = "303030"
 let s:gui02        = "3d3d3d"
 let g:base16_gui02 = "3d3d3d"
 
-let s:gui03        = "999999"
-let g:base16_gui03 = "999999"
+let s:gui03        = "545454"
+let g:base16_gui03 = "545454"
 
 let s:gui04        = "b6b6b6"
 let g:base16_gui04 = "b6b6b6"
@@ -222,7 +222,7 @@ call <sid>hi("WildMenu",      s:gui08, s:gui0A, s:cterm08, "", "", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "", "")
-call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("NonText",       s:gui00, "", s:cterm00, "", "", "")
 call <sid>hi("LineNr",        s:gui02, s:gui00, s:cterm03, s:cterm01, "", "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none", "")
