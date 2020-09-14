@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Record a fullscreen video with ffmpeg
+# Toggleable!
+#
+
+pgrep -x ffmpeg && pkill ffmpeg || \
+
+ffmpeg \
+    -video_size 1366x768 \
+    -framerate 30 \
+    -f x11grab \
+    -i :0.0 \
+    -c:v libx264 \
+    -crf 0 \
+    -preset ultrafast \
+    -y \
+    $HOME/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
