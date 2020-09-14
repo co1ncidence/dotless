@@ -1,7 +1,7 @@
 " FZF Menu
 map <C-p> :Files<CR>
 
-" Pencil only for Markdown
+" Pencil only For Markdown
 set nocompatible
 filetype plugin on
 let g:pencil#textwidth = 80
