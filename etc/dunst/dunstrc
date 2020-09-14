@@ -15,7 +15,7 @@
     sort = yes
     idle_threshold = 120
 
-    font = Roboto Mono Light 12
+    font = Crisp 12
 
     line_height = 0
     markup = no

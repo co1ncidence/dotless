@@ -4,7 +4,7 @@
 #
 
 choice=$(echo -e "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\n'               '"| \
-  dmenu -fn 'Roboto Mono Medium' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
+  dmenu -fn 'Dina' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
 
 case "$choice" in
   zohomail) cat $HOME/usr/doc/savefiles/pass/zohomail.txt | xclip -selection clipboard & ;;

@@ -4,7 +4,7 @@
 #
 
 choice=$(echo -e "pdf\npng\nppt\ntxt\n'               '"| \
-  dmenu -fn 'Roboto Mono Medium' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
+  dmenu -fn 'Dina' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
 
 case "$choice" in
   pdf) st -e ranger ~/usr/doc/school/doc/pdf/ & disown ;;
