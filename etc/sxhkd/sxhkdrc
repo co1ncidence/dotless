@@ -20,7 +20,7 @@ super + q
   . ~/usr/bin/noti
 
 super + b
-  ~/usr/bin/shf
+  ~/usr/bin/school
 
 super + Up
   xbacklight -inc 10 -time 0 && . ~/usr/bin/light

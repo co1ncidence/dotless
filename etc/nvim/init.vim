@@ -1,4 +1,3 @@
-" nuaNce's init.vim
 
 " fix weird colors in tmux
 if &term =~ '256color'

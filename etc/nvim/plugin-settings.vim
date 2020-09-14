@@ -21,9 +21,8 @@ let g:vim_markdown_strikethrough = 1
 let g:vim_markdown_autowrite = 1
 let g:vim_markdown_edit_url_in = 'tab'
 let g:vim_markdown_follow_anchor = 1
-let g:vim_markdown_folding_level = 6
 
-" Markdown file settings
+" automatically set filetype as markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 " HTML
@@ -47,11 +46,3 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
-
-" TeX Settings
-let g:tex_fast = "bMpr"
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-let g:tex_conceal = ""
-let g:tex_conceal='abdmg'

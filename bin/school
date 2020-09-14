@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# dmenu script to manage my school workflow
+#
+
+choice=$(echo -e "comp2\nhumanities\n'               '"| \
+  dmenu -fn 'Roboto Mono Medium' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
+
+case "$choice" in
+  comp2) . ~/usr/bin/classes/comp2 & disown ;;
+  humanities) . ~/usr/bin/classes/humanities & disown ;;
+  space) echo ' ' & ;;
+esac
