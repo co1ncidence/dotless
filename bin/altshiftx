@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# dmenu script to manage my school workflow
+#
+
+choice=$(echo -e "logout\nrestart\nshutdown\nsuspend\n'               '"| \
+  dmenu -fn 'Dina' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
+
+case "$choice" in
+  logout) openbox --exit ;;
+  restart) systemctl reboot ;;
+  shutdown) systemctl poweroff ;;
+  suspend) systemctl suspend ;;
+  space) echo ' ' & ;;
+esac

@@ -2,6 +2,10 @@
 super + c
   centerwindow
 
+# logout menu
+alt + shift + x
+  ~/usr/bin/altshiftx
+
 # screenshot an image and pipe to clipboard
 alt + shift + e
   maim -s -u -m 10 | xclip -selection clipboard -t image/png
