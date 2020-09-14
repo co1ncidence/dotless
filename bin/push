@@ -1,4 +1,9 @@
 #! /bin/sh
+#
+# Push a repo to master branch with a message you give
+# Uses date if no message is given
+#
+
 [ -z "$1" ] && \
     msg="$(date +%H:%M:%S)" || \
     msg="$1"

@@ -1,19 +1,15 @@
 #!/bin/sh
 #
-# take a screenshot with some padding
-# also saves to clipboard
+# Take a screenshot with some padding
+# Also saves to clipboard
 #
 
-PADDING=25
-DIR=$HOME/usr/pic/scrots/
-
-mkdir -p "$DIR"
+PADDING=30
 
 id=$(slw) &&
     wattr xywhb "$id" | {
         read -r x y w h b
 
-        # get dimensions & coordinates
         w=$((w + PADDING * 2))
         h=$((h + PADDING * 2))
         x=$((x - PADDING + b))
@@ -22,5 +18,5 @@ id=$(slw) &&
         cur=$(date +%F_%H-%M-%S)
 
         maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png &&
-            notify-send "Screenshot Taken"
+            herbe "Screenshot Taken"
     }

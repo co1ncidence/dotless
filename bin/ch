@@ -7,4 +7,3 @@ rm -rf ~/.cache/
 rm -rf ~/.dbus/
 rm -rf ~/.pki/
 rm -rf ~/.icons/
-rm -rf ~/.w3m/

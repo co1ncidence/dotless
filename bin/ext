@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# An all purpose extractor
+# An all purpose archive extractor
 #
 
 usage() {

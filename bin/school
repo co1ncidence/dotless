@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# dmenu script to manage my school workflow
+# Dmenu script to manage my school workflow
 #
 
 choice=$(echo -e "schooldocs\ncomp2\nhumanities\n'               '"| \

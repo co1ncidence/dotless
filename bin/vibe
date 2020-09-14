@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Simple script to vibe
-# to a random song
+# Chooses a random file from the specified dir
 #
 
 exec mpv --geometry=200x200+1600+800 \

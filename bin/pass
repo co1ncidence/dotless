@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# dmenu script to copy my passwords to clipboard
+# Dmenu script to copy my passwords to clipboard
+# Might be "insecure" as of yet, but a workaround is coming soon
 #
 
 choice=$(echo -e "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
