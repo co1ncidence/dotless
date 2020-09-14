@@ -42,6 +42,7 @@ rm -rf ~/git/dotless/etc/user-dirs.locale
 rm -rf ~/git/dotless/etc/user-dirs.dirs
 rm -rf ~/git/dotless/etc/MusicBrainz/
 rm -rf ~/git/dotless/etc/skanliterc
+rm -rf ~/git/dotless/etc/inkscape/
 
 cd ~/git/dotless/
 
