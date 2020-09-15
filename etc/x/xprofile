@@ -4,6 +4,9 @@
 
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
+# repeat rate
+xset r rate 250 50
+
 # actual programs
 hsetroot -solid '#dddddd'
 picom -b --config ~/etc/picom/picom.conf &
