@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Simple script to archive a folder
 #

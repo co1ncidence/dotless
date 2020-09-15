@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Prints window ID for xdotool
 # Best used for moving windows

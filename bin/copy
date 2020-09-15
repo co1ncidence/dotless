@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Copies contents of a file to the clipboard
 #

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Stupid Script that updates my dotfiles
 #

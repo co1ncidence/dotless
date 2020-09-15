@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/dash
 #
 # Dmenu script to copy my passwords to clipboard
 # Might be "insecure" as of yet, but a workaround is coming soon
@@ -6,7 +6,7 @@
 
 pass=$HOME/usr/doc/savefiles/pass
 
-choice=$(echo -e "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
+choice=$(echo "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
   dmenu -fn 'Dina' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
 
 case "$choice" in

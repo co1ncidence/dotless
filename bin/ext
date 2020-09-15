@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # An all purpose archive extractor
 #

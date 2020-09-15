@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Take a screenshot with some padding
 # Also saves to clipboard

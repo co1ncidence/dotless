@@ -1,10 +1,12 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Record a fullscreen video with ffmpeg
 # Toggleable!
 #
 
-pgrep -x ffmpeg && pkill ffmpeg || 
+herbe "Recording Starts Soon..." && \
+
+pgrep -x ffmpeg && pkill ffmpeg || \
 
 ffmpeg \
     -video_size 1366x768 \
@@ -16,3 +18,5 @@ ffmpeg \
     -preset ultrafast \
     -y \
     $HOME/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+
+

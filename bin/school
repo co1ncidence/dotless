@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/dash
 #
 # Dmenu script to manage my school workflow
 #
 
-choice=$(echo -e "schooldocs\ncomp2\nhumanities\n'               '"| \
+choice=$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
   dmenu -fn 'Dina' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
 
 case "$choice" in

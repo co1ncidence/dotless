@@ -1,11 +1,10 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Simple script to vibe
 # Point to a file or URL
 #
 
-exec mpv --geometry=200x200+1600+800 \
-         --x11-name=no-title \
+exec mpv --x11-name=no-title \
          --no-video \
          --shuffle \
          "$@" \

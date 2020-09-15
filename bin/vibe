@@ -1,11 +1,10 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Simple script to vibe
 # Chooses a random file from the specified dir
 #
 
-exec mpv --geometry=200x200+1600+800 \
-         --x11-name=no-title \
+exec mpv --x11-name=no-title \
          --no-video \
          --shuffle \
          -- "$@" "$HOME/usr/mus/"

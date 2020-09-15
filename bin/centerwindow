@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # Small script to center a window
 # Requires wmutils

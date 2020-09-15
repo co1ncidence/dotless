@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #
 # All purpose raw file download script
 #

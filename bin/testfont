@@ -1,11 +1,9 @@
-#!/bin/bash
+#!/bin/dash
 #
 # Test a font for all the testies
 #
 
 clear
-
-xrdb -query | grep URxvt.font | sed 's/^[^-]*://g' | sed 's/\t//g'
 
 echo ''
 
