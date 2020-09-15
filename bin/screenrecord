@@ -4,7 +4,7 @@
 # Toggleable!
 #
 
-pgrep -x ffmpeg && pkill ffmpeg || \
+pgrep -x ffmpeg && pkill ffmpeg || 
 
 ffmpeg \
     -video_size 1366x768 \
