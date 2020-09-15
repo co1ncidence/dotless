@@ -123,15 +123,15 @@
     <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
-      <name>5</name>
-      <name>6</name>
-      <name>7</name>
-      <name>9</name>
-      <name>10</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
+      <name>|</name>
     </names>
     <popupTime>250</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
