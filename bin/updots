@@ -40,11 +40,13 @@ rm -rf \
 	etc/dconf/    \
 	etc/gnupg/    \
 	etc/xfce4/    \
+	etc/enchant/  \
 	etc/gedit/    \
 	etc/qt5ct/    \
 	etc/procps    \
 	etc/gconf     \
 	etc/GIMP/     \
+	etc/yay/      \
   etc/git/
 rm -rf ~/git/dotless/bin/templates/
 rm -rf ~/git/dotless/bin/classes/
