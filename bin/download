@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 #
 # Download a song from Youtube
 #

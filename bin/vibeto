@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 #
 # Simple script to vibe
 # Point to a file or URL

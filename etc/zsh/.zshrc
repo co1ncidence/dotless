@@ -56,6 +56,7 @@ alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
 alias tree="tree -C"
 alias so="du -sh"
 alias sudo="doas"
+alias upx="xrdb -merge ~/etc/x/xresources"
 
 # Pfetch
 export PF_ASCII="linux"

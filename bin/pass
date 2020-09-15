@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 #
 # Dmenu script to copy my passwords to clipboard
 # Might be "insecure" as of yet, but a workaround is coming soon

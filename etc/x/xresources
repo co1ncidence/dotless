@@ -6,39 +6,47 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
+! urxvt shit
+URxvt.font: xft:Roboto Mono Medium:size=10
+URxvt.perl-ext-common:  ...,clipboard,...
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+
 ! special
-*.foreground:   #ebedeb
-*.background:   #0a0b0a
-*.cursorColor:  #ebedeb
+*.foreground:   #d9dbda
+*.background:   #232323
+*.cursorColor:  #d9dbda
 
 ! black
-*.color0:       #1d201d
-*.color8:       #2f342f
+*.color0:       #303030
+*.color8:       #3d3d3d
 
 ! red
-*.color1:       #726768
-*.color9:       #726768
+*.color1:       #D5BBBC
+*.color9:       #dcc7c8
 
 ! green
-*.color2:       #677267
-*.color10:      #677267
+*.color2:       #BBD5BD
+*.color10:      #c7dcca
 
 ! yellow
-*.color3:       #717267
-*.color11:      #717267
+*.color3:       #D5D5BB
+*.color11:      #dcdcc7
 
 ! blue
-*.color4:       #676772
-*.color12:      #676772
+*.color4:       #BCBBD5
+*.color12:      #c8c7dc
 
 ! magenta
-*.color5:       #726770
-*.color13:      #726770
+*.color5:       #D5BBD3
+*.color13:      #dcc7db
 
 ! cyan
-*.color6:       #677272
-*.color14:      #677272
+*.color6:       #BBD5D4
+*.color14:      #c7dcdc
 
 ! white
-*.color7:       #d7dad7
-*.color15:      #e1e4e1
+*.color7:       #e7e7e7
+*.color15:      #f0f0f0

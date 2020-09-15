@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 #
 # Push a repo to master branch with a message you give
 #
