@@ -10,12 +10,12 @@ choice=$(echo "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\nssn\n'     
   dmenu -fn 'Dina' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
 
 case "$choice" in
-	collegeboard) xclip -selection clipboard "$pass/collegeboard.txt";;
-  zohomail)  xclip -selection clipboard "$pass/zohomail.txt";;
-	discord)  xclip -selection clipboard "$pass/discord.txt" ;;
-	cougar)  xclip -selection clipboard "$pass/cougar.txt" ;;
-  gmail)  xclip -selection clipboard "$pass/gmail.txt" ;;
-  root)  xclip -selection clipboard "$pass/root.txt" ;;
-  ssn)  xclip -selection clipboard "$HOME/usr/doc/school/doc/txt/ssn.md" ;;
-  space) cat $HOME/usr/bin/pass | xclip -selection clipboard & ;;
+	collegeboard) xclip -sel clip "$pass/collegeboard.txt";;
+  zohomail)  xclip -sel clip "$pass/zohomail.txt";;
+	discord)  xclip -sel clip "$pass/discord.txt" ;;
+	cougar)  xclip -sel clip "$pass/cougar.txt" ;;
+  gmail)  xclip -sel clip "$pass/gmail.txt" ;;
+  root)  xclip -sel clip "$pass/root.txt" ;;
+  ssn)  xclip -sel clip "$HOME/usr/doc/school/doc/txt/ssn.md" ;;
+  space) cat $HOME/usr/bin/pass | xclip -sel clip & ;;
 esac

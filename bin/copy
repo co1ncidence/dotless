@@ -3,4 +3,4 @@
 # Copies contents of a file to the clipboard
 #
 
-cat "$1" | xclip -selection clipboard
+cat "$1" | xclip -sel clip

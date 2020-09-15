@@ -4,4 +4,3 @@
 #
 
 feh --bg-fill --randomize --no-fehbg ~/usr/pic/wallpapers/*
-#                          ^respects your home dir!
