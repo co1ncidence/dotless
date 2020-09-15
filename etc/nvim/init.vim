@@ -28,11 +28,11 @@ nnoremap <C-L> <C-W><C-L>
 noremap k gk
 noremap j gj
 
-" Move a lin up or down
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
+" Move a line up or down
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
 
 " Correct any typos on current line
 " Works if you have spellcheck turned on

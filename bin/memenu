@@ -1,0 +1,26 @@
+#!/bin/dash
+#
+# Higly opinionated dmenu meme script
+# Don't expect this to work for you XD
+#
+
+choice=$(echo "thonk
+rollsafe
+kellyshrug
+cringelist
+understandable
+gettheboat
+linusfinger
+'                             '"| \
+
+  dmenu -fn 'Dina' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
+
+case "$choice" in
+  thonk)           xclip -sel clip -t image/png "$HOME/usr/pic/mem/thonk.png"           ;;
+  rollsafe)        xclip -sel clip -t image/png "$HOME/usr/pic/mem/rollsafe.png"        ;;
+  kellyshrug)      xclip -sel clip -t image/png "$HOME/usr/pic/mem/kellyshrug.png"      ;;
+  cringelist)      xclip -sel clip -t image/png "$HOME/usr/pic/mem/cringelist.jpg"      ;;
+  understandable)  xclip -sel clip -t image/png "$HOME/usr/pic/mem/understandable.jpg"  ;;
+  gettheboat)      xclip -sel clip -t image/png "$HOME/usr/pic/mem/gettheboat.png"      ;;
+  linusfinger)     xclip -sel clip -t image/png "$HOME/usr/pic/mem/linusfinger.jpg"     ;;
+esac

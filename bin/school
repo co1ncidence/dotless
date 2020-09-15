@@ -10,5 +10,4 @@ case "$choice" in
   schooldocs) . ~/usr/bin/classes/schooldocs & disown ;;
   comp2) . ~/usr/bin/classes/comp2 & disown ;;
   humanities) . ~/usr/bin/classes/humanities & disown ;;
-  space) echo ' ' & ;;
 esac

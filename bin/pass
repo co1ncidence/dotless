@@ -17,5 +17,4 @@ case "$choice" in
   gmail)  xclip -sel clip "$pass/gmail.txt" ;;
   root)  xclip -sel clip "$pass/root.txt" ;;
   ssn)  xclip -sel clip "$HOME/usr/doc/school/doc/txt/ssn.md" ;;
-  space) cat $HOME/usr/bin/pass | xclip -sel clip & ;;
 esac

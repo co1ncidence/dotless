@@ -3,4 +3,4 @@
 # Shuffle Wallpaper
 #
 
-feh --bg-fill --randomize --no-fehbg ~/usr/pic/wallpapers/*
+feh --bg-fill --randomize --no-fehbg ~/usr/pic/wlp/*

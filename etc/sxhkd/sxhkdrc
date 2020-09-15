@@ -38,6 +38,10 @@ super + q
 super + b
   ~/usr/bin/school
 
+# open up the memenu
+super + m
+  ~/usr/bin/memenu
+
 # change wallpaper
 super + u
   ~/usr/bin/shf
