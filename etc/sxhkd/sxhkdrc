@@ -18,6 +18,10 @@ alt + shift + d
 alt + shift + r
   scr -m s -f 60 -c ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
 
+# record entire screen at 60fps
+alt + shift + t
+  ~/usr/bin/screenrecord ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+
 # move a window around
 super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-75 y,75 y,x 75,x -75}

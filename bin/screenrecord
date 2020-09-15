@@ -8,7 +8,7 @@ pgrep -x ffmpeg && pkill ffmpeg || \
 
 ffmpeg \
     -video_size 1366x768 \
-    -framerate 30 \
+    -framerate 60 \
     -f x11grab \
     -i :0.0 \
     -c:v libx264 \

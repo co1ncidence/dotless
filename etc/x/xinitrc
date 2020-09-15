@@ -3,6 +3,9 @@
 # Spoofed Xinit File
 # Sourced Directly from /usr/bin/startx
 
+# some settings
+xset r rate 250
+
 # load modmaps
 userresources="$XDG_CONFIG_HOME/x/xresources"
 usermodmap="$HOME/.Xmodmap"
