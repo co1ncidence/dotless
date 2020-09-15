@@ -3,19 +3,7 @@
 
 <p align="center"
 
-![img](screenshots/what13.png)
-
-</p>
-
-<p align="center"
-
-![img](screenshots/what12.png)
-
-</p>
-
-<p align="center"
-
-![img](screenshots/what18.png)
+![img](screenshots/what.png)
 
 </p>
 
