@@ -5,12 +5,12 @@
 
 msg="$(date)"
 
-cp -r ~/etc/ ~/git/dotless/
-rm -rf ~/git/dotless/etc/nvim/plugged/
-rm -rf ~/git/dotless/etc/nvim/spell/
-cp -r ~/usr/bin/ ~/git/dotless/
+cp -r ~/etc/ ~/usr/git/dotless/
+rm -rf ~/usr/git/dotless/etc/nvim/plugged/
+rm -rf ~/usr/git/dotless/etc/nvim/spell/
+cp -r ~/usr/bin/ ~/usr/git/dotless/
 cp -r ~/var/themes/graywindow/ ~/git/dotless/var/themes/
-cd ~/git/dotless/
+cd ~/usr/git/dotless/
 rm -rf \
 	etc/ranger/colorschemes/  \
 	etc/user-dirs.locale \
@@ -48,9 +48,9 @@ rm -rf \
 	etc/GIMP/     \
 	etc/yay/      \
   etc/git/
-rm -rf ~/git/dotless/bin/templates/
-rm -rf ~/git/dotless/bin/classes/
-rm -rf ~/git/dotless/bin/notmine/
+rm -rf ~/usr/git/dotless/bin/templates/
+rm -rf ~/usr/git/dotless/bin/classes/
+rm -rf ~/usr/git/dotless/bin/notmine/
 
 [ -z "$1" ] && \
     msg="docs:update" || \
