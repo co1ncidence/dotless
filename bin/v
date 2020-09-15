@@ -1,5 +1,0 @@
-#!/bin/sh
-#
-# Set volume easy and simply
-
-amixer set Master "$@"%

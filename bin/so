@@ -1,6 +1,0 @@
-#!/bin/sh
-#
-# Show size of a file/folder
-#
-
-[ "$1" ] && du -sh "$1" || exit 1

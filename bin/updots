@@ -10,42 +10,45 @@ rm -rf ~/git/dotless/etc/nvim/plugged/
 rm -rf ~/git/dotless/etc/nvim/spell/
 cp -r ~/usr/bin/ ~/git/dotless/
 cp -r ~/var/themes/graywindow/ ~/git/dotless/var/themes/
-rm -rf ~/git/dotless/etc/gnupg/
-rm -rf ~/git/dotless/etc/pulse/
-rm -rf ~/git/dotless/etc/git/
-rm -rf ~/git/dotless/etc/chromium/
-rm -rf ~/git/dotless/etc/libreoffice/
-rm -rf ~/git/dotless/etc/GIMP/
-rm -rf ~/git/dotless/etc/manjaro/
-rm -rf ~/git/dotless/etc/configstore/
-rm -rf ~/git/dotless/etc/dconf/
-rm -rf ~/git/dotless/etc/keepassxc/
-rm -rf ~/git/dotless/etc/xfce4/
-rm -rf ~/git/dotless/etc/pavucontrol.ini
-rm -rf ~/git/dotless/etc/gedit/
-rm -rf ~/git/dotless/etc/Thunar/
-rm -rf ~/git/dotless/etc/youtube-dlg/
-rm -rf ~/git/dotless/etc/.lesshst
-rm -rf ~/git/dotless/etc/QtProject.conf
-rm -rf ~/git/dotless/etc/mimeapps.list
-rm -rf ~/git/dotless/etc/zsh/.histfile
-rm -rf ~/git/dotless/etc/zsh/.zcompdump
-rm -rf ~/git/dotless/etc/zsh/.zshrc.zni
-rm -rf ~/git/dotless/etc/qalculate/
-rm -rf ~/git/dotless/etc/gtk-2.0/
-rm -rf ~/git/dotless/etc/gtk-3.0/
-rm -rf ~/git/dotless/etc/qt5ct/
-rm -rf ~/git/dotless/etc/ranger/colorschemes/
-rm -rf ~/git/dotless/etc/gconf
-rm -rf ~/git/dotless/etc/procps
-rm -rf ~/git/dotless/etc/user-dirs.locale
-rm -rf ~/git/dotless/etc/user-dirs.dirs
-rm -rf ~/git/dotless/etc/MusicBrainz/
-rm -rf ~/git/dotless/etc/skanliterc
-rm -rf ~/git/dotless/etc/inkscape/
-rm -rf ~/git/dotless/bin/templates/
-
 cd ~/git/dotless/
+rm -rf \
+	etc/ranger/colorschemes/  \
+	etc/user-dirs.locale \
+	etc/user-dirs.dirs   \
+	etc/pavucontrol.ini  \
+	etc/QtProject.conf   \
+	etc/zsh/.zshrc.zni   \
+	etc/zsh/.zcompdump   \
+	etc/mimeapps.list    \
+	etc/zsh/.histfile    \
+	etc/youtube-dlg/  \
+	etc/libreoffice/  \
+	etc/MusicBrainz/  \
+	etc/configstore/  \
+	etc/keepassxc/    \
+	bin/templates/    \
+	etc/skanliterc    \
+	etc/qalculate/    \
+	etc/inkscape/     \
+	etc/chromium/     \
+	etc/.lesshst  \
+	etc/gtk-2.0/  \
+	etc/gtk-3.0/  \
+	etc/manjaro/  \
+	etc/Thunar/   \
+	etc/pulse/    \
+	etc/dconf/    \
+	etc/gnupg/    \
+	etc/xfce4/    \
+	etc/gedit/    \
+	etc/qt5ct/    \
+	etc/procps    \
+	etc/gconf     \
+	etc/GIMP/     \
+  etc/git/
+rm -rf ~/git/dotless/bin/templates/
+rm -rf ~/git/dotless/bin/classes/
+rm -rf ~/git/dotless/bin/notmine/
 
 [ -z "$1" ] && \
     msg="$(date +%H:%M:%S)" || \

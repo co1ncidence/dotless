@@ -4,16 +4,18 @@
 # Might be "insecure" as of yet, but a workaround is coming soon
 #
 
+pass=$HOME/usr/doc/savefiles/pass
+
 choice=$(echo -e "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
   dmenu -fn 'Dina' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
 
 case "$choice" in
-  zohomail) cat $HOME/usr/doc/savefiles/pass/zohomail.txt | xclip -selection clipboard & ;;
-  gmail) cat $HOME/usr/doc/savefiles/pass/gmail.txt | xclip -selection clipboard & ;;
-  root) cat $HOME/usr/doc/savefiles/pass/root.txt | xclip -selection clipboard & ;;
-  cougar) cat $HOME/usr/doc/savefiles/pass/cougar.txt | xclip -selection clipboard & ;;
-  discord) cat $HOME/usr/doc/savefiles/pass/discord.txt | xclip -selection clipboard & ;;
-  collegeboard) cat $HOME/usr/doc/savefiles/pass/collegeboard.txt | xclip -selection clipboard & ;;
-  ssn) cat $HOME/usr/doc/school/doc/txt/ssn.md | xclip -selection clipboard & ;;
+	collegeboard) xclip -selection clipboard "$pass/collegeboard.txt";;
+  zohomail)  xclip -selection clipboard "$pass/zohomail.txt";;
+	discord)  xclip -selection clipboard "$pass/discord.txt" ;;
+	cougar)  xclip -selection clipboard "$pass/cougar.txt" ;;
+  gmail)  xclip -selection clipboard "$pass/gmail.txt" ;;
+  root)  xclip -selection clipboard "$pass/root.txt" ;;
+  ssn)  xclip -selection clipboard "$HOME/usr/doc/school/doc/txt/ssn.md" ;;
   space) cat $HOME/usr/bin/pass | xclip -selection clipboard & ;;
 esac

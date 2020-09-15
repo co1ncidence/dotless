@@ -55,6 +55,7 @@ alias reconf="openbox --reconfigure"
 alias convert="pandoc -s -o"
 alias lel="info='n os wm sh n' separator=' - ' accent='1' fet.sh"
 alias tree="tree -C"
+alias so="du -sh"
 
 # Pfetch
 export PF_ASCII="linux"

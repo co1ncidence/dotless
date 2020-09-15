@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# dmenu script to manage my school workflow
+# Dmenu Logout Script
 #
 
 choice=$(echo -e "logout\nrestart\nshutdown\nsuspend\n'               '"| \
