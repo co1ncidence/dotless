@@ -1,11 +1,10 @@
 #!/bin/dash
 #
 # Push a repo to master branch with a message you give
-# Uses date if no message is given
 #
 
 [ -z "$1" ] && \
-    msg="$(date +%H:%M:%S)" || \
+    msg="docs:update" || \
     msg="$1"
 
 git add .

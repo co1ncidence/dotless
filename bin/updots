@@ -51,7 +51,7 @@ rm -rf ~/git/dotless/bin/classes/
 rm -rf ~/git/dotless/bin/notmine/
 
 [ -z "$1" ] && \
-    msg="$(date +%H:%M:%S)" || \
+    msg="docs:update" || \
     msg="$1"
 
 git add .
