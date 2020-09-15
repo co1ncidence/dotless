@@ -40,7 +40,7 @@ menu.items.text.color: #f0f0f0
 menu.items.disabled.text.color: #232323
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #1d201d
+menu.items.active.bg.color: #3d3d3d
 menu.items.active.text.color:#f0f0f0
 
 menu.separator.color: #f0f0f0
