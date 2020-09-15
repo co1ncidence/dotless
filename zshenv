@@ -1,3 +1,7 @@
+# Global zsh environment file
+#
+# Place this in /etc/zsh/
+
 # XDG Settings
 export XDG_CONFIG_HOME="$HOME/etc/"
 export XDG_DATA_HOME="$HOME/var/"
