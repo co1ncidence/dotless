@@ -42,7 +42,6 @@ alias free="free -h"
 alias epub="epy"
 alias wset="hsetroot -cover"
 alias r="ranger"
-alias f="fff"
 alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CFv --color=auto --group-directories-first"
@@ -62,3 +61,10 @@ export PF_ASCII="linux"
 
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
+
+# Cd on exit
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
+}
+

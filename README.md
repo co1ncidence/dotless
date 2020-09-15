@@ -1,4 +1,4 @@
-<h3 align="center">(.)files</h3>
+<h3 align="center">.less</h3>
 <p align="center">I have reclaimed <code>~/</code></p>
 
 <p align="center"
@@ -22,12 +22,3 @@
 ## See More Rices [Here](https://co1ncidence.github.io/rices/)
 
 For more information on how to make your home directory **spot-free**, check out [declutter-home](https://github.com/vizs/declutter-home).
-
-## `bin` Attributions
-`birch` and `shfm` both belong to [dylanaraps](https://github.com/dylanaraps)
-
-`scr`, `fet.sh`, and `timer` all belong to [6gk](https://github.com/6gk)
-
-`farge` and `fontpreview` both belong to [sdushantha](https://github.com/sdushantha/)
-
-
