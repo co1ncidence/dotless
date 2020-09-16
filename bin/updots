@@ -3,8 +3,6 @@
 # Stupid Script that updates my dotfiles
 #
 
-msg="$(date)"
-
 cp -r ~/etc/ ~/usr/git/dotless/
 rm -rf ~/usr/git/dotless/etc/nvim/plugged/
 rm -rf ~/usr/git/dotless/etc/nvim/spell/

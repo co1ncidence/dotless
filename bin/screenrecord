@@ -4,7 +4,9 @@
 # Toggleable!
 #
 
-herbe "Recording Starts Soon..." && \
+pkill herbe
+
+herbe "Recording Starts Soon..."
 
 pgrep -x ffmpeg && pkill ffmpeg || \
 
@@ -18,5 +20,3 @@ ffmpeg \
     -preset ultrafast \
     -y \
     $HOME/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
-
-
