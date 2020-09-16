@@ -1,3 +1,8 @@
+#
+# Global ZSH environment file
+# Place this in /etc/zshenv
+#
+
 # XDG Settings
 export XDG_CONFIG_HOME="$HOME/etc/"
 export XDG_DATA_HOME="$HOME/var/"
@@ -14,16 +19,22 @@ export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/etc/}zsh"
 export PATH=$PATH:"$HOME/usr/bin/"
 export PATH=$PATH:"$HOME/usr/bin/notmine/"
 
-# Program Specific Things
+# Default Programs
 export TERMINAL="st"
 export EDITOR="nvim"
+export READER="zathura"
+export EDITOR="nvim"
+export VISUAL="$EDITOR"
+export VIDPLAYER="mpv"
+export IMGVIEWER="sxiv"
+export BROWSER="chromium"
+
+# Program Specific Things
 export FZF_DEFAULT_COMMAND='find .'
 export MANPAGER="nvim -c 'set ft=man' -"
 export FFF_OPENER="$HOME/usr/bin/opener"
 export SHFM_OPENER="$HOME/usr/bin/opener"
 export PASSWORD_STORE_DIR="$HOME/usr/pas/"
-
-# configs
 export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/etc/}gnupg"
 export GIMP2_DIRECTORY="${XDG_CONFIG_HOME:-$HOME/etc/}GIMP/2.10"
 export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/etc/}.lesshst"
