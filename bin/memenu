@@ -2,6 +2,6 @@
 
 dir="$HOME/usr/pic/mem"
 
-mem=$(ls -1 "$dir" | dmenu -fn 'Roboto Mono Medium' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
+mem=$(ls -1 "$dir" | dmenu -fn 'Cascadia Code' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
 
 [ -f "$dir/$mem" ] && xclip -sel clip -t image/png "$dir/$mem"
