@@ -9,7 +9,7 @@
 
 <p align="center"
 
-![img](screenshots/what1.png)
+![img](screenshots/screenshot.png)
 
 </p>
 
