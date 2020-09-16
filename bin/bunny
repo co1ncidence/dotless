@@ -3,5 +3,5 @@
 # Display a cute ASCII bunny
 #
 
-echo ' ' ; echo '(\(\' ; echo '(-.-)' ; echo 'o_(")(")' ; echo ' '
+echo ' ' ; echo '(\ /)' ; echo '( . .)' ; echo 'c(")(")' ; echo ' '
 
