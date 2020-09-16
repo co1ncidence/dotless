@@ -5,13 +5,14 @@
 
 pass=$HOME/usr/doc/savefiles/pass
 
-choice=$(echo "zohomail\ngmail\nroot\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
+choice=$(echo "zohomail\ngmail\nroot\ngithub\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
   dmenu -fn 'Cascadia Code' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
 
 case "$choice" in
 	collegeboard) xclip -sel clip "$pass/collegeboard.txt"							;;
   zohomail)			xclip -sel clip "$pass/zohomail.txt"									;;
 	discord)			xclip -sel clip "$pass/discord.txt"										;;
+	github)				xclip -sel clip "$pass/github.txt"										;;
 	cougar)				xclip -sel clip "$pass/cougar.txt"										;;
   gmail)				xclip -sel clip "$pass/gmail.txt"											;;
   root)					xclip -sel clip "$pass/root.txt"											;;
