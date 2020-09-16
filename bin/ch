@@ -3,8 +3,6 @@
 # Clean ~~your~~ my home dir!
 #
 
-cd /home/co1ncidence
-rm -rf \
-  .pki/
-  .cache/
-  .local/
+rm -rf $HOME/.pki/
+rm -rf $HOME/.local/
+rm -rf $HOME/.cache/
