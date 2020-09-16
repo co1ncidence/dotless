@@ -5,6 +5,7 @@
 #
 
 exec mpv --x11-name=no-title \
+         --config-dir=/home/co1ncidence/etv/mpv/ \
          --no-video \
          --shuffle \
          -- "$@" "$HOME/usr/mus/"
