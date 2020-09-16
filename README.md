@@ -3,13 +3,13 @@
 
 <p align="center"
 
-![img](screenshots/what.png)
+![img](screenshots/home.png)
 
 </p>
 
 <p align="center"
 
-![img](screenshots/home.png)
+![img](screenshots/what.png)
 
 </p>
 
