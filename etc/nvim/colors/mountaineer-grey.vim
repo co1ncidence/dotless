@@ -140,11 +140,11 @@ elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#1d1f21",
         \ "#cc6666",
+        \ "#8abeb7",
         \ "#b5bd68",
         \ "#f0c674",
         \ "#81a2be",
         \ "#b294bb",
-        \ "#8abeb7",
         \ "#c5c8c6",
         \ "#969896",
         \ "#cc6666",
