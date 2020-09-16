@@ -35,7 +35,6 @@ inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 
 " Correct any typos on current line
-" Works if you have spellcheck turned on
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " Color Settings
