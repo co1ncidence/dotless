@@ -7,4 +7,4 @@ dir="$HOME/usr/doc/savefiles/pass"
 
 pass=$(ls -1 "$dir" | dmenu -fn 'Cascadia Code' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
 
-[ -f "$dir/$mem" ] && xclip -sel clip "$dir/$pass"
+[ -f "$dir/$pass" ] && xclip -sel clip "$dir/$pass"
