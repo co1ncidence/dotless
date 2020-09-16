@@ -58,9 +58,6 @@ alias so="du -sh"
 alias sudo="doas"
 alias upx="xrdb -merge ~/etc/x/xresources"
 
-# Pfetch
-export PF_ASCII="linux"
-
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
 

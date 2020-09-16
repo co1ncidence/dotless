@@ -3,7 +3,7 @@
 
 <p align="center"
 
-![img](screenshots/what2.png)
+![img](screenshots/woah.png)
 
 </p>
 
