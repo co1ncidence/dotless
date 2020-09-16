@@ -61,3 +61,7 @@ super + p
 # decrease volume and tell me the level
 super + o
   amixer --quiet set Master 10%- && . ~/usr/bin/vol
+
+# select and preview a hex code
+alt + shift + s
+  ~/usr/bin/hex

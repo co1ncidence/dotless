@@ -3,7 +3,10 @@
 # Clean ~~your~~ my home dir!
 #
 
-rm -rf ~/.cache/
-rm -rf ~/.dbus/
-rm -rf ~/.pki/
-rm -rf ~/.icons/
+cd /home/co1ncidence
+rm -rf \
+  .pki/
+  .cache/
+  .local/
+  .dbus/
+  .icons/

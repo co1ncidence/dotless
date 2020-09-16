@@ -3,7 +3,6 @@
 # Download a song from Youtube
 #
 
-youtube-dl \
-    -x \
+youtube-dl -x \
     --audio-format mp3 \
     "$@"
