@@ -6,7 +6,7 @@
 pass=$HOME/usr/doc/savefiles/pass
 
 choice=$(echo "zohomail\ngmail\nroot\ngithub\ncougar\ndiscord\ncollegeboard\nssn\n'               '"| \
-  dmenu -fn 'Cascadia Code' -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323')
+  dmenu -fn 'Cascadia Code' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
 
 case "$choice" in
 	collegeboard) xclip -sel clip "$pass/collegeboard.txt"							;;

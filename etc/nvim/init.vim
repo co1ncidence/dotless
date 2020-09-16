@@ -42,7 +42,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme mountaineer-grey
+colorscheme mountaineer
 
 " Look and feel
 set ruler
