@@ -7,12 +7,6 @@
 
 </p>
 
-<p align="center"
-
-![img](screenshots/what.png)
-
-</p>
-
 <h1><a href="https://postimg.cc/gallery/MxW3J1t">wallpapers.</a></h1>
 
 Clone the repo with 1 depth to save storage:
