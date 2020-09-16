@@ -6,3 +6,4 @@
 rm -rf $HOME/.pki/
 rm -rf $HOME/.local/
 rm -rf $HOME/.cache/
+rm -rf $HOME/.xournalapp/
