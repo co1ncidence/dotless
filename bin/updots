@@ -7,6 +7,7 @@ cp -r ~/etc/ ~/usr/git/dotless/
 rm -rf ~/usr/git/dotless/etc/nvim/plugged/
 rm -rf ~/usr/git/dotless/etc/nvim/colors/
 rm -rf ~/usr/git/dotless/etc/nvim/spell/
+rm -rf ~/usr/git/dotless/etc/nvim/.netrwhist
 cp -r ~/usr/bin/ ~/usr/git/dotless/
 cp -r ~/var/themes/graywindow/ ~/usr/git/dotless/var/themes/
 cd ~/usr/git/dotless/
