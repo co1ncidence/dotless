@@ -4,7 +4,7 @@
 # Also saves to clipboard
 #
 
-PADDING=30
+PADDING=50
 
 id=$(slw) &&
     wattr xywhb "$id" | {
