@@ -7,6 +7,12 @@
 
 </p>
 
+<p align="center"
+
+![img](screenshots/home.png)
+
+</p>
+
 ## Installation
 Clone the repo with 1 depth to save storage:
 ```sh

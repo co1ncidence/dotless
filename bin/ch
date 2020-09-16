@@ -8,5 +8,3 @@ rm -rf \
   .pki/
   .cache/
   .local/
-  .dbus/
-  .icons/
