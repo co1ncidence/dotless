@@ -29,7 +29,6 @@ window.label.text.justify: center
 menu.title.text.justify: center
 
 ### Menu ###
-
 menu.title.bg: Solid Flat
 menu.title.bg.color: #f0f0f0
 menu.title.text.color: #1d201d
@@ -40,7 +39,7 @@ menu.items.text.color: #f0f0f0
 menu.items.disabled.text.color: #050505
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #3d3d3d
+menu.items.active.bg.color: #191919
 menu.items.active.text.color:#f0f0f0
 
 menu.separator.color: #f0f0f0
