@@ -17,6 +17,5 @@ id=$(slw) &&
 
         cur=$(date +%F_%H-%M-%S)
 
-        maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png &&
-            herbe "Screenshot Taken"
+        maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png
     }

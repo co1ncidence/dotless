@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Small script to center a window
+# Script to center current window
 # Requires wmutils
 #
 
