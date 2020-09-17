@@ -3,7 +3,7 @@
 
 <p align="center"
 
-![img](screenshots/home.png)
+![img](screenshots/ls.png)
 
 </p>
 
