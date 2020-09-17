@@ -1,7 +1,10 @@
+" Automatically set filetype as markdown
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
 " FZF Menu
 map <C-p> :Files<CR>
 
-" Pencil only For Markdown
+" Settings for vim-pencil
 set nocompatible
 filetype plugin on
 let g:pencil#textwidth = 80
@@ -12,7 +15,7 @@ augroup pencil
 augroup END
 let g:pencil#autoformat = 1
 
-" vim-markdown settings
+" settings for vim-markdown
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_markdown_math = 1
@@ -23,10 +26,7 @@ let g:vim_markdown_autowrite = 1
 let g:vim_markdown_edit_url_in = 'tab'
 let g:vim_markdown_follow_anchor = 1
 
-" automatically set filetype as markdown
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-
-" HTML
+" Settings for vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
@@ -40,7 +40,7 @@ let g:closetag_regions = {
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
-" Ale
+" Settings for ale
 let b:ale_fixers = ['prettier', 'eslint']
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -48,7 +48,7 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
-" vimtex
+" Settings for vimtex
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0

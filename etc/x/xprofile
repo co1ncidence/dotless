@@ -4,13 +4,17 @@
 
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
-# repeat rate
+# Set repeat rate
 xset r rate 250 50
 
-# actual programs
+# Set wallpaper
 hsetroot -solid '#dddddd'
+
+# Launch some programs
 picom -b --config ~/etc/picom/picom.conf &
 sxhkd -c ~/etc/sxhkd/sxhkdrc &
 
-# Start a WM
+# Start a wm
 exec openbox
+# exec sowm
+# exec glazier
