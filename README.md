@@ -9,7 +9,7 @@
 
 <p align="center"
 
-![img](screenshots/what.svg)
+![img](screenshots/comfy.png)
 
 </p>
 
