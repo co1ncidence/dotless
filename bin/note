@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Note something down
+#
+
+printf '%s\n' "$(date +%d/%m/%y): $*" >> ~/usr/.notes.md

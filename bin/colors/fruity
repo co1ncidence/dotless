@@ -1,0 +1,29 @@
+*.background: #102029
+*.foreground: #EDEEF0
+*.cursorColor: #EDEEF0
+
+*.color0: #102029
+*.color8: #0E374B
+
+*.color1: #C9647E
+*.color9: #D87E8F
+
+*.color2: #7CABA3
+*.color10: #ADD4CF
+
+*.color3: #C7C8B7
+*.color11: #EBDECD
+
+*.color4: #71AAC5
+*.color12: #A7CBE3
+
+*.color5: #F4ADB1
+*.color13: #F8CBCE
+
+*.color6: #7CBBC0
+*.color14: #A5D3D9
+
+*.color7: #D9DBE3
+*.color15: #EDEEF0
+
+! vim: ft=xdefaults

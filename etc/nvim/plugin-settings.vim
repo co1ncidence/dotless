@@ -9,8 +9,8 @@ augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
   autocmd FileType tex call pencil#init({'wrap': 'hard'})
-  autocmd FileType text         call pencil#init()
 augroup END
+let g:pencil#autoformat = 1
 
 " vim-markdown settings
 let g:vim_markdown_conceal = 0

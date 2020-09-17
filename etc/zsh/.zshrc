@@ -31,7 +31,7 @@ unsetopt beep
 bindkey -e
 
 # Aliases
-alias walls="cd ~/usr/pic/wlp/"
+alias walls="cd ~/usr/med/pic/wlp/"
 alias df="df -h /dev/sda3"
 alias nvimrc="nvim ~/etc/nvim/init.vim"
 alias c="clear"

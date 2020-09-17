@@ -1,4 +1,4 @@
-" fix weird colors in tmux
+" Fix weird colors in tmux
 if &term =~ '256color'
     set t_ut=
 

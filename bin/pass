@@ -3,7 +3,7 @@
 # Dmenu script to copy my passwords to clipboard
 #
 
-dir="$HOME/usr/doc/savefiles/pass"
+dir="$HOME/usr/doc/sav/pass"
 
 pass=$(ls -1 "$dir" | dmenu -fn 'Roboto Mono Medium' -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#050505')
 
