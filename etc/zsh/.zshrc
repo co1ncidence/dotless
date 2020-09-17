@@ -57,6 +57,8 @@ alias tree="tree -C"
 alias so="du -sh"
 alias sudo="doas"
 alias upx="xrdb -merge ~/etc/x/xresources"
+alias n="note"
+alias no="nvim ~/usr/.notes.md"
 
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
