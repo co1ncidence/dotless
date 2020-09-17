@@ -8,4 +8,4 @@ exec mpv --x11-name=no-title \
          --config-dir=/home/co1ncidence/etc/mpv/ \
          --no-video \
          --shuffle \
-         -- "$@" "$HOME/usr/mus/"
+         -- "$@" "$HOME/usr/med/mus/"
