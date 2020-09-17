@@ -1,6 +1,9 @@
 #!/bin/sh
 #
 # Note something down
+# Appends to file with date and arg
+# Recommend markdown
+# Since you can comment out done lines
 #
 
 printf '%s\n' "$(date +'%a,%d %I:%M'): $*" >> ~/usr/.notes.md

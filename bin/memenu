@@ -2,7 +2,6 @@
 #
 # Dmemenu,
 # Point to a folder full of memes
-# And you can spam them!
 #
 
 dir="$HOME/usr/med/pic/mem"

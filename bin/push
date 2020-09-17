@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # Push a repo to master branch with a message you give
+# Uses "docs:update" otherwise
 #
 
 [ -z "$1" ] && \

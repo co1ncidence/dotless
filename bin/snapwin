@@ -1,14 +1,16 @@
 #!/bin/sh
 #
-# wmutils/contrib>: snap.sh, 9/12/15 kekler 
-# snaps focued window to the left, right, top, or bottom edge
+# Snap windows
+# Source:
+# https://github.com/wmutils/contrib
+#
 
 usage() {
     echo "usage: $(basename $0) <direction>" >&2
     exit 1
 }
 
-# default values for gaps and master area
+# set gaps
 TOP_PANEL=${PANEL:-20}
 GAP=${GAP:-5}
 
@@ -16,7 +18,7 @@ GAP=${GAP:-5}
 PFW=$(pfw)
 BW=$(wattr b $PFW)
 
-# get root window's size
+# get window size
 ROOT=$(lsw -r)
 SW=$(wattr w $ROOT)
 SH=$(wattr h $ROOT)
