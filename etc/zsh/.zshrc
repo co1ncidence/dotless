@@ -58,6 +58,7 @@ alias sudo="doas"
 alias upx="xrdb -merge ~/etc/x/xresources"
 alias n="note"
 alias no="nvim ~/usr/.notes.md"
+alias t="termtosvg"
 
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
