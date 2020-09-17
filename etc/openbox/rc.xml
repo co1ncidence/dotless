@@ -252,7 +252,10 @@
         <desktop>yes</desktop>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="W-k">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-j">
       <action name="ToggleMaximize"/>
     </keybind>
     <keybind key="W-f">
@@ -307,26 +310,6 @@
       </action>
     </keybind>
     <!-- snap windows -->
-    <keybind key="S-C-h">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-      </action>
-      <action name="MoveToEdge">
-        <direction>west</direction>
-      </action>
-    </keybind>
-    <keybind key="S-C-l">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-      </action>
-      <action name="MoveToEdge">
-        <direction>east</direction>
-      </action>
-    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

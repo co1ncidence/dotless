@@ -2,6 +2,10 @@
 super + c
   centerwindow
 
+# snaps windows to certain directions
+ctrl + shift + {h,j,k,l}
+  ~/usr/bin/snapwin {left, down, up, right}
+
 # logout menu
 alt + shift + x
   ~/usr/bin/altshiftx
