@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono Medium:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Apercu Pro Mono:pixelsize=14:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -118,28 +118,28 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#0f0f0f", /* "#303030",  black  */
-  [1] = "#AC8A8C", /* "#D5BBBC",  red    */
-  [2] = "#8AAC8B", /* "#BBD5BD",  green  */
-  [3] = "#ACA98A", /* "#D5D5BB",  yellow */
-  [4] = "#8F8AAC", /* "#BCBBD5",  blue   */
-  [5] = "#AC8AAC", /* "#D5BBD3",  purple */
-  [6] = "#8AABAC", /* "#BBD5D4",  cyan   */
-  [7] = "#f0f0f0", /* "#e7e7e7",  white  */
+  [0] = "#1c1b1d",  /* "#0f0f0f", "#303030",  black  */
+  [1] = "#DE9DAC",  /* "#AC8A8C", "#D5BBBC",  red    */
+  [2] = "#9DDEAF",  /* "#8AAC8B", "#BBD5BD",  green  */
+  [3] = "#DEDD9D",  /* "#ACA98A", "#D5D5BB",  yellow */
+  [4] = "#9DACDE",  /* "#8F8AAC", "#BCBBD5",  blue   */
+  [5] = "#AF9DDE",  /* "#AC8AAC", "#D5BBD3",  purple */
+  [6] = "#9DCCDE",  /* "#8AABAC", "#BBD5D4",  cyan   */
+  [7] = "#f4e0d8",  /* "#f0f0f0", "#e7e7e7",  white  */
 
   /* 8 bright colors */
-  [8]  = "#191919", /* "#3d3d3d", black  */
-  [9]  = "#C49EA0", /* "#dcc7c8", red    */
-  [10] = "#9EC49F", /* "#c7dcca", green  */
-  [11] = "#C4C19E", /* "#dcdcc7", yellow */
-  [12] = "#A39EC4", /* "#c8c7dc", blue   */
-  [13] = "#C49EC4", /* "#dcc7db", purple */
-  [14] = "#9ec3c4", /* "#c7dcdc", cyan   */
-  [15] = "#fafafa", /* "#f0f0f0", white  */
+  [8]  = "#262427", /* "#3d3d3d", black  */
+  [9]  = "#F7AFC0", /* "#dcc7c8", red    */
+  [10] = "#AFF7C3", /* "#c7dcca", green  */
+  [11] = "#F7F6AF", /* "#dcdcc7", yellow */
+  [12] = "#AFC0F7", /* "#c8c7dc", blue   */
+  [13] = "#C3AFF7", /* "#dcc7db", purple */
+  [14] = "#AFE3F7", /* "#c7dcdc", cyan   */
+  [15] = "#f9ece8", /* "#f0f0f0", white  */
 
   /* special colors */
-  [256] = "#050505", /* background */
-  [257] = "#f0f0f0", /* foreground */
+  [256] = "#121213", /* background */
+  [257] = "#fdf9f7", /* foreground */
 };
 
 /*

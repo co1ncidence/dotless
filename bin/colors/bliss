@@ -1,10 +1,10 @@
 ! Bliss Colorscheme
 
-*.background: #262727
+*.background: #262427
 *.foreground: #fdf9f7
 
 ! black
-*.color0:  #262727
+*.color0:  #262427
 *.color8:  #393b3b
 
 ! red
