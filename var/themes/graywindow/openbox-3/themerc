@@ -1,10 +1,10 @@
 # Window geometry
 padding.width: 0
 padding.height: 0
-border.width: 0
-window.client.padding.width: 4
-window.client.padding.height: 0
-window.handle.width: 4
+border.width: 10
+window.client.padding.width: 2
+window.client.padding.height: 2
+window.handle.width: 0
 
 #Menu geometry
 menu.border.width: 10
@@ -15,8 +15,8 @@ menu.overlap.y: 0
 window.active.border.color: #121213
 window.inactive.border.color: #121213
 menu.border.color: #121213
-window.active.client.color: #121213
-window.inactive.client.color: #121213
+window.active.client.color: #f0d3c9
+window.inactive.client.color: #262427
 
 # Text shadows
 window.active.label.text.font: shadow=n
@@ -65,48 +65,48 @@ window.active.grip.bg.color: #121213
 window.active.button.unpressed.bg: Flat solid
 window.active.button.unpressed.bg.color: #121213
 window.active.button.unpressed.bg.border.color: #121213
-window.active.button.close.unpressed.image.color: #121213
-window.active.button.max.unpressed.image.color: #121213
-window.active.button.iconify.unpressed.image.color: #121213
+window.active.button.close.unpressed.image.color: #DE9DAC
+window.active.button.max.unpressed.image.color: #DEDD9D
+window.active.button.iconify.unpressed.image.color: #9DDEAF
 window.active.button.shade.unpressed.image.color: #121213
 window.active.button.desk.unpressed.image.color: #121213
 
 window.active.button.hover.bg: Flat solid
 window.active.button.hover.bg.color: #121213
 window.active.button.hover.bg.border.color: #121213
-window.active.button.close.hover.image.color: #ac8a8c
-window.active.button.max.hover.image.color: #848484
-window.active.button.iconify.hover.image.color: #848484
+window.active.button.close.hover.image.color: #DE9DAC
+window.active.button.max.hover.image.color: #DEDD9D
+window.active.button.iconify.hover.image.color: #9DDEAF
 window.active.button.shade.hover.image.color: #848484
 window.active.button.desk.hover.image.color: #848484
 
 window.active.button.pressed.bg: Flat solid
 window.active.button.pressed.bg.color: #121213
 window.active.button.pressed.bg.border.color: #121213
-window.active.button.close.pressed.image.color: #121213
-window.active.button.max.pressed.image.color: #121213
-window.active.button.iconify.pressed.image.color: #121213
+window.active.button.close.pressed.image.color: #DE9DAC
+window.active.button.max.pressed.image.color: #DEDD9D
+window.active.button.iconify.pressed.image.color: #9DDEAF
 window.active.button.shade.pressed.image.color: #121213
 window.active.button.desk.pressed.image.color: #121213
 
 window.active.button.toggled.unpressed.bg: Flat solid
 window.active.button.toggled.unpressed.bg.color: #121213
 window.active.button.toggled.unpressed.bg.border.color: #121213
-window.active.button.max.toggled.unpressed.image.color: #121213
-window.active.button.shade.toggled.unpressed.image.color: #121213
+window.active.button.max.toggled.unpressed.image.color: #DEDD9D
+window.active.button.shade.toggled.unpressed.image.color: #9DDEAF
 window.active.button.desk.toggled.unpressed.image.color: #121213
 
 window.active.button.toggled.hover.bg: Flat solid
 window.active.button.toggled.hover.bg.color: #121213
 window.active.button.toggled.hover.bg.border.color: #121213
-window.active.button.max.toggled.hover.image.color: #121213
+window.active.button.max.toggled.hover.image.color: #DEDD9D
 window.active.button.shade.toggled.hover.image.color: #121213
 window.active.button.desk.toggled.hover.image.color: #121213
 
 window.active.button.toggled.pressed.bg: Flat solid
 window.active.button.toggled.pressed.bg.color: #121213
 window.active.button.toggled.pressed.bg.border.color: #121213
-window.active.button.max.toggled.pressed.image.color: #121213
+window.active.button.max.toggled.pressed.image.color: #DEDD9D
 window.active.button.shade.toggled.pressed.image.color: #121213
 window.active.button.desk.toggled.pressed.image.color: #121213
 
@@ -130,38 +130,38 @@ window.inactive.grip.bg.color: #121213
 
 ### Inactive buttons ###
 window.inactive.button.unpressed.bg: Flat solid
-window.inactive.button.unpressed.bg.color: #121213
+window.inactive.button.unpressed.bg.color: #1c1b1d
 window.inactive.button.unpressed.bg.border.color: #121213
-window.inactive.button.unpressed.image.color: #121213
+window.inactive.button.unpressed.image.color: #1c1b1d
 
 window.inactive.button.pressed.bg: Flat solid
-window.inactive.button.pressed.bg.color: #121213
+window.inactive.button.pressed.bg.color: #1c1b1d
 window.inactive.button.pressed.bg.border.color: #121213
-window.inactive.button.pressed.image.color: #121213
+window.inactive.button.pressed.image.color: #1c1b1d
 
 window.inactive.button.disabled.bg: Flat solid
-window.inactive.button.disabled.bg.color: #121213
-window.inactive.button.disabled.image.color: #121213
+window.inactive.button.disabled.bg.color: #1c1b1d
+window.inactive.button.disabled.image.color: #1c1b1d
 
 window.inactive.button.toggled.unpressed.bg: Flat solid
-window.inactive.button.toggled.unpressed.bg.color: #121213
+window.inactive.button.toggled.unpressed.bg.color: #1c1b1d
 window.inactive.button.toggled.unpressed.bg.border.color: #121213
-window.inactive.button.toggled.unpressed.image.color: #121213
+window.inactive.button.toggled.unpressed.image.color: #1c1b1d
 
 window.inactive.button.toggled.pressed.bg: Flat solid
-window.inactive.button.toggled.pressed.bg.color: #121213
+window.inactive.button.toggled.pressed.bg.color: #1c1b1d
 window.inactive.button.toggled.pressed.bg.border.color: #121213
-window.inactive.button.toggled.pressed.image.color: #121213
+window.inactive.button.toggled.pressed.image.color: #1c1b1d
 
 window.inactive.button.toggled.hover.bg: Flat solid
-window.inactive.button.toggled.hover.bg.color: #121213
+window.inactive.button.toggled.hover.bg.color: #1c1b1d
 window.inactive.button.toggled.hover.bg.border.color: #121213
-window.inactive.button.toggled.hover.image.color: #121213
+window.inactive.button.toggled.hover.image.color: #1c1b1d
 
 window.inactive.button.hover.bg: Flat solid
-window.inactive.button.hover.bg.color: #121213
+window.inactive.button.hover.bg.color: #1c1b1d
 window.inactive.button.hover.bg.border.color: #121213
-window.inactive.button.hover.image.color: #121213
+window.inactive.button.hover.image.color: #1c1b1d
 
 ### On-Screen-Display ###
 osd.border.width: 10
