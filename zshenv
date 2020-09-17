@@ -1,8 +1,3 @@
-#
-# Global ZSH environment file
-# Place this in /etc/zshenv
-#
-
 # XDG Settings
 export XDG_CONFIG_HOME="$HOME/etc/"
 export XDG_DATA_HOME="$HOME/var/"
@@ -23,6 +18,7 @@ export PATH=$PATH:"$HOME/usr/bin/notmine/"
 export TERMINAL="st"
 export EDITOR="nvim"
 export READER="zathura"
+export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export VIDPLAYER="mpv"
 export IMGVIEWER="sxiv"
@@ -40,3 +36,4 @@ export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/etc/}.lesshst"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export GTK2_RC_FILES="{XDG_CONFIG_HOME:-$HOME/etc/}.gtkrc-2.0"
+export PULSE_COOKIE="{XDG_CONFIG_HOME:-$HOME/etc/}pulse/cookie"
