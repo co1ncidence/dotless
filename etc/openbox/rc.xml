@@ -282,7 +282,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn "Cascadia Code" -nb '#232323' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#232323'</command>
+        <command>dmenu_run -fn "Roboto Mono Medium" -nb '#050505' -nf '#d9d9d9' -sb '#f0f0f0' -sf '#191919'</command>
       </action>
     </keybind>
     <!-- passmenu -->
@@ -417,13 +417,6 @@
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
-      <mousebind action="Press" button="Right">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
     </context>
     <context name="Top">
       <mousebind action="Drag" button="Left">
@@ -452,13 +445,6 @@
           <edge>bottom</edge>
         </action>
       </mousebind>
-      <mousebind action="Press" button="Right">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
     </context>
     <context name="TRCorner BRCorner TLCorner BLCorner">
       <mousebind action="Press" button="Left">
@@ -485,21 +471,6 @@
       </mousebind>
     </context>
     <context name="Icon">
-      <mousebind action="Press" button="Left">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
-      <mousebind action="Press" button="Right">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
     </context>
     <context name="AllDesktops">
       <mousebind action="Press" button="Left">
@@ -614,11 +585,6 @@
       <mousebind action="Press" button="Middle">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
-        </action>
-      </mousebind>
-      <mousebind action="Press" button="Right">
-        <action name="ShowMenu">
-          <menu>root-menu</menu>
         </action>
       </mousebind>
     </context>
