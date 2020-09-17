@@ -3,4 +3,4 @@
 # Note something down
 #
 
-printf '%s\n' "$(date +'%a, %b %d'): $*" >> ~/usr/.notes.md
+printf '%s\n' "$(date +'%a,%d %I:%M'): $*" >> ~/usr/.notes.md
