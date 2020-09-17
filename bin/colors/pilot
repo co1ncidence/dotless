@@ -1,3 +1,5 @@
+! Pilot Colorscheme
+
 *.background: #232323
 *.foreground: #d9dbda
 *.cursorColor: #d9dbda

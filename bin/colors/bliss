@@ -1,3 +1,5 @@
+! Bliss Colorscheme
+
 *.background:   #262727
 *.foreground:   #fdf9f7
 *.cursorColor: #f0f0f0
