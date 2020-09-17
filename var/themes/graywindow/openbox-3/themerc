@@ -172,9 +172,9 @@ osd.bg.color: #191919
 osd.bg.border.color: #191919
 
 osd.label.bg: parentrelative
-osd.label.text.color: #ac8a8c
+osd.label.text.color: #f0f0f0
 
 osd.hilight.bg: flat solid border
-osd.hilight.bg.color: #ac8a8c
+osd.hilight.bg.color: #f0f0f0
 osd.unhilight.bg.color: #ff0000
-osd.hilight.bg.border.color: #ac8a8c
+osd.hilight.bg.border.color: #f0f0f0
