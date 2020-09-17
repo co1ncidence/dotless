@@ -1,6 +1,6 @@
 *.background: #232323
-*.foreground: #f0f0f0
-*.cursorColor: #f0f0f0
+*.foreground: #d9dbda
+*.cursorColor: #d9dbda
 
 ! black
 *.color0: #303030
@@ -32,6 +32,6 @@
 
 ! white
 *.color7: #e7e7e7
-*.color15: #f5f5f5
+*.color15: #f0f0f0
 
 ! vim: ft=xdefaults

@@ -165,16 +165,16 @@ window.inactive.button.hover.image.color: #050505
 
 ### On-Screen-Display ###
 osd.border.width: 10
-osd.border.color:  #d9dbda
+osd.border.color:  #191919
 
 osd.bg: flat border solid
-osd.bg.color: #d9dbda
-osd.bg.border.color: #d9dbda
+osd.bg.color: #191919
+osd.bg.border.color: #191919
 
 osd.label.bg: parentrelative
-osd.label.text.color: #050505
+osd.label.text.color: #ac8a8c
 
 osd.hilight.bg: flat solid border
-osd.hilight.bg.color: #8aabac
+osd.hilight.bg.color: #ac8a8c
 osd.unhilight.bg.color: #00ff00
-osd.hilight.bg.border.color: #8aabac
+osd.hilight.bg.border.color: #ac8a8c
