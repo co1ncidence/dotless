@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Apercu Pro Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=14:antialias=true:autohint=true";
 
 
 /* Spare fonts */
