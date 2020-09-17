@@ -2,27 +2,35 @@
 *.foreground: #EDEEF0
 *.cursorColor: #EDEEF0
 
+! black
 *.color0: #102029
 *.color8: #0E374B
 
+! red
 *.color1: #C9647E
 *.color9: #D87E8F
 
+! green
 *.color2: #7CABA3
 *.color10: #ADD4CF
 
+! yellow
 *.color3: #C7C8B7
 *.color11: #EBDECD
 
+! blue
 *.color4: #71AAC5
 *.color12: #A7CBE3
 
+! magenta
 *.color5: #F4ADB1
 *.color13: #F8CBCE
 
+! cyan
 *.color6: #7CBBC0
 *.color14: #A5D3D9
 
+! white
 *.color7: #D9DBE3
 *.color15: #EDEEF0
 
