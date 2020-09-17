@@ -176,5 +176,5 @@ osd.label.text.color: #ac8a8c
 
 osd.hilight.bg: flat solid border
 osd.hilight.bg.color: #ac8a8c
-osd.unhilight.bg.color: #00ff00
+osd.unhilight.bg.color: #ff0000
 osd.hilight.bg.border.color: #ac8a8c
