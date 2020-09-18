@@ -16,7 +16,7 @@
 
 <hr />
 
-## Installation
+### Installation
 
 Clone the repo with 1 depth to save storage:
 ```sh
