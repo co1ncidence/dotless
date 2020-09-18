@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "iA Writer Mono S:pixelsize=14:antialias=true:autohint=true";
+static char *font = "iA Writer Mono S:style=Semibold:pixelsize=14:antialias=true:autohint=true";
 
 
 /* Spare fonts */
