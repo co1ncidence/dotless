@@ -1,0 +1,1 @@
+@reboot rm -rf /home/co1ncidence/tmp/*
