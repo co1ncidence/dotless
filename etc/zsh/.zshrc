@@ -59,7 +59,6 @@ alias upx="xrdb -merge ~/etc/x/xresources"
 alias n="note"
 alias no="nvim ~/var/notes/notes.md"
 alias t="termtosvg"
-alias rm="trash"
 
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
