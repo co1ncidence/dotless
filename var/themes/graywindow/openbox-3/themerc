@@ -14,7 +14,7 @@ menu.overlap.y: 0
 # Border colors
 window.active.border.color: #121213
 window.inactive.border.color: #121213
-menu.border.color: #121213
+menu.border.color: #fdf9f7
 window.active.client.color: #121213
 window.inactive.client.color: #121213
 
@@ -30,19 +30,19 @@ menu.title.text.justify: center
 
 ### Menu ###
 menu.title.bg: Solid Flat
-menu.title.bg.color: #f0f0f0
-menu.title.text.color: #1d201d
+menu.title.bg.color: #fdf9f7
+menu.title.text.color: #121213
 
 menu.items.bg: Solid Flat
-menu.items.bg.color: #121213
-menu.items.text.color: #f0f0f0
+menu.items.bg.color: #fdf9f7
+menu.items.text.color: #121213
 menu.items.disabled.text.color: #121213
 
 menu.items.active.bg: Solid Flat
-menu.items.active.bg.color: #191919
-menu.items.active.text.color:#f0f0f0
+menu.items.active.bg.color: #262427
+menu.items.active.text.color:#fdf9f7
 
-menu.separator.color: #f0f0f0
+menu.separator.color: #121213
 menu.separator.width: 1
 menu.separator.padding.width: 10
 menu.separator.padding.height: 10
