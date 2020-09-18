@@ -1,3 +1,4 @@
+! Fix font rendering
 Xft.autohint: 0
 Xft.antialias: 1
 Xft.hinting: true
@@ -6,46 +7,48 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-! urxvt shit
-URxvt.font: xft:Roboto Mono Medium:size=10
+! URXVT shit
+URxvt.font: xft:iA Writer Mono V:size=12
 URxvt.perl-ext-common:  ...,clipboard,...
 URxvt.clipboard.autocopy: true
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 
-! special
-*.foreground:   #d9dbda
-*.background:   #232323
-*.cursorColor:  #d9dbda
+! Special
+*.background: #121213
+*.foreground: #fdf9f7
+*.cursorColor:  #fdf9f7
 
 ! black
-*.color0:       #303030
-*.color8:       #3d3d3d
+*.color0:  #1c1b1d
+*.color8:  #262427
 
 ! red
-*.color1:       #D5BBBC
-*.color9:       #dcc7c8
+*.color1:  #DE9DAC
+*.color9:  #F7AFC0
 
 ! green
-*.color2:       #BBD5BD
-*.color10:      #c7dcca
+*.color2:  #9DDEAF
+*.color10: #AFF7C3
 
 ! yellow
-*.color3:       #D5D5BB
-*.color11:      #dcdcc7
+*.color3:  #DEDD9D
+*.color11: #F7F6AF
 
 ! blue
-*.color4:       #BCBBD5
-*.color12:      #c8c7dc
+*.color4:  #9DACDE
+*.color12: #AFC0F7
 
 ! magenta
-*.color5:       #D5BBD3
-*.color13:      #dcc7db
+*.color5:  #AF9DDE
+*.color13: #C3AFF7
 
 ! cyan
-*.color6:       #BBD5D4
-*.color14:      #c7dcdc
+*.color6:  #9DCCDE
+*.color14: #AFE3F7
 
 ! white
-*.color7:       #e7e7e7
-*.color15:      #f0f0f0
+*.color7:  #f4e0d8
+*.color15: #f9ece8
+
+! vim: ft=xdefaults
