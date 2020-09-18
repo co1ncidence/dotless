@@ -5,6 +5,7 @@
 #
 
 exec mpv --x11-name=no-title \
+         --config-dir="$HOME/etc/mpv/loop/" \
          --no-video \
          --shuffle \
          "$@" \
