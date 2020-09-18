@@ -3,4 +3,4 @@
 
 pkill herbe &
 
-herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(~/usr/bin/bat)"
+herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(bat)"
