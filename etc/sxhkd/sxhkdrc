@@ -20,11 +20,11 @@ alt + shift + d
 
 # record a vide via selection
 alt + shift + r
-  scr -m s -f 60 -c ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+  scr -m s -f 60 -c ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
 
 # record entire screen at 60fps
 alt + shift + t
-  ~/usr/bin/screenrecord ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+  ~/usr/bin/screenrecord ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
 
 # move a window around
 super + shift + {h,l,j,k}
