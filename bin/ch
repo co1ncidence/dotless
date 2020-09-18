@@ -16,5 +16,5 @@ while :; do
 		[ -e "$i" ] && set -- "$@" "$i"
 	done
 	[ "$1" ] && rm -rf -- "$@"
-	sleep 120
+	sleep 60
 done
