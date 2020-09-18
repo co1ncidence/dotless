@@ -1,7 +1,5 @@
 #!/bin/sh
-#
 # An all purpose archive extractor
-#
 
 usage() {
     >&2 printf '%s\n' "Usage: ${0##*/} [-c copy_path] file"

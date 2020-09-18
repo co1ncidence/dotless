@@ -1,9 +1,7 @@
 #!/bin/sh
-#
 # Snap windows
 # Source:
 # https://github.com/wmutils/contrib
-#
 
 usage() {
     echo "usage: $(basename $0) <direction>" >&2

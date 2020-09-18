@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # Record a fullscreen video with ffmpeg
-# Toggleable!
-#
 
 pkill herbe
 

@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # Simple script to vibe
-# Chooses a random file from the specified dir
-#
 
 exec mpv --x11-name=no-title \
          --config-dir="$HOME/etc/mpv/" \

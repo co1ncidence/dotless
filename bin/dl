@@ -1,7 +1,5 @@
 #!/bin/sh
-#
 # All purpose raw file download script
-#
 
 [ "$1" ] || { read -r inp && set "$inp" ; }
 

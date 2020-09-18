@@ -1,9 +1,6 @@
 #!/bin/sh
-#
 # Test a font for all the testies
-# Based off of
 # https://github.com/addy-dclxvi
-#
 
 clear
 

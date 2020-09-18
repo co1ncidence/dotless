@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # Take a screenshot with some padding
-# Also saves to clipboard
-#
 
 PADDING=50 # set padding in px
 

@@ -1,7 +1,5 @@
 #!/bin/sh
-#
 # Display an all inclusive notification
-#
 
 pkill herbe &
 

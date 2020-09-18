@@ -1,6 +1,4 @@
 #!/bin/sh
-#
 # Shuffle Wallpaper
-#
 
 feh --bg-fill --randomize --no-fehbg ~/usr/med/pic/wlp/*

@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # Display current Volume level
-# Best used with my sxhkd config
-#
 
 pkill herbe &
 

@@ -1,8 +1,6 @@
 #!/bin/sh
-#
 # World's best 0x0 upload script
-# Courtesy of: https://github.com/vizs
-#
+# https://github.com/vizs
 
 [ -f "$1" ] && op="cat"
 ${op:-echo} "${@:-$(cat -)}" \

@@ -1,4 +1,5 @@
 #!/bin/sh -e
+# Display batter capacity and status
 
 bat_dir=/sys/class/power_supply/BAT0
 

@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # Prints window ID for xdotool
-# Best used for moving windows
-#
 
 xwininfo -tree -id "$1" |
     while IFS=: read property value; do

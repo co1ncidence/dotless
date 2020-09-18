@@ -1,8 +1,5 @@
 #!/bin/sh
-#
-# Simple script to vibe
-# Point to a file or URL
-#
+# Simple script to vibeto
 
 exec mpv --x11-name=no-title \
          --config-dir="$HOME/etc/mpv/loop/" \

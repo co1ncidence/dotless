@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # Script to center current window
-# Requires wmutils
-#
 
 WID=$(pfw)
 WW=$(wattr w $WID)

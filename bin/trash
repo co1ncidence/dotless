@@ -1,7 +1,4 @@
 #!/bin/sh
-#
 # Trash a file
-# $HOME/tmp gets deleted on reboot
-#
 
-mv "$@" "$HOME/tmp/"
+mv "$@" "$HOME/tmp/" # this is a tmpfs

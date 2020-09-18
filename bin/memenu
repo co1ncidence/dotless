@@ -1,8 +1,5 @@
 #!/bin/sh
-#
-# Dmemenu,
-# Point to a folder full of memes
-#
+# Dmemenu
 
 dir="$HOME/usr/med/pic/mem"
 
