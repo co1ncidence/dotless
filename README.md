@@ -3,13 +3,13 @@
 
 <p align="center"
 
-![img](screenshots/ls.png)
+![img](scr/ls.png)
 
 </p>
 
 <p align="center"
 
-![img](screenshots/comfyaf.png)
+![img](scr/comfyaf.png)
 
 </p>
 
