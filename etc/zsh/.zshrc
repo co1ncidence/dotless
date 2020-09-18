@@ -57,7 +57,7 @@ alias so="du -sh"
 alias sudo="doas"
 alias upx="xrdb -merge ~/etc/x/xresources"
 alias n="note"
-alias no="nvim ~/usr/.notes.md"
+alias no="nvim ~/var/notes/notes.md"
 alias t="termtosvg"
 
 # Prompt
