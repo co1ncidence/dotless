@@ -63,9 +63,9 @@ alias t="termtosvg"
 # Prompt
 PROMPT='%B%F{red}%1~%f%b '
 
-# Cd on exit
+### FUNCTIONS
+
 f() {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
 }
-
