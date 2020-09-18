@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Trash a file
+# $HOME/tmp gets deleted on reboot
+#
+
+mv "$@" "$HOME/tmp/"
