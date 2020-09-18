@@ -1,5 +1,5 @@
 #!/bin/sh
-# Dmenu script to manage my school workflow
+# dmenu script to manage my school workflow
 
 choice=$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
   dmenu -fn "iA Writer Mono V" -nb '#1c1b1d' -nf '#fdf9f7' -sb '#fdf9f7' -sf '#121213')

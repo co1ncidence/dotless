@@ -1,5 +1,5 @@
 #!/bin/sh
-# Simple script to vibe
+# simple script to vibe
 
 exec mpv --x11-name=no-title \
          --config-dir="$HOME/etc/mpv/" \

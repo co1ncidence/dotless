@@ -1,5 +1,5 @@
 #!/bin/sh
-# Stupid Script that updates my dotfiles
+# stupid script that updates my dotfiles
 
 cp -r ~/etc/ ~/usr/git/dotless/
 rm -rf ~/usr/git/dotless/etc/nvim/plugged/

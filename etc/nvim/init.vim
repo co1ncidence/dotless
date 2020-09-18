@@ -97,6 +97,7 @@ autocmd BufWinLeave * call  clearmatches()
 " Enable spellcheck only for .md and .tex
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType tex setlocal spell spelllang=en_us
+autocmd FileType sh hi PreProc guifg=#39373b guibg=#121213
 
 " Sources
 source ~/etc/nvim/statusline.vim

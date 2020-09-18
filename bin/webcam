@@ -1,5 +1,5 @@
 #!/bin/sh
-# Toggle a floating webcam
+# toggle a floating webcam
 
 doas chown root:video /dev/video0
 doas chmod g+rwx /dev/video0

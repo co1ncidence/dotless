@@ -1,5 +1,5 @@
 #!/bin/sh
-# Display current Volume level
+# display current Volume level
 
 pkill herbe &
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# Clean ~~your~~ my home dir!
+# clean ~~your~~ my home dir!
 
 rm -rf $HOME/.pki/
 rm -rf $HOME/.local/

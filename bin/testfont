@@ -1,5 +1,5 @@
 #!/bin/sh
-# Test a font for all the testies
+# test a font for all the testies
 # https://github.com/addy-dclxvi
 
 clear

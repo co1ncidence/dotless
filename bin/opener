@@ -1,5 +1,5 @@
 #!/bin/sh -e
-# Plumber for FFF and SHFM
+# plumber for FFF and SHFM
 
 case $1 in
         *.mp3|*.flac|*.wav)

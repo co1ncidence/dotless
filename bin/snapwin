@@ -1,6 +1,5 @@
 #!/bin/sh
-# Snap windows
-# Source:
+# snap windows
 # https://github.com/wmutils/contrib
 
 usage() {

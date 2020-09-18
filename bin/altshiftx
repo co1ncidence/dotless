@@ -1,5 +1,5 @@
 #!/bin/bash
-# Dmenu Logout Script
+# dmenu logout script
 
 choice=$(echo -e "logout\nrestart\nshutdown\nsuspend\n'               '"| \
   dmenu -fn "iA Writer Mono V" -nb '#1c1b1d' -nf '#fdf9f7' -sb '#fdf9f7' -sf '#121213')

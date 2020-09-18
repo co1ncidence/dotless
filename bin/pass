@@ -1,5 +1,5 @@
 #!/bin/sh
-# Dmenu script to copy my passwords to clipboard
+# dmenu script to copy my passwords to clipboard
 
 dir="$HOME/usr/doc/sav/pass"
 

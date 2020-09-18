@@ -1,5 +1,5 @@
 #!/bin/sh
-# Display brightness level
+# display brightness level
 
 pkill herbe &
 
