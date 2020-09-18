@@ -1,17 +1,20 @@
 #!/bin/sh
 # clean ~~your~~ my home dir!
 
-rm -rf $HOME/.pki/
-rm -rf $HOME/.local/
-rm -rf $HOME/.cache/
-rm -rf $HOME/.config/
-rm -rf $HOME/.xournalpp/
-rm -rf $HOME/Desktop/
-rm -rf $HOME/Documents/
-rm -rf $HOME/Downloads/
-rm -rf $HOME/Music/
-rm -rf $HOME/Pictures/
-rm -rf $HOME/Public/
-rm -rf $HOME/Templates/
-rm -rf $HOME/Videos/
+[ "$(pgrep -x ch)" = "$$" ] || exit
 
+while :; do
+	set --
+	for i in "$HOME/.pki" \
+           "$HOME/.local" \
+           "$HOME/.cache" \
+           "$HOME/.config" \
+           "$HOME/.xournapp" \
+           "$HOME/.pki" \
+           "$HOME/.bash*" \
+           "$HOME/.local"; do
+		[ -e "$i" ] && set -- "$@" "$i"
+	done
+	[ "$1" ] && rm -rf -- "$@"
+	sleep 120
+done
