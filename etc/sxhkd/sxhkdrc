@@ -4,11 +4,11 @@ super + c
 
 # snaps windows to certain directions
 ctrl + shift + {h,j,k,l}
-  ~/usr/bin/snapwin {left, down, up, right}
+  snapwin {left, down, up, right}
 
 # logout menu
 alt + shift + x
-  ~/usr/bin/altshiftx
+  altshiftx
 
 # screenshot an image and pipe to clipboard
 alt + shift + e
@@ -16,7 +16,7 @@ alt + shift + e
 
 # take a screenshot with padding
 alt + shift + d
-  ~/usr/bin/padshot
+  padshot
 
 # record a vide via selection
 alt + shift + r
@@ -24,7 +24,7 @@ alt + shift + r
 
 # record entire screen at 60fps
 alt + shift + t
-  ~/usr/bin/screenrecord ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+  screenrecord
 
 # move a window around
 super + shift + {h,l,j,k}
@@ -32,23 +32,23 @@ super + shift + {h,l,j,k}
 
 # resize current window
 alt + {h,j,k,l}
-      wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
+  wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
 # send an all-inclusive notification
 super + q
-  . ~/usr/bin/noti
+  noti
 
 # open up my school menu
 super + b
-  ~/usr/bin/school
+  school
 
 # open up the memenu
 super + m
-  ~/usr/bin/memenu
+  memenu
 
 # change wallpaper
 super + u
-  ~/usr/bin/shf
+  shf
 
 # increase brightness and tell me the level
 super + Up
@@ -65,7 +65,3 @@ super + p
 # decrease volume and tell me the level
 super + o
   amixer --quiet set Master 10%- && . ~/usr/bin/vol
-
-# select and preview a hex code
-alt + shift + s
-  ~/usr/bin/hex
