@@ -1,5 +1,6 @@
 <h3 align="center"><a href="https://co1ncidence.github.io/rices/">.less</a></h3>
 <p align="center">I have <a href="https://github.com/vizs/declutter-home">reclaimed ~/</a></p>
+<p align="center">You can find my wallpapers <a href="https://postimg.cc/gallery/MxW3J1t">here</a></p>
 
 <p align="center"
 
@@ -13,7 +14,7 @@
 
 </p>
 
-[Some of my wallpapers](https://postimg.cc/gallery/MxW3J1t)
+[Some of my wallpapers]()
 
 Clone the repo with 1 depth to save storage:
 ```sh
