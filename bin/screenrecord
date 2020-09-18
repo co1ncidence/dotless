@@ -16,4 +16,4 @@ ffmpeg \
     -crf 0 \
     -preset ultrafast \
     -y \
-    $HOME/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+    $HOME/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
