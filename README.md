@@ -1,5 +1,5 @@
 <h3 align="center"><a href="https://co1ncidence.github.io/rices/">.less</a></h3>
-<p align="center">I have reclaimed <code>~/</code></p>
+<p align="center">I have <a href="https://github.com/vizs/declutter-home">reclaimed<code>~/</code></a></p>
 
 <p align="center"
 
@@ -13,7 +13,7 @@
 
 </p>
 
-<h1><a href="https://postimg.cc/gallery/MxW3J1t">wallpapers.</a></h1>
+https://postimg.cc/gallery/MxW3J1t
 
 Clone the repo with 1 depth to save storage:
 ```sh
