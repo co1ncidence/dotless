@@ -13,7 +13,7 @@
 
 </p>
 
-https://postimg.cc/gallery/MxW3J1t
+[Some of my wallpapers](https://postimg.cc/gallery/MxW3J1t)
 
 Clone the repo with 1 depth to save storage:
 ```sh
