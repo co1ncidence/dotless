@@ -1,21 +1,21 @@
-#!/usr/bin/env bash
+#!/bin/sh
 # screenshot script
 
 # padding for padshot
 PADDING=50
 
 # take with selection and copy to clipboard
-if [[ "$1" = "-s" ]]; then
+if [ "$1" = "-s" ]; then
   maim -s -u -m 10 | xclip -sel clip -t image/png
 fi
 
 # take with selection and save to folder
-if [[ "$1" = "-d" ]]; then
+if [ "$1" = "-d" ]; then
   maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M').png"
 fi
 
 # take with padding and save to clipboard
-if [[ "$1" = "-p" ]]; then
+if [ "$1" = "-p" ]; then
 id=$(slw) &&
     wattr xywhb "$id" | {
         read -r x y w h b
@@ -32,6 +32,6 @@ id=$(slw) &&
 fi
 
 # take desktop screenshot
-if [[ "$1" = "-c" ]]; then
+if [ "$1" = "-c" ]; then
   maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png"
 fi
