@@ -13,7 +13,7 @@ alt + shift + d
 # select and save
 alt + shift + s
   shot -d
-# full desktop screenshot
+# full and save
 alt + shift + w
   shot -c
 # record section of screen

@@ -42,7 +42,6 @@ case "$1" in
         if pidof ffmpeg
         then
             killall ffmpeg
-
 	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
         else
             slop=$(slop -f "%x %y %w %h")
@@ -57,12 +56,11 @@ case "$1" in
             then
 	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
 
-            ffmpeg -f x11grab \
-                # -f alsa -i pulse \
-                -s "$W"x"$H" \
-                -framerate 60  \
-                -thread_queue_size 512  \
-                -i $DISPLAY.0+$X,$Y \
+            ffmpeg -f x11grab\
+                -s "$W"x"$H"\
+                -framerate 60 \
+                -thread_queue_size 512 \
+                -i $DISPLAY.0+$X,$Y\
                 -vcodec libx264\
                 -qp 18\
                 -preset ultrafast \
@@ -76,7 +74,6 @@ case "$1" in
         if pidof ffmpeg
         then
             killall ffmpeg
-
 	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
         else
 
