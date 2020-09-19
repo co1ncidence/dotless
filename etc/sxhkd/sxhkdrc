@@ -14,10 +14,10 @@ alt + shift + w
   shot -c
 # record section of screen
 alt + shift + r
-  shot -v
+  pkill ffmpeg || shot -v
 # record whole screen
 alt + shift + t
-  shot -t
+  pkill ffmpeg || shot -t
 
 ### WINDOW MANAGEMENT ###--------------------------------------------------
 #

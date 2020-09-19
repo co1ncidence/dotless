@@ -39,7 +39,7 @@ case "$1" in
 
         if pidof ffmpeg
         then
-            killall ffmpeg
+            pkill ffmpeg
 	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
         else
             slop=$(slop -f "%x %y %w %h")
@@ -69,7 +69,7 @@ case "$1" in
 
         if pidof ffmpeg
         then
-            killall ffmpeg
+            pkill ffmpeg
 	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
         else
 
