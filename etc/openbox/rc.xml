@@ -267,7 +267,13 @@
         <command>st</command>
       </action>
     </keybind>
-    <!-- thunar -->
+    <!-- ranger -->
+    <keybind key="W-y">
+      <action name="Execute">
+        <command>urxvt</command>
+      </action>
+    </keybind>
+    <!-- ranger -->
     <keybind key="W-e">
       <action name="Execute">
         <command>st -e ranger</command>

@@ -8,16 +8,24 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 ! URXVT shit
-URxvt.font: xft:iA Writer Mono V:size=12
+URxvt.font: xft:Recursive Mono Casual Static:size=12
 URxvt.perl-ext-common:  ...,clipboard,...
 URxvt.clipboard.autocopy: true
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.internalBorder: 40
+
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
 
 ! Special
-*.background: #121213
-*.foreground: #fdf9f7
-*.cursorColor:  #fdf9f7
+*.background: #fdf9f7
+*.foreground: #262427
+*.cursorColor:  #262427
 
 ! black
 *.color0:  #1c1b1d

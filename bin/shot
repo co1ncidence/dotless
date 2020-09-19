@@ -11,7 +11,7 @@ fi
 
 # take with selection and save to folder
 if [[ "$1" = "-d" ]]; then
-  maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M')"
+  maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M').png"
 fi
 
 # take with padding and save to clipboard
@@ -33,5 +33,5 @@ fi
 
 # take desktop screenshot
 if [[ "$1" = "-c" ]]; then
-  maim -m 10 -u "$HOME/$(date +'%a_%I:%M')"
+  maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png"
 fi
