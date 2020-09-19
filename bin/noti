@@ -1,17 +1,27 @@
 #!/usr/bin/env bash
 # display cool notifications
 
-if [[ "$1" = "-a" ]]; then
-  pkill herbe & \
-  herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)"
-fi
+case "$1" in
 
-if [[ "$1" = "-v" ]]; then
-  pkill herbe & \
-  herbe "Volume: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
-fi
+  -a)
 
-if [[ "$1" = "-l" ]]; then
-  pkill herbe & \
-  herbe "Brightness" " " "$(xbacklight -get)"
-fi
+      pkill herbe & \
+      herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)"
+
+      ;;
+
+  -v)
+
+      pkill herbe & \
+      herbe "Volume: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
+
+      ;;
+
+  -l)
+
+      pkill herbe & \
+      herbe "Brightness" " " "$(xbacklight -get)"
+
+      ;;
+
+esac
