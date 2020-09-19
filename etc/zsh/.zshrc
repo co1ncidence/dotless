@@ -61,7 +61,7 @@ alias no="nvim ~/var/notes/notes.md"
 alias t="termtosvg"
 
 # Prompt
-PROMPT='%B%F{red}%1~%f%b '
+PROMPT='%F{239}%1~%f %B%F{red}>%b%f '
 
 ### FUNCTIONS
 
