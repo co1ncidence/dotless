@@ -12,7 +12,7 @@ case "$1" in
 
     -d)
 
-        maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M').png"
+        maim -s -u -m 10 "$HOME/med/pic/scr/$(date +'%a_%I:%M').png"
         ;;
 
     -p)
@@ -60,7 +60,7 @@ case "$1" in
                 -vcodec libx264\
                 -qp 18\
                 -preset ultrafast \
-            "$HOME/usr/med/vid/$(date +'%a_%I:%M').mp4"
+            "$HOME/med/vid/$(date +'%a_%I:%M').mp4"
             fi
         fi
         ;;
@@ -83,7 +83,7 @@ case "$1" in
             -crf 0 \
             -preset ultrafast \
             -y \
-            "$HOME/usr/med/vid/$(date +'%a_%I:%M').mp4"
+            "$HOME/med/vid/$(date +'%a_%I:%M').mp4"
         fi
         ;;
 
