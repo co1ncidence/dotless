@@ -1,4 +1,9 @@
+#
+# nuaNce's shitty sxhkd config
+#
+
 ### SCREENSHOT KEYBINDS ###------------------------------------------------
+#
 # select and clipboard
 alt + shift + e
   shot -s
@@ -13,6 +18,7 @@ alt + shift + w
   shot -c
 
 ### WINDOW MANAGEMENT ###--------------------------------------------------
+#
 # center window
 super + c
   centerwindow
@@ -27,6 +33,7 @@ alt + {h,j,k,l}
   wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
 ### VARIOUS MENUS ###-----------------------------------------------------
+#
 # logout menu
 alt + shift + x
   altshiftx
@@ -38,6 +45,7 @@ super + m
   memenu
 
 ### VIDEO RECORDING ###---------------------------------------------------
+#
 # record section of screen
 alt + shift + r
   scr -m s -f 60 -c ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
@@ -46,10 +54,12 @@ alt + shift + t
   screenrecord
 
 ### DA NOTI ###-----------------------------------------------------------
+#
 super + q
   noti -a
 
 ### BRIGHTNESS ###--------------------------------------------------------
+#
 # brightness up
 super + Up
   xbacklight -inc 10 -time 0 && noti -l
@@ -58,6 +68,7 @@ super + Down
   xbacklight -dec 10 -time 0 && noti -l
 
 ### VOLUME ###------------------------------------------------------------
+#
 # volume up 10%
 super + p
   amixer --quiet set Master 10%+ && noti -v
