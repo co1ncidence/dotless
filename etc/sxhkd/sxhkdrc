@@ -1,7 +1,3 @@
-#
-# nuaNce's shitty sxhkd config
-#
-
 ### CAPTURE KEYBINDS ###------------------------------------------------
 #
 # select and clipboard
@@ -52,25 +48,19 @@ super + b
 super + m
   memenu
 
-### DA NOTI ###-----------------------------------------------------------
-#
+### HERBE ###--------------------------------------------------------
+# Full Noti
 super + q
   noti -a
-
-### BRIGHTNESS ###--------------------------------------------------------
-#
 # brightness up
 super + Up
   xbacklight -inc 10 -time 0 && noti -l
 # brightness down
 super + Down
   xbacklight -dec 10 -time 0 && noti -l
-
-### VOLUME ###------------------------------------------------------------
-#
-# volume up 10%
+# volume up
 super + p
   amixer --quiet set Master 10%+ && noti -v
-# volume down 10%
+# volume down
 super + o
   amixer --quiet set Master 10%- && noti -v
