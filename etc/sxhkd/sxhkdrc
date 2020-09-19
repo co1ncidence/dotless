@@ -2,7 +2,7 @@
 # nuaNce's shitty sxhkd config
 #
 
-### SCREENSHOT KEYBINDS ###------------------------------------------------
+### CAPTURE KEYBINDS ###------------------------------------------------
 #
 # select and clipboard
 alt + shift + e
@@ -16,11 +16,19 @@ alt + shift + s
 # full desktop screenshot
 alt + shift + w
   shot -c
+# record section of screen
+alt + shift + r
+  shot -v
+# record whole screen
+alt + shift + t
+  shot -t
 
 ### WINDOW MANAGEMENT ###--------------------------------------------------
 #
 # center window
 super + c
+  centerwindow
+alt + c
   centerwindow
 # snap window
 ctrl + shift + {h,j,k,l}
@@ -43,15 +51,6 @@ super + b
 # meme menu
 super + m
   memenu
-
-### VIDEO RECORDING ###---------------------------------------------------
-#
-# record section of screen
-alt + shift + r
-  scr -m s -f 60 -c ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
-# record whole screen
-alt + shift + t
-  screenrecord
 
 ### DA NOTI ###-----------------------------------------------------------
 #

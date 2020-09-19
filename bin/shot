@@ -1,25 +1,22 @@
-#!/bin/sh
-# super duper screenSHOTer
+#!/bin/bash
+# screenshotter and recorder
 
-PADDING=50 # the amount of padding for -p flag
+PADDING=50
 
 case "$1" in
 
     -s)
 
-        # take a screenshot with selection and copy to clipboard
         maim -s -u -m 10 | xclip -sel clip -t image/png
         ;;
 
     -d)
 
-        # take a screnshot with selection and save to scrots folder
         maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M').png"
         ;;
 
     -p)
 
-        # take a screenshot with padding and save to clipboard
         id=$(slw) &&
             wattr xywhb "$id" | {
                 read -r x y w h b
@@ -37,8 +34,64 @@ case "$1" in
 
     -c)
 
-        # take full desktop screenshot and save to home
         maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png"
+        ;;
+
+    -v)
+
+        if pidof ffmpeg
+        then
+            killall ffmpeg
+
+	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
+        else
+            slop=$(slop -f "%x %y %w %h")
+
+            read -r X Y W H < <(echo $slop)
+
+            time=$(date +%F%T)
+
+            width=${#W}
+
+            if [ $width -gt 0 ];
+            then
+	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
+
+            ffmpeg -f x11grab \
+                # -f alsa -i pulse \
+                -s "$W"x"$H" \
+                -framerate 60  \
+                -thread_queue_size 512  \
+                -i $DISPLAY.0+$X,$Y \
+                -vcodec libx264\
+                -qp 18\
+                -preset ultrafast \
+            "$HOME/usr/med/vid/$(date +'%a_%I:%M').mp4"
+            fi
+        fi
+        ;;
+
+    -t)
+
+        if pidof ffmpeg
+        then
+            killall ffmpeg
+
+	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
+        else
+
+        paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
+        ffmpeg \
+            -video_size 1366x768 \
+            -framerate 60 \
+            -f x11grab \
+            -i :0.0 \
+            -c:v libx264 \
+            -crf 0 \
+            -preset ultrafast \
+            -y \
+            "$HOME/usr/med/vid/$(date +'%a_%I:%M').mp4"
+        fi
         ;;
 
 esac
