@@ -1,6 +1,0 @@
-#!/bin/sh
-# display current Volume level
-
-pkill herbe &
-
-herbe "Volume: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"

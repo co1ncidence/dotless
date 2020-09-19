@@ -1,6 +1,0 @@
-#!/bin/sh
-# display brightness level
-
-pkill herbe &
-
-herbe "Brightness" " " "$(xbacklight -get)"

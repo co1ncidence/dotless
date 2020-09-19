@@ -33,5 +33,5 @@ fi
 
 # take desktop screenshot
 if [[ "$1" = "-c" ]]; then
-  maim -m 10 -u "$HOME/what.png"
+  maim -m 10 -u "$HOME/$(date +'%a_%I:%M')"
 fi
