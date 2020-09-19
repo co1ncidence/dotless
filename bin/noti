@@ -1,6 +1,17 @@
-#!/bin/sh
-# display an all inclusive notification
+#!/usr/bin/env bash
+# display cool notifications
 
-pkill herbe &
+if [[ "$1" = "-a" ]]; then
+  pkill herbe & \
+  herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)"
+fi
 
-herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)"
+if [[ "$1" = "-v" ]]; then
+  pkill herbe & \
+  herbe "Volume: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
+fi
+
+if [[ "$1" = "-l" ]]; then
+  pkill herbe & \
+  herbe "Brightness" " " "$(xbacklight -get)"
+fi

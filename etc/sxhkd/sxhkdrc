@@ -36,7 +36,7 @@ alt + {h,j,k,l}
 
 # send an all-inclusive notification
 super + q
-  noti
+  noti -a
 
 # open up my school menu
 super + b
@@ -52,16 +52,16 @@ super + u
 
 # increase brightness and tell me the level
 super + Up
-  xbacklight -inc 10 -time 0 && . ~/usr/bin/light
+  xbacklight -inc 10 -time 0 && noti -l
 
 # decrease brightness and tell me the level
 super + Down
-  xbacklight -dec 10 -time 0 && . ~/usr/bin/light
+  xbacklight -dec 10 -time 0 && noti -l
 
 # increase volume and tell me the level
 super + p
-  amixer --quiet set Master 10%+ && . ~/usr/bin/vol
+  amixer --quiet set Master 10%+ && noti -v
 
 # decrease volume and tell me the level
 super + o
-  amixer --quiet set Master 10%- && . ~/usr/bin/vol
+  amixer --quiet set Master 10%- && noti -v
