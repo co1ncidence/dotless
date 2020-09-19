@@ -10,7 +10,7 @@
 
 <p align="center"
 
-![img](scr/blissful.png)
+![img](scr/sunset.png)
 
 </p>
 
