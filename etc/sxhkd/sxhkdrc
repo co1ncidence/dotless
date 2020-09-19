@@ -1,67 +1,66 @@
-# centers a window
+### SCREENSHOT KEYBINDS ###------------------------------------------------
+# select and clipboard
+alt + shift + e
+  shot -s
+# padding and clipboard
+alt + shift + d
+  shot -p
+# select and save
+alt + shift + s
+  shot -d
+# full desktop screenshot
+alt + shift + w
+  shot -c
+
+### WINDOW MANAGEMENT ###--------------------------------------------------
+# center window
 super + c
   centerwindow
-
-# snaps windows to certain directions
+# snap window
 ctrl + shift + {h,j,k,l}
   snapwin {left, down, up, right}
-
-# logout menu
-alt + shift + x
-  altshiftx
-
-# screenshot an image and pipe to clipboard
-alt + shift + e
-  maim -s -u -m 10 | xclip -selection clipboard -t image/png
-
-# take a screenshot with padding
-alt + shift + d
-  padshot
-
-# record a vide via selection
-alt + shift + r
-  scr -m s -f 60 -c ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
-
-# record entire screen at 60fps
-alt + shift + t
-  screenrecord
-
-# move a window around
+# move window
 super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-75 y,75 y,x 75,x -75}
-
-# resize current window
+# resize window
 alt + {h,j,k,l}
   wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
-# send an all-inclusive notification
-super + q
-  noti -a
-
-# open up my school menu
+### VARIOUS MENUS ###-----------------------------------------------------
+# logout menu
+alt + shift + x
+  altshiftx
+# school menu
 super + b
   school
-
-# open up the memenu
+# meme menu
 super + m
   memenu
 
-# change wallpaper
-super + u
-  shf
+### VIDEO RECORDING ###---------------------------------------------------
+# record section of screen
+alt + shift + r
+  scr -m s -f 60 -c ~/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+# record whole screen
+alt + shift + t
+  screenrecord
 
-# increase brightness and tell me the level
+### DA NOTI ###-----------------------------------------------------------
+super + q
+  noti -a
+
+### BRIGHTNESS ###--------------------------------------------------------
+# brightness up
 super + Up
   xbacklight -inc 10 -time 0 && noti -l
-
-# decrease brightness and tell me the level
+# brightness down
 super + Down
   xbacklight -dec 10 -time 0 && noti -l
 
-# increase volume and tell me the level
+### VOLUME ###------------------------------------------------------------
+# volume up 10%
 super + p
   amixer --quiet set Master 10%+ && noti -v
-
-# decrease volume and tell me the level
+# volume down 10%
 super + o
   amixer --quiet set Master 10%- && noti -v
