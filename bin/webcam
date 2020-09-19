@@ -1,6 +1,7 @@
-#!/bin/sh
-# toggle a floating webcam
+#!/usr/bin/env bash
 
-doas chown root:video /dev/video0
-doas chmod g+rwx /dev/video0
-mpv av://v4l2:/dev/video0
+qvidcap & disown
+
+# doas chown root:video /dev/video0
+# doas chmod g+rwx /dev/video0
+# mpv av://v4l2:/dev/video0
