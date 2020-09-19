@@ -42,7 +42,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme sublime
+colorscheme sunset
 
 " Look and feel
 set ruler

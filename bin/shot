@@ -1,31 +1,44 @@
 #!/bin/sh
 # super duper screenSHOTer
 
-PADDING=50
+PADDING=50 # the amount of padding for -p flag
 
 case "$1" in
+
     -s)
-      maim -s -u -m 10 | xclip -sel clip -t image/png
-      ;;
+
+        # take a screenshot with selection and copy to clipboard
+        maim -s -u -m 10 | xclip -sel clip -t image/png
+        ;;
+
     -d)
-      maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M').png"
-      ;;
+
+        # take a screnshot with selection and save to scrots folder
+        maim -s -u -m 10 "$HOME/usr/med/pic/scr/$(date +'%a_%I:%M').png"
+        ;;
+
     -p)
-      id=$(slw) &&
-          wattr xywhb "$id" | {
-            read -r x y w h b
 
-            w=$((w + PADDING * 2))
-            h=$((h + PADDING * 2))
-            x=$((x - PADDING + b))
-            y=$((y - PADDING + b))
+        # take a screenshot with padding and save to clipboard
+        id=$(slw) &&
+            wattr xywhb "$id" | {
+                read -r x y w h b
 
-            cur=$(date +%F_%H-%M-%S)
+                w=$((w + PADDING * 2))
+                h=$((h + PADDING * 2))
+                x=$((x - PADDING + b))
+                y=$((y - PADDING + b))
 
-            maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png
-        }
-       ;;
+                cur=$(date +%F_%H-%M-%S)
+
+                maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png
+            }
+        ;;
+
     -c)
-      maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png"
-      ;;
+
+        # take full desktop screenshot and save to home
+        maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png"
+        ;;
+
 esac
