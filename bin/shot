@@ -26,8 +26,6 @@ case "$1" in
                 x=$((x - PADDING + b))
                 y=$((y - PADDING + b))
 
-                cur=$(date +%F_%H-%M-%S)
-
                 maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png
             }
         ;;
@@ -46,13 +44,11 @@ case "$1" in
         else
             slop=$(slop -f "%x %y %w %h")
 
-            read -r X Y W H < <(echo $slop)
-
-            time=$(date +%F%T)
+            read -r X Y W H < <(echo "$slop")
 
             width=${#W}
 
-            if [ $width -gt 0 ];
+            if [ "$width" -gt 0 ];
             then
 	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
 
@@ -60,7 +56,7 @@ case "$1" in
                 -s "$W"x"$H"\
                 -framerate 60 \
                 -thread_queue_size 512 \
-                -i $DISPLAY.0+$X,$Y\
+                -i "$DISPLAY".0+"$X","$Y"\
                 -vcodec libx264\
                 -qp 18\
                 -preset ultrafast \
