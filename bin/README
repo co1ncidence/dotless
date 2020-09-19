@@ -4,62 +4,62 @@
 |                |
 +----------------+
 
-altshiftx - dmenu logout menu
+altshiftx     - dmenu logout menu
 
-arc - compress a folder into a tar
+arc           - compress a folder into a tar
 
-battery - display batter status for parsing
+battery       - display batter status for parsing
 
-bunny - bunny!
+bunny         - bunny!
 
-centerwindow - center the current window
+centerwindow  - center the current window
 
-ch - rm daemon for annoying homedir invaders
+ch            - rm daemon for annoying homedir invaders
 
-chkbsh - check bin for bashisms
+chkbsh        - check bin for bashisms
 
-cl - colorscheme script
+cl            - colorscheme script
 
-downlaod - YouTube to mp3 scipt
+downlaod      - YouTube to mp3 scipt
 
-ext - extract an archive, any archive
+ext           - extract an archive, any archive
 
-memenu - menu of memes to spam
+memenu        - menu of memes to spam
 
-note - note something down in da notes file
+note          - note something down in da notes file
 
-noti - send various notis with sxhkd commands
+noti          - send various notis with sxhkd commands
 
-office - opens libreoffice with a sensible theme
+office        - opens libreoffice with a sensible theme
 
-opener - plumber for FFF and SHFM
+opener        - plumber for FFF and SHFM
 
-pass - use dmenu as a passwords menu
+pass          - use dmenu as a passwords menu
 
-push - push a repo to origin master
+push          - push a repo to origin master
 
-school - open school menu tree
+school        - open school menu tree
 
-screenrecord - record whole screen in 60fps
+screenrecord  - record whole screen in 60fps
 
-shot - modular maim frontend, different modes
+shot          - modular maim frontend, different modes
 
-snapwin - snap windows to 4 sides of screen
+snapwin       - snap windows to 4 sides of screen
 
-testfont - test the current font
+testfont      - test the current font
 
-trash - trash a file/folder instead of rm'ing
+trash         - trash a file/folder instead of rm'ing
 
-updots - update dotfiles
+updots        - update dotfiles
 
-upload - upload a file to 0x0 and copy link
+upload        - upload a file to 0x0 and copy link
 
-vibe - start vibing to random music
+vibe          - start vibing to random music
 
-vibeto - start vibing to specific music
+vibeto        - start vibing to specific music
 
-webcam - opens view of what I hate the most
+webcam        - opens view of what I hate the most
 
-wid - prints wid for xdotool to use
+wid           - prints wid for xdotool to use
 
-xd - remove XDG_RETARDED_DIRS
+xd            - remove XDG_RETARDED_DIRS
