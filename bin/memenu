@@ -1,7 +1,7 @@
 #!/bin/sh
 # dmemenu
 
-dir="$HOME/usr/med/pic/mem"
+dir="$HOME/med/pic/mem"
 
 mem=$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static" -nb '#1c1b1d' -nf '#dedd9d' -sb '#dedd9d' -sf '#121213')
 

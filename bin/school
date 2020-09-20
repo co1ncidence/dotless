@@ -5,7 +5,7 @@ choice=$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
   dmenu -fn "Recursive Mono Linear Static" -nb '#1c1b1d' -nf '#9dccde' -sb '#9dccde' -sf '#121213')
 
 case "$choice" in
-  schooldocs)  . ~/usr/bin/classes/schooldocs & disown    ;;
-  comp2)       . ~/usr/bin/classes/comp2 & disown         ;;
-  humanities)  . ~/usr/bin/classes/humanities & disown    ;;
+  schooldocs)  . ~/usr/bin/classes/schooldocs &   ;;
+  comp2)       . ~/usr/bin/classes/comp2 &        ;;
+  humanities)  . ~/usr/bin/classes/humanities &   ;;
 esac

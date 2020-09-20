@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/sh
 # erm...
 
-qvidcap & disown
+qvidcap &
 
 # doas chown root:video /dev/video0
 # doas chmod g+rwx /dev/video0
