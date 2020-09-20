@@ -1,5 +1,4 @@
-### CAPTURE KEYBINDS ###------------------------------------------------
-#
+### CAPTURE KEYBINDS
 # select and clipboard
 alt + shift + e
   shot -s
@@ -19,8 +18,7 @@ alt + shift + r
 alt + shift + t
   pkill ffmpeg || shot -t
 
-### WINDOW MANAGEMENT ###--------------------------------------------------
-#
+### WINDOW MANAGEMENT
 # center window
 super + c
   centerwindow
@@ -36,8 +34,7 @@ super + shift + {h,l,j,k}
 alt + {h,j,k,l}
   wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
-### VARIOUS MENUS ###-----------------------------------------------------
-#
+### VARIOUS MENUS
 # logout menu
 alt + shift + x
   altshiftx
@@ -48,7 +45,7 @@ super + b
 super + m
   memenu
 
-### HERBE ###--------------------------------------------------------
+### HERBE
 # Full Noti
 super + q
   noti -a
