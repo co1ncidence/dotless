@@ -1,13 +1,13 @@
-#!/bin/sh
+#! /bin/sh
 # an all purpose archive extractor
 
 usage() {
-    >&2 printf '%s\n' "Usage: ${0##*/} [-c copy_path] file"
+    >&2 printf '%s\n' "Usage: "${0##*/}" [-c copy_path] file"
     exit 1
 }
 
 decompress() {
-    case ${1##*.} in
+    case "${1##*.}" in
         gz|tgz)  gunzip -qdc "$1" ;;
         xz|txz)  xz -qdcT 0 "$1"  ;;
         bz2|tbz) bunzip2 -qdc "$1" ;;
@@ -15,13 +15,13 @@ decompress() {
 }
 
 run() {
-    case $1 in
+    case "$1" in
         *tar.*|*.tgz|*.txz|*.tbz)
             decompress "$1" | \
             tar -C "${COPY_PATH:-$PWD}" -xpf -
             ;;
         *.xz|*.gz|*.bz2)
-            decompress "$1" "${COPY_PATH:-$PWD}/${1%.*}"
+            decompress "$1" "${COPY_PATH:-"$PWD"}/"${1%.*}""
             ;;
         *.zip)
             unzip -q "$1" -d "$2"
@@ -33,17 +33,17 @@ run() {
             7z x "$1"
             ;;
         *)
-            >&2 echo "Unrecognized compression format: ${1##*.}"
+            >&2 echo "Unrecognized compression format: "${1##*.}""
     esac
 }
 
 while [ "$1" ] ; do
-    case $1 in
+    case "$1" in
         -h|h)
             usage
             ;;
         -C|-c)
-            COPY_PATH=$1
+            COPY_PATH="$1"
             ;;
         *)
             run "$@"

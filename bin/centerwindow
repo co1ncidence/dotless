@@ -1,12 +1,12 @@
-#!/bin/sh
+#! /bin/sh
 # script to center current window
 
-WID=$(pfw)
-WW=$(wattr w $WID)
-WH=$(wattr h $WID)
+WID="$(pfw)"
+WW="$(wattr w $WID)"
+WH="$(wattr h $WID)"
 
-ROOT=$(lsw -r)
-SW=$(wattr w $ROOT)
-SH=$(wattr h $ROOT)
+ROOT="$(lsw -r)"
+SW="$(wattr w "$ROOT")"
+SH="$(wattr h "$ROOT")"
 
-wtp $(((SW - WW)/2)) $(((SH - WH)/2)) $WW $WH $WID
+wtp "$(((SW - WW)/2))" "$(((SH - WH)/2))" "$WW" "$WH" "$WID"

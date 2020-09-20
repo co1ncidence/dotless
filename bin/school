@@ -1,11 +1,12 @@
-#!/bin/sh
+#! /bin/sh
 # dmenu script to manage my school workflow
 
-choice=$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
-  dmenu -fn "Recursive Mono Linear Static" -nb '#1c1b1d' -nf '#fdf9f7' -sb '#fdf9f7' -sf '#121213')
-
-case "$choice" in
-  schooldocs)  . ~/usr/bin/classes/schooldocs &   ;;
-  comp2)       . ~/usr/bin/classes/comp2 &        ;;
-  humanities)  . ~/usr/bin/classes/humanities &   ;;
-esac
+choice="$(echo "schooldocs\ncomp2\nhumanities\n"               ""| \
+  dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
+[ -z "$choice" ] && \
+  exit 1 || \
+  case "$choice" in
+    schooldocs)  . "$HOME/usr/bin/classes/schooldocs" &       ;;
+    comp2)       . "$HOME/usr/bin/classes/comp2" &            ;;
+    humanities)  . "$HOME/usr/bin/classes/humanities" &     ;;
+  esac

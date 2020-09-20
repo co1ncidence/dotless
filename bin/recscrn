@@ -1,14 +1,14 @@
-#!/bin/sh
+#! /bin/sh
 # record a fullscreen video with ffmpeg
 
 pkill herbe
 
 herbe "Recording Starts Soon..."
 
-pgrep -x ffmpeg && pkill ffmpeg || \
+pgrep -x "ffmpeg" && pkill -9 ffmpeg || \
 
 ffmpeg \
-    -video_size 1366x768 \
+    -video_size "1366x768" \
     -framerate 60 \
     -f x11grab \
     -i :0.0 \
@@ -16,4 +16,4 @@ ffmpeg \
     -crf 0 \
     -preset ultrafast \
     -y \
-    $HOME/usr/med/vid/$(date '+%Y-%m-%d_%H-%M-%S').mp4
+    "$HOME/usr/med/vid/"$(date '+%Y-%m-%d_%H-%M-%S')".mp4"

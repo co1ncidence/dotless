@@ -1,8 +1,8 @@
-#!/bin/sh
+#! /bin/sh
 # dmemenu
 
 dir="$HOME/med/pic/mem"
 
-mem=$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static" -nb '#1c1b1d' -nf '#fdf9f7' -sb '#fdf9f7' -sf '#121213')
+mem="$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
 
 [ -f "$dir/$mem" ] && xclip -sel clip -t image/png "$dir/$mem"

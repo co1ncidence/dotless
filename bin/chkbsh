@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 # check all my shell scripts for bashisms
 
-find ~/usr/bin/ -type f -perm -o=r -print0 | xargs -0 gawk '/^#!.*( |[/])sh/{printf "%s\0", FILENAME} {nextfile}' | xargs -0 checkbashisms
+find "$HOME/usr/bin/" -type f -perm -o=r -print0 | xargs -0 gawk '/^#!.*( |[/])sh/{printf "%s\0", FILENAME} {nextfile}' | xargs -0 checkbashisms

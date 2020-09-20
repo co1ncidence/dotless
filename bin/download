@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 # download a song from Youtube
 
 youtube-dl -x \

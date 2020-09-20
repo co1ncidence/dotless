@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 # simple script to vibe
 
 exec mpv --x11-name=no-title \
