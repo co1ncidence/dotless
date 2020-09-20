@@ -3,6 +3,7 @@
 
 choice="$(echo "schooldocs\ncomp2\nhumanities\n"               ""| \
   dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
+  
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in
