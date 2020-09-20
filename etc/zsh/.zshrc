@@ -58,10 +58,11 @@ alias sudo="sls -u root"
 alias upx="xrdb -merge ~/etc/x/xresources"
 alias n="note"
 alias no="nvim ~/var/notes/notes.md"
+alias nls="grep -v '>' ~/var/notes/notes.md"
 alias t="termtosvg"
 
 # Prompt
-PROMPT='%F{244}%1~%f %B%F{red}/%b%f '
+PROMPT='%B%F{white}%1~%f%b %B%F{red}/%b%f '
 
 ### FUNCTIONS
 
