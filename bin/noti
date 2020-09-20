@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 # display cool notifications
 
 case "$1" in
@@ -13,7 +13,7 @@ case "$1" in
   -v)
 
       pkill herbe & \
-      herbe "Volume: $(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
+      herbe "Volume: "$(amixer sget Master | grep -i "right:" | awk -F '[][]' '{ print $2 }')""
 
       ;;
 

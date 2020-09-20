@@ -1,14 +1,14 @@
-#!/bin/sh
+#! /bin/sh
 # stupid script that updates my dotfiles
 
-cp -r ~/etc/ ~/usr/git/dotless/
-rm -rf ~/usr/git/dotless/etc/nvim/plugged/
-rm -rf ~/usr/git/dotless/etc/nvim/colors/
-rm -rf ~/usr/git/dotless/etc/nvim/spell/
-rm -rf ~/usr/git/dotless/etc/nvim/.netrwhist
-cp -r ~/usr/bin/ ~/usr/git/dotless/
-cp -r ~/var/themes/graywindow/ ~/usr/git/dotless/var/themes/
-cd ~/usr/git/dotless/
+cp -r	"$HOME/etc/" "$HOME/usr/git/dotless/"
+rm -rf	"$HOME/usr/git/dotless/etc/nvim/plugged/"
+rm -rf	"$HOME/usr/git/dotless/etc/nvim/colors/"
+rm -rf	"$HOME/usr/git/dotless/etc/nvim/spell/"
+rm -rf	"$HOME/usr/git/dotless/etc/nvim/.netrwhist"
+cp -r	"$HOME/usr/bin/ $HOME/usr/git/dotless/"
+cp -r	"$HOME/var/themes/graywindow/" "$HOME/usr/git/dotless/var/themes/"
+cd		"$HOME/usr/git/dotless/"
 rm -rf \
 	etc/ranger/colorschemes/  \
 	etc/user-dirs.locale \
@@ -47,9 +47,9 @@ rm -rf \
 	etc/GIMP/     \
 	etc/yay/      \
   etc/git/
-rm -rf ~/usr/git/dotless/bin/templates/
-rm -rf ~/usr/git/dotless/bin/classes/
-rm -rf ~/usr/git/dotless/bin/notmine/
+rm -rf "$HOME/usr/git/dotless/bin/templates/"
+rm -rf "$HOME/usr/git/dotless/bin/classes/"
+rm -rf "$HOME/usr/git/dotless/bin/notmine/"
 
 [ -z "$1" ] && \
     msg="docs:update" || \

@@ -1,7 +1,7 @@
-#!/bin/sh -e
+#! /bin/sh -e
 # display batter capacity and status
 
-bat_dir=/sys/class/power_supply/BAT0
+bat_dir="/sys/class/power_supply/BAT0"
 
 read -r capacity < "$bat_dir/capacity"
 read -r status   < "$bat_dir/status"

@@ -1,25 +1,25 @@
-#!/bin/sh -e
+#! /bin/sh -e
 # plumber for FFF and SHFM
 
-case $1 in
+case "$1" in
         *.mp3|*.flac|*.wav)
-            mpv --no-video "$1"
+           setsid -f mpv --no-video "$1"
         ;;
 
         *.mp4|*.mkv|*.webm|*.mov)
-            mpv "$1"
+           setsid -f mpv "$1"
         ;;
 
         *.png|*.gif|*.jpg|*.jpe|*.jpeg)
-            sxiv "$1"
+           setsid -f sxiv "$1"
         ;;
 
         *.pdf)
-            zathura "$1"
+           setsid -f zathura "$1"
         ;;
 
         *.odt|*.ppt|*.csv)
-            libreoffice "$1"
+           setsid -f libreoffice "$1"
         ;;
 
         # all other files

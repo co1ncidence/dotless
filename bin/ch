@@ -1,7 +1,7 @@
-#!/bin/sh
+#! /bin/sh
 # clean ~~your~~ my home dir!
 
-[ "$(pgrep -x ch)" = "$$" ] || exit
+[ "$(pgrep -x ch)" = "$$" ] || exit 1
 
 while :; do
 	set --

@@ -1,8 +1,8 @@
-#!/bin/sh
+#! /bin/sh
 # dmenu script to copy my passwords to clipboard
 
 dir="$HOME/usr/doc/sav/pass"
 
-pass=$(ls -1 "$dir" | dmenu -fn "Recursive Mono Casual Static" -nb '#1c1b1d' -nf '#fdf9f7' -sb '#fdf9f7' -sf '#121213')
+pass="$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
 
-[ -f "$dir/$pass" ] && xclip -sel clip "$dir/$pass"
+[ -f "$dir/$pass" ] && xclip -sel clip -in "$dir/$pass"

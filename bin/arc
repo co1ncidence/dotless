@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 # simple script to archive a folder
 
 die() {
@@ -6,18 +6,18 @@ die() {
     exit 1
 }
 
-tar=${1%/}
-tar=${tar%%.*}.tar.gz
+tar="${1%/}"
+tar="{tar%%.*}.tar.gz"
 
 [ "$1" ] ||
     die
 
 [ -e "$tar" ] &&
-    die "error : '$tar' already exists"
+    die "error : "$tar" already exists"
 
 for file; do
     [ -e "$file" ] ||
-        die "error : '$file' isn't a valid file"
+        die "error : "$file" isn't a valid file"
 done
 
 tar czvf "$tar" "$@"
