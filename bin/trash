@@ -1,4 +1,0 @@
-#!/bin/sh
-# trash a file
-
-mv "$@" "$HOME/tmp/" # this is a tmpfs

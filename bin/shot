@@ -37,32 +37,26 @@ case "$1" in
 
     -v)
 
-        if pidof ffmpeg
-        then
-            pkill ffmpeg
-	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
-        else
-            slop=$(slop -f "%x %y %w %h")
+          slop=$(slop -f "%x %y %w %h")
 
-            read -r X Y W H < <(echo "$slop")
+          read -r X Y W H < <(echo "$slop")
 
-            width=${#W}
+          width=${#W}
 
-            if [ "$width" -gt 0 ];
-            then
-	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
+          if [ "$width" -gt 0 ];
+          then
+          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
 
-            ffmpeg -f x11grab\
-                -s "$W"x"$H"\
-                -framerate 60 \
-                -thread_queue_size 512 \
-                -i "$DISPLAY".0+"$X","$Y"\
-                -vcodec libx264\
-                -qp 18\
-                -preset ultrafast \
-            "$HOME/med/vid/$(date +'%a_%I:%M').mp4"
-            fi
-        fi
+          ffmpeg -f x11grab\
+              -s "$W"x"$H"\
+              -framerate 60 \
+              -thread_queue_size 512 \
+              -i "$DISPLAY".0+"$X","$Y"\
+              -vcodec libx264\
+              -qp 18\
+              -preset ultrafast \
+          "$HOME/med/vid/$(date +'%a_%I:%M').mp4"
+          fi
         ;;
 
     -t)
