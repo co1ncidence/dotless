@@ -45,6 +45,12 @@ rm -rf \
 	etc/procps    \
 	etc/gconf     \
 	etc/GIMP/     \
+	etc/ncmpcpp/error.log \
+	etc/mpd/mpd.db \
+	etc/mpd/mpd.log \
+	etc/mpd/mpd.pid \
+	etc/mpd/mpdstate \
+	etc/mpd/playlists \
 	etc/yay/      \
   etc/git/
 rm -rf "$HOME/usr/git/dotless/bin/templates/"
