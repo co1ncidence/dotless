@@ -9,7 +9,7 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 xset r rate 250 50
 
 # Set wallpaper
-feh --no-fehbg --bg-fill ~/med/pic/wlp/see.jpg &
+feh --no-fehbg --bg-fill ~/med/wlp/see.jpg &
 
 # Launch some programs
 picom -b --config ~/etc/picom/picom.conf &

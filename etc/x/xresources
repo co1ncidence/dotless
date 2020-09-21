@@ -9,7 +9,6 @@ Xft.lcdfilter: lcddefault
 
 ! URXVT shit
 URxvt.font: xft:Recursive Mono Casual Static:size=12
-URxvt.perl-ext-common:  ...,clipboard,...
 URxvt.clipboard.autocopy: true
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
