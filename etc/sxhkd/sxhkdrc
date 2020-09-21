@@ -76,3 +76,7 @@ super + backslash
 ### CHANGE WALLPAPER
 super + u
   feh --no-fehbg --bg-fill --randomize --recursive ~/med/wlp/*
+
+### TYPING TEST
+super + s
+  typingtest

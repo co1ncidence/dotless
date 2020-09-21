@@ -1,4 +1,17 @@
 #!/bin/sh
 # start a typing test
+# choose a font
 
-st -f Recursive:pixelsize=28 -e gottagofast -w 68 &
+choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\n'               '"| \
+  dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
+
+[ -z "$choice" ] && \
+  exit 1 || \
+  case "$choice" in
+    recursive)    st -f "Recursive Mono Linear Static":pixelsize=28 -e gottagofast -w 68 &  ;;
+    roboto)       st -f "Roboto Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
+    sudo)         st -f "Sudo":pixelsize=28 -e gottagofast -w 68 &                          ;;
+    apercu)       st -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 68 &               ;;
+    jetbrains)    st -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 68 &                ;;
+    writer)       st -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
+  esac
