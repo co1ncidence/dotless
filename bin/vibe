@@ -1,4 +1,4 @@
 #! /bin/sh
 # simple script to vibe
 
-pgrep -x mpd || mpd && ncmpcpp
+pgrep -x mpd || mpd && mpc toggle
