@@ -5,7 +5,7 @@ if &term =~ '256color'
 endif
 
 " File tree settings
-nnoremap <C-n> :Vexplore!<CR> " Opens file tree
+nnoremap <C-n> :Vexplore!<CR>
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 3
