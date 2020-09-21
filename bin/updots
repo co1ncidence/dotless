@@ -36,6 +36,7 @@ rm -rf \
 	etc/manjaro/  \
 	etc/Thunar/   \
 	etc/pulse/    \
+	etc/libfm/    \
 	etc/dconf/    \
 	etc/gnupg/    \
 	etc/xfce4/    \
