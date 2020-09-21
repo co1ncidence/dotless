@@ -61,3 +61,11 @@ super + p
 # volume down
 super + o
   amixer --quiet set Master 10%- && noti -v
+
+### MUSIC
+# next song
+super + bracketright
+  mpc next && noti -n
+# toggle playback
+super + bracketleft
+  mpc toggle && noti -t

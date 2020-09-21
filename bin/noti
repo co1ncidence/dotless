@@ -24,4 +24,18 @@ case "$1" in
 
       ;;
 
+  -n)
+
+      pkill herbe & \
+      herbe "Now Playing" " " "$(mpc current)"
+
+      ;;
+
+  -t)
+
+      pkill herbe & \
+      herbe "Toggled"
+
+      ;;
+
 esac

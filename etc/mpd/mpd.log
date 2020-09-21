@@ -78,3 +78,67 @@ Sep 20 22:04 : avahi: Service 'Music Player @ aventus' successfully established.
 Sep 20 22:04 : client: [0] opened from 127.0.0.1:36710
 Sep 20 22:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Sep 20 22:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:07 : client: [0] closed
+Sep 20 22:07 : client: [1] opened from 127.0.0.1:36722
+Sep 20 22:07 : client: [1] closed
+Sep 20 22:07 : client: [2] opened from 127.0.0.1:36726
+Sep 20 22:08 : client: [2] closed
+Sep 20 22:08 : player: played "Blue Rose.mp3"
+Sep 20 22:08 : client: [3] opened from 127.0.0.1:36732
+Sep 20 22:08 : client: [3] closed
+Sep 20 22:09 : player: played "Borealis.mp3"
+Sep 20 22:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:09 : config: option 'device' on line 11 was not recognized
+Sep 20 22:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:09 : avahi: Service 'Music Player @ aventus' successfully established.
+Sep 20 22:10 : client: [0] opened from 127.0.0.1:57048
+Sep 20 22:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:14 : player: played "Celestial.mp3"
+Sep 20 22:14 : client: [0] closed
+Sep 20 22:14 : client: [1] opened from 127.0.0.1:57052
+Sep 20 22:14 : client: [1] closed
+Sep 20 22:15 : client: [2] opened from 127.0.0.1:57060
+Sep 20 22:15 : client: [2] closed
+Sep 20 22:15 : client: [3] opened from 127.0.0.1:57064
+Sep 20 22:15 : client: [3] closed
+Sep 20 22:15 : client: [4] opened from 127.0.0.1:57068
+Sep 20 22:15 : client: [4] closed
+Sep 20 22:16 : client: [5] opened from 127.0.0.1:57072
+Sep 20 22:16 : client: [5] closed
+Sep 20 22:17 : client: [6] opened from 127.0.0.1:57076
+Sep 20 22:17 : client: [6] closed
+Sep 20 22:17 : client: [7] opened from 127.0.0.1:57080
+Sep 20 22:17 : client: [7] closed
+Sep 20 22:17 : client: [8] opened from 127.0.0.1:57084
+Sep 20 22:17 : client: [8] closed
+Sep 20 22:17 : client: [9] opened from 127.0.0.1:57088
+Sep 20 22:17 : client: [9] closed
+Sep 20 22:17 : client: [10] opened from 127.0.0.1:57092
+Sep 20 22:17 : client: [10] closed
+Sep 20 22:17 : client: [11] opened from 127.0.0.1:57096
+Sep 20 22:17 : client: [11] closed
+Sep 20 22:18 : client: [12] opened from 127.0.0.1:57100
+Sep 20 22:18 : client: [12] closed
+Sep 20 22:18 : client: [13] opened from 127.0.0.1:57104
+Sep 20 22:18 : client: [13] closed
+Sep 20 22:19 : player: played "Deja Vu.mp3"
+Sep 20 22:19 : client: [14] opened from 127.0.0.1:57108
+Sep 20 22:19 : client: [14] closed
+Sep 20 22:19 : client: [15] opened from 127.0.0.1:57112
+Sep 20 22:19 : client: [15] closed
+Sep 20 22:19 : client: [16] opened from 127.0.0.1:57116
+Sep 20 22:19 : client: [16] closed
+Sep 20 22:19 : client: [17] opened from 127.0.0.1:57120
+Sep 20 22:19 : client: [17] closed
+Sep 20 22:19 : client: [18] opened from 127.0.0.1:57124
+Sep 20 22:19 : client: [18] closed
+Sep 20 22:19 : client: [19] opened from 127.0.0.1:57130
+Sep 20 22:19 : client: [19] closed
+Sep 20 22:19 : client: [20] opened from 127.0.0.1:57134
+Sep 20 22:19 : client: [20] closed
+Sep 20 22:20 : client: [21] opened from 127.0.0.1:57140
+Sep 20 22:20 : client: [21] closed
+Sep 20 22:20 : client: [22] opened from 127.0.0.1:57144
+Sep 20 22:20 : client: [22] closed
+Sep 20 22:20 : client: [23] opened from 127.0.0.1:57148
+Sep 20 22:20 : client: [23] closed
