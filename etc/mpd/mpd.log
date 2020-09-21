@@ -1,0 +1,80 @@
+Sep 20 22:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:01 : exception: Failed to open '/home/co1ncidence/etc/mpd/mpdstate': No such file or directory
+Sep 20 22:01 : config: option 'device' on line 11 was not recognized
+Sep 20 22:01 : update: added /A change of seasons.mp3
+Sep 20 22:01 : update: added /Shooting Stars.mp3
+Sep 20 22:01 : update: added /Breathe.mp3
+Sep 20 22:01 : update: added /weightless.mp3
+Sep 20 22:01 : update: added /Crystal Realm.mp3
+Sep 20 22:01 : update: added /2am Study Session.mp3
+Sep 20 22:01 : update: added /Tragic Hero.mp3
+Sep 20 22:01 : update: added /Without Words.mp3
+Sep 20 22:01 : update: added /summer 19.mp3
+Sep 20 22:01 : update: added /Dream.mp3
+Sep 20 22:01 : update: added /8.16.18.mp3
+Sep 20 22:01 : update: added /Memories We Made.mp3
+Sep 20 22:01 : update: added /The Sound of Rain.mp3
+Sep 20 22:01 : update: added /You and Me.mp3
+Sep 20 22:01 : update: added /You're Not Alone.mp3
+Sep 20 22:01 : update: added /Daydream Full EP.mp3
+Sep 20 22:01 : update: added /lone wanderer.mp3
+Sep 20 22:01 : update: added /The World Can Wait.mp3
+Sep 20 22:01 : update: added /Nostalgia.mp3
+Sep 20 22:01 : update: added /Borealis.mp3
+Sep 20 22:01 : update: added /Innocence.mp3
+Sep 20 22:01 : update: added /Into the Void.mp3
+Sep 20 22:01 : update: added /When the world went dark.mp3
+Sep 20 22:01 : update: added /Let there be light.mp3
+Sep 20 22:01 : update: added /Miracle.mp3
+Sep 20 22:01 : update: added /Deja Vu.mp3
+Sep 20 22:01 : update: added /The Hunt.mp3
+Sep 20 22:01 : update: added /Impurity.mp3
+Sep 20 22:01 : update: added /Mellow.mp3
+Sep 20 22:01 : update: added /Meadow.mp3
+Sep 20 22:01 : update: added /Harmony.mp3
+Sep 20 22:01 : update: added /Two Ways.mp3
+Sep 20 22:01 : update: added /Afloat again.mp3
+Sep 20 22:01 : update: added /Colorblind.mp3
+Sep 20 22:01 : update: added /Celestial.mp3
+Sep 20 22:01 : update: added /Distant Memoris.mp3
+Sep 20 22:01 : update: added /Sentaku.mp3
+Sep 20 22:01 : update: added /On The Horizon.mp3
+Sep 20 22:01 : update: added /Twilight.mp3
+Sep 20 22:01 : update: added /I'll go on.mp3
+Sep 20 22:01 : update: added /Itai.mp3
+Sep 20 22:01 : update: added /Immanuel.mp3
+Sep 20 22:01 : update: added /neverland.mp3
+Sep 20 22:01 : update: added /Something More.mp3
+Sep 20 22:01 : update: added /Floating.mp3
+Sep 20 22:01 : update: added /Lilac.mp3
+Sep 20 22:01 : update: added /Solitude.mp3
+Sep 20 22:01 : update: added /Purity.mp3
+Sep 20 22:01 : update: added /Auditory Hallucination.mp3
+Sep 20 22:01 : update: added /chillstep.mp3
+Sep 20 22:01 : update: added /In Time.mp3
+Sep 20 22:01 : update: added /Dream Sign.mp3
+Sep 20 22:01 : update: added /Farewell.mp3
+Sep 20 22:01 : update: added /Soul Align.mp3
+Sep 20 22:01 : update: added /Reiwa.mp3
+Sep 20 22:01 : update: added /Blue Rose.mp3
+Sep 20 22:01 : update: added /Free.mp3
+Sep 20 22:01 : update: added /kanao.mp3
+Sep 20 22:01 : update: added /Siori.mp3
+Sep 20 22:01 : update: added /The Shadow.mp3
+Sep 20 22:01 : update: added /Parallel Universe.mp3
+Sep 20 22:01 : update: added /Golden.mp3
+Sep 20 22:01 : update: added /Feel free to imagine.mp3
+Sep 20 22:01 : update: added /Evergreen.mp3
+Sep 20 22:01 : update: added /Remember Me.mp3
+Sep 20 22:01 : update: added /Torii.mp3
+Sep 20 22:01 : update: added /drifting.mp3
+Sep 20 22:01 : update: added /Stars and Chimneys.mp3
+Sep 20 22:01 : update: added /Autumn.mp3
+Sep 20 22:01 : update: added /Bloom.mp3
+Sep 20 22:01 : avahi: Service 'Music Player @ aventus' successfully established.
+Sep 20 22:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:04 : config: option 'device' on line 11 was not recognized
+Sep 20 22:04 : avahi: Service 'Music Player @ aventus' successfully established.
+Sep 20 22:04 : client: [0] opened from 127.0.0.1:36710
+Sep 20 22:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 22:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
