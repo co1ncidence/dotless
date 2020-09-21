@@ -1,6 +1,4 @@
 #! /bin/sh
 # simple script to vibe
 
-pgrep -x mpd || mpd && \
-         ncmpcpp && \
-         mpc update
+pgrep -x mpd || mpd && ncmpcpp
