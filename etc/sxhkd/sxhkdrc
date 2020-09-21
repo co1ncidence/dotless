@@ -69,3 +69,7 @@ super + bracketright
 # toggle playback
 super + bracketleft
   mpc toggle && noti -t
+
+### CHANGE WALLPAPER
+super + u
+  feh --no-fehbg --bg-fill --randomize --recursive ~/med/wlp/*
