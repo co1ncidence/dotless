@@ -1,0 +1,4 @@
+#!/bin/sh
+# start a typing test
+
+st -f Recursive:pixelsize=28 -e gottagofast -w 68 &

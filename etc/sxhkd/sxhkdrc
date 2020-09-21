@@ -66,8 +66,11 @@ super + o
 # next song
 super + bracketright
   mpc next && noti -n
-# toggle playback
+# previous song
 super + bracketleft
+  mpc prev && noti -n
+# toggle playback
+super + backslash
   mpc toggle && noti -t
 
 ### CHANGE WALLPAPER
