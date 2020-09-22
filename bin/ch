@@ -9,7 +9,7 @@ while :; do
            "$HOME/.local" \
            "$HOME/.cache" \
            "$HOME/.config" \
-           "$HOME/.xournapp" \
+           "$HOME/.xournalpp" \
            "$HOME/.lyrics" \
            "$HOME/.pki" \
            "$HOME/.bash*" \
