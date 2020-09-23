@@ -100,5 +100,5 @@ autocmd FileType tex setlocal spell spelllang=en_us
 
 " Sources
 source ~/etc/nvim/statusline.vim
-source ~/etc/nvim/plugins.vim
 source ~/etc/nvim/plugin-settings.vim
+source ~/etc/nvim/plugins.vim

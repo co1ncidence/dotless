@@ -7,20 +7,16 @@ usage() {
     exit 1
 }
 
-# set gaps
 TOP_PANEL="${PANEL:-20}"
 GAP="${GAP:-5}"
 
-# get current window id and its borderwidth
 PFW="$(pfw)"
 BW="$(wattr b "$PFW")"
 
-# get window size
 ROOT="$(lsw -r)"
 SW="$(wattr w "$ROOT")"
 SH="$(wattr h "$ROOT")"
 
-# calculate usable screen size (without borders and gaps)
 SH="$((SH - TOP_PANEL))"
 
 snap_up()
