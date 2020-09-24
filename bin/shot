@@ -30,7 +30,7 @@ case "$1" in
             }
         ;;
 
-    -c)
+    -h)
 
         maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png"
         ;;
@@ -79,6 +79,11 @@ case "$1" in
             -y \
             "$HOME/med/vid/"$(date +'%a_%I:%M')".mp4"
         fi
+        ;;
+
+    --center)
+
+        maim -g 800x600+283+84 -d 3 "$HOME/what.png"
         ;;
 
 esac

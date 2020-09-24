@@ -10,7 +10,7 @@ alt + shift + s
   shot -d
 # full and save
 alt + shift + w
-  shot -c
+  shot -h
 # record section of screen
 alt + shift + r
   pkill ffmpeg || shot -v
