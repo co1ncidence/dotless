@@ -2,7 +2,7 @@
 # start a typing test
 # choose a font
 
-choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\n'               '"| \
+choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\n'               '"| \
   dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
 
 [ -z "$choice" ] && \
@@ -14,5 +14,6 @@ choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\n'    
     apercu)       st -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 67 &               ;;
     jetbrains)    st -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 67 &                ;;
     writer)       st -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 67 &              ;;
-    space)       st -f "Space Mono":pixelsize=28 -e gottagofast -w 67 &              ;;
+    space)        st -f "Space Mono":pixelsize=28 -e gottagofast -w 67 &                    ;;
+    sanfran)      st -f "SF Mono":pixelsize=28 -e gottagofast -w 67 &                       ;;
   esac

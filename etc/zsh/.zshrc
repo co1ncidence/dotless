@@ -60,6 +60,7 @@ alias no="nvim ~/var/notes/notes.md"
 alias nls="grep -v '>' ~/var/notes/notes.md"
 alias t="termtosvg"
 alias typingtest="st -f Recursive:pixelsize=28 -e gottagofast -w 68 & disown"
+alias weather="clear && curl wttr.in"
 
 # Prompt
 PROMPT='%B%F{white}%1~%f%b %B%F{red}/%b%f '
