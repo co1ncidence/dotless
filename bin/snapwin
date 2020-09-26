@@ -7,8 +7,8 @@ usage() {
     exit 1
 }
 
-TOP_PANEL="${PANEL:-20}"
-GAP="${GAP:-5}"
+TOP_PANEL="${PANEL:-0}"
+GAP="${GAP:-35}"
 
 PFW="$(pfw)"
 BW="$(wattr b "$PFW")"
