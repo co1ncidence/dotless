@@ -86,4 +86,9 @@ case "$1" in
         maim -g 800x600+283+84 -d 3 "$HOME/what.png"
         ;;
 
+    --gif)
+
+        giph -d 3 "$HOME/what.gif"
+        ;;
+
 esac
