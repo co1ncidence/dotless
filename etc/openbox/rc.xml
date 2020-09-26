@@ -288,7 +288,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'Recursive Mono Casual Static' -nb '#1c1b1d' -nf '#fdf9f7' -sb '#fdf9f7' -sf '#121213'</command>
+        <command>dmenu_run -fn 'Recursive Mono Casual Static' -nb '#211d1c' -nf '#ede3e1' -sb '#ede3e1' -sf '#211d1c'</command>
       </action>
     </keybind>
     <!-- passmenu -->

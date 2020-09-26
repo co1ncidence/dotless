@@ -1,10 +1,10 @@
 # Window geometry
 padding.width: 0
-padding.height: 0
-border.width: 0
-window.client.padding.width: 5
+padding.height: 1
+border.width: 8
+window.client.padding.width: 3
 window.client.padding.height: 3
-window.handle.width: 2
+window.handle.width: 0
 
 # Menu geometry
 menu.border.width: 10
@@ -49,7 +49,7 @@ menu.separator.padding.height: 10
 
 ## Active window ###
 window.active.title.bg: Solid Flat
-window.active.title.bg.color: #524845
+window.active.title.bg.color: #ede3e1
 window.active.title.bg.border.color: #2f342f
 
 window.active.label.bg: Parentrelative
@@ -116,7 +116,7 @@ window.active.button.disabled.image.color: #211d1c
 
 ### Inactive windows ###
 window.inactive.title.bg: Solid Flat
-window.inactive.title.bg.color: #2B2625
+window.inactive.title.bg.color: #ede3e1
 window.inactive.title.bg.border.color: #f0f0f0
 
 window.inactive.label.bg: Parentrelative
