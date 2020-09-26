@@ -3,7 +3,7 @@
 # choose a font
 
 choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\n'               '"| \
-  dmenu -fn "Recursive Mono Linear Static" -nb "#211d1c" -nf "#ede3e1" -sb "#ede3e1" -sf "#211d1c")"
+  dmenu -fn "Recursive Mono Linear Static" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
 
 [ -z "$choice" ] && \
   exit 1 || \

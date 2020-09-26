@@ -3,6 +3,6 @@
 
 dir="$HOME/med/pic/mem"
 
-mem="$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static" -nb "#211d1c" -nf "#ede3e1" -sb "#ede3e1" -sf "#211d1c")"
+mem="$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
 
 [ -f "$dir/$mem" ] && xclip -sel clip -t image/png "$dir/$mem"
