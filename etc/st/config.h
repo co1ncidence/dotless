@@ -118,28 +118,28 @@ unsigned int tabspaces = 8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#262427",  /* "#0f0f0f", "#303030",  black  */
-  [1] = "#de9dac",  /* "#AC8A8C", "#D5BBBC",  red    */
-  [2] = "#9ddeaf",  /* "#8AAC8B", "#BBD5BD",  green  */
-  [3] = "#dedd9d",  /* "#ACA98A", "#D5D5BB",  yellow */
-  [4] = "#9dacde",  /* "#8F8AAC", "#BCBBD5",  blue   */
-  [5] = "#af9dde",  /* "#AC8AAC", "#D5BBD3",  purple */
-  [6] = "#9dccde",  /* "#8AABAC", "#BBD5D4",  cyan   */
-  [7] = "#f4e0d8",  /* "#f0f0f0", "#e7e7e7",  white  */
+  [0] = "#332523", /* "#262427", "#303030",  black  */
+  [1] = "#734948", /* "#de9dac", "#D5BBBC",  red    */
+  [2] = "#768157", /* "#9ddeaf", "#BBD5BD",  green  */
+  [3] = "#aa9375", /* "#dedd9d", "#D5D5BB",  yellow */
+  [4] = "#585b63", /* "#9dacde", "#BCBBD5",  blue   */
+  [5] = "#6f5a56", /* "#af9dde", "#D5BBD3",  purple */
+  [6] = "#7d8486", /* "#9dccde", "#BBD5D4",  cyan   */
+  [7] = "#D4CBC9", /* "#f4e0d8", "#e7e7e7",  white  */
 
   /* 8 bright colors */
-  [8]  = "#434146", /* "#3d3d3d", black  */
-  [9]  = "#f7afc0", /* "#dcc7c8", red    */
-  [10] = "#aff7c3", /* "#c7dcca", green  */
-  [11] = "#f7f6af", /* "#dcdcc7", yellow */
-  [12] = "#afc0f7", /* "#c8c7dc", blue   */
-  [13] = "#c3aff7", /* "#dcc7db", purple */
-  [14] = "#afe3f7", /* "#c7dcdc", cyan   */
-  [15] = "#f9ece8", /* "#f0f0f0", white  */
+  [8]  = "#664A46", /* "#434146", "#3d3d3d", black  */
+  [9]  = "#734948", /* "#f7afc0", "#dcc7c8", red    */
+  [10] = "#768157", /* "#aff7c3", "#c7dcca", green  */
+  [11] = "#aa9375", /* "#f7f6af", "#dcdcc7", yellow */
+  [12] = "#585b63", /* "#afc0f7", "#c8c7dc", blue   */
+  [13] = "#6f5a56", /* "#c3aff7", "#dcc7db", purple */
+  [14] = "#7d8486", /* "#afe3f7", "#c7dcdc", cyan   */
+  [15] = "#BAB2B0", /* "#f9ece8", "#f0f0f0", white  */
 
   /* special colors */
-  [256] = "#121213", /* background */
-  [257] = "#fdf9f7", /* foreground */
+  [256] = "#211D1C", /* background */
+  [257] = "#EDE3E1", /* foreground */
 };
 
 /*

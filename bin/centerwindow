@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # script to center current window
 
 WID="$(pfw)"

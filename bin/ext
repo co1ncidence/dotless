@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # an all purpose archive extractor
 
 usage() {

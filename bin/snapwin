@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # snap windows
 # https://github.com/wmutils/contrib
 

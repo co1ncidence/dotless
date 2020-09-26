@@ -1,8 +1,8 @@
-#! /bin/sh
+#!/bin/sh
 # dmenu logout script
 
 choice="$(echo "logout\nrestart\nshutdown\nsuspend\n'               '"| \
-  dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
+  dmenu -fn "Recursive Mono Linear Static" -nb "#211d1c" -nf "#EDE3E1" -sb "#EDE3E1" -sf "#211d1c")"
 
 [ -z "$choice" ] && \
   exit 1 || \

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # test a font for all the testies
 # https://github.com/addy-dclxvi
 

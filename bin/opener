@@ -1,4 +1,4 @@
-#! /bin/sh -e
+#!/bin/sh -e
 # plumber for FFF and SHFM
 
 case "$1" in

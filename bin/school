@@ -1,9 +1,9 @@
-#! /bin/sh
+#!/bin/sh
 # dmenu script to manage my school workflow
 
 choice="$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
-  dmenu -fn "Recursive Mono Linear Static" -nb "#1c1b1d" -nf "#fdf9f7" -sb "#fdf9f7" -sf "#121213")"
-  
+  dmenu -fn "Recursive Mono Linear Static" -nb "#211d1c" -nf "#ede3e1" -sb "#ede3e1" -sf "#211d1c")"
+
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # simple script to archive a folder
 
 die() {

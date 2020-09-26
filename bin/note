@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # note something down
 
 printf '%s\n' "$(date +'%a/%d %I:%M'): $*" >> "$HOME/var/notes/notes.md"

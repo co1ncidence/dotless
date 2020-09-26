@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # stupid script that updates my dotfiles
 
 cp -r	"$HOME/etc/" "$HOME/usr/git/dotless/"
