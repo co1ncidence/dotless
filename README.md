@@ -7,5 +7,3 @@
 ![img](scr/dejavu.png)
 
 </p>
-
-<hr />
