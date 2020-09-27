@@ -10,7 +10,7 @@
 
 <p align="center"
 
-![img](scr/broken.png)
+![img](scr/dejavu.png)
 
 </p>
 
