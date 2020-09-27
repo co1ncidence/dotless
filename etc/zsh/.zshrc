@@ -64,7 +64,8 @@ alias smci="sudo make clean install"
 
 # Prompt
 NEWLINE=$'\n'
-PROMPT="%B%F{red}─── %1~%f%b${NEWLINE} "
+# PROMPT="%B%F{red}─── %1~%f%b${NEWLINE} "
+PROMPT="%B%F{white}%1~%f%b "
 
 ### FUNCTIONS
 
