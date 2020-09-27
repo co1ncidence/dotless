@@ -3,7 +3,7 @@
 
 <p align="center"
 
-![img](scr/home.png)
+![img](scr/dotless.png)
 
 </p>
 
