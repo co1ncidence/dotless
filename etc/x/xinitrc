@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # Spoofed Xinit File
 # Sourced Directly from /usr/bin/startx
 
