@@ -63,7 +63,8 @@ alias weather="clear && curl wttr.in"
 alias smci="sudo make clean install"
 
 # Prompt
-PROMPT='%B%F{white}%1~%f%b '
+NEWLINE=$'\n'
+PROMPT="%B%F{red}─── %1~%f%b${NEWLINE} "
 
 ### FUNCTIONS
 

@@ -1,0 +1,35 @@
+#!/bin/sh
+# lel
+
+clear
+
+os='Manjaro'
+uptime="$(upp)"
+packages="$(pacman -Q | wc -l)"
+music="$(mpc current)"
+
+if [ -x "$(command -v tput)" ]; then
+	bold="$(tput bold)"
+	black="$(tput setaf 0)"
+	red="$(tput setaf 1)"
+	green="$(tput setaf 2)"
+	yellow="$(tput setaf 3)"
+	blue="$(tput setaf 4)"
+	magenta="$(tput setaf 5)"
+	cyan="$(tput setaf 6)"
+	white="$(tput setaf 7)"
+	reset="$(tput sgr0)"
+fi
+
+ic="${reset}"                       # info
+nc="${reset}${green}"               # first color
+
+cat <<EOF
+
+${c0} ${ic}| ${os}${reset}
+${c0} ${nc}| openbox${reset}
+${c0} ${ic}| ${packages}${reset}
+${c0} ${ic}| ${music}${reset}
+${c0} ${ic}| ${uptime}${reset}
+
+EOF
