@@ -45,7 +45,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme oceanskye
+colorscheme asunder
 
 " Look and feel
 set ruler

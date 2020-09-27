@@ -1,53 +1,62 @@
-song_status_format = "{%a - %t}"
-song_list_format = "{%t}$9 $R {%l}"
-song_window_title_format = "{%a - }{%t}|{%f}"
-song_columns_list_format = "(36)[]{}(50)[16]{t}"
-
+# dirs and shit
 ncmpcpp_directory = "/home/co1ncidence/etc/ncmpcpp/"
 mpd_music_dir = "/home/co1ncidence/med/mus/"
 external_editor = "gedit"
 user_interface = "classic"
 playlist_display_mode = "classic"
 
-message_delay_time = "1"
-playlist_disable_highlight_delay = 1
+# visualizer
+visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_output_name = Visualizer feed
+visualizer_in_stereo = yes
+visualizer_sync_interval = 30
+visualizer_type = wave
+visualizer_look = ++
+visualizer_color = default, white, white, cyan, red
 
-now_playing_prefix = "$(4)─ "
-now_playing_suffix = "$0"
-selected_item_prefix = "$(11)"
-current_item_prefix = "$(11)$r"
-browser_playlist_prefix = "$77»$77 "
-
-colors_enabled = "yes"
-cyclic_scrolling = "no"
-use_console_editor = "yes"
+# ??
+message_delay_time = 3
 discard_colors_if_item_is_selected = "yes"
 
-header_visibility = "no"
-titles_visibility = "no"
-statusbar_visibility = "no"
-display_remaining_time = "no"
+# songs
+song_list_format = {%a - $2%t}$9
+now_playing_prefix = "$b| "
+selected_item_prefix = $3
+selected_item_suffix = $9
 
-volume_color = "2"
-statusbar_color = "239"
-header_window_color = "5"
-main_window_color = "239"
-empty_tag_color = "5"
-color2 = "4"
-
-color1 = "white"
-state_line_color = "white"
-state_flags_color = "white"
-window_border_color = "white"
-active_window_border = "cyan"
-alternative_ui_separator_color = "black"
-
-progressbar_color = "1"
+# progressbar
 progressbar_look = ───
-progressbar_elapsed_color = "4"
+progressbar_color = black
+progressbar_elapsed_color = white
 
-volume_change_step = 5
-mouse_support = no
+# ui vis
+header_visibility = no
+statusbar_visibility = no
+titles_visibility = no
 
-visualizer_type = "spectrum"
-visualizer_look = "+|"
+# cursor
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+# stuff
+colors_enabled = yes
+empty_tag_color = cyan
+header_window_color = default
+volume_color = default
+state_line_color = default
+state_flags_color = default:b
+main_window_color = default
+color1 = white
+color2 = green
+
+# statusbar
+statusbar_color = default
+statusbar_time_color = default:b
+
+# ?? v2
+player_state_color = default:b
+alternative_ui_separator_color = black:b
+
+# window border
+window_border_color = green
+active_window_border = red
