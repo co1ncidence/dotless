@@ -288,7 +288,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'Recursive Mono Casual Static' -nb '#2E2927' -nf '#ede3e1' -sb '#ede3e1' -sf '#2E2927'</command>
+        <command>dmenu_run -fn 'envypn' -nb '#2E2927' -nf '#ede3e1' -sb '#ede3e1' -sf '#2E2927'</command>
       </action>
     </keybind>
     <!-- passmenu -->

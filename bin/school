@@ -2,7 +2,7 @@
 # dmenu script to manage my school workflow
 
 choice="$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
-  dmenu -fn "Recursive Mono Linear Static" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
+  dmenu -fn "envypn" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
 
 [ -z "$choice" ] && \
   exit 1 || \
