@@ -4,12 +4,6 @@
 
 <p align="center"
 
-![img](scr/home.png)
-
-</p>
-
-<p align="center"
-
 ![img](scr/dejavu.png)
 
 </p>
