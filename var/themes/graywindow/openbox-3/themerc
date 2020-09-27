@@ -4,7 +4,7 @@ padding.height: 0
 border.width: 0
 window.client.padding.width: 6
 window.client.padding.height: 4
-window.handle.width: 3
+window.handle.width: 2
 
 # Menu geometry
 menu.border.width: 10
@@ -15,7 +15,7 @@ menu.overlap.y: 0
 window.active.border.color: #211d1c
 window.inactive.border.color: #211d1c
 menu.border.color: #ede3e1
-window.active.client.color: #ede3e1
+window.active.client.color: #211d1c
 window.inactive.client.color: #211d1c
 
 # Text shadows
@@ -49,17 +49,17 @@ menu.separator.padding.height: 10
 
 ## Active window ###
 window.active.title.bg: Solid Flat
-window.active.title.bg.color: #ede3e1
+window.active.title.bg.color: #211d1c
 window.active.title.bg.border.color: #2f342f
 
 window.active.label.bg: Parentrelative
 window.active.label.text.color: #2f342f
 
 window.active.handle.bg: Flat solid
-window.active.handle.bg.color: #ede3e1
+window.active.handle.bg.color: #211d1c
 
 window.active.grip.bg: Flat solid
-window.active.grip.bg.color: #ede3e1
+window.active.grip.bg.color: #211d1c
 
 ### Active buttons ###
 window.active.button.unpressed.bg: Flat solid

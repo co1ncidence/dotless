@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 80;
+static int borderpx = 70;
 
 /*
  * What program is execed by st depends of these precedence rules:
