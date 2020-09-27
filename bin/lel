@@ -20,14 +20,14 @@ if [ -x "$(command -v tput)" ]; then
 	reset="$(tput sgr0)"
 fi
 
-ic="${reset}"                       # info
-nc="${reset}${green}"               # first color
-lc="${reset}${red}"               # second color
+ic="${reset}"
+nc="${reset}${green}"
+lc="${reset}${red}"
 
 cat <<EOF
 
 ${c0} ${ic}| ${os}${reset}
-${c0} ${nc}| openbox${reset}
+${c0} ${nc}| Openbox${reset}
 ${c0} ${ic}| ${packages}${reset}
 ${c0} ${ic}| ${music}${reset}
 ${c0} ${lc}| ${memory}${reset}

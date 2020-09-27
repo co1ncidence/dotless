@@ -1,7 +1,7 @@
 #!/bin/bash
 # screenshotter and recorder
 
-PADDING="50"
+PADDING="70"
 
 case "$1" in
 
