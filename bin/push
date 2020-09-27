@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh                           
 # push a repo to master branch
 
 [ -z "$1" ] && \

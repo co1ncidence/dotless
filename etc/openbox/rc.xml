@@ -276,7 +276,7 @@
     <!-- ranger -->
     <keybind key="W-e">
       <action name="Execute">
-        <command>st -e ranger</command>
+        <command>st -g 66x20 -e ranger</command>
       </action>
     </keybind>
     <!-- chrome -->

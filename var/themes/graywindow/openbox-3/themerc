@@ -1,10 +1,10 @@
 # Window geometry
 padding.width: 0
-padding.height: 20
+padding.height: 2
 border.width: 0
-window.client.padding.width: 5
-window.client.padding.height: 5
-window.handle.width: 0
+window.client.padding.width: 8
+window.client.padding.height: 4
+window.handle.width: 5
 
 # Menu geometry
 menu.border.width: 10
@@ -15,7 +15,7 @@ menu.overlap.y: 0
 window.active.border.color: #211d1c
 window.inactive.border.color: #211d1c
 menu.border.color: #ede3e1
-window.active.client.color: #665A57
+window.active.client.color: #ede3e1
 window.inactive.client.color: #211d1c
 
 # Text shadows
@@ -56,10 +56,10 @@ window.active.label.bg: Parentrelative
 window.active.label.text.color: #2f342f
 
 window.active.handle.bg: Flat solid
-window.active.handle.bg.color: #524845
+window.active.handle.bg.color: #ede3e1
 
 window.active.grip.bg: Flat solid
-window.active.grip.bg.color: #524845
+window.active.grip.bg.color: #ede3e1
 
 ### Active buttons ###
 window.active.button.unpressed.bg: Flat solid
@@ -116,17 +116,17 @@ window.active.button.disabled.image.color: #211d1c
 
 ### Inactive windows ###
 window.inactive.title.bg: Solid Flat
-window.inactive.title.bg.color: #ede3e1
+window.inactive.title.bg.color: #211d1c
 window.inactive.title.bg.border.color: #f0f0f0
 
 window.inactive.label.bg: Parentrelative
 window.inactive.label.text.color: #363636
 
 window.inactive.handle.bg: Flat solid
-window.inactive.handle.bg.color: #2B2625
+window.inactive.handle.bg.color: #211d1c
 
 window.inactive.grip.bg: Flat solid
-window.inactive.grip.bg.color: #2B2625
+window.inactive.grip.bg.color: #211d1c
 
 ### Inactive buttons ###
 window.inactive.button.unpressed.bg: Flat solid

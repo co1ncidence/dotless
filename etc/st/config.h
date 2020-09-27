@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Recursive Mono Linear Static:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Recursive Mono Linear Static:pixelsize=14:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -15,7 +15,7 @@ static char *font2[] = {
 
 
 
-static int borderpx = 60;
+static int borderpx = 80;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -164,7 +164,7 @@ static unsigned int cursorshape = 4;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
+static unsigned int cols = 60;
 static unsigned int rows = 20;
 
 /*

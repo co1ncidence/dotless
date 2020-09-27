@@ -24,5 +24,5 @@ set statusline+=%#Sl2#\ %.20t\
 " Unsaved
 set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
 " Ruler
-set statusline+=\%#Sl2#/
+set statusline+=\%#Sl2#\|
 set statusline+=\%#Sl2#\ %l:%c

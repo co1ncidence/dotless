@@ -26,6 +26,9 @@ nnoremap <C-L> <C-W><C-L>
 noremap k gk
 noremap j gj
 
+" effective line navigation
+noremap ) $
+
 " Move a line up or down
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
