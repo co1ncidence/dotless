@@ -5,6 +5,7 @@ os='Manjaro'
 uptime="$(upp)"
 packages="$(pacman -Q | wc -l)"
 music="$(mpc current)"
+memory="$(mem)"
 
 if [ -x "$(command -v tput)" ]; then
 	bold="$(tput bold)"
@@ -21,6 +22,7 @@ fi
 
 ic="${reset}"                       # info
 nc="${reset}${green}"               # first color
+lc="${reset}${red}"               # second color
 
 cat <<EOF
 
@@ -28,6 +30,7 @@ ${c0} ${ic}| ${os}${reset}
 ${c0} ${nc}| openbox${reset}
 ${c0} ${ic}| ${packages}${reset}
 ${c0} ${ic}| ${music}${reset}
+${c0} ${lc}| ${memory}${reset}
 ${c0} ${ic}| ${uptime}${reset}
 
 EOF
