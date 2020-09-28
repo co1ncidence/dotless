@@ -28,6 +28,7 @@ rm -rf \
 	etc/skanliterc    \
 	etc/weechat/      \
 	etc/qalculate/    \
+	etc/calcurse/     \
 	etc/inkscape/     \
 	etc/chromium/     \
 	etc/.lesshst  \
