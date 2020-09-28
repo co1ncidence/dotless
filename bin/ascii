@@ -1,0 +1,14 @@
+#!/bin/sh
+#cute asciis
+
+case "$1" in
+
+  --bunny)
+    echo ' ' ; echo '(\ /)' ; echo '( . .)' ; echo 'c(")(")' ; echo ' '
+    ;;
+
+  --cat)
+    echo ' ' ; echo ' /\_/\' ; echo ' >^.^<' ; echo ', / \' ; echo '\(___)' ; echo ' '
+    ;;
+
+esac
