@@ -1,5 +1,6 @@
 " statusline
-"
+" based off of gk's
+" https://github.com/6gk/polka
 hi Sl1 ctermbg=NONE
 hi Sl2 ctermbg=NONE
 hi Sl3 ctermbg=NONE

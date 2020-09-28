@@ -1,9 +1,6 @@
 " Automatically set filetype as markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
-" FZF Menu
-map <C-p> :Files<CR>
-
 " Settings for vim-pencil
 set nocompatible
 filetype plugin on
