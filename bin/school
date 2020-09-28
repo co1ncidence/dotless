@@ -1,5 +1,5 @@
 #!/bin/sh
-# dmenu script to manage my school workflow
+#dmenu script to manage my school workflow
 
 choice="$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
   dmenu -fn "envypn" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"

@@ -1,5 +1,5 @@
 #!/bin/sh
-# remove shit XD
+#remove shit XD
 
 rm -rf "$HOME/Desktop/"
 rm -rf "$HOME/Documents/"

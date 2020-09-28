@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# show used ram
+#show used ram
 
 while IFS=':k ' read -r key val _; do
     case $key in

@@ -1,4 +1,4 @@
 #!/bin/sh
-# bunnies are cute
+#bunnies are cute
 
 echo ' ' ; echo '(\ /)' ; echo '( . .)' ; echo 'c(")(")' ; echo ' '

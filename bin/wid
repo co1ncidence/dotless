@@ -1,5 +1,5 @@
 #!/bin/sh
-# prints window ID for xdotool
+#prints window ID for xdotool
 
 xwininfo -tree -id "$1" |
     while IFS=: read property value; do

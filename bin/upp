@@ -1,4 +1,5 @@
 #!/bin/sh
+#mnml uptime
 
 read -r uptime _ < /proc/uptime
 

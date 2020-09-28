@@ -1,5 +1,5 @@
 #!/bin/sh
-# simple script to vibe
+#simple script to vibe
 
 pgrep -x mpd && mpc toggle || mpd && mpc toggle
 

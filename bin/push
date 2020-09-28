@@ -1,5 +1,5 @@
-#!/bin/sh                           
-# push a repo to master branch
+#!/bin/sh
+#push a repo to master branch
 
 [ -z "$1" ] && \
     msg="docs:update" || \

@@ -1,6 +1,6 @@
 #!/bin/sh
-# snap windows
-# https://github.com/wmutils/contrib
+#snap windows
+#https://github.com/wmutils/contrib
 
 usage() {
     echo "usage: "$(basename $0)" <direction>" >&2

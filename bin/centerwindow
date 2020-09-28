@@ -1,4 +1,5 @@
 #!/bin/bash
+#center the current window
 
 IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1)
 

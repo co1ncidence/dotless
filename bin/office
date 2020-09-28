@@ -1,4 +1,4 @@
 #!/bin/sh
-# open libreoffice with a nice light theme
+#open libreoffice with a nice light theme
 
 GTK_THEME="Macha" libreoffice &

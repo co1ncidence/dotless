@@ -1,5 +1,5 @@
 #!/bin/sh
-# display cool notifications
+#display cool notifications
 
 case "$1" in
 

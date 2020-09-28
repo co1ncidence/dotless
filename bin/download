@@ -1,5 +1,5 @@
 #!/bin/sh
-# download a song from Youtube
+#download a song from Youtube
 
 youtube-dl -x \
     --audio-format mp3 \

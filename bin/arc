@@ -1,5 +1,5 @@
 #!/bin/sh
-# simple script to archive a folder
+#simple script to archive a folder
 
 die() {
     echo "${1:-usage : ${0##*/} [file] ...}" >&2

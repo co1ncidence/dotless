@@ -1,5 +1,5 @@
 #!/bin/sh
-# dmenu logout script
+#dmenu logout script
 
 choice="$(echo "logout\nrestart\nshutdown\nsuspend\n'               '"| \
   dmenu -fn "envypn" -nb "#2E2927" -nf "#EDE3E1" -sb "#EDE3E1" -sf "#2E2927")"

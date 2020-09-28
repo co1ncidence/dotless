@@ -1,5 +1,5 @@
 #!/bin/sh
-# dmemenu
+#dmemenu
 
 dir="$HOME/med/pic/mem"
 

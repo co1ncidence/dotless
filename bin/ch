@@ -1,5 +1,5 @@
 #!/bin/sh
-# clean ~~your~~ my home dir!
+#clean ~~your~~ my home dir!
 
 [ "$(pgrep -x ch)" = "$$" ] || exit 1
 

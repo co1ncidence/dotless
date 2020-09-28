@@ -1,5 +1,5 @@
 #!/bin/sh
-# lel
+#lel
 
 os='Manjaro'
 uptime="$(upp)"

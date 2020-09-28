@@ -1,6 +1,5 @@
 #!/bin/sh
-# start a typing test
-# choose a font
+#start a typing test with chosen font
 
 choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\n'               '"| \
   dmenu -fn "envypn" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
@@ -8,7 +7,7 @@ choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfr
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in
-    recursive)    st -f "envypn":pixelsize=28 -e gottagofast -w 67 &  ;;
+    recursive)    st -f "Recursive Mono Linear Static":pixelsize=28 -e gottagofast -w 67 &  ;;
     roboto)       st -f "Roboto Mono":pixelsize=28 -e gottagofast -w 67 &                   ;;
     sudo)         st -f "Sudo":pixelsize=28 -e gottagofast -w 67 &                          ;;
     apercu)       st -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 67 &               ;;
