@@ -50,13 +50,14 @@ alias dunst="dunst -conf ~/etc/dunst/dunstrc"
 alias reconf="openbox --reconfigure"
 alias tree="tree -C"
 alias so="du -sh"
-alias sudo="sls -u root"
 alias upx="xrdb -merge ~/etc/x/xresources"
 alias n="note"
 alias no="nvim ~/var/notes/notes.md"
 alias nls="grep -v '>' ~/var/notes/notes.md"
 alias weather="clear && curl wttr.in"
 alias smci="sudo make clean install"
+alias sudo="sls -u root"
+alias su="sls -s"
 
 # Prompt
 NEWLINE=$'\n'
