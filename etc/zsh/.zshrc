@@ -53,11 +53,12 @@ alias so="du -sh"
 alias upx="xrdb -merge ~/etc/x/xresources"
 alias n="note"
 alias no="nvim ~/var/notes/notes.md"
-alias nls="grep -v '>' ~/var/notes/notes.md"
+alias nls="grep -v '>' ~/var/notes/notes.md | grep -v '#' && echo ' '"
 alias weather="clear && curl wttr.in"
 alias smci="sudo make clean install"
 alias sudo="sls -u root"
 alias su="sls -s"
+alias sudoedit="sls -e"
 
 # Prompt
 NEWLINE=$'\n'
