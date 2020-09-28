@@ -16,6 +16,9 @@
 
 `cl` - Colorscheme script
 
+`clone` - clone a repo, smartly
+  - format is: `clone <repo-owner> <repo-name>`
+
 `copy` - Copy a files contents to clipboard
 
 `dl` - All purpose curl wrapper
