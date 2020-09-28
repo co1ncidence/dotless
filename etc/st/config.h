@@ -158,7 +158,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("FUCK")
  */
-static unsigned int cursorshape = 4;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
