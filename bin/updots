@@ -25,6 +25,7 @@ rm -rf \
 	etc/configstore/  \
 	etc/keepassxc/    \
 	bin/templates/    \
+	bin/stain/				\
 	etc/skanliterc    \
 	etc/weechat/      \
 	etc/qalculate/    \

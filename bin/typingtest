@@ -7,12 +7,12 @@ choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfr
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in
-    recursive)    st -f "Recursive Mono Linear Static":pixelsize=28 -e gottagofast -w 67 &  ;;
-    roboto)       st -f "Roboto Mono":pixelsize=28 -e gottagofast -w 67 &                   ;;
-    sudo)         st -f "Sudo":pixelsize=28 -e gottagofast -w 67 &                          ;;
-    apercu)       st -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 67 &               ;;
-    jetbrains)    st -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 67 &                ;;
-    writer)       st -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 67 &              ;;
-    space)        st -f "Space Mono":pixelsize=28 -e gottagofast -w 67 &                    ;;
-    sanfran)      st -f "SF Mono":pixelsize=28 -e gottagofast -w 67 &                       ;;
+    recursive)    st -f "Recursive Mono Linear Static":pixelsize=28 -e gottagofast -w 68 &  ;;
+    roboto)       st -f "Roboto Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
+    sudo)         st -f "Sudo":pixelsize=28 -e gottagofast -w 68 &                          ;;
+    apercu)       st -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 68 &               ;;
+    jetbrains)    st -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 68 &                ;;
+    writer)       st -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
+    space)        st -f "Space Mono":pixelsize=28 -e gottagofast -w 68 &                    ;;
+    sanfran)      st -f "SF Mono":pixelsize=28 -e gottagofast -w 68 &                       ;;
   esac
