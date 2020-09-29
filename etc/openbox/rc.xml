@@ -303,19 +303,6 @@
         <command>ripcord</command>
       </action>
     </keybind>
-    <!-- kill polybar -->
-    <keybind key="W-x">
-      <action name="Execute">
-        <command>~/etc/polybar/kill.sh</command>
-      </action>
-    </keybind>
-    <!-- start polybar -->
-    <keybind key="W-z">
-      <action name="Execute">
-        <command>~/etc/polybar/launch.sh</command>
-      </action>
-    </keybind>
-    <!-- snap windows -->
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

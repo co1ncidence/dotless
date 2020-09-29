@@ -1,89 +1,95 @@
-### CAPTURE KEYBINDS
-# select and clipboard
+#
+# Screenshot and video
+#
+#select and clipboard
 alt + shift + e
   shot -s
-# padding and clipboard
+#padding and clipboard
 alt + shift + d
   shot -p
-# select and save
+#select and save
 alt + shift + s
   shot -d
-# full and save
+#full and save
 alt + shift + w
   shot -h
-# record section of screen
+#record section of screen
 alt + shift + r
   pkill ffmpeg || shot -v
-# record whole screen
+#record whole screen
 alt + shift + t
   pkill ffmpeg || shot -t
-
-### WINDOW MANAGEMENT
-# center window
+#
+# Window management
+#
+#center window
 super + c
   centerwindow
 alt + c
   centerwindow
-# snap window
+#snap window
 ctrl + shift + {h,j,k,l}
   snapwin {left, down, up, right}
-# move window
+#move window
 super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-75 y,75 y,x 75,x -75}
-# resize window
+#resize window
 alt + {h,j,k,l}
   wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
-
-### VARIOUS MENUS
-# logout menu
+#
+# Menus
+#
+#logout menu
 alt + shift + x
   altshiftx
-# school menu
+#school menu
 super + b
   school
-# meme menu
+#meme menu
 super + m
   memenu
-
-### HERBE
-# Full Noti
+#
+# Notis
+#
+#Full Noti
 super + q
   noti -a
-# Calender
+#calender
 alt + shift + c
   noti -d
-# brightness up
+#brightness up
 super + Up
   xbacklight -inc 10 -time 0 && noti -l
-# brightness down
+#brightness down
 super + Down
   xbacklight -dec 10 -time 0 && noti -l
-# volume up
+#volume up
 super + p
   amixer --quiet set Master 10%+ && noti -v
-# volume down
+#volume down
 super + o
   amixer --quiet set Master 10%- && noti -v
-
-### MUSIC
-# next song
+#
+# MPC
+#
+#next song
 super + bracketright
   mpc next && noti -n
-# previous song
+#previous song
 super + bracketleft
   mpc prev && noti -n
-# toggle playback
+#toggle playback
 super + backslash
   mpc toggle && noti -t
-
-### CHANGE WALLPAPER
+#
+# Misc
+#
+#shuffle wallpaper
 super + u
   feh --no-fehbg --bg-fill --randomize --recursive ~/med/wlp/*
-
-### TYPING TEST
+#typing test
 super + s
   typingtest
-
-### SLOPPYMOVE
+#sloppymove
 super + a
   sloppymove
