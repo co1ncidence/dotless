@@ -24,10 +24,11 @@ rm -rf \
 	etc/MusicBrainz/  \
 	etc/configstore/  \
 	etc/keepassxc/    \
+	etc/GeoGebra/     \
 	bin/templates/    \
 	bin/stain/				\
 	etc/skanliterc    \
-	etc/weechat/      \
+	etc/Electron/     \
 	etc/qalculate/    \
 	etc/calcurse/     \
 	etc/inkscape/     \

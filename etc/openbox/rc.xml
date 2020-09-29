@@ -267,10 +267,10 @@
         <command>st</command>
       </action>
     </keybind>
-    <!-- ranger -->
+    <!-- super terminal -->
     <keybind key="W-y">
       <action name="Execute">
-        <command>urxvt</command>
+        <command>st -g 81x40+333+54</command>
       </action>
     </keybind>
     <!-- ranger -->
