@@ -1,23 +1,19 @@
 #!/bin/sh
-#simple script to archive a folder
+#simple file archiver
 
-die() {
-    echo "${1:-usage : ${0##*/} [file] ...}" >&2
+usage() {
+    >&2 printf 'Usage: %s [dir]\n' "${0##*/}"
     exit 1
 }
 
-tar="${1%/}"
-tar="{tar%%.*}.tar.gz"
+[ -d "$1" ] || usage
 
-[ "$1" ] ||
-    die
+out="${1%/}".tar.xz
 
-[ -e "$tar" ] &&
-    die "error : "$tar" already exists"
+if [ -f "$out" ] ; then
+    printf "file '%s' already exists, overwrite? (y/n): " "$out"
+    read -r ans
+    [ "$ans" = y ] || exit 1
+fi
 
-for file; do
-    [ -e "$file" ] ||
-        die "error : "$file" isn't a valid file"
-done
-
-tar czvf "$tar" "$@"
+tar -cvf - "$1" | xz -qcT 0 > "$out"
