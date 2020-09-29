@@ -1,0 +1,151 @@
+#!/bin/sh
+# Sloppymove
+# Select an area to move a window to or another window to switch positions with.
+
+main() {
+    interactively_select_target
+
+    if did_user_click_on_a_window; then
+        reposition_window "$target_window" \
+            "$active_x" \
+            "$active_y" \
+            "$active_width" \
+            "$active_height"
+    fi
+
+    reposition_window "$active_window" \
+        "$target_x" \
+        "$target_y" \
+        "$target_width" \
+        "$target_height"
+}
+
+
+# Main functions
+################
+
+interactively_select_target() {
+    fetch_slop_output
+    target_x="$fetched_x"
+    target_y="$fetched_y"
+    target_width="$fetched_width"
+    target_height="$fetched_height"
+
+    fetch_geometry_of_window "$active_window"
+    active_x="$fetched_x"
+    active_y="$fetched_y"
+    active_width="$fetched_width"
+    active_height="$fetched_height"
+}
+
+reposition_window() {
+    xdotool windowmove "$1" "$2" "$3" \
+            windowsize "$1" "$4" "$5"
+    xdotool windowactivate "$1" # Ensures the window is not hidden by another
+}
+
+did_user_click_on_a_window() {
+    [ "$target_window" != "$root_window_decimal" ]
+}
+
+
+# Secondary functions
+#####################
+
+fetch_slop_output() {
+    # We need to be using a convoluted logic to determine the geometry to return
+    # in order to ensure swapped windows' geometries match exactly (except for
+    # hinted geometry windows like terminals), even if the two windows have
+    # differently-sized decorations (e.g. one has a CSD and the other a SSD)
+
+    fetch_geometry_of_window "$active_window"
+    active_window_x_borders="$fetched_x_borders"
+    active_window_y_borders="$fetched_y_borders"
+
+    set -f; set $(slop -n 1 -f "%i %x %y %w %h")
+    target_window="$1"
+    target_window_x="$2"
+    target_window_y="$3"
+    target_window_width="$4"
+    target_window_height="$5"
+
+    if did_user_click_on_a_window; then
+        target_frame=$(get_window_parent_id "$target_window")
+        set $(
+            xdotool getwindowgeometry "$target_frame" |
+            awk -F"[ x,]" 'BEGIN {RS="%"}{print $5" "$6" "$11" "$12 }'
+        )
+        target_frame_x="$1"
+        target_frame_y="$2"
+        target_frame_width="$3"
+        target_frame_height="$4"
+        target_x_borders=$(( target_frame_width - target_window_width ))
+        target_y_borders=$(( target_frame_height - target_window_height ))
+
+        x_border_diff=$(( target_x_borders - active_window_x_borders ))
+        y_border_diff=$(( target_y_borders - active_window_y_borders ))
+
+        # Returned values if window was clicked, stored in fetched_* variables
+        fetched_x="$target_frame_x"
+        fetched_y="$target_frame_y"
+        fetched_width=$(( target_window_width + x_border_diff ))
+        fetched_height=$(( target_window_height + y_border_diff ))
+
+    else
+        # Returned values if rectangle was selected
+        fetched_x="$target_window_x"
+        fetched_y="$target_window_y"
+        fetched_width=$(( target_window_width - active_window_x_borders))
+        fetched_height=$(( target_window_height - active_window_y_borders ))
+
+    fi
+
+    set +f
+}
+
+fetch_geometry_of_window() {
+    queried_window="$1"
+
+    set -f; set $(
+        xdotool getwindowgeometry "$queried_window" |
+        awk -F"[ x,]" 'BEGIN {RS="%"}{print $11" "$12 }'
+    )
+    window_width="$1"
+    window_height="$2"
+
+    set $(
+        xdotool getwindowgeometry "$(get_window_parent_id "$queried_window")" |
+        awk -F"[ x,]" 'BEGIN {RS="%"}{print $5" "$6" "$11" "$12}'
+    )
+    frame_x="$1"
+    frame_y="$2"
+    frame_width="$3"
+    frame_height="$4"
+
+    # Returned information about window, stored in fetched_* variables
+    fetched_x="$frame_x"
+    fetched_y="$frame_y"
+    fetched_width=$(( window_width - x_border_diff ))
+    fetched_height=$(( window_height - y_border_diff ))
+    fetched_x_borders=$(( frame_width - window_width ))
+    fetched_y_borders=$(( frame_height - window_height ))
+
+    set +f
+}
+
+get_window_parent_id() {
+    parent=$(xwininfo -tree -stats -id "$1" | awk '$1 ~ "Parent" {print $4}')
+
+    # Fall back to the input value if the parent window is the root window
+    if [ "$parent" =  "$root_window" ]; then
+        echo "$1"
+    else
+        echo "$parent"
+    fi
+}
+
+root_window=$(xwininfo -root | awk 'NR==2{print $4}')
+root_window_decimal=$(printf "%d\n" "$root_window")
+active_window=$(xdotool getactivewindow)
+
+main; exit
