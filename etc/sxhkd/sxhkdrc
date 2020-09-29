@@ -49,6 +49,9 @@ super + m
 # Full Noti
 super + q
   noti -a
+# Calender
+alt + shift + c
+  noti -d
 # brightness up
 super + Up
   xbacklight -inc 10 -time 0 && noti -l
