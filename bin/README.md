@@ -41,8 +41,9 @@
   - `-a`: show time, date, and battery
   - `-v`: show volume level
   - `-l`: show brightness level
-  - `0n`: now playing (mpc)
+  - `-n`: now playing (mpc)
   - `-t`: say "toggled"
+  - `-d`: show a calendar popup
 
 `office` - Open libreoffice with fire theme
 
