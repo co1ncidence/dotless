@@ -55,7 +55,7 @@ super + m
 super + q
   noti -a
 #calender
-alt + shift + c
+super + g
   noti -d
 #brightness up
 super + Up

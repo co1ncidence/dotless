@@ -41,6 +41,6 @@ case "$1" in
   -d)
 
       pkill herbe & \
-        herbe "$(date +'%a, %b %d')" "--------------------" "$(cal)" && chromium --app "https://duckduckgo.com/?q=calendar&ia=answer"
+        herbe "$(date +'%A, %b %d')" "--------------------" "$(cal)" && chromium --app "https://duckduckgo.com/?q=calendar&ia=answer"
 
 esac

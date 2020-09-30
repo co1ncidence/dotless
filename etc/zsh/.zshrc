@@ -64,7 +64,7 @@ alias sudoedit="sls -e"
 NEWLINE=$'\n'
 PROMPT="%B%F{white}%1~%f%b "
 
-### FUNCTIONS
+# FUNCTIONS
 
 f() {
     fff "$@"
