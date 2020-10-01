@@ -1,4 +1,3 @@
-#
 # Screenshot and video
 #
 #select and clipboard
@@ -19,7 +18,7 @@ alt + shift + r
 #record whole screen
 alt + shift + t
   pkill ffmpeg || shot -t
-#
+
 # Window management
 #
 #center window
@@ -36,7 +35,7 @@ super + shift + {h,l,j,k}
 #resize window
 alt + {h,j,k,l}
   wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
-#
+
 # Menus
 #
 #logout menu
@@ -48,7 +47,7 @@ super + b
 #meme menu
 super + m
   memenu
-#
+
 # Notis
 #
 #Full Noti
@@ -69,7 +68,7 @@ super + p
 #volume down
 super + o
   amixer --quiet set Master 10%- && noti -v
-#
+
 # MPC
 #
 #next song
@@ -81,7 +80,7 @@ super + bracketleft
 #toggle playback
 super + backslash
   mpc toggle && noti -t
-#
+
 # Misc
 #
 #shuffle wallpaper
