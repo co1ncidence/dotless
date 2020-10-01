@@ -47,6 +47,9 @@ super + b
 #meme menu
 super + m
   memenu
+#gif menu
+super + t
+  gifmenu
 
 # Notis
 #
