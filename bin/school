@@ -7,7 +7,7 @@ choice="$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in
-    schooldocs)  . "$HOME/usr/bin/classes/schooldocs" &       ;;
-    comp2)       . "$HOME/usr/bin/classes/comp2" &            ;;
-    humanities)  . "$HOME/usr/bin/classes/humanities" &     ;;
+    schooldocs)  . "$HOME/usr/bin/classes/schooldocs" &  ;;
+    comp2)       . "$HOME/usr/bin/classes/comp2" &       ;;
+    humanities)  . "$HOME/usr/bin/classes/humanities" &  ;;
   esac

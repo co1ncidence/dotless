@@ -1,7 +1,9 @@
 #!/bin/sh
 #dmenu logout script
 
+#emtpy line is for dmenu width
 choice="$(echo "logout\nrestart\nshutdown\nsuspend\n'               '"| \
+  #change colors if you like
   dmenu -fn "envypn" -nb "#2E2927" -nf "#EDE3E1" -sb "#EDE3E1" -sf "#2E2927")"
 
 [ -z "$choice" ] && \

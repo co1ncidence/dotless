@@ -1,6 +1,7 @@
 #!/bin/sh
-#recursively search for given arg
+#recursively search for file
 
+#usage text
 usage() {
     >&2 echo 'usage: f [path] [-t <f|d>] term'
     exit 1

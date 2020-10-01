@@ -48,7 +48,7 @@ super + b
 super + m
   memenu
 #gif menu
-super + t
+alt + shift + m
   gifmenu
 
 # Notis

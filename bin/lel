@@ -1,5 +1,6 @@
 #!/bin/sh
 #lel
+#modified ufetch
 
 os='Manjaro'
 uptime="$(upp)"

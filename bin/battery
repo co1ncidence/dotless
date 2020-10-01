@@ -1,9 +1,12 @@
 #!/bin/sh -e
 #display batter capacity and status
 
+#change if needed
 bat_dir="/sys/class/power_supply/BAT0"
 
+#read capacity and status
 read -r capacity < "$bat_dir/capacity"
 read -r status   < "$bat_dir/status"
 
+#output format
 printf '%s%% [%s]\n' "$capacity" "$status"

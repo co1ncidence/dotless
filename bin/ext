@@ -6,6 +6,7 @@ usage() {
     exit 1
 }
 
+#main commands to use
 decompress() {
     case "${1##*.}" in
         gz|tgz)  gunzip -qdc "$1" ;;
@@ -14,6 +15,7 @@ decompress() {
     esac
 }
 
+#plumber
 run() {
     case "$1" in
         *tar.*|*.tgz|*.txz|*.tbz)
@@ -33,10 +35,12 @@ run() {
             7z x "$1"
             ;;
         *)
+            #error maessage
             >&2 echo "Unrecognized compression format: "${1##*.}""
     esac
 }
 
+#make sure output has same name
 while [ "$1" ] ; do
     case "$1" in
         -h|h)

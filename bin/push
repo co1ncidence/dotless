@@ -2,8 +2,8 @@
 #push a repo to master branch
 
 [ -z "$1" ] && \
-    msg="docs:update" || \
-    msg="$1"
+    msg="docs:update" || \ #use docs:update by default
+    msg="$1" #user-defined commit message
 
 git add .
 git commit -m "${msg}"

@@ -1,6 +1,7 @@
 #!/bin/sh
 #simple folder archiver
 
+#help message
 usage() {
     >&2 printf 'Usage: %s [dir]\n' "${0##*/}"
     exit 1
@@ -8,12 +9,14 @@ usage() {
 
 [ -d "$1" ] || usage
 
-out="${1%/}".tar.xz
+out="${1%/}".tar.xz #define output
 
 if [ -f "$out" ] ; then
+    #overwrite quey
     printf "file '%s' already exists, overwrite? (y/n): " "$out"
     read -r ans
     [ "$ans" = y ] || exit 1
 fi
 
+#archive command
 tar -cvf - "$1" | xz -qcT 0 > "$out"

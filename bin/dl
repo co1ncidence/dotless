@@ -3,11 +3,13 @@
 
 [ "$1" ] || { read -r inp && set "$inp" ; }
 
+#usage message
 usage() {
-    >&2 print 'Usage: %s [-m] link <output>\n' "${0##*/}"
+    >&2 printf 'Usage: %s [-m] link <output>\n' "${0##*/}"
     exit 1
 }
 
+#make curl not suck
 _dl() {
     curl \
         --disable \
@@ -20,6 +22,7 @@ _dl() {
         --output "${2:-${1##*/}}"
 }
 
+#when downloading multiple
 mass_dl() {
     tmp="/tmp/$$"
     "${EDITOR:-vi}" "$tmp"
@@ -32,6 +35,7 @@ mass_dl() {
     rm "$tmp"
 }
 
+#choose type
 main() {
     case "${1#-}" in
         h) usage ;;

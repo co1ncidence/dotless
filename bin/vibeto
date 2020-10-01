@@ -1,5 +1,6 @@
 #!/bin/sh
 #simple script to vibeto
+#a certain file/url
 
 exec mpv --x11-name=no-title \
          --config-dir="$HOME/etc/mpv/loop/" \

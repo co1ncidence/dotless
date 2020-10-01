@@ -4,10 +4,12 @@
 case "$1" in
 
   --bunny)
+    #cute bunny
     echo ' ' ; echo '(\ /)' ; echo '( . .)' ; echo 'c(")(")' ; echo ' '
     ;;
 
   --cat)
+    #cute cat
     echo ' ' ; echo ' /\_/\' ; echo ' >^.^<' ; echo ', / \' ; echo '\(___)' ; echo ' '
     ;;
 

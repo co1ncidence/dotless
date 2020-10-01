@@ -1,6 +1,7 @@
 #!/bin/sh
 #simple script to vibe
 
+#this somehow works lol
 pgrep -x mpd && mpc toggle || mpd && mpc toggle
 
 pkill herbe & herbe "Now Playing" " " "$(mpc current)"
