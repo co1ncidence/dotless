@@ -1,9 +1,5 @@
 #!/bin/sh
-#
-# http://github.com/mitchweaver
-#
 # simple offline dictionary
-#
 
 dict="$HOME/var/dict/dict.txt"
 
