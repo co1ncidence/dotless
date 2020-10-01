@@ -59,6 +59,7 @@ alias smci="sudo make clean install"
 alias sudo="sls -u root"
 alias su="sls -s"
 alias sudoedit="sls -e"
+alias sx="startx"
 
 # Prompt
 NEWLINE=$'\n'

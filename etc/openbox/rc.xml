@@ -270,7 +270,7 @@
     <!-- super terminal -->
     <keybind key="W-y">
       <action name="Execute">
-        <command>st -g 82x40+333+54</command>
+        <command>st -g 84x40+333+54</command>
       </action>
     </keybind>
     <!-- ranger -->
