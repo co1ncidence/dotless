@@ -83,12 +83,12 @@ case "$1" in
         fi
         ;;
 
-    --c)
+    -c)
         #take a 800x600 screenshot of center of screen
         maim -g 800x600+283+84 -d 3 "$HOME/what.png"
         ;;
 
-    --g)
+    -g)
         #start recording whole screen after 3 seconds
         #https://github.com/phisch/giph
         giph -d 3 "$HOME/what.gif"
