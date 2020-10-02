@@ -1,39 +1,30 @@
-! Pilot Colorscheme
+!pilot
 
-! special
+!special
 *.background: #232323
 *.foreground: #d9dbda
-
-! black
+!black
 *.color0:  #303030
 *.color8:  #3d3d3d
-
-! red
+!red
 *.color1:  #D5BBBC
 *.color9:  #dcc7c8
-
-! green
+!green
 *.color2:  #BBD5BD
 *.color10: #c7dcca
-
-! yellow
+!yellow
 *.color3:  #D5D5BB
 *.color11: #dcdcc7
-
-! blue
+!blue
 *.color4:  #BCBBD5
 *.color12: #c8c7dc
-
-! magenta
+!magenta
 *.color5:  #D5BBD3
 *.color13: #dcc7db
-
-! cyan
+!cyan
 *.color6:  #BBD5D4
 *.color14: #c7dcdc
-
-! white
+!white
 *.color7:  #e7e7e7
 *.color15: #f0f0f0
-
 ! vim: ft=xdefaults

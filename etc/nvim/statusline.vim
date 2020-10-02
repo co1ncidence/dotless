@@ -1,6 +1,6 @@
-" statusline
-" based off of gk's
-" https://github.com/6gk/polka
+"statusline
+"based off of gk's
+"https://github.com/6gk/polka
 hi Sl1 ctermbg=NONE
 hi Sl2 ctermbg=NONE
 hi Sl3 ctermbg=NONE
@@ -14,16 +14,16 @@ function! SetModifiedSymbol(modified)
 	endif
 endfunction
 
-" Modified status
+"modified status
 set statusline=%#Slrese#\ \ %#Sl1#
-" Right side
+"right side
 set statusline+=%=
-" Begin
+"begin
 set statusline+=%#SlRese#
-" Filename
+"filename
 set statusline+=%#Sl2#\ %.20t\ 
-" Unsaved
+"unsaved
 set statusline+=%#Sl3#%{SetModifiedSymbol(&modified)}
-" Ruler
+"ruler
 set statusline+=\%#Sl2#\|
 set statusline+=\%#Sl2#\ %l:%c

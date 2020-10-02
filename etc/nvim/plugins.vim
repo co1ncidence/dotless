@@ -1,4 +1,4 @@
-" vim-plugins
+"vim-plugins
 call plug#begin('~/etc/nvim/plugged')
 
 Plug 'dense-analysis/ale'

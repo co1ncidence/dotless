@@ -1,7 +1,7 @@
-" Automatically set filetype as markdown
+"set .md filetype
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
-" Settings for vim-pencil
+"vim-pencil
 set nocompatible
 filetype plugin on
 let g:pencil#textwidth = 80
@@ -12,7 +12,7 @@ augroup pencil
 augroup END
 let g:pencil#autoformat = 1
 
-" settings for vim-markdown
+"vim-markdown
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_markdown_math = 1
@@ -23,7 +23,7 @@ let g:vim_markdown_autowrite = 1
 let g:vim_markdown_edit_url_in = 'tab'
 let g:vim_markdown_follow_anchor = 1
 
-" Settings for ale
+"ale
 let b:ale_fixers = ['prettier', 'eslint']
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -31,7 +31,7 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
-" Settings for vimtex
+"vimtex
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0

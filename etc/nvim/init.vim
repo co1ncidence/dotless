@@ -1,10 +1,10 @@
-" Fix weird colors in tmux
+"fix weird tmux glitches
 if &term =~ '256color'
     set t_ut=
 
 endif
 
-" File tree settings
+"file tree settings
 nnoremap <C-n> :Vexplore!<CR>
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
@@ -12,33 +12,33 @@ let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
-" Toggle line numbers
+"toggle file tree
 nnoremap <C-x> :set nonumber! norelativenumber!<CR>
 
-" Toggle cursorline
+"toggle cursorline
 nnoremap <C-a> :set cursorline!<CR>
 
-" Keybinds for navigating splits
+"split navigation
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
 
-" Let j and k navigate longer lines
+"better j and k
 noremap k gk
 noremap j gj
 
-" effective line navigation
+"shift 0 to end of line
 noremap ) $
 
-" Move a line up or down
+"move lines
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
 inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 
-" Correct any typos on current line
+"correct typos
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-" Color Settings
+"color stuff
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
@@ -47,61 +47,62 @@ set t_Co=254
 syntax on
 colorscheme asunder
 
-" Look and feel
+"look and feel
 set ruler
 set laststatus=2
 set noshowmode
 set linebreak
 set hidden
 
-" Split Properly
+"good splitting
 set splitbelow
 set splitright
 
-" Indentation
+"tab settings
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 filetype indent on
 
-" No Show CMD
+"noshowcmd
 set noshowcmd
 
-" Folding Settings
+"folding
 set foldmethod=manual
 set foldnestmax=3
 set foldenable
 
-" Other settings
+"misc
 set wildmenu
 set lazyredraw
 set scrolloff=3
 set autoread
 
-" Search Settings
+"search
 set incsearch
 set hlsearch
 set ignorecase
 let g:rehash256 = 1
 
-" MORE SETTINGS
+"shell
 set history=1000
 set shell:bash
 set backspace=indent,eol,start
 
-" Detect whitespace and color as red
+"show whitespaces as red
 hi!  ExtraWhitespace ctermbg=red guibg=red
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call  clearmatches()
 
-" Enable spellcheck only for .md and .tex
+"spellcheck for certain filetypes
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType tex setlocal spell spelllang=en_us
+autocmd FileType html setlocal spell spelllang=en_us
 
-" Sources
+"sources
 source ~/etc/nvim/statusline.vim
 source ~/etc/nvim/plugin-settings.vim
 source ~/etc/nvim/plugins.vim

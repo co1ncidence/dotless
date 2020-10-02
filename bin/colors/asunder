@@ -1,39 +1,30 @@
-! Asunder Colorscheme
+!asunder
 
-! special
+!special
 *.foreground: #EDE3E1
 *.background: #211D1C
-
-! black
+!black
 *.color0:  #36302e
 *.color8:  #4b4240
-
-! red
+!red
 *.color1:  #734948
 *.color9:  #734948
-
-! green
+!green
 *.color2:  #768157
 *.color10: #768157
-
-! yellow
+!yellow
 *.color3:  #aa9375
 *.color11: #aa9375
-
-! blue
+!blue
 *.color4:  #585b63
 *.color12: #585b63
-
-! magenta
+!magenta
 *.color5:  #6f5a56
 *.color13: #6f5a56
-
-! cyan
+!cyan
 *.color6:  #7d8486
 *.color14: #7d8486
-
-! white
+!white
 *.color7:  #D4CBC9
 *.color15: #BAB2B0
-
 ! vim: ft=xdefaults
