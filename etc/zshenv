@@ -1,21 +1,21 @@
-# XDG Settings
+#xdg settings
 export XDG_CONFIG_HOME="$HOME/etc/"
 export XDG_DATA_HOME="$HOME/var/"
 export XDG_CACHE_HOME="$HOME/var/cache/"
 
-# X
+#x
 export XAUTHORITY="${XDG_CONFIG_HOME:-$HOME/etc/}x/xauth"
 export XINITRC="${XDG_CONFIG_HOME:-$HOME/etc/}x/xinitrc"
 
-# ZSH
+#zsh
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/etc/}zsh"
 
-# Set Path
+#set Path
 export PATH=$PATH:"$HOME/usr/bin/"
 export PATH=$PATH:"$HOME/usr/bin/notmine/"
 export PATH=$PATH:"$HOME/usr/bin/stain/"
 
-# Default Programs
+#default programs
 export TERMINAL="st"
 export EDITOR="nvim"
 export READER="zathura"
@@ -25,10 +25,9 @@ export VIDPLAYER="mpv"
 export IMGVIEWER="sxiv"
 export BROWSER="chromium"
 
-# Program Specific Things
+#program specific things
 export FZF_DEFAULT_COMMAND='find .'
 export MANPAGER="nvim -c 'set ft=man' -"
-export FFF_OPENER="$HOME/usr/bin/opener"
 export SHFM_OPENER="$HOME/usr/bin/opener"
 export PASSWORD_STORE_DIR="$HOME/usr/pas/"
 export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/etc/}gnupg"
@@ -38,3 +37,14 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/etc/}.gtkrc-2.0"
 export PULSE_COOKIE="$HOME/etc/pulse/cookie"
+
+#fff settings
+export FFF_OPENER="$HOME/usr/bin/opener"
+export FFF_COL1=3 #dir
+export FFF_COL2=5 #status bg
+export FFF_COL3=1 #selection
+export FFF_COL4=3 #cursor
+export FFF_COL5=0 #status fg
+export FFF_TRASH="$HOME/var/trash"
+export FFF_W3M_XOFFSET=3
+export FFF_W3M_YOFFSET=3
