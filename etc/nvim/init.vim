@@ -4,6 +4,9 @@ if &term =~ '256color'
 
 endif
 
+"huh?
+runtime macros/matchit.vim
+
 "file tree settings
 nnoremap <C-n> :Vexplore!<CR>
 let g:netrw_altv = 1
