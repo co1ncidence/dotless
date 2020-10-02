@@ -4,9 +4,11 @@
 
 `arc` - Archive a folder (tar)
 
-`ascii` - Display chosen ascii, so far only bunny and cat
+`ascii` - Display cute ascii animal
+  - `--bunny`: bunny
+  - `--cat`: cat
 
-`battery` - Display batter percentage
+`battery` - Display battery percentage
 
 `centerwindow` - Center the current window
 
@@ -16,16 +18,23 @@
 
 `cl` - Colorscheme script
 
-`clone` - clone a repo, smartly
-  - format is: `clone <repo-owner> <repo-name>`
+`clone` - Clone a repo, smartly
+  - format is: `clone <repo-owner>/<repo-name>`
 
 `copy` - Copy a files contents to clipboard
 
-`dl` - All purpose curl wrapper
+`cx` - Toggle a file as executable
+
+`dl` - Download script
+  - Downloads youtube as mp3
+  - Downloads unsplash as jpg
+  - Downloads raw otherwise
 
 `download` - Youtube to mp3
 
 `ext` - Extract an archive, works with all formats
+
+`gifmenu` - Tenor shitposting dmenu
 
 `lel` - Fetch script
 
@@ -61,10 +70,14 @@
   - `-p`: screenshot with selection and 70px padding
   - `-h`: desktop screenshot, max quality
   - `-v`: select and record a region of screen
+    - requires [slop](https://github.com/naelstrof/slop)
   - `-t`: record whole screen
-  - `--center`: take centered 800x600 screenshot
-  - `--gif`: record fullscreen gif after 3 seconds
+    - requires [ffmpeg](https://github.com/FFmpeg/FFmpeg)
+  - `-c`: take centered 800x600 screenshot
+  - `-g`: record fullscreen gif after 3 seconds
+    - requires [giph](https://github.com/phisch/giph)
 
+`search` - Search recursively for all instances of given pattern
 
 `snapwin` - Snap windows to respective directions
   - stolen from [wmutils contrib](https://github.com/wmutils/contrib)
@@ -85,7 +98,7 @@
 
 `vibeto` - Vibe to a specified url or file (mpv)
 
-`webcam` - Open webcam
+`webcam` - Open mpv webcam
 
 `wid` - Prints wid for xdotool to use
 

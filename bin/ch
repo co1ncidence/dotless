@@ -1,5 +1,5 @@
 #!/bin/sh
-#clean ~~your~~ my home dir!
+#homedir roomba
 
 [ "$(pgrep -x ch)" = "$$" ] || exit 1
 

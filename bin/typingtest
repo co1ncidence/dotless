@@ -7,7 +7,7 @@ choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfr
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in
-    recursive)    st -g 68x20+0+0 -f "Recursive Mono Linear Static":pixelsize=24 -e gottagofast -w 68 &  ;;
+    recursive)    st -g 68x20+0+0 -f "Recursive Mono Casual Static":pixelsize=24 -e gottagofast -w 68 &  ;;
     roboto)       st -g 68x20+0+0 -f "Roboto Mono":pixelsize=24 -e gottagofast -w 68 &                   ;;
     sudo)         st -g 68x20+0+0 -f "Sudo":pixelsize=24 -e gottagofast -w 68 &                          ;;
     apercu)       st -g 68x20+0+0 -f "Apercu Pro Mono":pixelsize=24 -e gottagofast -w 68 &               ;;
