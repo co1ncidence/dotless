@@ -3,7 +3,7 @@
 
 <p align="center"
 
-![img](scr/dotless.png)
+![img](https://i.postimg.cc/q7R8Nq34/image.png)
 
 </p>
 
