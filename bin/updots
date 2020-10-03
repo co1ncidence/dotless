@@ -28,8 +28,8 @@ rm -rf \
 	bin/templates/    \
 	bin/stain/				\
 	etc/skanliterc    \
-	etc/Electron/     \
 	etc/qalculate/    \
+	etc/htop/				  \
 	etc/calcurse/     \
 	etc/inkscape/     \
 	etc/chromium/     \

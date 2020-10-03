@@ -1,21 +1,23 @@
 #!/bin/sh
-# X11 Startup File
+#autostart file
 
-# Start dbus
+#dbus
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
-# Set repeat rate
+#repeat rate
 xset r rate 250 50
 
-# Set wallpaper
+#wallpaper
 hsetroot -cover "$HOME/med/wlp/coffee.jpg"
 
-# Launch some programs
+#important things
 picom -b --config ~/etc/picom/picom.conf &
 sxhkd -c ~/etc/sxhkd/sxhkdrc &
 
-# Start RM Daemon
+#rm daemon
 ch &
 
-# Start a wm
+#choose your WM
 exec openbox
+#exec glazier
+#exec sowm

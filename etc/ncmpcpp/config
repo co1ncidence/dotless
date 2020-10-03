@@ -1,11 +1,11 @@
-# dirs and shit
+#dirs and shit
 ncmpcpp_directory = "/home/co1ncidence/etc/ncmpcpp/"
 mpd_music_dir = "/home/co1ncidence/med/mus/"
 external_editor = "gedit"
 user_interface = "classic"
 playlist_display_mode = "classic"
 
-# visualizer
+#visualizer
 visualizer_fifo_path = /tmp/mpd.fifo
 visualizer_output_name = Visualizer feed
 visualizer_in_stereo = yes
@@ -14,31 +14,31 @@ visualizer_type = wave
 visualizer_look = ++
 visualizer_color = default, white, white, cyan, red
 
-# ??
+#??
 message_delay_time = 3
 discard_colors_if_item_is_selected = "yes"
 
-# songs
+#songs
 song_list_format = {%a - $2%t}$9
 now_playing_prefix = "$b| "
 selected_item_prefix = $3
 selected_item_suffix = $9
 
-# progressbar
+#progressbar
 progressbar_look = ───
 progressbar_color = black
 progressbar_elapsed_color = white
 
-# ui vis
+#ui vis
 header_visibility = no
 statusbar_visibility = no
 titles_visibility = no
 
-# cursor
+#cursor
 autocenter_mode = "yes"
 centered_cursor = "yes"
 
-# stuff
+#stuff
 colors_enabled = yes
 empty_tag_color = cyan
 header_window_color = default
@@ -49,14 +49,14 @@ main_window_color = default
 color1 = white
 color2 = green
 
-# statusbar
+#statusbar
 statusbar_color = default
 statusbar_time_color = default:b
 
-# ?? v2
+#??
 player_state_color = default:b
 alternative_ui_separator_color = black:b
 
-# window border
+#window border
 window_border_color = green
 active_window_border = red

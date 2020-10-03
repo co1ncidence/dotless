@@ -4,7 +4,8 @@ if &term =~ '256color'
 
 endif
 
-"huh?
+"inbuilt vim macro
+"pretty awesome
 runtime macros/matchit.vim
 
 "file tree settings
@@ -15,7 +16,7 @@ let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
-"toggle file tree
+"toggle line numbers
 nnoremap <C-x> :set nonumber! norelativenumber!<CR>
 
 "toggle cursorline

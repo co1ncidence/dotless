@@ -1,9 +1,11 @@
-# General settings
+#allow for comments in shell
 set -k
+
+#cd by typing dir name
 setopt auto_cd
 setopt autocd extendedglob nomatch notify
 
-# Autocomplete settings
+#completion
 setopt NO_NOMATCH
 setopt complete_in_word
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -14,23 +16,25 @@ zstyle ':completion:*' matcher-list \
 autoload -U compinit && compinit -C
 
 
-# Compinit
+#compinit
 autoload -Uz compinit
 compinit
 
-# History Settings
+#history
 setopt hist_ignore_dups
 HISTFILE=~/etc/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Don't beep
+#fuck beeping
 unsetopt beep
 
-# Keybinds
+#emacs!
 bindkey -e
 
-# Aliases
+#alii
+#is that plural of alias?
+#i have no clue tbh
 alias walls="cd ~/med/wlp/"
 alias nvimrc="nvim ~/etc/nvim/init.vim"
 alias c="clear"
@@ -56,17 +60,18 @@ alias no="nvim ~/var/notes/notes.md"
 alias nls="echo ; grep -v '>' ~/var/notes/notes.md | grep -v '#' && echo ' '"
 alias weather="clear && curl wttr.in"
 alias smci="sudo make clean install"
+alias sx="startx"
+
+#not "safe" but who cares
 alias sudo="sls -u root"
 alias su="sls -s"
 alias sudoedit="sls -e"
-alias sx="startx"
 
-# FUNCTIONS
-
+#functions
 f() {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
 }
 
-# Prompt
+#prompt
 PROMPT="%B%F{white}%1~%f%b "

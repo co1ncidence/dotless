@@ -1,4 +1,4 @@
-! Fix font rendering
+!fix font rendering
 Xft.autohint: 0
 Xft.antialias: 1
 Xft.hinting: true
@@ -7,7 +7,7 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-! URXVT shit
+!urxvt config
 URxvt.font: xft:Recursive Mono Casual Static:size=12
 URxvt.clipboard.autocopy: true
 URxvt.scrollBar: false
@@ -21,41 +21,24 @@ URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
-! Special
-*.background: #fdf9f7
-*.foreground: #262427
-*.cursorColor:  #262427
-
-! black
-*.color0:  #1c1b1d
-*.color8:  #262427
-
-! red
-*.color1:  #DE9DAC
-*.color9:  #F7AFC0
-
-! green
-*.color2:  #9DDEAF
-*.color10: #AFF7C3
-
-! yellow
-*.color3:  #DEDD9D
-*.color11: #F7F6AF
-
-! blue
-*.color4:  #9DACDE
-*.color12: #AFC0F7
-
-! magenta
-*.color5:  #AF9DDE
-*.color13: #C3AFF7
-
-! cyan
-*.color6:  #9DCCDE
-*.color14: #AFE3F7
-
-! white
-*.color7:  #f4e0d8
-*.color15: #f9ece8
-
+!colors
+*.foreground: #EDE3E1
+*.background: #211D1C
+*.cursorColor:  #211D1C
+*.color0:  #36302e
+*.color8:  #4b4240
+*.color1:  #734948
+*.color9:  #734948
+*.color2:  #768157
+*.color10: #768157
+*.color3:  #aa9375
+*.color11: #aa9375
+*.color4:  #585b63
+*.color12: #585b63
+*.color5:  #6f5a56
+*.color13: #6f5a56
+*.color6:  #7d8486
+*.color14: #7d8486
+*.color7:  #D4CBC9
+*.color15: #BAB2B0
 ! vim: ft=xdefaults

@@ -4,4 +4,4 @@
 exec mpv --config-dir="$HOME/etc/mpv/"
          --no-video \
          --shuffle \
-         -- "$@" "$HOME/med/mus/"
+         "$HOME/med/mus/*"
