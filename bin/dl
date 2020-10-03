@@ -17,8 +17,8 @@ case $1 in
             "$@" ;;
 
 		#unsplash
-		*unsplash.com*)
-	      curl -L#o "$HOME/leaf.jpeg" "$v/download?force=true" ;;
+		*unsplash.com*) v=${1%/download*}
+				curl -L#o "${v##*/}.jpeg" "$v/download?force=true" ;;
 
     #everything else
     *)

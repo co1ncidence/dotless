@@ -73,5 +73,9 @@ f() {
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
 }
 
+v() {
+	amixer set Master "$1"%
+}
+
 #prompt
 PROMPT="%B%F{white}%1~%f%b "

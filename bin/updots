@@ -21,6 +21,7 @@ rm -rf \
 	etc/zsh/.histfile    \
 	etc/youtube-dlg/  \
 	etc/libreoffice/  \
+	etc/.mozilla/			\
 	etc/MusicBrainz/  \
 	etc/configstore/  \
 	etc/keepassxc/    \
