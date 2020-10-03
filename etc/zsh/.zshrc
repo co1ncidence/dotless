@@ -78,4 +78,5 @@ v() {
 }
 
 #prompt
-PROMPT="%B%F{white}%1~%f%b "
+PROMPT="─── "
+RPROMPT="%B%F{white}%1~%f%b "
