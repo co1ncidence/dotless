@@ -9,12 +9,6 @@
 
 <p align="center"
 
-![img](scr/dejavu.png)
-
-</p>
-
-<p align="center"
-
-![img](scr/another.png)
+![img](scr/screenshot.png)
 
 </p>
