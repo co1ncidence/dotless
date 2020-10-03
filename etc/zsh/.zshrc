@@ -73,18 +73,17 @@ alias nls="echo ; grep -v '>' ~/var/notes/notes.md | grep -v '#' && echo ' '"
 alias weather="clear && curl wttr.in"
 alias smci="sudo make clean install"
 alias sx="startx"
-
-#not "safe" but who cares
 alias sudo="sls -u root"
 alias su="sls -s"
 alias sudoedit="sls -e"
 
-#functions
+#fff
 f() {
-    fff "$@"
-    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
+	fff "$@"
+  cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
 }
 
+#volume
 v() { amixer --quiet set Master "$1"% }
 
 #prompt
