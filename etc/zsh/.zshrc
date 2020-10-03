@@ -15,7 +15,6 @@ zstyle ':completion:*' matcher-list \
 	'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -U compinit && compinit -C
 
-
 #compinit
 autoload -Uz compinit
 compinit
@@ -23,19 +22,32 @@ compinit
 #history
 setopt hist_ignore_dups
 HISTFILE=~/etc/zsh/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=42069
+SAVEHIST=42069
 
 #fuck beeping
 unsetopt beep
 
-#emacs!
-bindkey -e
+#lu
+lu() {
+	autoload -U "$1"; zle -N "$1"; bindkey "$2" "$1";
+}
+
+#keybinds
+bindkey '^a'	beginning-of-line
+bindkey '^e'	end-of-line
+bindkey '^w'	backward-kill-word
+bindkey '^f'	forward-word
+bindkey '^b'  backward-word
+bindkey '^r'  history-incremental-search-backward
+
+#command hist
+lu up-line-or-beginning-search   '^[[A'
+lu down-line-or-beginning-search '^[[B'
+lu up-line-or-beginning-search   '^p'
+lu down-line-or-beginning-search '^n'
 
 #alii
-#is that plural of alias?
-#i have no clue tbh
-alias walls="cd ~/med/wlp/"
 alias nvimrc="nvim ~/etc/nvim/init.vim"
 alias c="clear"
 alias class="cd ~/usr/doc/sch/"
@@ -46,8 +58,8 @@ alias r="ranger"
 alias ff="shfm"
 alias q="qalc"
 alias ls="ls -CFv --color=auto --group-directories-first"
-alias ll='ls -l'
-alias la='ls -A'
+alias ll="ls -CFvl --color=auto --group-directories-first"
+alias la="ls -CFvA --color=auto --group-directories-first"
 alias wget="wget --no-hsts"
 alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
 alias dunst="dunst -conf ~/etc/dunst/dunstrc"
@@ -73,9 +85,7 @@ f() {
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
 }
 
-v() {
-	amixer --quiet set Master "$1"%
-}
+v() { amixer --quiet set Master "$1"% }
 
 #prompt
 PROMPT="%F{red}───%f "
