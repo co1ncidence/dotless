@@ -74,7 +74,7 @@ f() {
 }
 
 v() {
-	amixer set Master "$1"%
+	amixer --quiet set Master "$1"%
 }
 
 #prompt

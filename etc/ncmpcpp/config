@@ -19,15 +19,15 @@ message_delay_time = 3
 discard_colors_if_item_is_selected = "yes"
 
 #songs
-song_list_format = {%a - $2%t}$9
-now_playing_prefix = "$b| "
-selected_item_prefix = $3
-selected_item_suffix = $9
+song_list_format = {$8%t}$9
+now_playing_prefix = "$2- "
+selected_item_prefix = "$2> "
+selected_item_suffix = " $2<"
 
 #progressbar
 progressbar_look = ───
 progressbar_color = black
-progressbar_elapsed_color = white
+progressbar_elapsed_color = 2
 
 #ui vis
 header_visibility = no
