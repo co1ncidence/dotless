@@ -9,6 +9,6 @@
 
 <p align="center"
 
-![img](scr/screenshot.png)
+![img](scr/hello.png)
 
 </p>
