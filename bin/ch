@@ -6,13 +6,14 @@
 while :; do
 	set --
 	for i in "$HOME/.pki" \
+           "$HOME/.w3m" \
            "$HOME/.local" \
            "$HOME/.cache" \
+					 "$HOME/.bash*" \
+					 "$HOME/.local" \
            "$HOME/.config" \
-           "$HOME/.xournalpp" \
-           "$HOME/.lyrics" \
-           "$HOME/.bash*" \
-           "$HOME/.local"; do
+					 "$HOME/.lyrics" \
+           "$HOME/.xournalpp"; do
 		[ -e "$i" ] && set -- "$@" "$i"
 	done
 	[ "$1" ] && rm -rf -- "$@"
