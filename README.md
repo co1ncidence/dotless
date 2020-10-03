@@ -3,12 +3,6 @@
 
 <p align="center"
 
-![img](https://i.postimg.cc/q7R8Nq34/image.png)
-
-</p>
-
-<p align="center"
-
-![img](scr/hello.png)
+![img](scr/comfy.png)
 
 </p>
