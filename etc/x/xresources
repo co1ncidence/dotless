@@ -8,7 +8,7 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 !urxvt config
-URxvt.font: xft:Recursive Mono Casual Static:size=12
+URxvt.font: xft:envypn:size=13
 URxvt.clipboard.autocopy: true
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
@@ -24,7 +24,7 @@ URxvt.keysym.Control-Left: \033[1;5D
 !colors
 *.foreground: #EDE3E1
 *.background: #211D1C
-*.cursorColor:  #211D1C
+*.cursorColor:  #EDE3E1
 *.color0:  #36302e
 *.color8:  #4b4240
 *.color1:  #734948
