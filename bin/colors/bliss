@@ -1,30 +1,28 @@
-!bliss
+#bliss
+#made by: nuaNce
 
-!special
-*.background: #121213
-*.foreground: #fdf9f7
-!black
-*.color0:  #1c1b1d
-*.color8:  #262427
-!red
-*.color1:  #DE9DAC
-*.color9:  #F7AFC0
-!green
-*.color2:  #9DDEAF
-*.color10: #AFF7C3
-! yellow
-*.color3:  #DEDD9D
-*.color11: #F7F6AF
-! blue
-*.color4:  #9DACDE
-*.color12: #AFC0F7
-! magenta
-*.color5:  #AF9DDE
-*.color13: #C3AFF7
-! cyan
-*.color6:  #9DCCDE
-*.color14: #AFE3F7
-! white
-*.color7:  #f4e0d8
-*.color15: #f9ece8
-! vim: ft=xdefaults
+#mn
+bcg='fdf9f7'
+frg='121213'
+
+#bw
+bl1='1c1b1d'
+bl2='262427'
+wh1='f4e0d8'
+wh2='f9ece8'
+
+#cl
+red='DE9DAC'
+grn='9DDEAF'
+yel='DEDD9D'
+blu='9DACDE'
+mag='AF9DDE'
+cya='9DCCDE'
+
+#bl
+red='F7AFC0'
+grn='AFF7C3'
+yel='F7F6AF'
+blu='AFC0F7'
+mag='C3AFF7'
+cya='AFE3F7'

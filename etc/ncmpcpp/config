@@ -27,7 +27,7 @@ selected_item_suffix = " $2<"
 #progressbar
 progressbar_look = ───
 progressbar_color = black
-progressbar_elapsed_color = 2
+progressbar_elapsed_color = white
 
 #ui vis
 header_visibility = no

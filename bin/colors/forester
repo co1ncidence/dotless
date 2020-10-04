@@ -1,30 +1,20 @@
-!forester
+#forester
+#made by: nuaNce
 
-!special
-*.background: #0A0B0A
-*.foreground: #EBEDEB
-!black
-*.color0:  #202420
-*.color8:  #363D36
-!red
-*.color1:  #726768
-*.color9:  #726768
-!green
-*.color2:  #677267
-*.color10: #677267
-!yellow
-*.color3:  #717267
-*.color11: #717267
-!blue
-*.color4:  #676772
-*.color12: #676772
-!magenta
-*.color5:  #726770
-*.color13: #726770
-!cyan
-*.color6:  #677272
-*.color14: #677272
-!white
-*.color7:  #CFD1CF
-*.color15: #DCDEDC
-! vim: ft=xdefaults
+#mn
+bcg='0A0B0A'
+frg='EBEDEB'
+
+#bw
+bl1='202420'
+bl2='363D36'
+wh1='CFD1CF'
+wh2='DCDEDC'
+
+#cl
+red='726768'
+grn='677267'
+yel='717267'
+blu='676772'
+mag='726770'
+cya='677272'
