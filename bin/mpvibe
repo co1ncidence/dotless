@@ -1,5 +1,5 @@
 #!/bin/sh
-#Reee he's back
+#reee he's back
 
 exec mpv --config-dir="$HOME/etc/mpv/"
          --no-video \

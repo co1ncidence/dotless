@@ -2,29 +2,34 @@
 #plumber for FFF and SHFM
 
 case "$1" in
+
         *.mp3|*.flac|*.wav)
-           setsid -f mpv --no-video "$1"
-        ;;
+
+          setsid -f mpv --no-video "$1"
+          ;;
 
         *.mp4|*.mkv|*.webm|*.mov|*.gif)
-           setsid -f mpv "$1"
-        ;;
+
+          setsid -f mpv "$1"
+          ;;
 
         *.png|*.jpg|*.jpe|*.jpeg)
-           setsid -f sxiv "$1"
-        ;;
+
+          setsid -f sxiv "$1"
+          ;;
 
         *.pdf)
-           setsid -f zathura "$1"
-        ;;
+
+          setsid -f zathura "$1"
+          ;;
 
         *.odt|*.ppt|*.csv)
-           setsid -f libreoffice "$1"
-        ;;
 
-        # all other files
+          setsid -f libreoffice "$1"
+          ;;
+
         *)
-            "${EDITOR:=nvim}" "$1"
-        ;;
+          "${EDITOR:=nvim}" "$1"
+          ;;
 
-    esac
+esac

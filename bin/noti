@@ -4,45 +4,27 @@
 case "$1" in
 
   -a)
-      #kill running herbe instances
       pkill herbe & \
-      #all inclusive info noti
-      #might add mpc idk
-      herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)"
-      ;;
+      herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)" ;;
 
   -v)
-      #kill running herbe instances
       pkill herbe & \
-      #synced with sxhkd
-      herbe "Volume: "$(amixer sget Master | grep -i "right:" | awk -F '[][]' '{ print $2 }')""
-      ;;
+      herbe "Volume: "$(amixer sget Master | grep -i "right:" | awk -F '[][]' '{ print $2 }')"" ;;
 
   -l)
-      #kill running herbe instances
       pkill herbe & \
-      #synced with sxhkd
-      herbe "Brightness" " " "$(xbacklight -get)"
-      ;;
+      herbe "Brightness" " " "$(xbacklight -get)" ;;
 
   -n)
-      #kill running herbe instances
       pkill herbe & \
-      #for when i switch to new song
-      herbe "Now Playing" " " "$(mpc current)"
-      ;;
+      herbe "Now Playing" " " "$(mpc current)" ;;
 
   -t)
-      #kill running herbe instances
       pkill herbe & \
-      #don't ask.
-      herbe "Toggled"
-      ;;
+      herbe "Toggled" ;;
 
   -d)
-      #kill running herbe instances
       pkill herbe & \
-      #display calendar with date on top and a separatir,
-      #will open ddg calender in chromium on right click
-      herbe "$(date +'%A, %b %d')" "--------------------" "$(cal)" && chromium --app "https://duckduckgo.com/?q=calendar&ia=answer"
+      herbe "$(date +'%A, %b %d')" "--------------------" "$(cal)"
+
 esac

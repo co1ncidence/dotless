@@ -19,23 +19,27 @@ decompress() {
 run() {
     case "$1" in
         *tar.*|*.tgz|*.txz|*.tbz)
+            #untar
             decompress "$1" | \
-            tar -C "${COPY_PATH:-$PWD}" -xpf -
-            ;;
+            tar -C "${COPY_PATH:-$PWD}" -xpf - ;;
+
         *.xz|*.gz|*.bz2)
-            decompress "$1" "${COPY_PATH:-"$PWD"}/"${1%.*}""
-            ;;
+            #bz
+            decompress "$1" "${COPY_PATH:-"$PWD"}/"${1%.*}"" ;;
+
         *.zip)
-            unzip -q "$1" -d "$2"
-            ;;
+            #zip
+            unzip -q "$1" -d "$2" ;;
+
         *.rar)
-            unrar x "$1"
-            ;;
+            #unrar
+            unrar x "$1" ;;
+
         *.7z)
-            7z x "$1"
-            ;;
+            #who uses this
+            7z x "$1" ;;
+
         *)
-            #error maessage
             >&2 echo "Unrecognized compression format: "${1##*.}""
     esac
 }
