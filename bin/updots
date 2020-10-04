@@ -7,7 +7,7 @@ rm -rf	"$HOME/usr/git/dotless/etc/nvim/colors/"
 rm -rf	"$HOME/usr/git/dotless/etc/nvim/spell/"
 rm -rf	"$HOME/usr/git/dotless/etc/nvim/.netrwhist"
 cp -r	"$HOME/usr/bin/" "$HOME/usr/git/dotless/"
-cp -r	"$HOME/var/themes/*" "$HOME/usr/git/dotless/var/themes/"
+cp -r	$HOME/var/themes/* "$HOME/usr/git/dotless/var/themes/"
 cd		"$HOME/usr/git/dotless/"
 rm -rf \
 	etc/ranger/colorschemes/  \
