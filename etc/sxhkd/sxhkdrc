@@ -53,6 +53,9 @@ alt + shift + m
 
 # Notis
 #
+#Kill Noti
+super + 0
+  pkill herbe
 #Full Noti
 super + q
   noti -a

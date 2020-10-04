@@ -1,7 +1,7 @@
 #!/bin/sh
 #start a typing test with chosen font
 
-choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\nterminus\n'               '"| \
+choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\nterminus\nCMU\n'               '"| \
   dmenu -fn "envypn" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
 
 [ -z "$choice" ] && \
@@ -16,4 +16,5 @@ choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfr
     space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=24 -e gottagofast -w 68 &                    ;;
     sanfran)      st -g 68x20+0+0 -f "SF Mono":pixelsize=24 -e gottagofast -w 68 &                       ;;
     terminus)     st -g 68x20+0+0 -f "Terminus":pixelsize=32 -e gottagofast -w 68 &                      ;;
+    CMU)          st -g 68x20+0+0 -f "CMU Typewriter Text":pixelsize=32 -e gottagofast -w 68 &           ;;
   esac
