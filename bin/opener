@@ -6,11 +6,11 @@ case "$1" in
            setsid -f mpv --no-video "$1"
         ;;
 
-        *.mp4|*.mkv|*.webm|*.mov)
+        *.mp4|*.mkv|*.webm|*.mov|*.gif)
            setsid -f mpv "$1"
         ;;
 
-        *.png|*.gif|*.jpg|*.jpe|*.jpeg)
+        *.png|*.jpg|*.jpe|*.jpeg)
            setsid -f sxiv "$1"
         ;;
 
