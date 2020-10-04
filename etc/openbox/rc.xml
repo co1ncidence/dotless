@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>graywindow</name>
+    <name>2</name>
     <titleLayout/>
     <!--
       available characters are NDSLIMC, each can occur at most once.
