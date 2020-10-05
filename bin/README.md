@@ -79,6 +79,8 @@
 
 `search` - Search recursively for all instances of given pattern
 
+`shorten` - Shorten a given URL
+
 `snapwin` - Snap windows to respective directions
   - stolen from [wmutils contrib](https://github.com/wmutils/contrib)
 
