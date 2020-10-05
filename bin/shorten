@@ -5,12 +5,10 @@ me=${0##*/}
 host=https://0x0.st
 
 clip() {
-    if command -v xsel >/dev/null 2>&1;then
-        printf '%s' "$@" | xsel -b
-    fi
+    [ "$(command -v xsel)" ] && printf '%s' "$@" | xsel -b
 }
 
-shorten_url() {
+short() {
     local curl_opts="-s" url="$1" shortened
     [ "${progress_quiet}" ] || curl_opts="-#"
     [ "${quiet}" ] || printf "shortening \"${url}\"...\n" >&2
@@ -22,4 +20,4 @@ shorten_url() {
     echo "${shortened}" | xclip -selection clipboard && echo "${shortened}" | xclip -selection primary
 }
 
-shorten_url "${@}"
+short "${@}"
