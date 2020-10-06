@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Space Mono:pixelsize=15:antialias=true:autohint=true";
+static char *font = "Space Mono:pixelsize=13:antialias=true:autohint=true";
 
 
 /* Spare fonts */

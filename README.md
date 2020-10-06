@@ -4,6 +4,6 @@
 
 <p align="center"
 
-![img](scr/screenshot.png)
+![img](scr/fresh.png)
 
 </p>
