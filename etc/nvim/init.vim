@@ -5,7 +5,6 @@ if &term =~ '256color'
 endif
 
 "inbuilt vim macro
-"pretty awesome
 runtime macros/matchit.vim
 
 "file tree settings
