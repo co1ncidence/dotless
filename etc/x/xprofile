@@ -8,7 +8,7 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 xset r rate 250 50
 
 #wallpaper
-hsetroot -cover "$HOME/med/wlp/coffee.jpg"
+hsetroot -solid "#bab2b0"
 
 #important things
 picom -b --config ~/etc/picom/picom.conf &
@@ -20,4 +20,3 @@ ch &
 #choose your WM
 exec openbox
 #exec glazier
-#exec sowm

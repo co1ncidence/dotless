@@ -1,10 +1,9 @@
 #!/bin/sh
 #world"s best 0x0 upload script
-#https://github.com/vizs
 
 [ -f "$1" ] && op="cat"
 "${op:-echo}" "${@:-$(cat -)}" \
 	| curl -sF file="@-" "http://0x0.st" \
 	| tee /dev/stderr \
 	| tr -d "\n"      \
-	| xclip -sel clip -in
+	| xclip -sel clip -in       
