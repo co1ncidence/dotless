@@ -90,7 +90,7 @@ let g:rehash256 = 1
 
 "shell
 set history=1000
-set shell:bash
+set shell:zsh
 set backspace=indent,eol,start
 
 "show whitespaces as red
@@ -107,5 +107,5 @@ autocmd FileType html setlocal spell spelllang=en_us
 
 "sources
 source ~/etc/nvim/statusline.vim
-source ~/etc/nvim/plugin-settings.vim
 source ~/etc/nvim/plugins.vim
+source ~/etc/nvim/settings.vim
