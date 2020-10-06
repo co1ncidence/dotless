@@ -270,7 +270,7 @@
     <!-- super terminal -->
     <keybind key="W-y">
       <action name="Execute">
-        <command>st -f "Space Mono:pixelsize=16" -g 80x20</command>
+        <command>st -f "Space Mono:pixelsize=16" -g 82x20</command>
       </action>
     </keybind>
     <!-- ranger -->
