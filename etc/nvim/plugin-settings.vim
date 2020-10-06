@@ -37,3 +37,8 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 let g:tex_conceal='abdmg'
 let g:tex_fast = "bMpr"
+
+"ultisnippets
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
