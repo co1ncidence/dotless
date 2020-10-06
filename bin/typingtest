@@ -2,7 +2,7 @@
 #start a typing test with chosen font
 
 choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\nterminus\nCMU\n'               '"| \
-  dmenu -fn "envypn" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
+  dmenu -fn "Space Mono" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
 
 [ -z "$choice" ] && \
   exit 1 || \

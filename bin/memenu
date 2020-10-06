@@ -3,6 +3,6 @@
 
 dir="$HOME/med/pic/mem"
 
-mem="$(ls -1 "$dir" | dmenu -fn "envypn" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
+mem="$(ls -1 "$dir" | dmenu -fn "Space Mono" -nb "#2E2927" -nf "#ede3e1" -sb "#ede3e1" -sf "#2E2927")"
 
 [ -f "$dir/$mem" ] && xclip -sel clip -t image/png "$dir/$mem"

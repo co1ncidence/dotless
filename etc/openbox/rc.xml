@@ -270,7 +270,7 @@
     <!-- super terminal -->
     <keybind key="W-y">
       <action name="Execute">
-        <command>st -f "CMU Typewriter Text:pixelsize=18" -g 80x24</command>
+        <command>st -f "Space Mono:pixelsize=16" -g 80x20</command>
       </action>
     </keybind>
     <!-- ranger -->
@@ -288,7 +288,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'envypn' -nb '#2E2927' -nf '#ede3e1' -sb '#ede3e1' -sf '#2E2927'</command>
+        <command>dmenu_run -fn 'Space Mono' -nb '#2E2927' -nf '#ede3e1' -sb '#ede3e1' -sf '#2E2927'</command>
       </action>
     </keybind>
     <!-- passmenu -->

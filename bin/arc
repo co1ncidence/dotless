@@ -12,7 +12,7 @@ usage() {
 out="${1%/}".tar.xz #define output
 
 if [ -f "$out" ] ; then
-    #overwrite quey
+    #overwrite query
     printf "file '%s' already exists, overwrite? (y/n): " "$out"
     read -r ans
     [ "$ans" = y ] || exit 1
