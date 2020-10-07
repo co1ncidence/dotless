@@ -1,17 +1,8 @@
 # Screenshot and video
 #
-#select and clipboard
-alt + shift + e
-  shot -s
-#padding and clipboard
-alt + shift + d
-  shot -p
-#select and save
-alt + shift + s
-  shot -d
-#full and save
-alt + shift + w
-  shot -h
+#screenshots
+alt + shift + {e,d,s,w}
+  shot {-s,-p,-d,-h}
 #record section of screen
 alt + shift + r
   pkill ffmpeg || shot -v
@@ -38,51 +29,33 @@ alt + {h,j,k,l}
 
 # Menus
 #
-#logout menu
-alt + shift + x
-  altshiftx
-#school menu
-super + b
-  school
-#meme menu
-super + m
-  memenu
-#gif menu
-alt + shift + m
-  gifmenu
+#logout and gifs
+alt + shift + {x,m}
+  {altshiftx,gifmenu}
+#school and memes
+super + {b,m}
+  {school,memenu}
 
 # Notis
 #
 #Kill Noti
 super + 0
   pkill herbe
-#Full Noti
-super + q
-  noti -a
-#calender
-super + g
-  noti -d
-#brightness up
-super + Up
-  xbacklight -inc 10 -time 0 && noti -l
-#brightness down
-super + Down
-  xbacklight -dec 10 -time 0 && noti -l
-#volume up
-super + p
-  amixer --quiet set Master 10%+ && noti -v
-#volume down
-super + o
-  amixer --quiet set Master 10%- && noti -v
+#calendar and full
+super + {q,g}
+  noti {-a,-d}
+#brightness up and down
+super + {Up,Down}
+  xbacklight {-inc,-dec} 10 -time 0 && noti -l
+#volume up and down
+super + {p,o}
+  amixer --quiet set Master {10%+,10%-} && noti -v
 
 # MPC
 #
-#next song
-super + bracketright
-  mpc next && noti -n
-#previous song
-super + bracketleft
-  mpc prev && noti -n
+#next/previous song
+super + {bracketright,bracketleft}
+  mpc {next,prev} && noti -n
 #toggle playback
 super + backslash
   mpc toggle && noti -t
