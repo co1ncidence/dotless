@@ -2,8 +2,8 @@
 padding.width: 0
 padding.height: 20
 border.width: 0
-window.client.padding.width: 0
-window.client.padding.height: 0
+window.client.padding.width: 2
+window.client.padding.height: 2
 window.handle.width: 0
 
 # Menu geometry
@@ -15,8 +15,8 @@ menu.overlap.y: 0
 window.active.border.color: #211d1c
 window.inactive.border.color: #211d1c
 menu.border.color: #f7f6f6
-window.active.client.color: #f7f6f6
-window.inactive.client.color: #2c2625
+window.active.client.color: #211d1c
+window.inactive.client.color: #211d1c
 
 # Text shadows
 window.active.label.text.font: shadow=n
