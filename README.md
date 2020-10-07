@@ -4,6 +4,12 @@
 
 <p align="center"
 
-![img](scr/ghost.png)
+![img](scr/fresh.png)
+
+</p>
+
+<p align="center"
+
+![img](scr/readme.png)
 
 </p>
