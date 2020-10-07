@@ -4,12 +4,6 @@
 
 <p align="center"
 
-![img](scr/fresh.png)
-
-</p>
-
-<p align="center"
-
-![img](scr/readme.png)
+![img](scr/dual.png)
 
 </p>
