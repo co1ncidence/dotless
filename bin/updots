@@ -32,6 +32,10 @@ rm -rf \
 	etc/qalculate/    \
 	etc/htop/				  \
 	etc/calcurse/     \
+	etc/herbe/Makefile     \
+	etc/herbe/config.def.h	\
+	etc/herbe/herbe		\
+	etc/herbe/herbe.c \
 	etc/inkscape/     \
 	etc/chromium/     \
 	etc/.lesshst  \
