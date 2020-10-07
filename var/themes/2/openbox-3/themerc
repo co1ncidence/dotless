@@ -1,9 +1,9 @@
 # Window geometry
 padding.width: 0
 padding.height: 15
-border.width: 0
-window.client.padding.width: 12
-window.client.padding.height: 10
+border.width: 10
+window.client.padding.width: 0
+window.client.padding.height: 0
 window.handle.width: 0
 
 # Menu geometry
@@ -12,8 +12,8 @@ menu.overlap.x: 0
 menu.overlap.y: 0
 
 # Border colors
-window.active.border.color: #ede3e1
-window.inactive.border.color: #ede3e1
+window.active.border.color: #211d1c
+window.inactive.border.color: #211d1c
 menu.border.color: #ede3e1
 window.active.client.color: #81716d
 window.inactive.client.color: #413937
@@ -116,7 +116,7 @@ window.active.button.disabled.image.color: #211d1c
 
 ### Inactive windows ###
 window.inactive.title.bg: Solid Flat
-window.inactive.title.bg.color: #ede3e1
+window.inactive.title.bg.color: #d3cdcb
 window.inactive.title.bg.border.color: #f0f0f0
 
 window.inactive.label.bg: Parentrelative
