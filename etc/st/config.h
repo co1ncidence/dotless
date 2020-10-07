@@ -125,7 +125,7 @@ static const char *colorname[] = {
   [4] = "#585b63",
   [5] = "#6f5a56",
   [6] = "#7d8486",
-  [7] = "#D4CBC9",
+  [7] = "#d3cdcb",
 
   /* 8 bright colors */
   [8]  = "#4b4240",
@@ -135,11 +135,11 @@ static const char *colorname[] = {
   [12] = "#585b63",
   [13] = "#6f5a56",
   [14] = "#7d8486",
-  [15] = "#BAB2B0",
+  [15] = "#e5e1e0",
 
   /* special colors */
   [256] = "#211D1C", /* background */
-  [257] = "#EDE3E1", /* foreground */
+  [257] = "#f7f6f6", /* foreground */
 };
 
 /*

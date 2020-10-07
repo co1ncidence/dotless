@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>2</name>
+    <name>1</name>
     <titleLayout/>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -159,9 +159,9 @@
      cases. -->
   <margins>
     <top>10</top>
-    <bottom>20</bottom>
+    <bottom>10</bottom>
     <left>10</left>
-    <right>20</right>
+    <right>10</right>
   </margins>
   <dock>
     <position>TopLeft</position>
