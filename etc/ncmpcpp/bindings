@@ -184,11 +184,11 @@ def_key "j"
 #def_key "page_down"
 #  page_down
 #
-#def_key "gg"
+#def_key "g"
 #  move_home
 #
-#def_key "end"
-#  move_end
+def_key "shift-g"
+  move_end
 #
 #def_key "insert"
 #  select_item
