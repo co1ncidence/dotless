@@ -9,7 +9,7 @@ let g:pencil#textwidth = 80
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
-  autocmd FileType tex call pencil#init({'wrap': 'hard'})
+  autocmd FileType tex call pencil#init({'wrap': 'hard', 'autoformat': 0})
 augroup END
 let g:pencil#autoformat = 1
 

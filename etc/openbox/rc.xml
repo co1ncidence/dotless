@@ -273,6 +273,12 @@
         <command>st -g 82x24</command>
       </action>
     </keybind>
+    <!-- colorpicker -->
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>farge</command>
+      </action>
+    </keybind>
     <!-- ranger -->
     <keybind key="W-e">
       <action name="Execute">
@@ -288,7 +294,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'Input Mono Condensed' -nb '#2E2927' -nf '#ede3e1' -sb '#ede3e1' -sf '#2E2927'</command>
+        <command>dmenu_run -fn 'Input Mono Condensed' -nb '#2E2927' -nf '#f7f6f6' -sb '#f7f6f6' -sf '#2E2927'</command>
       </action>
     </keybind>
     <!-- passmenu -->
