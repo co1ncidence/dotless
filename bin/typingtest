@@ -4,7 +4,8 @@
 choice="$(echo "\
 recursive
 roboto
-sudoapercu
+sudo
+apercu
 jetbrains
 writer
 input
@@ -15,7 +16,7 @@ cmu
 fira
 plex
 '               '"| \
-dmenu -fn "Space Mono" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
+dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
 
 [ -z "$choice" ] && \
   exit 1 || \
