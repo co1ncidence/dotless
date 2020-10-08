@@ -1,21 +1,36 @@
 #!/bin/sh
 #start a typing test with chosen font
 
-choice="$(echo "recursive\nroboto\nsudo\napercu\njetbrains\nwriter\nspace\nsanfran\nterminus\ncmu\nfira\n'               '"| \
-  dmenu -fn "Space Mono" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
+choice="$(echo "\
+recursive
+roboto
+sudoapercu
+jetbrains
+writer
+input
+space
+sanfran
+terminus
+cmu
+fira
+plex
+'               '"| \
+dmenu -fn "Space Mono" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
 
 [ -z "$choice" ] && \
   exit 1 || \
   case "$choice" in
-    recursive)    st -g 68x20+0+0 -f "Recursive Mono Casual Static":pixelsize=24 -e gottagofast -w 68 &  ;;
-    roboto)       st -g 68x20+0+0 -f "Roboto Mono":pixelsize=24 -e gottagofast -w 68 &                   ;;
-    sudo)         st -g 68x20+0+0 -f "Sudo":pixelsize=24 -e gottagofast -w 68 &                          ;;
-    apercu)       st -g 68x20+0+0 -f "Apercu Pro Mono":pixelsize=24 -e gottagofast -w 68 &               ;;
-    jetbrains)    st -g 68x20+0+0 -f "JetBrains Mono":pixelsize=24 -e gottagofast -w 68 &                ;;
-    writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=24 -e gottagofast -w 68 &              ;;
-    space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=24 -e gottagofast -w 68 &                    ;;
-    sanfran)      st -g 68x20+0+0 -f "SF Mono":pixelsize=24 -e gottagofast -w 68 &                       ;;
-    terminus)     st -g 68x20+0+0 -f "Terminus":pixelsize=32 -e gottagofast -w 68 &                      ;;
-    cmu)          st -g 68x20+0+0 -f "CMU Typewriter Text":pixelsize=32 -e gottagofast -w 68 &           ;;
+    recursive)    st -g 68x20+0+0 -f "Recursive Mono Casual Static":pixelsize=28 -e gottagofast -w 68 &  ;;
+    roboto)       st -g 68x20+0+0 -f "Roboto Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
+    sudo)         st -g 68x20+0+0 -f "Sudo":pixelsize=28 -e gottagofast -w 68 &                          ;;
+    apercu)       st -g 68x20+0+0 -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 68 &               ;;
+    jetbrains)    st -g 68x20+0+0 -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 68 &                ;;
+    writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
+    input)        st -g 68x20+0+0 -f "Input Mono Condensed":pixelsize=28 -e gottagofast -w 68 &          ;;
+    space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=28 -e gottagofast -w 68 &                    ;;
+    sanfran)      st -g 68x20+0+0 -f "SF Mono":pixelsize=28 -e gottagofast -w 68 &                       ;;
+    terminus)     st -g 68x20+0+0 -f "Terminus":pixelsize=28 -e gottagofast -w 68 &                      ;;
+    cmu)          st -g 68x20+0+0 -f "CMU Typewriter Text":pixelsize=28 -e gottagofast -w 68 &           ;;
     fira)         st -g 68x20+0+0 -f "Fira Mono":pixelsize=28 -e gottagofast -w 68 &                     ;;
+    plex)         st -g 68x20+0+0 -f "IBM Plex Mono":pixelsize=28 -e gottagofast -w 68 &                 ;;
   esac

@@ -3,6 +3,6 @@
 
 dir="$HOME/usr/doc/sav/pass"
 
-pass="$(ls -1 "$dir" | dmenu -fn "Space Mono" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
+pass="$(ls -1 "$dir" | dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
 
 [ -f "$dir/$pass" ] && xclip -sel clip -in "$dir/$pass"
