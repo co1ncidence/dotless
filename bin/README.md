@@ -34,6 +34,9 @@
 
 `ext` - Extract an archive, works with all formats
 
+`findfont` - Find all matches of given arg in `fc-list`
+  - Useful for finding font names
+
 `gifmenu` - Tenor shitposting dmenu
 
 `lel` - Fetch script
