@@ -270,7 +270,7 @@
     <!-- super terminal -->
     <keybind key="W-y">
       <action name="Execute">
-        <command>st -g 82x24</command>
+        <command>st -g 83x24</command>
       </action>
     </keybind>
     <!-- colorpicker -->
