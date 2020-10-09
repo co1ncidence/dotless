@@ -76,12 +76,7 @@ alias sx="startx"
 alias sudo="sls -u root"
 alias su="sls -s"
 alias sudoedit="sls -e"
-
-#fff
-f() {
-	fff "$@"
-  cd "$(cat "${XDG_CACHE_HOME:=${HOME}/var/cache}/fff/.fff_d")"
-}
+alias f="fff"
 
 #volume
 v() { amixer --quiet set Master "$1"% }
