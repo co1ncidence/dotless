@@ -1,8 +1,11 @@
 # Screenshot and video
 #
 #screenshots
-alt + shift + {e,d,s,w}
-  shot {-s,-p,-d,-h}
+alt + shift + {e,d,s}
+  shot {-s,-p,-d}
+#r/up screenshot
+Print
+  shot -h
 #record section of screen
 alt + shift + r
   pkill ffmpeg || shot -v
