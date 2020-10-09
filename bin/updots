@@ -22,8 +22,8 @@ rm -rf \
 	etc/youtube-dlg/  \
 	etc/libreoffice/  \
 	etc/.mozilla/			\
-	etc/MusicBrainz/  \
 	etc/configstore/  \
+	etc/onlyoffice/  \
 	etc/keepassxc/    \
 	etc/GeoGebra/     \
 	bin/templates/    \
