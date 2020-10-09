@@ -222,7 +222,7 @@
       </action>
     </keybind>
     <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
+      <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-w">
       <action name="Close"/>
@@ -254,9 +254,11 @@
     </keybind>
     <keybind key="W-k">
       <action name="ToggleMaximize"/>
+      <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-j">
       <action name="ToggleMaximize"/>
+      <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>

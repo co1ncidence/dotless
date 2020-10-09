@@ -8,11 +8,11 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 xset r rate 250 50
 
 #wallpaper
-hsetroot -cover "$HOME/med/wlp/desert.jpg"
+hsetroot -cover "$HOME/med/wlp/desert.jpg" &
 
 #important things
-picom -b --config "$HOME/etc/picom/picom.conf"
-sxhkd -c "$HOME/etc/picom/picom.conf"
+picom -b --config "$HOME/etc/picom/picom.conf" &
+sxhkd -c "$HOME/etc/sxhkd/sxhkdrc" &
 
 #rm daemon
 ch &
