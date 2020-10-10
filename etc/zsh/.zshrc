@@ -21,7 +21,7 @@ compinit
 
 #history
 setopt hist_ignore_dups
-HISTFILE=~/etc/zsh/.histfile
+HISTFILE="$HOME/etc/zsh/.histfile"
 HISTSIZE=42069
 SAVEHIST=42069
 
@@ -78,8 +78,10 @@ alias su="sls -s"
 alias sudoedit="sls -e"
 alias f="fff"
 
-#volume
+#functions
 v() { amixer --quiet set Master "$1"% }
+lc() { cat "$@" | wc -l }
+linesh() { grep -icv '^[[:space:]]*#\|^$' "$@" }
 
 #prompt
 PROMPT="%F{red}───%f "

@@ -32,7 +32,7 @@ case "$1" in
 
     -h)
         #take whole desktop screenshot
-        maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png" ;;
+        maim -m 10 -u "$HOME/$(date +'%a_%I:%M').png" && xclip -sel clip -t image/png "$HOME/$(date +'%a_%I:%M').png" ;;
 
     -v)
         slop="$(slop -f "%x %y %w %h")" #select region to record
