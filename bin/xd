@@ -1,6 +1,10 @@
 #!/bin/sh
 #remove shit XD
 
+#clear trash
+rm -rf $HOME/tmp/tsh/*
+
+#remove xdg crap
 rm -rf "$HOME/Desktop/"
 rm -rf "$HOME/Documents/"
 rm -rf "$HOME/Downloads/"

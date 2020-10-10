@@ -82,6 +82,7 @@ alias f="fff"
 v() { amixer --quiet set Master "$1"% }
 lc() { cat "$@" | wc -l }
 linesh() { grep -icv '^[[:space:]]*#\|^$' "$@" }
+rm() { mv "$@" "$HOME/tmp/tsh/" }
 
 #prompt
 PROMPT="%F{red}───%f "

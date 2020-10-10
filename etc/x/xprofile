@@ -14,6 +14,9 @@ hsetroot -cover "$HOME/med/wlp/desert.jpg" &
 picom -b --config "$HOME/etc/picom/picom.conf" &
 sxhkd -c "$HOME/etc/sxhkd/sxhkdrc" &
 
+#empty trash and shit dirs
+xd &
+
 #rm daemon
 ch &
 

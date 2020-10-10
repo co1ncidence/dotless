@@ -100,7 +100,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call  clearmatches()
 
-"spellcheck for certain filetypes
+"spellcheck only for certain filetypes
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType html setlocal spell spelllang=en_us
