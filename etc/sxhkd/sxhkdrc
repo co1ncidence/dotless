@@ -1,8 +1,8 @@
 # Screenshot and video
 #
 #screenshots
-alt + shift + {e,d,s}
-  shot {-s,-p,-d}
+alt + shift + {e,d,s,w}
+  shot {-s,-p,-d,--desktop}
 #r/up screenshot
 Print
   shot -h

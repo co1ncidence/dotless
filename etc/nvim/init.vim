@@ -4,6 +4,14 @@ if &term =~ '256color'
 
 endif
 
+"quick quit
+nnoremap Q :wq!<CR>
+
+"live life on the edge
+set nobackup
+set nowritebackup
+set noswapfile
+
 "inbuilt vim macro
 runtime macros/matchit.vim
 

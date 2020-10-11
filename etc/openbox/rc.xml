@@ -278,7 +278,7 @@
     <!-- colorpicker -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>farge</command>
+        <command>farge --no-preview</command>
       </action>
     </keybind>
     <!-- ranger -->
