@@ -4,9 +4,6 @@ if &term =~ '256color'
 
 endif
 
-"quick quit
-nnoremap Q :wq!<CR>
-
 "live life on the edge
 set nobackup
 set nowritebackup
@@ -22,6 +19,12 @@ let g:netrw_winsize = 25
 let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
+
+"quick quit
+nnoremap Q :wq!<CR>
+
+"toggle goyo
+nnoremap <C-g> :Goyo<CR>
 
 "toggle line numbers
 nnoremap <C-x> :set nonumber! norelativenumber!<CR>

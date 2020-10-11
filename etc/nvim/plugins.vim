@@ -8,5 +8,6 @@ Plug 'plasticboy/vim-markdown'
 Plug 'reedes/vim-pencil'
 Plug 'sheerun/vim-polyglot'
 Plug 'lervag/vimtex'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()

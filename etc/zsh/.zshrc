@@ -47,6 +47,15 @@ lu down-line-or-beginning-search '^[[B'
 lu up-line-or-beginning-search   '^p'
 lu down-line-or-beginning-search '^n'
 
+#git status on ^b
+kgs() { clear; git status -sb; zle redisplay; }
+zle -N kgs; bindkey '^b' kgs
+
+#ls on ^k
+kls() { clear; ls -CFv --color=auto --group-directories-first -A;\
+	zle redisplay; }
+zle -N kls; bindkey '^k' kls
+
 #alii
 alias nvimrc="nvim ~/etc/nvim/init.vim"
 alias c="clear"
