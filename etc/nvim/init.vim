@@ -9,49 +9,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-"inbuilt vim macro
-runtime macros/matchit.vim
-
-"file tree settings
-nnoremap <C-n> :Vexplore!<CR>
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-let g:netrw_browse_split = 3
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-
-"quick quit
-nnoremap Q :wq!<CR>
-
-"toggle goyo
-nnoremap <C-g> :Goyo<CR>
-
-"toggle line numbers
-nnoremap <C-x> :set nonumber! norelativenumber!<CR>
-
-"toggle cursorline
-nnoremap <C-a> :set cursorline!<CR>
-
-"split navigation
-nnoremap <C-H> <C-W><C-H>
-nnoremap <C-L> <C-W><C-L>
-
-"better j and k
-noremap k gk
-noremap j gj
-
-"shift 0 to end of line
-noremap ) $
-
-"move lines
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-inoremap <C-j> <Esc>:m .+1<CR>==gi
-inoremap <C-k> <Esc>:m .-2<CR>==gi
-
-"correct typos
-inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-
 "color stuff
 let &t_8f = "\<Esc>[41;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -120,3 +77,4 @@ autocmd FileType html setlocal spell spelllang=en_us
 source ~/etc/nvim/statusline.vim
 source ~/etc/nvim/plugins.vim
 source ~/etc/nvim/settings.vim
+source ~/etc/nvim/keybinds.vim
