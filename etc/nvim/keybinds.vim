@@ -1,9 +1,9 @@
 "snippets
 iabbrev bf      \textbf{}<left><backspace>{
 iabbrev tit     \textit{}<left><backspace>{
-iabbrev func    foo() {<CR><CR><backspace>}<Up><Tab>
-iabbrev meth    \( \)<left><left>
-iabbrev kmeth   \[ \]<left><left>
+iabbrev func    foo() {<CR><CR>}<Up><Tab>
+iabbrev meth    \( \)<left><left><left>
+iabbrev kmeth   \[ \]<left><left><left>
 iabbrev sec     \section{}<left><backspace>{
 
 "inbuilt vim macro
