@@ -1,9 +1,12 @@
 # Screenshot and video
 #
 #screenshots
-alt + shift + {e,d,s,w}
-  shot {-s,-p,-d,--desktop}
-#r/up screenshot
+alt + shift + {e,d,s}
+  shot {-s,-p,-d}
+#save whole screen
+F7
+  shot --desktop
+#clipboard whole screen
 Print
   shot -h
 #record section of screen

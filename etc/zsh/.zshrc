@@ -49,7 +49,7 @@ lu down-line-or-beginning-search '^n'
 
 #git status on ^b
 kgs() { clear; git status -sb; zle redisplay; }
-zle -N kgs; bindkey '^b' kgs
+zle -N kgs; bindkey '^g' kgs
 
 #ls on ^k
 kls() { clear; ls -CFv --color=auto --group-directories-first -A;\
