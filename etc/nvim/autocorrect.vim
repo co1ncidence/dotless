@@ -66,6 +66,7 @@ ia <buffer> eahc each
 ia <buffer> efel feel
 ia <buffer> ehlp help
 ia <buffer> ehr her
+ia <buffer> efw few
 ia <buffer> emial email
 ia <buffer> ened need
 ia <buffer> enxt next
