@@ -1,3 +1,7 @@
+"pluginless autocorrection for vim
+"based off of
+"https://github.com/reedes/vim-litecorrect
+
 "common typos
 ia <buffer> adn and
 ia <buffer> taht that
