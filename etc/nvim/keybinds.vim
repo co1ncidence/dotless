@@ -4,8 +4,6 @@ ia <buffer> tit     \textit{}<left><backspace>{
 ia <buffer> func    foo() {<CR><CR>}<Up><Tab>
 ia <buffer> meth    \( \)<left><left><left>
 ia <buffer> kmeth   \[ \]<left><left><left>
-ia <buffer> sec     \section{}<left><backspace>{
-ia <buffer> frac    \frac{}<left><backspace>{
 ia <buffer> deri    \frac{d}{dx}
 ia <buffer> fx      f(x)
 ia <buffer> gx      g(x)
