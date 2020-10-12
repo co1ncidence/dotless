@@ -17,7 +17,6 @@ ia <buffer> shti this
 ia <buffer> THat That
 ia <buffer> THe The
 ia <buffer> abotu about
-ia <buffer> aboutit about it
 ia <buffer> acn can
 ia <buffer> adn and
 ia <buffer> aer are
@@ -36,8 +35,6 @@ ia <buffer> anf and
 ia <buffer> ans and
 ia <buffer> aobut about
 ia <buffer> aslo also
-ia <buffer> asthe as the
-ia <buffer> atthe at the
 ia <buffer> awya  away
 ia <buffer> aywa away
 ia <buffer> bakc back
@@ -61,7 +58,6 @@ ia <buffer> dael deal
 ia <buffer> diea idea
 ia <buffer> doens does
 ia <buffer> doese does
-ia <buffer> doesnt doesn't
 ia <buffer> doign doing
 ia <buffer> doimg doing
 ia <buffer> donig doing
@@ -85,7 +81,6 @@ ia <buffer> flase false
 ia <buffer> fo of
 ia <buffer> fomr form
 ia <buffer> fora for a
-ia <buffer> forthe for the
 ia <buffer> foudn found
 ia <buffer> frmo from
 ia <buffer> fro for
@@ -233,14 +228,11 @@ ia <buffer> tehre there
 ia <buffer> tehy they
 ia <buffer> tghe the
 ia <buffer> tghis this
-ia <buffer> thanit than it
 ia <buffer> thansk thanks
 ia <buffer> thast that
 ia <buffer> thats that's
-ia <buffer> thatthe that the
 ia <buffer> theh then
 ia <buffer> theri their
-ia <buffer> theyare they are
 ia <buffer> thgat that
 ia <buffer> thge the
 ia <buffer> thier their
@@ -294,14 +286,10 @@ ia <buffer> whta what
 ia <buffer> wih with
 ia <buffer> wihch which
 ia <buffer> wiht with
-ia <buffer> willbe will be
 ia <buffer> willk will
-ia <buffer> witha with a
 ia <buffer> withe with
 ia <buffer> withh with
-ia <buffer> withit with it
 ia <buffer> witht with
-ia <buffer> withthe with the
 ia <buffer> witn with
 ia <buffer> wiull will
 ia <buffer> wnat want
@@ -325,19 +313,30 @@ ia <buffer> ytou you
 ia <buffer> yuo you
 ia <buffer> yuor your
 
-
 "avoid contractions
-ia <buffer> Im          "I am"
-ia <buffer> alot        "a lot"
-ia <buffer> youre       "you're"
-ia <buffer> youve       "you've
-ia <buffer> didnot      "did not"
 ia <buffer> didnt       "didn't"
-ia <buffer> cant        "can not"
-ia <buffer> youare      "you are"
-ia <buffer> "I'm"       "I am"
-ia <buffer> "you're"    "You are"
-ia <buffer> "they're"   "they are"
-ia <buffer> "that's"    "that is"
-ia <buffer> "Theyare"   "They are"
-ia <buffer> "Youre"     "You are"
+ia <buffer> youre       "you're"
+ia <buffer> youve       "you've"
+ia <buffer> "I'm"       I am
+ia <buffer> "you're"    you are
+ia <buffer> "they're"   they are
+ia <buffer> "that's"    that is
+ia <buffer> "Theyare"   They are
+ia <buffer> "Youre"     You are
+ia <buffer> Im          I am
+ia <buffer> alot        a lot
+ia <buffer> didnot      did not
+ia <buffer> cant        can not
+ia <buffer> youare      you are
+ia <buffer> withthe     with the
+ia <buffer> withit      with it
+ia <buffer> willbe      will be
+ia <buffer> witha       with a
+ia <buffer> theyare     they are
+ia <buffer> thatthe     that the
+ia <buffer> thanit      than it
+ia <buffer> aboutit     about it
+ia <buffer> asthe       as the
+ia <buffer> atthe       at the
+ia <buffer> doesnt      does not
+ia <buffer> forthe      for the
