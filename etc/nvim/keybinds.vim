@@ -1,10 +1,17 @@
 "snippets
-iabbrev bf      \textbf{}<left><backspace>{
-iabbrev tit     \textit{}<left><backspace>{
-iabbrev func    foo() {<CR><CR>}<Up><Tab>
-iabbrev meth    \( \)<left><left><left>
-iabbrev kmeth   \[ \]<left><left><left>
-iabbrev sec     \section{}<left><backspace>{
+ia <buffer> bf      \textbf{}<left><backspace>{
+ia <buffer> tit     \textit{}<left><backspace>{
+ia <buffer> func    foo() {<CR><CR>}<Up><Tab>
+ia <buffer> meth    \( \)<left><left><left>
+ia <buffer> kmeth   \[ \]<left><left><left>
+ia <buffer> sec     \section{}<left><backspace>{
+ia <buffer> frac    \frac{}<left><backspace>{
+ia <buffer> deri    \frac{d}{dx}
+ia <buffer> fx      f(x)
+ia <buffer> gx      g(x)
+ia <buffer> hx      h(x)
+ia <buffer> ol      \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up>
+ia <buffer> ul      \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up>
 
 "inbuilt vim macro
 runtime macros/matchit.vim
