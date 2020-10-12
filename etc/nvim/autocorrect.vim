@@ -313,16 +313,12 @@ ia <buffer> ytou you
 ia <buffer> yuo you
 ia <buffer> yuor your
 
-"avoid contractions
-ia <buffer> didnt       "didn't"
-ia <buffer> youre       "you're"
-ia <buffer> youve       "you've"
-ia <buffer> "I'm"       I am
-ia <buffer> "you're"    you are
-ia <buffer> "they're"   they are
-ia <buffer> "that's"    that is
-ia <buffer> "Theyare"   They are
-ia <buffer> "Youre"     You are
+"multiple words
+ia <buffer> didnt       did not
+ia <buffer> youre       you are
+ia <buffer> youve       you have
+ia <buffer> Theyare     They are
+ia <buffer> Youre       You are
 ia <buffer> Im          I am
 ia <buffer> alot        a lot
 ia <buffer> didnot      did not
