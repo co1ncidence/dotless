@@ -28,7 +28,8 @@ nnoremap <C-L> <C-W><C-L>
 "better line nav
 noremap k gk
 noremap j gj
-noremap ) $
+noremap ) g$
+noremap 0 g0
 
 "move lines
 nnoremap <C-j> :m .+1<CR>==
