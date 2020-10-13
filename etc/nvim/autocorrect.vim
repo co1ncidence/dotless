@@ -315,25 +315,32 @@ ia <buffer> yuo you
 ia <buffer> yuor your
 
 "multiple words
-ia <buffer> didnt       did not
-ia <buffer> youre       you are
-ia <buffer> youve       you have
-ia <buffer> Theyare     They are
-ia <buffer> Youre       You are
-ia <buffer> Im          I am
-ia <buffer> alot        a lot
 ia <buffer> didnot      did not
-ia <buffer> cant        can not
-ia <buffer> youare      you are
+ia <buffer> Theyare     They are
+ia <buffer> theyare     they are
+ia <buffer> aboutit     about it
+ia <buffer> thatthe     that the
+ia <buffer> alot        a lot
 ia <buffer> withthe     with the
 ia <buffer> withit      with it
 ia <buffer> willbe      will be
 ia <buffer> witha       with a
-ia <buffer> theyare     they are
-ia <buffer> thatthe     that the
 ia <buffer> thanit      than it
-ia <buffer> aboutit     about it
 ia <buffer> asthe       as the
 ia <buffer> atthe       at the
-ia <buffer> doesnt      does not
 ia <buffer> forthe      for the
+
+"common contractions
+ia <buffer> ive         I have
+ia <buffer> Ive         I have
+ia <buffer> im          I am
+ia <buffer> Im          I am
+ia <buffer> cant        can not
+ia <buffer> didnt       did not
+ia <buffer> doesnt      does not
+ia <buffer> theyre      they are
+ia <buffer> wouldnt     would not
+ia <buffer> youre       you are
+ia <buffer> youve       you have
+ia <buffer> youare      you are
+ia <buffer> Youre       You are
