@@ -11,6 +11,9 @@ ia <buffer> hx      h(x)
 ia <buffer> ol      \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
 ia <buffer> ul      \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 
+"latex plot
+ia <buffer> pgplot  \bigbreak{}<CR>\begin{center}<CR>\begin{tikzpicture}<CR><tab>\begin{axis}%<CR><tab>[grid=both,<CR>minor tick num=4,<CR>grid style={line width=.1pt, draw=gray!10},<CR>major grid style={line width=.2pt,draw=gray!50},<CR>axis lines=middle,<CR>enlargelimits={abs=0.2}<CR><bacspace>]<CR>\addplot[domain=-1:3,samples=50,smooth,red] {<CR><backspace>\end{axis}<CR><backspace>\end{tikzpicture}<CR>\end{center}<CR>\bigbreak{}<CR><up><up><up><up><up><A-S-a>};<left><left>
+
 "inbuilt vim macro
 runtime macros/matchit.vim
 
