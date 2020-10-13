@@ -8,8 +8,8 @@ ia <buffer> deri    \frac{d}{dx}
 ia <buffer> fx      f(x)
 ia <buffer> gx      g(x)
 ia <buffer> hx      h(x)
-ia <buffer> ol      \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up>
-ia <buffer> ul      \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up>
+ia <buffer> ol      \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
+ia <buffer> ul      \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 
 "inbuilt vim macro
 runtime macros/matchit.vim
