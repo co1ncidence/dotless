@@ -1,5 +1,5 @@
 #!/bin/sh
-#reee he's back
+#gk says is cronj :sadface:
 
 exec mpv --config-dir="$HOME/etc/mpv/" \
          --no-video \

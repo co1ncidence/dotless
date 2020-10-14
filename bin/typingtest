@@ -11,6 +11,7 @@ jetbrains
 writer
 input
 space
+ubuntu
 sanfran
 terminus
 cmu
@@ -31,6 +32,7 @@ dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "
     writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
     input)        st -g 68x20+0+0 -f "Input Mono Condensed":pixelsize=28 -e gottagofast -w 68 &          ;;
     space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=28 -e gottagofast -w 68 &                    ;;
+    ubuntu)       st -g 68x20+0+0 -f "Ubuntu Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
     sanfran)      st -g 68x20+0+0 -f "SF Mono":pixelsize=28 -e gottagofast -w 68 &                       ;;
     terminus)     st -g 68x20+0+0 -f "Terminus":pixelsize=28 -e gottagofast -w 68 &                      ;;
     cmu)          st -g 68x20+0+0 -f "CMU Typewriter Text":pixelsize=28 -e gottagofast -w 68 &           ;;

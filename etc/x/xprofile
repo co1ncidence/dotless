@@ -8,7 +8,7 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 xset r rate 250 50
 
 #wallpaper
-hsetroot -cover "$HOME/med/wlp/flower.jpeg" &
+hsetroot -cover "$HOME/med/wlp/sakura.jpeg" &
 
 #important things
 picom -b --config "$HOME/etc/picom/picom.conf" &
