@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #screenshotter and recorder
 
 #amount of padding in px (for -p)

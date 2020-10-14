@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#use font
+
+st -f "$*":pixelsize=16 & disown
