@@ -3,6 +3,6 @@
 
 dir="$HOME/med/pic/mem"
 
-mem="$(ls -1 "$dir" | dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
+mem="$(ls -1 "$dir" | dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "#393939")"
 
 [ -f "$dir/$mem" ] && xclip -sel clip -t image/png "$dir/$mem"

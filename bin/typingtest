@@ -6,6 +6,7 @@ recursive
 roboto
 sudo
 apercu
+envy
 jetbrains
 writer
 input
@@ -16,7 +17,7 @@ cmu
 fira
 plex
 '               '"| \
-dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
+dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "#393939")"
 
 [ -z "$choice" ] && \
   exit 1 || \
@@ -25,6 +26,7 @@ dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "
     roboto)       st -g 68x20+0+0 -f "Roboto Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
     sudo)         st -g 68x20+0+0 -f "Sudo":pixelsize=28 -e gottagofast -w 68 &                          ;;
     apercu)       st -g 68x20+0+0 -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 68 &               ;;
+    envy)         st -g 68x20+0+0 -f "Envy Code R":pixelsize=28 -e gottagofast -w 68 &                   ;;
     jetbrains)    st -g 68x20+0+0 -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 68 &                ;;
     writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
     input)        st -g 68x20+0+0 -f "Input Mono Condensed":pixelsize=28 -e gottagofast -w 68 &          ;;
@@ -32,6 +34,6 @@ dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "
     sanfran)      st -g 68x20+0+0 -f "SF Mono":pixelsize=28 -e gottagofast -w 68 &                       ;;
     terminus)     st -g 68x20+0+0 -f "Terminus":pixelsize=28 -e gottagofast -w 68 &                      ;;
     cmu)          st -g 68x20+0+0 -f "CMU Typewriter Text":pixelsize=28 -e gottagofast -w 68 &           ;;
-    fira)         st -g 68x20+0+0 -f "Fira Mono":pixelsize=28 -e gottagofast -w 68 &                     ;;
+    fira)         st -g 68x20+0+0 -f "Fira Code":pixelsize=28 -e gottagofast -w 68 &                     ;;
     plex)         st -g 68x20+0+0 -f "IBM Plex Mono":pixelsize=28 -e gottagofast -w 68 &                 ;;
   esac

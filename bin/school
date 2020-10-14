@@ -2,7 +2,7 @@
 #dmenu script to manage my school workflow
 
 choice="$(echo "schooldocs\ncomp2\nhumanities\n'               '"| \
-  dmenu -fn "Input Mono Condensed" -nb "#2E2927" -nf "#f7f6f6" -sb "#f7f6f6" -sf "#2E2927")"
+  dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "#393939")"
 
 [ -z "$choice" ] && \
   exit 1 || \

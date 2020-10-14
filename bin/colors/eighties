@@ -1,0 +1,25 @@
+#!/bin/sh
+#tomorrow night
+#made by: chris kempson
+#----
+#this is not my scheme
+#i have it for reference
+#purposes only
+
+#mn
+bcg='2d2d2d'
+frg='ffffff'
+
+#bw
+bl1='393939'
+bl2='515151'
+wh1='cccccc'
+wh2='e0e0e0'
+
+#cl
+red='f2777a'
+grn='99cc99'
+yel='ffcc66'
+blu='6699cc'
+mag='cc99cc'
+cya='66cccc'

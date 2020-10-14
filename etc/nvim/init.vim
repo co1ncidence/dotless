@@ -16,7 +16,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme asunder
+colorscheme tomorrow
 
 "look and feel
 set ruler
