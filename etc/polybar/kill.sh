@@ -1,6 +1,5 @@
 #!/bin/sh
 
 pkill -9 polybar
-pkill cbatticon
-pkill nm-applet
-
+pkill -9 cbatticon
+pkill -9 nm-applet
