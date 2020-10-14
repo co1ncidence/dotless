@@ -6,7 +6,7 @@
 
 <p align="center"
 
-![img](scr/tomorrow.png)
+![img](scr/profile.png)
 
 </p>
 
