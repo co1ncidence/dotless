@@ -40,8 +40,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>3</name>
-    <titleLayout/>
+    <name>2</name>
+    <titleLayout>MLC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -56,7 +56,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Roboto Slab</name>
-      <size>1</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->

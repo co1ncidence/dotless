@@ -1,5 +1,5 @@
 #!/bin/sh
-#world"s best 0x0 upload script
+#https://github.com/vizs
 
 [ -f "$1" ] && op="cat"
 "${op:-echo}" "${@:-$(cat -)}" \
