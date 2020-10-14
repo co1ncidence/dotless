@@ -4,7 +4,7 @@
 #emtpy line is for dmenu width
 choice="$(echo "logout\nrestart\nshutdown\nsuspend\n'               '"| \
   #change colors if you like
-  dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "#393939")"
+  dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#f2777a" -sb "#ffffff" -sf "#f2777a")"
 
 [ -z "$choice" ] && \
   exit 1 || \

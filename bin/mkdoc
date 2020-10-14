@@ -1,0 +1,20 @@
+#!/bin/sh
+#create various LaTeX docs
+
+dir="$HOME/usr/bin/templates/"
+
+case "$1" in
+
+  --mla)
+      cp "$dir/mla.tex" "./essay.tex" && \
+        touch "./sources.bib" && \
+        mkdir "./bibliography" ;;
+
+  --math)
+      cp "$dir/mathnotes.tex" "./notes.tex" && \
+        mkdir "./images" ;;
+
+  --letter)
+      cp "$dir/letter.tex" "./letter.tex" ;;
+
+esac

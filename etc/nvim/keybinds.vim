@@ -1,10 +1,11 @@
 "snippets
-ia <buffer> bf      \textbf{}<left><backspace>{
-ia <buffer> tit     \textit{}<left><backspace>{
+ia <buffer> bf      \textbf{
+ia <buffer> tit     \textit{
 ia <buffer> func    foo() {<CR><CR>}<Up><Tab>
 ia <buffer> meth    \( \)<left><left><left>
 ia <buffer> kmeth   \[ \]<left><left><left>
 ia <buffer> deri    \frac{d}{dx}
+ia <buffer> frac    \frac{
 ia <buffer> fx      f(x)
 ia <buffer> gx      g(x)
 ia <buffer> hx      h(x)
