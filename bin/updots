@@ -24,6 +24,7 @@ rm -rf \
 	etc/.mozilla/			\
 	etc/configstore/  \
 	etc/onlyoffice/  \
+	etc/fontforge/	 \
 	etc/keepassxc/    \
 	etc/GeoGebra/     \
 	bin/templates/    \
