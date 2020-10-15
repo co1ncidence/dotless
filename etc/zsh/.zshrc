@@ -57,41 +57,41 @@ kls() { clear; ls -CFv --color=auto --group-directories-first -A;\
 zle -N kls; bindkey '^k' kls
 
 #alii
-alias nvimrc="nvim ~/etc/nvim/init.vim"
 alias c="clear"
-alias class="cd ~/usr/doc/sch/"
-alias web="cd ~/usr/git/co1ncidence.github.io/mysite/"
-alias free="free -h"
-alias df="df -h"
-alias wset="hsetroot -cover"
 alias r="ranger"
-alias ff="shfm"
 alias q="qalc"
+alias f="fff"
+alias n="note"
+alias ff="shfm"
+alias no="nvim ~/var/notes/notes.md"
+alias df="df -h"
+alias sx="startx"
+alias su="sls -s"
 alias ls="ls -CFv --color=auto --group-directories-first"
 alias ll="ls -CFvl --color=auto --group-directories-first"
 alias la="ls -CFvA --color=auto --group-directories-first"
-alias wget="wget --no-hsts"
-alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
-alias reconf="openbox --reconfigure"
-alias tree="tree -C"
 alias so="du -sh"
 alias upx="xrdb -merge ~/etc/x/xresources"
-alias n="note"
-alias no="nvim ~/var/notes/notes.md"
-alias nls="echo ; cat ~/var/notes/notes.md && echo ' '"
-alias weather="clear && curl wttr.in"
+alias web="cd ~/usr/git/co1ncidence.github.io/mysite/"
+alias nls="echo ; cat ~/var/notes/notes.md ; echo"
+alias free="free -h"
+alias wset="hsetroot -cover"
+alias wget="wget --no-hsts"
+alias tree="tree -C"
 alias smci="sudo make clean install"
-alias sx="startx"
 alias sudo="sls -u root"
-alias su="sls -s"
+alias class="cd ~/usr/doc/sch/"
+alias sxhkd="sxhkd -c ~/etc/sxhkd/sxhkdrc"
+alias nvimrc="nvim ~/etc/nvim/init.vim"
+alias reconf="openbox --reconfigure"
+alias weather="clear && curl wttr.in"
 alias sudoedit="sls -e"
-alias f="fff"
 
 #functions
 v() { amixer --quiet set Master "$1"% }
 lc() { cat "$@" | wc -l }
-linesh() { grep -icv '^[[:space:]]*#\|^$' "$@" }
 rm() { mv "$@" "$HOME/tmp/tsh/" }
+linesh() { grep -icv '^[[:space:]]*#\|^$' "$@" }
 
 #prompt
 PROMPT="%F{magenta} ─── %f"
