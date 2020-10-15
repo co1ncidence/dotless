@@ -1,5 +1,5 @@
 #!/bin/sh
-#mount/unmount usb
+#mount/unmount /dev/sdb
 
 alias sudo="sls -u root"
 
