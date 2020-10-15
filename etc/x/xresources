@@ -8,7 +8,7 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 !urxvt config
-URxvt.font: xft:envypn:size=13
+URxvt.font: xft:Ubuntu Mono:size=13
 URxvt.clipboard.autocopy: true
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
@@ -22,23 +22,23 @@ URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
 !colors
-*.foreground: #EDE3E1
-*.background: #211D1C
-*.cursorColor:  #EDE3E1
-*.color0:  #36302e
-*.color8:  #4b4240
-*.color1:  #734948
-*.color9:  #734948
-*.color2:  #768157
-*.color10: #768157
-*.color3:  #aa9375
-*.color11: #aa9375
-*.color4:  #585b63
-*.color12: #585b63
-*.color5:  #6f5a56
-*.color13: #6f5a56
-*.color6:  #7d8486
-*.color14: #7d8486
-*.color7:  #D4CBC9
-*.color15: #BAB2B0
+*.foreground: #ffffff
+*.background: #2d2d2d
+*.cursorColor:  #ffffff
+*.color0:  #2d2d2d
+*.color8:  #ffffff
+*.color1:  #f2777a
+*.color9:  #f2777a
+*.color2:  #99cc99
+*.color10: #99cc99
+*.color3:  #ffcc66
+*.color11: #ffcc66
+*.color4:  #6699cc
+*.color12: #6699cc
+*.color5:  #cc99cc
+*.color13: #cc99cc
+*.color6:  #66cccc
+*.color14: #66cccc
+*.color7:  #cccccc
+*.color15: #e0e0e0
 ! vim: ft=xdefaults

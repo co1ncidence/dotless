@@ -5,4 +5,4 @@ list() {
   fc-list | awk '{$1=""}1' | cut -d: -f1 | sort | uniq
 }
 
-list | grep -i "$@"
+list | grep -i "$*"
