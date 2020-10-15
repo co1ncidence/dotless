@@ -68,9 +68,9 @@ rm -rf "$HOME/usr/git/dotless/bin/templates/"
 rm -rf "$HOME/usr/git/dotless/bin/classes/"
 rm -rf "$HOME/usr/git/dotless/bin/notmine/"
 
-[ -z "$1" ] && \
+[ -z "$*" ] && \
     msg="docs:update" || \
-    msg="$1"
+    msg="$*"
 
 git add .
 git commit -m "${msg}"

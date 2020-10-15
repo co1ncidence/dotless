@@ -1,9 +1,9 @@
 #!/bin/sh
 #push a repo to master branch
 
-[ -z "$1" ] && \
+[ -z "$*" ] && \
     msg="docs:update" || \
-    msg="$1"
+    msg="$*"
 
 git add .
 git commit -m "${msg}"
