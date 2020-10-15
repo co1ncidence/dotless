@@ -8,6 +8,7 @@ sudo
 apercu
 envy
 jetbrains
+iosevka
 writer
 input
 space
@@ -29,6 +30,7 @@ dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "
     apercu)       st -g 68x20+0+0 -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 68 &               ;;
     envy)         st -g 68x20+0+0 -f "Envy Code R":pixelsize=28 -e gottagofast -w 68 &                   ;;
     jetbrains)    st -g 68x20+0+0 -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 68 &                ;;
+    iosevka)      st -g 68x20+0+0 -f "Iosevka Term Slab Extended":pixelsize=28 -e gottagofast -w 68 &    ;;
     writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
     input)        st -g 68x20+0+0 -f "Input Mono Condensed":pixelsize=28 -e gottagofast -w 68 &          ;;
     space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=28 -e gottagofast -w 68 &                    ;;
