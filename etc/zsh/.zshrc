@@ -94,5 +94,5 @@ rm() { mv "$@" "$HOME/tmp/tsh/" }
 linesh() { grep -icv '^[[:space:]]*#\|^$' "$@" }
 
 #prompt
-PROMPT="%F{magenta} ─── %f"
-RPROMPT="%F{white}%B %1~ %b%f"
+PROMPT="%F{magenta}─── %f"
+RPROMPT="%F{white}%B%1~%b%f"

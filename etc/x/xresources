@@ -13,7 +13,6 @@ URxvt.clipboard.autocopy: true
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.internalBorder: 40
-
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
 URxvt.keysym.Control-Up: \033[1;5A
