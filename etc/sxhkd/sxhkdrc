@@ -38,9 +38,9 @@ alt + {h,j,k,l}
 #logout and gifs
 alt + shift + {x,m}
   {altshiftx,gifmenu}
-#school and memes
-super + {b,m}
-  {school,memenu}
+#school, memes, and wallpapers
+super + {b,m,u}
+  {school,memenu,wallchooser}
 
 # Notis
 #
@@ -68,9 +68,6 @@ super + backslash
 
 # Misc
 #
-#shuffle wallpaper
-super + u
-  feh --no-fehbg --bg-fill --randomize --recursive ~/med/wlp/*
 #typing test
 super + s
   typingtest

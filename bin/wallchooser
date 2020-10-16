@@ -1,0 +1,8 @@
+#!/bin/sh
+#wallpaper chooser
+
+dir="$HOME/med/wlp"
+
+mem="$(ls -1 "$dir" | dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "#393939")"
+
+[ -f "$dir/$mem" ] && hsetroot -cover "$dir/$mem"
