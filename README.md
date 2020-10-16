@@ -6,14 +6,6 @@
 
 <p align="center"
 
-![img](scr/profile.png)
+![img](scr/itai.png)
 
 </p>
-
-<p align="center"
-
-![img](scr/know.png)
-
-</p>
-
-
