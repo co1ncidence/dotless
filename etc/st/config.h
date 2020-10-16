@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Input Mono Condensed:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Iosevka Term Slab:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
