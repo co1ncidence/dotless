@@ -1,50 +1,51 @@
 #xdg settings
-export XDG_CONFIG_HOME="$HOME/etc/"
 export XDG_DATA_HOME="$HOME/var/"
+export XDG_CONFIG_HOME="$HOME/etc/"
 export XDG_CACHE_HOME="$HOME/var/cache/"
 
 #x
-export XAUTHORITY="${XDG_CONFIG_HOME:-$HOME/etc/}x/xauth"
 export XINITRC="${XDG_CONFIG_HOME:-$HOME/etc/}x/xinitrc"
+export XAUTHORITY="${XDG_CONFIG_HOME:-$HOME/etc/}x/xauth"
 
 #zsh
-export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/etc/}zsh"
+export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/etc/}zsh/"
 
-#set Path
+#set path
 export PATH=$PATH:"$HOME/usr/bin/"
-export PATH=$PATH:"$HOME/usr/bin/notmine/"
 export PATH=$PATH:"$HOME/usr/bin/stain/"
+export PATH=$PATH:"$HOME/usr/bin/notmine/"
 
 #default programs
 export TERMINAL="st"
 export EDITOR="nvim"
-export READER="zathura"
 export EDITOR="nvim"
-export VISUAL="$EDITOR"
 export VIDPLAYER="mpv"
+export MANPAGER="less"
+export READER="zathura"
 export IMGVIEWER="sxiv"
+export VISUAL="$EDITOR"
 export BROWSER="chromium"
 
 #program specific things
 export FZF_DEFAULT_COMMAND='find .'
-export MANPAGER="nvim -c 'set ft=man' -"
-export SHFM_OPENER="$HOME/usr/bin/opener"
-export PASSWORD_STORE_DIR="$HOME/usr/pas/"
-export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/etc/}gnupg"
-export GIMP2_DIRECTORY="${XDG_CONFIG_HOME:-$HOME/etc/}GIMP/2.10"
-export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/etc/}.lesshst"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/etc/}.gtkrc-2.0"
+export SHFM_OPENER="$HOME/usr/bin/opener"
+export PASSWORD_STORE_DIR="$HOME/usr/pas/"
 export PULSE_COOKIE="$HOME/etc/pulse/cookie"
+export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/etc/}gnupg"
+export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/etc/}.lesshst"
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/etc/}.gtkrc-2.0"
+export GIMP2_DIRECTORY="${XDG_CONFIG_HOME:-$HOME/etc/}GIMP/2.10"
 
 #fff settings
-export FFF_OPENER="$HOME/usr/bin/opener"
-export FFF_COL1=3 #dir
-export FFF_COL2=5 #status bg
-export FFF_COL3=1 #selection
-export FFF_COL4=3 #cursor
-export FFF_COL5=0 #status fg
-export FFF_TRASH="$HOME/var/trash"
+export FFF_COL1=5
+export FFF_COL4=5
+export FFF_COL3=1
+export FFF_COL2=2
+export FFF_COL5=0
+export FFF_HIDDEN=1
 export FFF_W3M_XOFFSET=3
 export FFF_W3M_YOFFSET=3
+export FFF_TRASH_CMD="rm"
+export FFF_OPENER="$HOME/usr/bin/opener"
