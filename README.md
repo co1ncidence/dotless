@@ -6,6 +6,6 @@
 
 <p align="center"
 
-![img](scr/itai.png)
+![img](scr/itai2.png)
 
 </p>
