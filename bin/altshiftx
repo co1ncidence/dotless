@@ -1,9 +1,0 @@
-#!/bin/sh
-#power menu
-
-pwr="$(printf "suspend\nreboot\npoweroff" \
-				| dmenu -fn 'Iosevka Term Slab' -nb '#515151' \
-																				-nf '#ffffff' \
-																				-sb '#515151' \
-																				-sf '#946c66')"
-[ "$pwr" ] && systemctl "$pwr"

@@ -1,0 +1,13 @@
+#!/bin/sh
+#wallpaper chooser
+
+dir="$HOME/med/wlp"
+
+wall="$(ls -1 "$dir" | dmenu -fn "Iosevka Term Slab" \
+                                       -nb "#363636" \
+                                       -nf "#515151" \
+                                       -sb "#363636" \
+                                       -sf "#ffffff")"
+
+[ -f "$dir/$wall" ] && \
+  hsetroot -cover "$dir/$wall"

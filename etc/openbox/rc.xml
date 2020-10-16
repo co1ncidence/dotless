@@ -296,13 +296,13 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'Iosevka Term Slab' -nb '#515151' -nf '#ffffff' -sb '#515151' -sf '#66948b'</command>
+        <command>dmenu_run -fn 'Iosevka Term Slab' -nb '#363636' -nf '#515151' -sb '#363636' -sf '#ffffff'</command>
       </action>
     </keybind>
     <!-- passmenu -->
     <keybind key="W-n">
       <action name="Execute">
-        <command>~/usr/bin/pass</command>
+        <command>~/usr/bin/menus/pass</command>
       </action>
     </keybind>
     <!-- discord -->

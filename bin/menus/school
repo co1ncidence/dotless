@@ -3,10 +3,10 @@
 
 choice="$(echo "schooldocs\ncomp2\nhumanities"| \
   dmenu -fn "Iosevka Term Slab" \
-                     -nb "#515151" \
-                     -nf "#ffffff" \
-                     -sb "#515151" \
-                     -sf "#66948b")"
+                     -nb "#363636" \
+                     -nf "#515151" \
+                     -sb "#363636" \
+                     -sf "#ffffff")"
 
 [ -z "$choice" ] && \
   exit 1 || \
