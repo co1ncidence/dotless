@@ -11,7 +11,7 @@ visualizer_output_name = Visualizer feed
 visualizer_in_stereo = yes
 visualizer_sync_interval = 30
 visualizer_type = wave
-visualizer_look = ++
+visualizer_look = ██
 visualizer_color = default, white, white, cyan, red
 
 #??
