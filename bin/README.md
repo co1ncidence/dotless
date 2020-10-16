@@ -45,6 +45,9 @@
 
 `memenu` - The meme menu
 
+`mnt` - Mount/unmount `/dev/sdb`
+  - yeah it's hardcoded as fuck I don't care
+
 `mpvibe` - Vibe randomly using mpv
 
 `note` - Append argument to specified file
