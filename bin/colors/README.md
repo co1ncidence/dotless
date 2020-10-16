@@ -1,13 +1,5 @@
 <h1 align="center">nuaNce's colorschemes, some of them at least...</h1>
 
-<h3 align="center">Eighties</h1>
-
-<p align="center"
-
-![img](https://i.postimg.cc/WbGh9gd0/image.png)
-
-</p>
-
 <h3 align="center">Asunder</h1>
 
 <p align="center"

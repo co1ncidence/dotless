@@ -4,18 +4,26 @@
 
 #mn
 bcg='202020'
-frg='FAE1C3'
+frg='ffffff'
 
 #bw
-bl1='6e6458'
-bl2='847869'
-wh1='f7cf9f'
-wh2='f8d8b1'
+bl1='393939'
+bl2='515151'
+wh1='cccccc'
+wh2='e0e0e0'
 
 #cl
-red='91170C'
-grn='3E910C'
-yel='91780C'
-blu='0C5791'
-mag='910C57'
-cya='0C918A'
+red='7A5954'
+grn='547A56'
+yel='7A7554'
+blu='54567A'
+mag='78547A'
+cya='547A73'
+
+#bl
+red='946C66'
+grn='669468'
+yel='948E66'
+blu='666894'
+mag='916694'
+cya='66948B'
