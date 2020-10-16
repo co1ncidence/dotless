@@ -7,14 +7,14 @@ case "$1" in
 
   --mla)
       cp "$dir/mla.tex" "./essay.tex" && \
-        touch "./sources.bib" && \
-        mkdir "./bibliography" ;;
+          touch "./sources.bib" && \
+          mkdir "./bibliography" ;;
 
-  --math)
+  --mth)
       cp "$dir/mathnotes.tex" "./notes.tex" && \
-        mkdir "./images" ;;
+          mkdir "./images" ;;
 
-  --letter)
+  --ltr)
       cp "$dir/letter.tex" "./letter.tex" ;;
 
 esac

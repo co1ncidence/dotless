@@ -16,7 +16,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme maybe
+colorscheme itai
 
 "look and feel
 set ruler

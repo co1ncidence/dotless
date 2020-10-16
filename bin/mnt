@@ -1,6 +1,5 @@
 #!/bin/sh -e
 #mount disk
-#based off of gk's
 
 set -- $(lsblk -ro name,mountpoint,model,fstype \
 				| grep -i '  [a-rt-z]' \

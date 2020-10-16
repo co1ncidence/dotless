@@ -3,6 +3,11 @@
 
 dir="$HOME/med/wlp"
 
-mem="$(ls -1 "$dir" | dmenu -fn "Input Mono Condensed" -nb "#393939" -nf "#ffffff" -sb "#ffffff" -sf "#393939")"
+wall="$(ls -1 "$dir" | dmenu -fn "Iosevka Term Slab" \
+                                       -nb "#515151" \
+                                       -nf "#ffffff" \
+                                       -sb "#515151" \
+                                       -sf "#66948b")"
 
-[ -f "$dir/$mem" ] && hsetroot -cover "$dir/$mem"
+[ -f "$dir/$wall" ] && \
+  hsetroot -cover "$dir/$wall"
