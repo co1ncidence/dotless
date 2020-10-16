@@ -3,7 +3,7 @@
 
 dir="$HOME/med/pic/mem"
 
-pwr="$(ls -1 "$dir" | dmenu -fn "Iosevka Term Slab" \
+mem="$(ls -1 "$dir" | dmenu -fn "Iosevka Term Slab" \
                                       -nb "#363636" \
                                       -nf "#515151" \
                                       -sb "#363636" \
