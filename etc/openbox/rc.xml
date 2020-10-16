@@ -296,7 +296,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'Input Mono Condensed' -nb '#393939' -nf '#ffffff' -sb '#ffffff' -sf '#393939'</command>
+        <command>dmenu_run -fn 'Iosevka Term Slab' -nb '#515151' -nf '#ffffff' -sb '#515151' -sf '#66948b'</command>
       </action>
     </keybind>
     <!-- passmenu -->
