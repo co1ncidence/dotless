@@ -1,18 +1,14 @@
-#!/bin/sh
-#mount/unmount /dev/sdb
+#!/bin/sh -e
+#mount disk
+#based off of gk's
 
-alias sudo="sls -u root"
-
-case "$1" in
-
-	-m)
-		mkdir -p "$HOME/mnt/" && \
-		sudo mount "/dev/sdb" "$HOME/mnt" && \
-		herbe "mounted USB" ;;
-
-	-u)
-		sudo umount "/dev/sdb" && \
-		rm -rf "$HOME/mnt" && \
-		herbe "unmounted USB" ;;
-
-esac
+set -- $(lsblk -ro name,mountpoint,model,fstype \
+				| grep -i '  [a-rt-z]' \
+				| dmenu -fn 'Iosevka Term Slab' -nb '#393939' \
+																				-nf '#ffffff' \
+																				-sb '#ffffff' \
+																				-sf '#393939')
+[ "$1" ]
+mkdir -p "$HOME/mnt/$1"
+sls -u root mount "/dev/$1" "$HOME/mnt/$1"
+herbe "mounted $1"
