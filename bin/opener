@@ -18,7 +18,7 @@ case "$1" in
           setsid -f sxiv "$1"
           ;;
 
-        *.pdf)
+        *.pdf|*.PDF)
 
           setsid -f zathura "$1"
           ;;

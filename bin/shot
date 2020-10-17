@@ -6,16 +6,15 @@ PADDING="70"
 case "$1" in
 
     -s)
-
         maim -s -u -m 10 | \
-            xclip -sel clip -t image/png ;;
+            xclip -sel clip -t image/png
+        ;;
 
     -d)
-
-        maim -s -u -m 10 "$HOME/med/pic/scr/"$(date +'%a_%I:%M')".png" ;;
+        maim -s -u -m 10 "$HOME/med/pic/scr/"$(date +'%a_%I:%M')".png"
+        ;;
 
     -p)
-
         id="$(slw)" &&
           wattr xywhb "$id" | {
             read -r x y w h b
@@ -27,15 +26,17 @@ case "$1" in
 
             maim -m 10 -u -g "${w}x${h}+$x+$y" \
                 | xclip -selection clipboard -t image/png
-        } ;;
+        }
+        ;;
 
     -h)
         maim -m 10 -u \
-            | xclip -sel clip -t image/png ;;
+            | xclip -sel clip -t image/png
+        ;;
 
     --desktop)
-
-        maim -m 10 -u "$HOME/what.png" ;;
+        maim -m 10 -u "$HOME/what.png"
+        ;;
 
     -v)
         slop="$(slop -f "%x %y %w %h")"
@@ -55,7 +56,8 @@ case "$1" in
             -qp 18\
             -preset ultrafast \
         "$HOME/med/vid/$(date +'%a_%I:%M').mp4"
-        fi ;;
+        fi
+        ;;
 
     -t)
         if pidof "ffmpeg"
@@ -75,13 +77,15 @@ case "$1" in
             -preset ultrafast \
             -y \
             "$HOME/med/vid/"$(date +'%a_%I:%M')".mp4"
-        fi ;;
+        fi
+        ;;
 
     -c)
-
-        maim -u -m 10 -g 800x600+283+84 -d 3 "$HOME/what.png" ;;
+        maim -u -m 10 -g 800x600+283+84 -d 3 "$HOME/what.png"
+        ;;
 
     -g)
+        giph -d 3 "$HOME/what.gif"
+        ;;
 
-        giph -d 3 "$HOME/what.gif" ;;
 esac
