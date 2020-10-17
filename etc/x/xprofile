@@ -22,3 +22,4 @@ ch &
 
 #choose your WM
 exec openbox
+exec berry

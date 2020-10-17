@@ -2,11 +2,11 @@
 #mount disk
 
 set -- $(lsblk -ro name,mountpoint,model,fstype \
-					| grep -i '  [a-rt-z]' \
-					| dmenu -fn 'Iosevka Term Slab' -nb '#363636' \
-																					-nf '#727272' \
-																					-sb '#363636' \
-																					-sf '#ffffff')
+	| grep -i '  [a-rt-z]' \
+	| dmenu -fn 'Iosevka Term Slab' -nb '#363636' \
+	  															-nf '#727272' \
+																	-sb '#363636' \
+	  															-sf '#ffffff')
 [ "$1" ]
 mkdir -p "$HOME/mnt/$1"
 sls -u root mount "/dev/$1" "$HOME/mnt/$1"

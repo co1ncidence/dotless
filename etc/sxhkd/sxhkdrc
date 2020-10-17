@@ -39,8 +39,8 @@ alt + {h,j,k,l}
 alt + shift + {x,m}
   {altshiftx,gifmenu}
 #school, memes, and wallpapers
-super + {b,m,u}
-  {school,memenu,wallchooser}
+super + {b,m,u,s}
+  {school,memenu,wallchooser,typingtest}
 
 # Notis
 #
@@ -68,9 +68,6 @@ super + backslash
 
 # Misc
 #
-#typing test
-super + s
-  typingtest
 #sloppymove
 super + a
   sloppymove

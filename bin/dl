@@ -1,26 +1,21 @@
 #!/bin/sh
 #download stuff
 
-#add https
 case $1 in
 		http*) ;;
 		*) set -- "https://$1" "$2"
 esac
 
-#plumb urls
 case $1 in
 
-    #youtube songs
     *youtube.com*|*youtu.be*)
         youtube-dl -x \
             --audio-format mp3 \
             "$@" ;;
 
-		#unsplash
 		*unsplash.com*) v=${1%/download*}
 				curl -L#o "${v##*/}.jpeg" "$v/download?force=true" ;;
 
-    #everything else
     *)
         curl \
             --disable \

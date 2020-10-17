@@ -2,9 +2,9 @@
 #power menu
 
 pwr="$(printf "suspend\nreboot\npoweroff" \
-              | dmenu -fn "Iosevka Term Slab" \
-                                -nb "#363636" \
-                                -nf "#727272" \
-                                -sb "#363636" \
-                                -sf "#ffffff")"
+  | dmenu -fn "Iosevka Term Slab" \
+                    -nb "#363636" \
+                    -nf "#727272" \
+                    -sb "#363636" \
+                    -sf "#ffffff")"
 [ "$pwr" ] && systemctl "$pwr"

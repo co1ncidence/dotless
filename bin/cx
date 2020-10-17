@@ -2,7 +2,6 @@
 #chmod +x toggle
 
 for file ; do
-    #check if already executable
     if [ -f "$file" ] ; then
         if [ -x "$file" ] ; then
             chmod -x "$file"
@@ -10,7 +9,6 @@ for file ; do
             chmod +x "$file"
         fi
     else
-        #file doesn't exist msg
         >&2 printf 'Error: %s does not exist.\n' "$file"
     fi
 done

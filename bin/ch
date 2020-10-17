@@ -5,12 +5,12 @@
 
 while :; do
 	set --
-	for i in "$HOME/.pki" \
-           "$HOME/.w3m" \
-           "$HOME/.local" \
-           "$HOME/.cache" \
-					 "$HOME/.bash*" \
-					 "$HOME/.local" \
+	for i in "$HOME/.pki"	 	 \
+           "$HOME/.w3m"	   \
+           "$HOME/.local"  \
+           "$HOME/.cache"  \
+					 "$HOME/.bash*"  \
+					 "$HOME/.local"  \
            "$HOME/.config" \
 					 "$HOME/.lyrics" \
            "$HOME/.xournalpp"; do

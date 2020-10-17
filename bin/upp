@@ -1,14 +1,11 @@
 #!/bin/sh
 #mnml uptime
 
-#read uptime file
 read -r uptime _ < /proc/uptime
 
 up=${uptime%.*}
 
-#define hours and minutes
 hours=$(( ( up % 86400 ) / 3600 ))
 min=$(( (( up % 86400 ) % 3600 ) / 60 ))
 
-#print in nh nm
 printf '%s\n' "${hours}h ${min}m"

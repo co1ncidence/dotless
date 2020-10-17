@@ -1,21 +1,16 @@
 #!/bin/sh
 # simple offline dictionary
 
-#location of dictionary file
 dict="$HOME/var/dict/dict.txt"
 
-#fetch dictionary from repo
-#will occur if $dict is missing
 if [ ! -f "$dict" ] ; then
     url='https://raw.githubusercontent.com/sujithps/Dictionary/master/Oxford%20English%20Dictionary.txt'
     curl -#fLC - "$url" -o "$dict"
 fi
 
 count=0
-#get queried word and print
 grep -Ei "^$*" "$dict" | \
 while read -r line ; do
-    #line numbers for convenience
     count=$(( count + 1 ))
     printf '%s\n\n' "$count. $line"
 done

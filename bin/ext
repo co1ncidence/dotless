@@ -6,7 +6,6 @@ usage() {
     exit 1
 }
 
-#main commands to use
 decompress() {
     case "${1##*.}" in
         gz|tgz)  gunzip -qdc "$1" ;;
@@ -15,44 +14,51 @@ decompress() {
     esac
 }
 
-#plumber
 run() {
     case "$1" in
         *tar.*|*.tgz|*.txz|*.tbz)
-            #untar
+
             decompress "$1" | \
-            tar -C "${COPY_PATH:-$PWD}" -xpf - ;;
+            tar -C "${COPY_PATH:-$PWD}" -xpf -
+            ;;
 
         *.xz|*.gz|*.bz2)
-            #bz
-            decompress "$1" "${COPY_PATH:-"$PWD"}/"${1%.*}"" ;;
+
+            decompress "$1" "${COPY_PATH:-"$PWD"}/"${1%.*}""
+            ;;
 
         *.zip)
-            #zip
-            unzip -q "$1" -d "$2" ;;
+
+            unzip -q "$1" -d "$2"
+            ;;
 
         *.rar)
-            #unrar
-            unrar x "$1" ;;
+
+            unrar x "$1"
+            ;;
 
         *.7z)
-            #who uses this
-            7z x "$1" ;;
+
+            7z x "$1"
+            ;;
 
         *)
+
             >&2 echo "Unrecognized compression format: "${1##*.}""
     esac
 }
 
-#make sure output has same name
 while [ "$1" ] ; do
     case "$1" in
+
         -h|h)
             usage
             ;;
+
         -C|-c)
             COPY_PATH="$1"
             ;;
+
         *)
             run "$@"
     esac

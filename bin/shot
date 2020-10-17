@@ -1,59 +1,51 @@
 #!/usr/bin/env bash
 #screenshotter and recorder
 
-#amount of padding in px (for -p)
 PADDING="70"
 
-#flags
 case "$1" in
 
     -s)
-        #take screenshot by selection and save to clipboard
+
         maim -s -u -m 10 | \
             xclip -sel clip -t image/png ;;
 
     -d)
-        #takey screenshot by selection and save to dir
+
         maim -s -u -m 10 "$HOME/med/pic/scr/"$(date +'%a_%I:%M')".png" ;;
 
     -p)
-        #take selection but add padding (defined at top)
+
         id="$(slw)" &&
           wattr xywhb "$id" | {
             read -r x y w h b
 
-            w="$((w + PADDING * 2))" #width
-            h="$((h + PADDING * 2))" #height
-            x="$((x - PADDING + b))" #x value
-            y="$((y - PADDING + b))" #y value
+            w="$((w + PADDING * 2))"
+            h="$((h + PADDING * 2))"
+            x="$((x - PADDING + b))"
+            y="$((y - PADDING + b))"
 
-            #copy to clipboard
             maim -m 10 -u -g "${w}x${h}+$x+$y" \
                 | xclip -selection clipboard -t image/png
         } ;;
 
     -h)
-        #take whole desktop screenshot and save to clipboard
         maim -m 10 -u \
             | xclip -sel clip -t image/png ;;
 
     --desktop)
 
-        #take whole desktop screenshot
         maim -m 10 -u "$HOME/what.png" ;;
 
     -v)
-        slop="$(slop -f "%x %y %w %h")" #select region to record
-
-        read -r X Y W H < <(echo "$slop") #not POSIX
-
-        width="${#W}" #make width var
+        slop="$(slop -f "%x %y %w %h")"
+        read -r X Y W H < <(echo "$slop")
+        width="${#W}"
 
         if [ "$width" -gt 0 ];
         then
         paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
 
-        #super duper ffmpeg command
         ffmpeg -f x11grab\
             -s "$W"x"$H"\
             -framerate 60 \
@@ -62,14 +54,14 @@ case "$1" in
             -vcodec libx264\
             -qp 18\
             -preset ultrafast \
-        "$HOME/med/vid/$(date +'%a_%I:%M').mp4" #change to match your dirs
+        "$HOME/med/vid/$(date +'%a_%I:%M').mp4"
         fi ;;
 
     -t)
-        if pidof "ffmpeg" #toggle ffmpeg
+        if pidof "ffmpeg"
         then
             pkill -9 ffmpeg && \
-	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: & #recording sound
+	          paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
         else
 
         paplay "/usr/share/sounds/freedesktop/stereo/complete.oga" |: &
@@ -82,15 +74,14 @@ case "$1" in
             -crf 0 \
             -preset ultrafast \
             -y \
-            "$HOME/med/vid/"$(date +'%a_%I:%M')".mp4" #change this to match your dirs
+            "$HOME/med/vid/"$(date +'%a_%I:%M')".mp4"
         fi ;;
 
     -c)
-        #take a 800x600 screenshot of center of screen
+
         maim -u -m 10 -g 800x600+283+84 -d 3 "$HOME/what.png" ;;
 
     -g)
-        #start recording whole screen after 3 seconds
-        #https://github.com/phisch/giph
+
         giph -d 3 "$HOME/what.gif" ;;
 esac

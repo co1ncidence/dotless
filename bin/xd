@@ -1,16 +1,13 @@
 #!/bin/sh
 #remove shit XD
 
-#clear trash
 rm -rf $HOME/tmp/tsh/*
-
-#remove xdg crap
 rm -rf \
-  "$HOME/Desktop/" \
-  "$HOME/Documents/" \
-  "$HOME/Downloads/" \
-  "$HOME/Music/" \
-  "$HOME/Pictures/" \
-  "$HOME/Public/" \
-  "$HOME/Templates/" \
-  "$HOME/Videos/"
+  "$HOME/Documents/"  \
+  "$HOME/Downloads/"  \
+  "$HOME/Templates/"  \
+  "$HOME/Pictures/"   \
+  "$HOME/Desktop/"    \
+  "$HOME/Public/"     \
+  "$HOME/Videos/"     \
+  "$HOME/Music/"
