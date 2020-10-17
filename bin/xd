@@ -5,11 +5,12 @@
 rm -rf $HOME/tmp/tsh/*
 
 #remove xdg crap
-rm -rf "$HOME/Desktop/"
-rm -rf "$HOME/Documents/"
-rm -rf "$HOME/Downloads/"
-rm -rf "$HOME/Music/"
-rm -rf "$HOME/Pictures/"
-rm -rf "$HOME/Public/"
-rm -rf "$HOME/Templates/"
-rm -rf "$HOME/Videos/"
+rm -rf \
+  "$HOME/Desktop/" \
+  "$HOME/Documents/" \
+  "$HOME/Downloads/" \
+  "$HOME/Music/" \
+  "$HOME/Pictures/" \
+  "$HOME/Public/" \
+  "$HOME/Templates/" \
+  "$HOME/Videos/"

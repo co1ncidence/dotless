@@ -5,19 +5,27 @@ case "$1" in
 
   -a)
       pkill herbe & \
-      herbe "$(date +'%I:%M %P')" " " "$(date +'%a, %b %d')" " " "$(battery)" ;;
+      herbe "$(date +'%I:%M %P')" " "\
+            "$(date +'%a, %b %d')" " "\
+            "$(battery)" " "\
+            "$(set -- $(sensors | grep -i cpu); \
+                        printf '%s\n' "$1 $2")" ;;
 
   -v)
       pkill herbe & \
-      herbe "Volume: "$(amixer sget Master | grep -i "right:" | awk -F '[][]' '{ print $2 }')"" ;;
+      herbe "Volume: "$(amixer sget Master \
+                        | grep -i "right:" \
+                        | awk -F '[][]' '{ print $2 }')"" ;;
 
   -l)
       pkill herbe & \
-      herbe "Brightness" " " "$(xbacklight -get)" ;;
+      herbe "Brightness" " "\
+            "$(xbacklight -get)" ;;
 
   -n)
       pkill herbe & \
-      herbe "Now Playing" " " "$(mpc current)" ;;
+      herbe "Now Playing" " "\
+            "$(mpc current)" ;;
 
   -t)
       pkill herbe & \
@@ -25,6 +33,7 @@ case "$1" in
 
   -d)
       pkill herbe & \
-      herbe "$(date +'%A, %b %d')" "--------------------" "$(cal)"
+      herbe "$(date +'%A, %b %d')" \
+            "--------------------" "$(cal)" ;;
 
 esac

@@ -9,7 +9,8 @@ case "$1" in
 
     -s)
         #take screenshot by selection and save to clipboard
-        maim -s -u -m 10 | xclip -sel clip -t image/png ;;
+        maim -s -u -m 10 | \
+            xclip -sel clip -t image/png ;;
 
     -d)
         #takey screenshot by selection and save to dir
@@ -27,12 +28,14 @@ case "$1" in
             y="$((y - PADDING + b))" #y value
 
             #copy to clipboard
-            maim -m 10 -u -g "${w}x${h}+$x+$y" | xclip -selection clipboard -t image/png
+            maim -m 10 -u -g "${w}x${h}+$x+$y" \
+                | xclip -selection clipboard -t image/png
         } ;;
 
     -h)
         #take whole desktop screenshot and save to clipboard
-        maim -m 10 -u | xclip -sel clip -t image/png ;;
+        maim -m 10 -u \
+            | xclip -sel clip -t image/png ;;
 
     --desktop)
 
@@ -84,7 +87,7 @@ case "$1" in
 
     -c)
         #take a 800x600 screenshot of center of screen
-        maim -g 800x600+283+84 -d 3 "$HOME/what.png" ;;
+        maim -u -m 10 -g 800x600+283+84 -d 3 "$HOME/what.png" ;;
 
     -g)
         #start recording whole screen after 3 seconds

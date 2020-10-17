@@ -3,10 +3,11 @@
 
 dir="$HOME/med/pic/mem/gif/"
 
-gif="$(ls -1 "$dir" | dmenu -fn "Iosevka Term Slab" \
-                                      -nb "#363636" \
-                                      -nf "#515151" \
-                                      -sb "#363636" \
-                                      -sf "#ffffff")"
+gif="$(ls -1 "$dir" | \
+  dmenu -fn "Iosevka Term Slab" \
+                  -nb "#363636" \
+                  -nf "#727272" \
+                  -sb "#363636" \
+                  -sf "#ffffff")"
 
 [ -f "$dir/$gif" ] && xclip -sel clip -in "$dir/$gif"

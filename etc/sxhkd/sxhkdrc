@@ -74,3 +74,6 @@ super + s
 #sloppymove
 super + a
   sloppymove
+#super term
+super + y
+  cd "$HOME/usr/doc/sch" && st &

@@ -1,6 +1,6 @@
 # Window geometry
 padding.width: 0
-padding.height: 15
+padding.height: 0
 border.width: 0
 window.client.padding.width: 10
 window.client.padding.height: 10
