@@ -1,58 +1,97 @@
-#
-# wm independent hotkeys
-#
-
 # terminal emulator
 super + Return
 	st
-
 # program launcher
-super + d
-	dmenu_run -fn 'Iosevka Term Slab' -nb '#363636' -nf '#515151' -sb '#363636' -sf '#ffffff'
-
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
-
-#
-# berry hotkeys
-#
-
-super + {h, j, k, l}
+super + space
+	dmenu_run -fn 'Iosevka Term Slab' \
+	-nb '#363636' \
+	-nf '#515151' \
+	-sb '#363636' \
+	-sf '#ffffff'
+# web browser
+super + i
+	chromium
+#discord
+super + v
+	ripcord
+#move windows
+super + shift + {h, j, k, l}
     berryc window_move {-50 0, 0 50, 0 -50, 50 0}
-
-super + shift +  {h, j, k, l}
+#resize windows
+alt +  {h, j, k, l}
     berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
-
+#shift workspaces
 super + {1-9}
     berryc switch_workspace {0-9}
-
+#move to workspace
 super + shift + {1-9}
     berryc send_to_workspace {0-9}
-
-super + m
-    berryc window_monocle
-
-super + f
-    berryc fullscreen
-
-super +  p
-    berryc snap_right
-
-super + o
-    berryc snap_left
-
-super + n
+#focus
+super + {h,l}
+		berryc cardinal_focus {2,3}
+#fullscreen
+super + {j,k}
+    berryc {fullscreen,fullscreen}
+#snap right
+ctrl + shift + {l,h}
+    berryc {snap_right,snap_left}
+#toggle decorations
+super + d
     berryc toggle_decorations
-
+#alt tab boiye
 alt + Tab
     berryc cycle_focus
-
+#close window
 super + w
     berryc window_close
-
+#center window
 super + c
     berryc window_center
-
+#focus window
 ~button1
     berryc pointer_focus
+#screenshots
+alt + shift + {e,d,s}
+  shot {-s,-p,-d}
+#save whole screen
+F7
+  shot --desktop
+#clipboard whole screen
+Print
+  shot -h
+#record section of screen
+alt + shift + r
+  pkill ffmpeg || shot -v
+#record whole screen
+alt + shift + t
+  pkill ffmpeg || shot -t
+#logout and gifs
+alt + shift + {x,m}
+  {altshiftx,gifmenu}
+#school, memes, and wallpapers
+super + {m,u,s}
+  {memenu,wallchooser,typingtest}
+#Kill Noti
+super + 0
+  pkill herbe
+#calendar and full
+super + {q,g}
+  noti {-a,-d}
+#brightness up and down
+super + {Up,Down}
+  xbacklight {-inc,-dec} 10 -time 0 && noti -l
+#volume up and down
+super + {p,o}
+  amixer --quiet set Master {10%+,10%-} && noti -v
+#next/previous song
+super + {bracketright,bracketleft}
+  mpc {next,prev} && noti -n
+#toggle playback
+super + backslash
+  mpc toggle && noti -t
+#sloppymove
+super + a
+  sloppymove
+#super term
+super + y
+  cd "$HOME/usr/doc/sch" && st &

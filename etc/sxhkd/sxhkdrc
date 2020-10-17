@@ -1,76 +1,77 @@
-# Screenshot and video
-#
 #screenshots
 alt + shift + {e,d,s}
   shot {-s,-p,-d}
+
 #save whole screen
 F7
   shot --desktop
+
 #clipboard whole screen
 Print
   shot -h
+
 #record section of screen
 alt + shift + r
   pkill ffmpeg || shot -v
+
 #record whole screen
 alt + shift + t
   pkill ffmpeg || shot -t
 
-# Window management
-#
 #center window
 super + c
   centerwindow
 alt + c
   centerwindow
+
 #snap window
 ctrl + shift + {h,j,k,l}
   snapwin {left, down, up, right}
+
 #move window
 super + shift + {h,l,j,k}
   xdotool windowmove --relative -- $(wid $(xdotool getactivewindow)) {-75 y,75 y,x 75,x -75}
+
 #resize window
 alt + {h,j,k,l}
   wrs {-30 0, 0 30, 0 -30, 30 0} $(pfw)
 
-# Menus
-#
 #logout and gifs
 alt + shift + {x,m}
   {altshiftx,gifmenu}
+
 #school, memes, and wallpapers
 super + {b,m,u,s}
   {school,memenu,wallchooser,typingtest}
 
-# Notis
-#
 #Kill Noti
 super + 0
   pkill herbe
+
 #calendar and full
 super + {q,g}
   noti {-a,-d}
+
 #brightness up and down
 super + {Up,Down}
   xbacklight {-inc,-dec} 10 -time 0 && noti -l
+
 #volume up and down
 super + {p,o}
   amixer --quiet set Master {10%+,10%-} && noti -v
 
-# MPC
-#
 #next/previous song
 super + {bracketright,bracketleft}
   mpc {next,prev} && noti -n
+
 #toggle playback
 super + backslash
   mpc toggle && noti -t
 
-# Misc
-#
 #sloppymove
 super + a
   sloppymove
+
 #super term
 super + y
   cd "$HOME/usr/doc/sch" && st &
