@@ -8,12 +8,11 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 xset r rate 250 50
 
 #wallpaper
-hsetroot -cover "$HOME/med/wlp/candle.jpg" &
+hsetroot -cover "$HOME/med/wlp/flowerpot.jpg" &
 
 #important things
 picom -b --config "$HOME/etc/picom/picom.conf" &
 sxhkd -c "$HOME/etc/sxhkd/sxhkdrc" &
-# sxhkd -c "$HOME/etc/berry/sxhkdrc" &
 
 #empty trash and shit dirs
 xd &
@@ -23,4 +22,3 @@ ch &
 
 #choose your WM
 exec openbox
-# exec berry
