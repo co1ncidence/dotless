@@ -81,7 +81,7 @@ case "$1" in
         ;;
 
     -c)
-        maim -u -m 10 -g 800x600+283+84 -d 3 "$HOME/what.png"
+        maim -u -m 10 -g 800x700+283+34 -d 3 "$HOME/what.png"
         ;;
 
     -g)
