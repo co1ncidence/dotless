@@ -3,8 +3,8 @@
 
 pwr="$(printf "suspend\nreboot\npoweroff" \
   | dmenu -fn "Iosevka Term Slab" \
-                    -nb "#363636" \
-                    -nf "#727272" \
-                    -sb "#363636" \
+                    -nb "#3e393b" \
+                    -nf "#7b7274" \
+                    -sb "#3e393b" \
                     -sf "#ffffff")"
 [ "$pwr" ] && systemctl "$pwr"
