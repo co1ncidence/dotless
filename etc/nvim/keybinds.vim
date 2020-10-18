@@ -11,16 +11,27 @@ ia <buffer> gx            g(x)
 ia <buffer> hx            h(x)
 ia <buffer> ol            \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
 ia <buffer> ul            \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
-ia <buffer> newsec        \section{
-ia <buffer> newsubsec     \subsection{
-ia <buffer> newsubsubsec  \subsubsection{
-ia <buffer> limxtoy       \lim\limits_{x \to y}
-ia <buffer> limxtoinf     \lim\limits_{x \to \infty}
+ia <buffer> sec           \section{
+ia <buffer> subsec        \subsection{
+ia <buffer> subsubsec     \subsubsection{
 ia <buffer> addnode       \node[label={180:{$$}},circle,fill,inner sep=2pt] at (axis cs:) {};<left><left><left><left><left><left>
+ia <buffer> addpoint      \addplot[mark=*] coordinates {()};<left><left><left>
 ia <buffer> addlegend     \addlegendentry{$$}<left><left>
 
-"latex plot
-ia <buffer> pgplot  \bigbreak{}<CR>\begin{center}<CR>\begin{tikzpicture}<CR><tab>\begin{axis}%<CR><tab>[grid=both,<CR>minor tick num=4,<CR>grid style={line width=.1pt, draw=gray!10},<CR>major grid style={line width=.2pt,draw=gray!50},<CR>axis lines=middle,<CR>enlargelimits={abs=0.2}<CR><bacspace>]<CR>\addplot[domain=-1:3,samples=50,smooth,red] {<CR><backspace>\end{axis}<CR><backspace>\end{tikzpicture}<CR>\end{center}<CR>\bigbreak{}<CR><up><up><up><up><up><A-S-a>};<left><left>
+"math limits
+ia <buffer> limxtoy       \lim\limits_{x \to y}
+ia <buffer> limxtoinf     \lim\limits_{x \to \infty}
+ia <buffer> limxto0       \lim\limits_{x \to 0}
+ia <buffer> limxto1       \lim\limits_{x \to 1}
+ia <buffer> limxto2       \lim\limits_{x \to 2}
+ia <buffer> limxto3       \lim\limits_{x \to 3}
+ia <buffer> limxto4       \lim\limits_{x \to 4}
+ia <buffer> limxto5       \lim\limits_{x \to 5}
+ia <buffer> limxto6       \lim\limits_{x \to 6}
+ia <buffer> limxto7       \lim\limits_{x \to 7}
+ia <buffer> limxto8       \lim\limits_{x \to 8}
+ia <buffer> limxto9       \lim\limits_{x \to 9}
+ia <buffer> limxto10      \lim\limits_{x \to 10}
 
 "inbuilt vim macro
 runtime macros/matchit.vim
@@ -58,3 +69,6 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 "toggle goyo
 nnoremap <C-g> :Goyo<CR>
+
+"latex plot
+ia <buffer> pgplot  \bigbreak{}<CR>\begin{center}<CR>\begin{tikzpicture}<CR><tab>\begin{axis}%<CR><tab>[grid=both,<CR>minor tick num=4,<CR>grid style={line width=.1pt, draw=gray!10},<CR>major grid style={line width=.2pt,draw=gray!50},<CR>axis lines=middle,<CR>enlargelimits={abs=0.2}<CR>]<CR>\addplot[domain=-1:3,samples=50,smooth,red] {<CR><backspace>\end{axis}<CR><backspace>\end{tikzpicture}<CR>\end{center}<CR>\bigbreak{}<CR><up><up><up><up><up><A-S-a>};<left><left>

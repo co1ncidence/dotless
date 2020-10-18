@@ -25,12 +25,14 @@ let g:vim_markdown_edit_url_in = 'tab'
 let g:vim_markdown_follow_anchor = 1
 
 "ale
-let b:ale_fixers = ['prettier', 'eslint']
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint'],
+\   'tex': ['alex', 'chktex', 'lacheck', 'proselint', 'redpen', 'texlab', 'textlint', 'vale', 'latexindent'],
+\   'css': ['csslint', 'fecs', 'stylelint'],
 \}
 let g:ale_fix_on_save = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
 
 "vimtex
 autocmd FileType tex,plaintex call vimtex#init()
