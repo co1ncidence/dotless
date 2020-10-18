@@ -27,8 +27,7 @@ let g:vim_markdown_follow_anchor = 1
 "ale
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'tex': ['alex', 'chktex', 'lacheck', 'proselint', 'redpen', 'texlab', 'textlint', 'vale', 'latexindent'],
-\   'css': ['csslint', 'fecs', 'stylelint'],
+\   'tex': ['chktex', 'lacheck', 'texlab', 'latexindent'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_sign_error = '>>'
