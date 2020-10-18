@@ -16,7 +16,7 @@ window.active.border.color: #2d2d2d
 window.inactive.border.color: #2d2d2d
 menu.border.color: #ffffff
 window.active.client.color: #7A5954
-window.inactive.client.color: #393939
+window.inactive.client.color: #31322e
 
 # Text shadows
 window.active.label.text.font: shadow=n
@@ -116,17 +116,17 @@ window.active.button.disabled.image.color: #2d2d2d
 
 ### Inactive windows ###
 window.inactive.title.bg: Solid Flat
-window.inactive.title.bg.color: #393939
+window.inactive.title.bg.color: #31322e
 window.inactive.title.bg.border.color: #f0f0f0
 
 window.inactive.label.bg: Parentrelative
 window.inactive.label.text.color: #2d2d2d
 
 window.inactive.handle.bg: Flat solid
-window.inactive.handle.bg.color: #393939
+window.inactive.handle.bg.color: #31322e
 
 window.inactive.grip.bg: Flat solid
-window.inactive.grip.bg.color: #393939
+window.inactive.grip.bg.color: #31322e
 
 ### Inactive buttons ###
 window.inactive.button.unpressed.bg: Flat solid
