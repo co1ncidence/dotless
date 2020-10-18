@@ -18,7 +18,7 @@ terminus
 cmu
 fira
 plex
-'               '"| \
+'           ' "| \
 dmenu -fn "Iosevka Term Slab" \
                 -nb "#363636" \
                 -nf "#727272" \
