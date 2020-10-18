@@ -8,7 +8,7 @@ wall="$(ls -1 "$dir" \
                     -nb "#3e393b" \
                     -nf "#7b7274" \
                     -sb "#3e393b" \
-                    -sf "#ffffff")"
+                    -sf "#e4e1e2")"
 
 [ -f "$dir/$wall" ] && \
   hsetroot -cover "$dir/$wall"

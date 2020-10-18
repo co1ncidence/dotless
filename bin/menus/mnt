@@ -6,7 +6,7 @@ set -- $(lsblk -ro name,mountpoint,model,fstype \
   | dmenu -fn 'Iosevka Term Slab' -nb '#3e393b' \
                                   -nf '#7b7274' \
                                   -sb '#3e393b' \
-                                  -sf '#ffffff')
+                                  -sf '#e4e1e2')
 [ "$1" ]
 mkdir -p "$HOME/mnt/$1"
 sls -u root mount "/dev/$1" "$HOME/mnt/$1"

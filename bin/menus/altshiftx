@@ -6,5 +6,5 @@ pwr="$(printf "suspend\nreboot\npoweroff" \
                     -nb "#3e393b" \
                     -nf "#7b7274" \
                     -sb "#3e393b" \
-                    -sf "#ffffff")"
+                    -sf "#e4e1e2")"
 [ "$pwr" ] && systemctl "$pwr"
