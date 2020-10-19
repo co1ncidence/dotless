@@ -37,8 +37,8 @@ lu() {
 bindkey '^a'	beginning-of-line
 bindkey '^e'	end-of-line
 bindkey '^w'	backward-kill-word
-bindkey '^f'	forward-word
-bindkey '^b'  backward-word
+bindkey '^f'	forward-char
+bindkey '^b'  backward-char
 bindkey '^r'  history-incremental-search-backward
 
 #command hist
@@ -96,7 +96,7 @@ alias sudoedit="sls -e"
 v() { amixer --quiet set Master "$1"% }
 lc() { cat "$@" | wc -l }
 rm() { mv "$@" "$HOME/tmp/tsh/" }
-linesh() { grep -icv '^[[:space:]]*#\|^$' "$@" }
+li() { grep -icv '^[[:space:]]*#\|^$' "$@" }
 
 #prompt
 PROMPT="%F{magenta}─── %f"
