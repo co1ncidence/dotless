@@ -56,6 +56,11 @@ kls() { clear; ls -CFv --color=auto --group-directories-first -A;\
 	zle redisplay; }
 zle -N kls; bindkey '^k' kls
 
+#todo list on ^u
+todo() { echo ; echo ; cat ~/var/notes/notes.md ; echo;\
+	zle redisplay; }
+zle -N todo; bindkey '^u' todo
+
 #alii
 alias c="clear"
 alias r="ranger"
