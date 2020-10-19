@@ -1,9 +1,16 @@
 {
-    "/home/co1ncidence/king.epub": {
+    "/home/co1ncidence/usr/doc/bok/the-way-of-kings.epub": {
+        "lastread": "0",
+        "index": "0",
+        "width": "76",
+        "pos": "0",
+        "pctg": "0.0"
+    },
+    "/home/co1ncidence/usr/doc/bok/oathbringer.epub": {
         "lastread": "1",
-        "index": "30",
-        "width": "48",
-        "pos": "77",
-        "pctg": "0.3532110091743119"
+        "index": "5",
+        "width": "76",
+        "pos": "0",
+        "pctg": "0.0"
     }
 }

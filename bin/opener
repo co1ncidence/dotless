@@ -5,7 +5,7 @@ case "$1" in
 
         *.mp3|*.flac|*.wav)
 
-          setsid -f st -e vibeto "$1" &
+          setsid -f vibeto "$1"
           ;;
 
         *.mp4|*.mkv|*.webm|*.mov|*.gif)
