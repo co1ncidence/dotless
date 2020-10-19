@@ -22,6 +22,7 @@ run() {
         *.zip) unzip -q "$1" -d "$2" ;;
         *.rar) unrar x "$1" ;;
         *.7z) 7z x "$1" ;;
+        *.tar) tar -xf "$1" ;;
         *) >&2 echo "Unrecognized compression format: "${1##*.}""
     esac
 }
