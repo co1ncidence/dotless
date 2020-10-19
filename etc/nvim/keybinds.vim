@@ -3,10 +3,10 @@ ia <buffer> fx            f(x)
 ia <buffer> gx            g(x)
 ia <buffer> hx            h(x)
 ia <buffer> Fx            F(x)
-ia <buffer> f'x           f'(x)
-ia <buffer> g'x           g'(x)
-ia <buffer> h'x           h'(x)
-ia <buffer> F'x           F'(x)
+ia <buffer> fpx           f'(x)
+ia <buffer> gpx           g'(x)
+ia <buffer> hpx           h'(x)
+ia <buffer> Fpx           F'(x)
 ia <buffer> int           \int_
 ia <buffer> frac          \frac{
 ia <buffer> sqrt          \sqrt{
