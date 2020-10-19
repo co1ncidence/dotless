@@ -74,4 +74,4 @@ nnoremap <C-g> :Goyo<CR>
 ia <buffer> pgplot  \bigbreak{}<CR>\begin{center}<CR>\begin{tikzpicture}<CR><tab>\begin{axis}%<CR><tab>[grid=both,<CR>minor tick num=4,<CR>grid style={line width=.1pt, draw=gray!10},<CR>major grid style={line width=.2pt,draw=gray!50},<CR>axis lines=middle,<CR>enlargelimits={abs=0.2}<CR>]<CR>\addplot[domain=-1:3,samples=50,smooth,red] {<CR><backspace>\end{axis}<CR><backspace>\end{tikzpicture}<CR>\end{center}<CR>\bigbreak{}<CR><up><up><up><up><up><A-S-a>};<left><left>
 
 "piecewise function
-ia <buffer> casefunc      \[ f(x) =<CR><tab>\begin{cases}<CR><CR><tab>x<tab>&<space>\quad<space>\text{if<space>}<space>x<space>=<space>0<space>\\<CR>x<tab>&<space>\quad<space>\text{if<space>}<space>x<space>=<space>0<CR><CR><backspace>\end{cases}<CR><backspace>\]
+ia <buffer> casefunc      \[ f(x) =<CR><tab>\begin{cases}<CR><CR><tab>x<tab>&<space>\quad<space>\text{if<space>}<space>x<space>=<space>0<space>\\<CR><CR>x<tab>&<space>\quad<space>\text{if<space>}<space>x<space>=<space>0<CR><CR><backspace>\end{cases}<CR><backspace>\]
