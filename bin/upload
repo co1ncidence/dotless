@@ -1,5 +1,6 @@
 #!/bin/sh
-#https://github.com/6gk
+#upload to 0x0
+#stel from geekay
 
 type=
 file -ibL "$1" | grep -q '^text/' && type=';type=text/plain'
@@ -7,10 +8,3 @@ file -ibL "$1" | grep -q '^text/' && type=';type=text/plain'
 curl -sF file="@${1:--}$type" 'http://0x0.st' \
 	| tee /dev/stderr \
 	| xclip -r -sel clip
-
-# [ -f "$1" ] && op="cat"
-# "${op:-echo}" "${@:-$(cat -)}" \
-# 	| curl -sF file="@-" "http://0x0.st" \
-# 	| tee /dev/stderr \
-# 	| tr -d "\n"      \
-# 	| xclip -sel clip -in
