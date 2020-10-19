@@ -12,6 +12,6 @@
 
 <p align="center"
 
-![img](scr/itai2.png)
+![img](scr/itai3.png)
 
 </p>
