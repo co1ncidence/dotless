@@ -42,16 +42,6 @@
   <theme>
     <name>3</name>
     <titleLayout/>
-    <!--
-      available characters are NDSLIMC, each can occur at most once.
-      N: window icon
-      L: window label (AKA title).
-      I: iconify
-      M: maximize
-      C: close
-      S: shade (roll up/down)
-      D: omnipresent (on all desktops).
-  -->
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
@@ -290,7 +280,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'Iosevka Term Slab' -nb '#363636' -nf '#515151' -sb '#363636' -sf '#ffffff'</command>
+        <command>dmenu_run -fn 'Iosevka Term Slab' -nb '#343030' -nf '#716969' -sb '#343030' -sf '#e4e1e2'</command>
       </action>
     </keybind>
     <!-- passmenu -->

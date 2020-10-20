@@ -24,10 +24,11 @@ ia <buffer> addpoint      \addplot[mark=*] coordinates {()};<left><left><left>
 ia <buffer> ul            \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 ia <buffer> ol            \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
 ia <buffer> emptypoint    \addplot[mark=*,fill=white] coordinates {()};<left><left><left>
-ia <buffer> addnode       \node[label={180:{$$}},circle,fill,inner sep=2pt] at (axis cs:) {};<left><left><left><left><left><left>
+ia <buffer> addnode       \node[label={180:{}},circle,fill,inner sep=2pt] at (axis cs:) {};<left><left><left><left><left><left>
 
 "fractions
 ia <buffer> 1o2           \frac{1}{2}
+ia <buffer> 1o3           \frac{1}{3}
 ia <buffer> 2o3           \frac{2}{3}
 ia <buffer> 3o4           \frac{3}{4}
 ia <buffer> 1ox           \frac{1}{x}
