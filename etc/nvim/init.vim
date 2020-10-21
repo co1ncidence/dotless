@@ -73,9 +73,6 @@ autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType html setlocal spell spelllang=en_us
 
-"thesaurus
-set thesaurus+=~/var/dict/thes.txt
-
 "sources
 source ~/etc/nvim/statusline.vim
 source ~/etc/nvim/plugins.vim
