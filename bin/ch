@@ -9,10 +9,10 @@ while :; do
            "$HOME/.w3m"	   \
            "$HOME/.local"  \
            "$HOME/.cache"  \
-					 "$HOME/.bash*"  \
-					 "$HOME/.local"  \
+           "$HOME/.bash*"  \
+           "$HOME/.local"  \
            "$HOME/.config" \
-					 "$HOME/.lyrics" \
+           "$HOME/.lyrics" \
            "$HOME/.xournalpp"; do
 		[ -e "$i" ] && set -- "$@" "$i"
 	done

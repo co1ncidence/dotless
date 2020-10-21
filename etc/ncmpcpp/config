@@ -1,5 +1,6 @@
 #dirs and shit
 ncmpcpp_directory = "/home/co1ncidence/etc/ncmpcpp/"
+lyrics_directory = "/home/co1ncidence/etc/ncmpcpp/lyrics/"
 mpd_music_dir = "/home/co1ncidence/med/mus/"
 external_editor = "gedit"
 user_interface = "classic"
