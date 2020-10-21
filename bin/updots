@@ -27,6 +27,7 @@ rm -rf \
 	etc/fontforge/	 \
 	etc/keepassxc/    \
 	etc/GeoGebra/     \
+	etc/Mumble/       \
 	bin/templates/    \
 	bin/stain/				\
 	etc/skanliterc    \
