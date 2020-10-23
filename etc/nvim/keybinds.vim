@@ -7,7 +7,6 @@ ia <buffer> fpx           f'(x)
 ia <buffer> gpx           g'(x)
 ia <buffer> hpx           h'(x)
 ia <buffer> Fpx           F'(x)
-ia <buffer> int           \int_
 ia <buffer> frac          \frac{
 ia <buffer> sqrt          \sqrt{
 ia <buffer> bf            \textbf{
@@ -23,7 +22,7 @@ ia <buffer> addlegend     \addlegendentry{$$}<left><left>
 ia <buffer> addpoint      \addplot[mark=*] coordinates {()};<left><left><left>
 ia <buffer> ul            \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 ia <buffer> ol            \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
-ia <buffer> parent        \left( \right)<left><left><left><left><left><left><left><left>
+ia <buffer> parenth       \left( \right)<left><left><left><left><left><left><left><left>
 ia <buffer> brack         \left[ \right]<left><left><left><left><left><left><left><left>
 ia <buffer> emptypoint    \addplot[mark=*,fill=white] coordinates {()};<left><left><left>
 ia <buffer> addplot       \addplot[domain=-1:3,samples=50,smooth,red]<space>{};<left><left>

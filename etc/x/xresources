@@ -21,23 +21,23 @@ URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
 !colors
-*.foreground: #ffffff
-*.background: #2d2d2d
-*.cursorColor:  #ffffff
-*.color0:  #2d2d2d
-*.color8:  #ffffff
-*.color1:  #f2777a
-*.color9:  #f2777a
-*.color2:  #99cc99
-*.color10: #99cc99
-*.color3:  #ffcc66
-*.color11: #ffcc66
-*.color4:  #6699cc
-*.color12: #6699cc
-*.color5:  #cc99cc
-*.color13: #cc99cc
-*.color6:  #66cccc
-*.color14: #66cccc
-*.color7:  #cccccc
-*.color15: #e0e0e0
+*.foreground: #131313
+*.background: #727474
+*.cursorColor:  #131313
+*.color0:  #272727
+*.color8:  #3a3a3a
+*.color1:  #782e19
+*.color9:  #782e19
+*.color2:  #637819
+*.color10: #637819
+*.color3:  #785e19
+*.color11: #785e19
+*.color4:  #193478
+*.color12: #193478
+*.color5:  #781963
+*.color13: #781963
+*.color6:  #196378
+*.color14: #196378
+*.color7:  #b8b0a8
+*.color15: #cac4be
 ! vim: ft=xdefaults

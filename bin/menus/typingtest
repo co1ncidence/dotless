@@ -6,12 +6,14 @@ recursive
 roboto
 sudo
 apercu
+league
 envy
 jetbrains
 iosevka
 writer
 input
 space
+victor
 ubuntu
 sanfran
 terminus
@@ -19,7 +21,7 @@ cmu
 fira
 plex
 '           ' "| \
-dmenu -fn "Iosevka Term Slab" \
+dmenu -fn "League Mono Condensed" \
                 -nb "#343030" \
                 -nf "#716969" \
                 -sb "#343030" \
@@ -32,12 +34,14 @@ dmenu -fn "Iosevka Term Slab" \
     roboto)       st -g 68x20+0+0 -f "Roboto Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
     sudo)         st -g 68x20+0+0 -f "Sudo":pixelsize=28 -e gottagofast -w 68 &                          ;;
     apercu)       st -g 68x20+0+0 -f "Apercu Pro Mono":pixelsize=28 -e gottagofast -w 68 &               ;;
+    league)       st -g 68x20+0+0 -f "League Mono Condensed":pixelsize=28 -e gottagofast -w 68 &         ;;
     envy)         st -g 68x20+0+0 -f "Envy Code R":pixelsize=28 -e gottagofast -w 68 &                   ;;
     jetbrains)    st -g 68x20+0+0 -f "JetBrains Mono":pixelsize=28 -e gottagofast -w 68 &                ;;
     iosevka)      st -g 68x20+0+0 -f "Iosevka Term Slab Extended":pixelsize=28 -e gottagofast -w 68 &    ;;
     writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
     input)        st -g 68x20+0+0 -f "Input Mono Condensed":pixelsize=28 -e gottagofast -w 68 &          ;;
     space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=28 -e gottagofast -w 68 &                    ;;
+    victor)       st -g 68x20+0+0 -f "Victor Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
     ubuntu)       st -g 68x20+0+0 -f "Ubuntu Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
     sanfran)      st -g 68x20+0+0 -f "SF Mono":pixelsize=28 -e gottagofast -w 68 &                       ;;
     terminus)     st -g 68x20+0+0 -f "Terminus":pixelsize=28 -e gottagofast -w 68 &                      ;;

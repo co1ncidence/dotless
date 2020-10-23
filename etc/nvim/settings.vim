@@ -2,17 +2,6 @@
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.tex set filetype=tex
 
-"vim-pencil
-set nocompatible
-filetype plugin on
-let g:pencil#textwidth = 80
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
-  autocmd FileType tex call pencil#init({'wrap': 'hard', 'autoformat': 0})
-augroup END
-let g:pencil#autoformat = 1
-
 "vim-markdown
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0

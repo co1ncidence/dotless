@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Output the key-binding values for 'fff'.
+#keybind finder
+
 key() {
     case "$1" in
 
@@ -13,7 +14,6 @@ key() {
         "")
             printf '%s\n' "key: \" \"" ;;
 
-        # Everything else.
         *)
             printf '%s %q\n' "key:" "$1" ;;
 

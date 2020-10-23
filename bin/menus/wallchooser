@@ -4,7 +4,7 @@
 dir="$HOME/med/wlp"
 
 wall="$(ls -1 "$dir" \
-  | dmenu -fn "Iosevka Term Slab" \
+  | dmenu -fn "League Mono Condensed" \
                     -nb "#343030" \
                     -nf "#716969" \
                     -sb "#343030" \

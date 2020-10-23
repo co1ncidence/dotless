@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Term Slab:pixelsize=16:antialias=true:autohint=true";
+static char *font = "League Mono Condensed:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */
@@ -165,7 +165,7 @@ static unsigned int cursorshape = 2;
  */
 
 static unsigned int cols = 80;
-static unsigned int rows = 20;
+static unsigned int rows = 24;
 
 /*
  * Default colour and shape of the mouse cursor

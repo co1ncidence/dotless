@@ -1,6 +1,5 @@
 #!/bin/sh
 #upload to 0x0
-#stel from geekay
 
 type=
 file -ibL "$1" | grep -q '^text/' && type=';type=text/plain'
