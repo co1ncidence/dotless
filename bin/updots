@@ -26,14 +26,12 @@ rm -rf \
 	etc/onlyoffice/  \
 	etc/fontforge/	 \
 	etc/keepassxc/    \
-	etc/GeoGebra/     \
 	etc/Mumble/       \
 	bin/templates/    \
 	bin/stain/				\
 	etc/skanliterc    \
 	etc/qalculate/    \
 	etc/htop/				  \
-	etc/calcurse/     \
 	etc/herbe/Makefile     \
 	etc/herbe/config.def.h	\
 	etc/herbe/herbe		\
