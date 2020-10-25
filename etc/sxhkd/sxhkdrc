@@ -60,6 +60,10 @@ super + {Up,Down}
 super + {p,o}
   amixer --quiet set Master {10%+,10%-} && noti -v
 
+#quick mute and max
+super + shift + {p,o}
+  amixer --quiet set Master {100%,0%} && noti -v
+
 #next/previous song
 super + {bracketright,bracketleft}
   mpc {next,prev} && noti -n
