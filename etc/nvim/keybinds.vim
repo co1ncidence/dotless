@@ -18,11 +18,11 @@ ia <buffer> sec           \section{
 ia <buffer> deri          \frac{d}{dx}
 ia <buffer> subsec        \subsection{
 ia <buffer> subsubsec     \subsubsection{
-ia <buffer> smoltit       \begin{center}<CR>\textbf{\large }<CR>\end{center}
 ia <buffer> meth          \( \)<left><left><left>
 ia <buffer> kmeth         \[ \]<left><left><left>
 ia <buffer> func          foo() {<CR><CR>}<Up><Tab>
 ia <buffer> addlegend     \addlegendentry{$$}<left><left>
+ia <buffer> smoltit       \begin{center}<CR>\textbf{\large }<CR>\end{center}
 ia <buffer> addpoint      \addplot[mark=*] coordinates {()};<left><left><left>
 ia <buffer> ul            \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 ia <buffer> ol            \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
