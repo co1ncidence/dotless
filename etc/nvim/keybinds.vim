@@ -7,6 +7,9 @@ ia <buffer> fpx           f'(x)
 ia <buffer> gpx           g'(x)
 ia <buffer> hpx           h'(x)
 ia <buffer> Fpx           F'(x)
+ia <buffer> sinx          \sin(x)
+ia <buffer> cosx          \cos(x)
+ia <buffer> tanx          \tan(x)
 ia <buffer> frac          \frac{
 ia <buffer> sqrt          \sqrt{
 ia <buffer> bf            \textbf{
@@ -15,6 +18,7 @@ ia <buffer> sec           \section{
 ia <buffer> deri          \frac{d}{dx}
 ia <buffer> subsec        \subsection{
 ia <buffer> subsubsec     \subsubsection{
+ia <buffer> smoltit       \begin{center}<CR>\textbf{\large }<CR>\end{center}
 ia <buffer> meth          \( \)<left><left><left>
 ia <buffer> kmeth         \[ \]<left><left><left>
 ia <buffer> func          foo() {<CR><CR>}<Up><Tab>
@@ -22,6 +26,7 @@ ia <buffer> addlegend     \addlegendentry{$$}<left><left>
 ia <buffer> addpoint      \addplot[mark=*] coordinates {()};<left><left><left>
 ia <buffer> ul            \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 ia <buffer> ol            \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>
+ia <buffer> smolmeth      \begin{center}<CR>\( \)<CR>\end{center}<Up><left><left><left>
 ia <buffer> parenth       \left( \right)<left><left><left><left><left><left><left><left>
 ia <buffer> brack         \left[ \right]<left><left><left><left><left><left><left><left>
 ia <buffer> emptypoint    \addplot[mark=*,fill=white] coordinates {()};<left><left><left>

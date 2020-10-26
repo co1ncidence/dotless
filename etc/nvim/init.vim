@@ -16,7 +16,7 @@ set termguicolors
 set background=dark
 set t_Co=254
 syntax on
-colorscheme siori
+colorscheme itai
 
 "look and feel
 set ruler
@@ -71,10 +71,7 @@ autocmd BufWinLeave * call  clearmatches()
 "spellcheck only for certain filetypes
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType html setlocal spell spelllang=en_us
-
-"different colorscheme for TeX
 autocmd FileType tex setlocal spell spelllang=en_us
-autocmd FileType tex source ~/etc/nvim/colors/itai.vim
 
 "sources
 source ~/etc/nvim/statusline.vim
