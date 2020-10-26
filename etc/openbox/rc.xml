@@ -40,13 +40,13 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>3</name>
-    <titleLayout/>
+    <name>2</name>
+    <titleLayout>CLM</titleLayout>
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Roboto Slab</name>
-      <size>1</size>
+      <name>CMU Sans Serif Demi Condensed, Semi-Bold Condensed</name>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -54,8 +54,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Roboto Mono Medium</name>
-      <size>5</size>
+      <name>CMU Sans Serif Demi Condensed, Semi-Bold Condensed</name>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
