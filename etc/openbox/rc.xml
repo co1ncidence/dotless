@@ -40,13 +40,13 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>2</name>
-    <titleLayout>CLM</titleLayout>
+    <name>3</name>
+    <titleLayout/>
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>CMU Sans Serif Demi Condensed, Semi-Bold Condensed</name>
-      <size>10</size>
+      <name>Sans Italic Condensed</name>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -54,8 +54,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>CMU Sans Serif Demi Condensed, Semi-Bold Condensed</name>
-      <size>10</size>
+      <name>Sans Bold Italic Condensed</name>
+      <size>1</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->

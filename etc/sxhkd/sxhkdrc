@@ -58,7 +58,7 @@ super + {Up,Down}
 
 #volume up and down
 super + {p,o}
-  amixer --quiet set Master {10%+,10%-} && noti -v
+  amixer --quiet set Master {5%+,5%-} && noti -v
 
 #quick mute and max
 super + shift + {p,o}

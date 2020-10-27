@@ -35,6 +35,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 filetype indent on
+set backspace=indent,eol,start
 
 "noshowcmd
 set noshowcmd
@@ -59,7 +60,6 @@ let g:rehash256=1
 "shell
 set history=1000
 set shell:zsh
-set backspace=indent,eol,start
 
 "show whitespaces as red
 hi!  ExtraWhitespace ctermbg=red guibg=red
