@@ -100,5 +100,5 @@ rm() { mv "$@" "$HOME/tmp/tsh/" }
 li() { grep -icv '^[[:space:]]*#\|^$' "$@" }
 
 #prompt
-PROMPT="%F{magenta}─── %f"
+PROMPT="%F{240}>%F{245}>%F{255}>%f "
 RPROMPT="%F{white}%B%1~%b%f"

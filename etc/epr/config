@@ -1,6 +1,6 @@
 {
     "/home/co1ncidence/usr/doc/bok/the-way-of-kings.epub": {
-        "lastread": "1",
+        "lastread": "0",
         "index": "11",
         "width": "44",
         "pos": "21",
@@ -12,5 +12,19 @@
         "width": "76",
         "pos": "15",
         "pctg": "0.09433962264150944"
+    },
+    "/home/co1ncidence/usr/doc/bok/productivity-ninja.epub": {
+        "lastread": "0",
+        "index": "6",
+        "width": "26",
+        "pos": "1092",
+        "pctg": "0.4497528830313015"
+    },
+    "/home/co1ncidence/usr/doc/bok/12-reasons-for-life.epub": {
+        "lastread": "1",
+        "index": "3",
+        "width": "56",
+        "pos": "20",
+        "pctg": "0.3508771929824561"
     }
 }
