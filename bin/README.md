@@ -25,6 +25,8 @@
 
 `cx` - Toggle a file as executable
 
+`define` - Offline dictionary which sources from a (massive) text file
+
 `dl` - Download script
   - Downloads youtube as mp3
   - Downloads unsplash as jpg
@@ -37,13 +39,23 @@
 `findfont` - Find all matches of given arg in `fc-list`
   - Useful for finding font names
 
+`firefox` - Spoofed Firefox launcher
+
 `gifmenu` - Tenor shitposting dmenu
+
+`keys` - Find which key I'm pressing
+  - `-x`: uses `xev` to track keysyms
 
 `lel` - Fetch script
 
 `mem` - Display memory usage (mnml)
 
 `memenu` - The meme menu
+
+`mkdoc` - Set up LaTeX templates
+  - `--mla`: creates MLA document, and corresponding files/folders
+  - `--mth`: creates a math-notes document, and corresponding files/folders
+  - `--ltr`: creates a letter
 
 `mnt` - Mount/unmount `/dev/sdb`
   - yeah it's hardcoded as fuck I don't care
@@ -68,7 +80,9 @@
 
 `push` - Push a repo to origin master
 
-`school` - Begin the school menu tree
+`search` - Search recursively for STRING in current folder
+
+`shorten` - [0x0](https://0x0.st) url-shortener script
 
 `shot` - Extensible maim/ffmpeg wrapper
   - `-s`: screenshot with selection, save to xclip

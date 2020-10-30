@@ -14,14 +14,14 @@ ia <buffer> frac          \frac{
 ia <buffer> sqrt          \sqrt{
 ia <buffer> bf            \textbf{
 ia <buffer> tit           \textit{
-ia <buffer> sec           \section{
 ia <buffer> deri          \frac{d}{dx}
 ia <buffer> subsec        \subsection{
+ia <buffer> meth          $ $<left><left>
 ia <buffer> subsubsec     \subsubsection{
-ia <buffer> meth          \( \)<left><left><left>
 ia <buffer> kmeth         \[ \]<left><left><left>
 ia <buffer> func          foo() {<CR><CR>}<Up><Tab>
 ia <buffer> addlegend     \addlegendentry{$$}<left><left>
+ia <buffer> fundther      \( A = \int_a^b f(x) dx = F(b) - F(a) \)
 ia <buffer> addpoint      \addplot[mark=*] coordinates {()};<left><left><left>
 ia <buffer> ul            \begin{itemize}<CR><CR><CR><CR>\end{itemize}<Up><Up><tab>
 ia <buffer> ol            \begin{enumerate}<CR><CR><CR><CR>\end{enumerate}<Up><Up><tab>

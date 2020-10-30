@@ -1,5 +1,5 @@
 #!/bin/sh
-#simple folder archiver
+#folder archiver
 
 usage() {
     >&2 printf 'Usage: %s [dir]\n' "${0##*/}"
