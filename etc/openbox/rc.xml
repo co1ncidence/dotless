@@ -280,7 +280,7 @@
     <!-- dmenu -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>dmenu_run -fn 'League Mono Narrow' -nb '#343030' -nf '#716969' -sb '#343030' -sf '#e4e1e2'</command>
+        <command>dmenu_run -fn 'NovaMono' -nb '#343030' -nf '#716969' -sb '#343030' -sf '#e4e1e2'</command>
       </action>
     </keybind>
     <!-- passmenu -->

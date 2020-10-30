@@ -2,9 +2,9 @@
 #power menu
 
 pwr="$(printf "suspend\nreboot\npoweroff" \
-  | dmenu -fn "League Mono Condensed" \
-                    -nb "#343030" \
-                    -nf "#716969" \
-                    -sb "#343030" \
-                    -sf "#e4e1e2")"
+  | dmenu -fn "NovaMono" \
+           -nb "#343030" \
+           -nf "#716969" \
+           -sb "#343030" \
+           -sf "#e4e1e2")"
 [ "$pwr" ] && systemctl "$pwr"
