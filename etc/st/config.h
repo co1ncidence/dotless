@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "NovaMono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Pragmata Pro Mono:pixelsize=16:antialias=true:autohint=true";
 
 
 /* Spare fonts */

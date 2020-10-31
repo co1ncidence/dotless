@@ -2,7 +2,7 @@
 #power menu
 
 pwr="$(printf "suspend\nreboot\npoweroff" \
-  | dmenu -fn "NovaMono" \
+  | dmenu -fn "PragmataPro Mono" \
            -nb "#343030" \
            -nf "#716969" \
            -sb "#343030" \

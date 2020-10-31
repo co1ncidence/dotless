@@ -12,6 +12,7 @@ jetbrains
 iosevka
 writer
 input
+pragmata
 space
 victor
 ubuntu
@@ -21,7 +22,7 @@ cmu
 fira
 plex
 '           ' "| \
-dmenu -fn "NovaMono" \
+dmenu -fn "PragmataPro Mono" \
        -nb "#343030" \
        -nf "#716969" \
        -sb "#343030" \
@@ -40,6 +41,7 @@ dmenu -fn "NovaMono" \
     iosevka)      st -g 68x20+0+0 -f "Iosevka Term Slab Extended":pixelsize=28 -e gottagofast -w 68 &    ;;
     writer)       st -g 68x20+0+0 -f "iA Writer Mono V":pixelsize=28 -e gottagofast -w 68 &              ;;
     input)        st -g 68x20+0+0 -f "Input Mono Condensed":pixelsize=28 -e gottagofast -w 68 &          ;;
+    pragmata)     st -g 68x20+0+0 -f "Pragmata Pro Mono":pixelsize=28 -e gottagofast -w 68 &             ;;
     space)        st -g 68x20+0+0 -f "Space Mono":pixelsize=28 -e gottagofast -w 68 &                    ;;
     victor)       st -g 68x20+0+0 -f "Victor Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
     ubuntu)       st -g 68x20+0+0 -f "Ubuntu Mono":pixelsize=28 -e gottagofast -w 68 &                   ;;
