@@ -1,9 +1,9 @@
 #!/bin/sh
-#recursively search for file
+#recursively search for given STRING
 
 #usage text
 usage() {
-    >&2 echo 'usage: f [path] [-t <f|d>] term'
+    >&2 echo 'usage: search [path] [-t <f|d>] term'
     exit 1
 }
 

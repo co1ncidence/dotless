@@ -11,7 +11,7 @@ case $1 in
     *youtube.com*|*youtu.be*)
         youtube-dl -x \
             --audio-format mp3 \
-            "$@" ;;
+            "$*" ;;
 
 		*unsplash.com*) v=${1%/download*}
 				curl -L#o "${v##*/}.jpeg" "$v/download?force=true" ;;

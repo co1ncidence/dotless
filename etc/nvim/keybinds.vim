@@ -9,6 +9,7 @@ ia <buffer> hpx           h'(x)
 ia <buffer> Fpx           F'(x)
 ia <buffer> sinx          \sin(x)
 ia <buffer> cosx          \cos(x)
+ia <buffer> mkdimg        [![]()]()
 ia <buffer> tanx          \tan(x)
 ia <buffer> frac          \frac{
 ia <buffer> sqrt          \sqrt{
@@ -81,6 +82,10 @@ nnoremap <C-L> <C-W><C-L>
 "better line nav
 noremap k gk
 noremap j gj
+noremap H g0
+noremap L g$
+
+"wtf is wrong with me
 noremap ) g$
 noremap 0 g0
 
