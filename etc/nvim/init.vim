@@ -79,3 +79,6 @@ source ~/etc/nvim/plugins.vim
 source ~/etc/nvim/settings.vim
 source ~/etc/nvim/keybinds.vim
 source ~/etc/nvim/autocorrect.vim
+
+"source tex snippets
+autocmd FileType tex source ~/etc/nvim/tex.vim
