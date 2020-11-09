@@ -16,6 +16,10 @@ let g:netrw_liststyle = 3
 nnoremap <C-x> :set nonumber! norelativenumber!<CR>
 nnoremap <C-a> :set cursorline!<CR>
 
+"readline??
+imap <C-a> <esc>I
+imap <C-e> <esc>A
+
 "split navigation
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
