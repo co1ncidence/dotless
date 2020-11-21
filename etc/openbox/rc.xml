@@ -274,7 +274,7 @@
     <!-- chrome -->
     <keybind key="W-i">
       <action name="Execute">
-        <command>chromium --user-data-dir=/home/co1ncidence/etc/chromium/</command>
+        <command>jumpapp chromium --user-data-dir=/home/co1ncidence/etc/chromium/</command>
       </action>
     </keybind>
     <!-- dmenu -->
@@ -292,7 +292,7 @@
     <!-- discord -->
     <keybind key="W-v">
       <action name="Execute">
-        <command>ripcord</command>
+        <command>jumpapp ripcord</command>
       </action>
     </keybind>
   </keyboard>
